@@ -29,7 +29,8 @@
 </ul>
 </div>
 {/if}
-
+<div id="separator"><hr/></div>
 <br />
-<input type="button" onclick="window.close()" value="{translate key="common.close"}" class="button defaultButton"/>
+<input type="button" onclick="window.close()" value="{translate key="common.close"}" class="btn btn-danger btn-small"/>
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}
 

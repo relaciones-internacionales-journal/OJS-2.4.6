@@ -21,18 +21,18 @@
 	<message key="about.contact.phone">Teléfono</message>
 	<message key="about.contact.principalContact">Contacto principal</message>
 	<message key="about.contact.supportContact">Contacto de asistencia</message>
-	<message key="about.other">Otro</message>
-	<message key="about.people">Contactos</message>
+	<message key="about.other">Otros</message>
+	<message key="about.people">Equipo</message>
 	<message key="about.policies">Políticas</message>
+	<message key="about.info">Información</message>
 	<message key="about.siteMap">Mapa del sitio</message>
-	<message key="announcement.announcements">Avisos</message>
-	<message key="announcement.announcementsHome">Avisos</message>
-	<message key="announcement.moreAnnouncements">Más avisos...</message>
-	<message key="announcement.noneExist">No se publicó ningún aviso.</message>
+	<message key="announcement.announcements">Noticias</message>
+	<message key="announcement.announcementsHome">Noticias</message>
+	<message key="announcement.moreAnnouncements">Más noticias</message>
+	<message key="announcement.noneExist">No se ha publicado ninguna noticia.</message>
 	<message key="announcement.posted">Publicado</message>
-	<message key="announcement.postedOn">Publicado en {$postDate}</message>
-	<message key="announcement.viewLink">Más...</message>
-	<message key="announcement.view">Ver aviso</message>
+	<message key="announcement.viewLink">Más</message>
+	<message key="announcement.view">Ver noticia</message>
 	<message key="common.accepted">Aceptado(s)</message>
 	<message key="common.acknowledged">Confirmado(s)</message>
 	<message key="common.action">Acción</message>
@@ -293,8 +293,16 @@
 	<message key="locale.primary">Configuración regional principal</message>
 	<message key="locale.supported">Configuraciones regionales soportadas</message>
 	<message key="navigation.website">Sitio web</message>
+	<!-- ADDED -->	
+	<message key="navigation.about">La Revista</message>
+	<message key="navigation.ForAuthors">Para autores/as</message>
+	<message key="navigation.indexes">Indexada en...</message>
+	<message key="navigation.login">Acceder</message>
+	<message key="navigation.logout">Salir</message>
+	<message key="navigation.news">Noticias</message>
+	<message key="navigation.past.issues">Números</message>
+	
 	<message key="navigation.access"><![CDATA[Roles &amp; usuarios/as]]></message>
-	<message key="navigation.about">Acerca de</message>
 	<message key="navigation.admin">Administración</message>
 	<message key="navigation.browse">Examinar</message>
 	<message key="navigation.browseByAuthor">Por autor/a</message>
@@ -386,4 +394,6 @@
 	<!-- Common -->
 	<message key="grid.action.downloadFile">Descargar este archivo</message>
 	<message key="common.notice">Notificación</message>
+	
+	<!-- MODIFICADO OJS V.2.4.6 / 06-2015 -->
 </locale>

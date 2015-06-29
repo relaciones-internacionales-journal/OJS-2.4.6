@@ -14,11 +14,12 @@
 {include file="common/header.tpl"}
 {/strip}
 
-<ul class="menu">
-	<li><a href="{url op="announcements"}">{translate key="manager.announcements"}</a></li>
-	<li class="current"><a href="{url op="announcementTypes"}">{translate key="manager.announcementTypes"}</a></li>
-</ul>
-
+<div id="editor_top_menu">
+	<ul class="nav nav-pills">
+		<li><a href="{url op="announcements"}">{translate key="manager.announcements"}</a></li>
+		<li class="active"><a href="{url op="announcementTypes"}">{translate key="manager.announcementTypes"}</a></li>
+	</ul>
+</div>
 <br />
 
 <div id="announcementTypes">
@@ -36,7 +37,7 @@
 {iterate from=announcementTypes item=announcementType}
 	<tr valign="top">
 		<td>{$announcementType->getLocalizedTypeName()|escape}</td>
-		<td><a href="{url op="editAnnouncementType" path=$announcementType->getId()}" class="action">{translate key="common.edit"}</a>&nbsp;|&nbsp;<a href="{url op="deleteAnnouncementType" path=$announcementType->getId()}" onclick="return confirm('{translate|escape:"jsparam" key="manager.announcementTypes.confirmDelete"}')" class="action">{translate key="common.delete"}</a></td>
+		<td><a href="{url op="editAnnouncementType" path=$announcementType->getId()}" class="action editar-general">{translate key="common.edit"}</a>&nbsp;|&nbsp;<a href="{url op="deleteAnnouncementType" path=$announcementType->getId()}" onclick="return confirm('{translate|escape:"jsparam" key="manager.announcementTypes.confirmDelete"}')" class="action delete">{translate key="common.delete"}</a></td>
 	</tr>
 	<tr>
 		<td colspan="2" class="{if $announcementTypes->eof()}end{/if}separator">&nbsp;</td>
@@ -51,14 +52,15 @@
 	</tr>
 {else}
 	<tr>
-		<td align="left">{page_info iterator=$announcementTypes}</td>
-		<td align="right">{page_links anchor="announcementTypes" name="announcementTypes" iterator=$announcementTypes}</td>
+		<td align="left" class="table-results-pagination">{page_info iterator=$announcementTypes}</td>
+		<td align="right" class="table-results-pagination_pages">{page_links anchor="announcementTypes" name="announcementTypes" iterator=$announcementTypes}</td>
 	</tr>
 {/if}
 </table>
 
-<a href="{url op="createAnnouncementType"}" class="action">{translate key="manager.announcementTypes.create"}</a>
+<a href="{url op="createAnnouncementType"}" class="action crear-general">{translate key="manager.announcementTypes.create"}</a>
 </div>
 
 {include file="common/footer.tpl"}
 
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

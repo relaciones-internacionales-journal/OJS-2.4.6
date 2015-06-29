@@ -14,11 +14,12 @@
 {include file="common/header.tpl"}
 {/strip}
 
-<ul class="menu">
-	<li class="current"><a href="{url op="announcements"}">{translate key="manager.announcements"}</a></li>
-	<li><a href="{url op="announcementTypes"}">{translate key="manager.announcementTypes"}</a></li>
-</ul>
-
+<div id="editor-top-menu">
+	<ul class="nav nav-pills">
+		<li class="active"><a href="{url op="announcements"}">{translate key="manager.announcements"}</a></li>
+		<li><a href="{url op="announcementTypes"}">{translate key="manager.announcementTypes"}</a></li>
+	</ul>
+</div>
 <br />
 
 <div id="announcementList">
@@ -40,7 +41,7 @@
 		<td>{$announcement->getDateExpire()|date_format:$dateFormatShort}</td>
 		<td>{$announcement->getAnnouncementTypeName()}</td>
 		<td>{$announcement->getLocalizedTitle()|escape}</td>
-		<td><a href="{url op="editAnnouncement" path=$announcement->getId()}" class="action">{translate key="common.edit"}</a>&nbsp;|&nbsp;<a href="{url op="deleteAnnouncement" path=$announcement->getId()}" onclick="return confirm('{translate|escape:"jsparam" key="manager.announcements.confirmDelete"}')" class="action">{translate key="common.delete"}</a></td>
+		<td><a href="{url op="editAnnouncement" path=$announcement->getId()}" class="action editar-general">{translate key="common.edit"}</a>&nbsp;|&nbsp;<a href="{url op="deleteAnnouncement" path=$announcement->getId()}" onclick="return confirm('{translate|escape:"jsparam" key="manager.announcements.confirmDelete"}')" class="action delete">{translate key="common.delete"}</a></td>
 	</tr>
 	<tr>
 		<td colspan="4" class="{if $announcements->eof()}end{/if}separator">&nbsp;</td>
@@ -55,13 +56,14 @@
 	</tr>
 {else}
 	<tr>
-		<td colspan="2" align="left">{page_info iterator=$announcements}</td>
-		<td colspan="2" align="right">{page_links anchor="announcements" name="announcements" iterator=$announcements}</td>
+		<td colspan="2" align="left" class="table-results-pagination">{page_info iterator=$announcements}</td>
+		<td colspan="2" align="right" class="table-results-pagination">{page_links anchor="announcements" name="announcements" iterator=$announcements}</td>
 	</tr>
 {/if}
 </table>
 
-<a href="{url op="createAnnouncement"}" class="action">{translate key="manager.announcements.create"}</a>
+<a href="{url op="createAnnouncement"}" class="action crear-general">{translate key="manager.announcements.create"}</a>
 </div>
 {include file="common/footer.tpl"}
 
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

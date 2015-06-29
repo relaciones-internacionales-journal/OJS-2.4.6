@@ -347,7 +347,7 @@
 	<message key="submission.page.review">#{$id} Review</message>
 	<message key="submission.page.summary">#{$id} Summary</message>
 	<message key="submission.page.citations">#{$id} Citations</message>
-	<message key="submission.peerReview">Peer&amp;nbsp;Review</message>
+	<message key="submission.peerReview">Peer&nbsp;Review</message>
 	<message key="submission.recommendation">Recommendation</message>
 	<message key="submission.rejected">Rejected</message>
 	<message key="submission.request">Request</message>
@@ -367,7 +367,7 @@
 	<message key="submissions.queuedEditing">In Editing</message>
 	<message key="submissions.queued">Queued</message>
 	<message key="submissions.queuedUnassigned">Awaiting assignment</message>
-	<message key="submissions.ruling">Ruling</message>
+	<message key="submissions.ruling">Decision</message>
 	<message key="submissions.submit">Submit</message>
 	<message key="submissions.submitted">Submitted</message>
 	<message key="submission.start">Start</message>
@@ -397,4 +397,6 @@
 	<!-- Submission file upload form elements -->
 	<message key="submission.form.name">Give this file a helpful name</message>
 	<message key="submission.form.replaceExisting">Replacing an Existing File?</message>
+	
+	<!-- MODIFICADO OJS V.2.4.6 / 06-2015 -->
 </locale>

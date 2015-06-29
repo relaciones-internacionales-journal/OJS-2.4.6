@@ -23,18 +23,14 @@
 	<p><span class="pkp_form_error">{translate key="$error"}</span></p>
 {/if}
 
-<table id="lostPasswordTable" class="data" width="100%">
-<tr valign="top">
-	<td class="label" width="25%">{translate key="user.login.registeredEmail"}</td>
-	<td class="value" width="75%"><input type="text" name="email" value="{$username|escape}" size="30" maxlength="90" class="textField" /></td>
-</tr>
-</table>
+<p>{translate key="user.login.registeredEmail"}</p>
+<p><input type="text" name="email" value="{$username|escape}" size="30" maxlength="90" class="textField" /></p>
 
-<p><input type="submit" value="{translate key="user.login.resetPassword"}" class="button defaultButton" /></p>
+<p><input type="submit" value="{translate key="user.login.resetPassword"}" class="btn" /></p>
 
-{if !$hideRegisterLink}
-	<ul><li><a href="{url page="user" op=$registerOp}">{translate key=$registerLocaleKey}</a></li></ul>
-{/if}
+{*{if !$hideRegisterLink}
+	&#187; <a href="{url page="user" op=$registerOp}">{translate key=$registerLocaleKey}</a>
+{/if}*}
 
 <script type="text/javascript">
 <!--
@@ -44,3 +40,5 @@
 </form>
 
 {include file="common/footer.tpl"}
+
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

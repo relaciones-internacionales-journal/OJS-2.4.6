@@ -9,14 +9,18 @@
  *}
 {if $isError}
 	<div id="formErrors">
-		<p>
-		<span class="pkp_form_error">{translate key="form.errorsOccurred"}:</span>
-		<ul class="pkp_form_error_list">
-		{foreach key=field item=message from=$errors}
-			<li><a href="#{$field|escape}">{$message}</a></li>
-		{/foreach}
-		</ul>
-		</p>
+		<div class="alert alert-block">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<h4>{translate key="form.errorTitle"}</h4>		
+			<p>
+			{translate key="form.errorsOccurred"}:<br/>
+			<ul class="plain">
+			{foreach key=field item=message from=$errors}
+				<li><a href="#{$field|escape}">{$message}</a></li>
+			{/foreach}
+			</ul>
+			</p>
+		</div>
 	</div>
 	<script type="text/javascript">{literal}
 		<!--
@@ -25,3 +29,4 @@
 		// -->
 	{/literal}</script>
 {/if}
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

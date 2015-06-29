@@ -344,7 +344,7 @@
 	<message key="submissions.queuedEditing">En edición</message>
 	<message key="submissions.queued">En espera</message>
 	<message key="submissions.queuedUnassigned">Asignación en espera</message>
-	<message key="submissions.ruling">Normativa</message>
+	<message key="submissions.ruling">Decisión</message>
 	<message key="submissions.submit">Enviar</message>
 	<message key="submissions.submitted">Enviado(s)</message>
 	<message key="submission.start">Empezar</message>
@@ -374,4 +374,6 @@
 	<!-- Submission file upload form elements -->
 	<message key="submission.form.name">Proporcione un nombre válido para el archivo</message>
 	<message key="submission.form.replaceExisting">¿Reemplazar el archivo existente?</message>
+	
+	<!-- MODIFICADO OJS V.2.4.6 / 06-2015 -->
 </locale>

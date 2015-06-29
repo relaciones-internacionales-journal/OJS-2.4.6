@@ -34,7 +34,7 @@
 	<message key="comments.replies">Replies</message>
 	<message key="comments.title">Title</message>
 	<message key="comments.viewAllComments">View all comments</message>
-	<message key="reader.fullText">Full Text:</message>
+	<message key="reader.fullText">Full Text</message>
 	<message key="rt.addComment">Add comment</message>
 	<message key="rt.admin.configuration">Configuration</message>
 	<message key="rt.admin.contexts.confirmDelete">Are you sure you wish to delete this Context and all associated Searches?</message>
@@ -99,7 +99,7 @@
 	<message key="rt.admin.versions.restoreVersions">Restore Versions to Defaults</message>
 	<message key="rt.authorBio">About the author</message>
 	<message key="rt.captureCite.format">Citation Format</message>
-	<message key="rt.captureCite">How to cite item</message>
+	<message key="rt.captureCite">How to cite this article</message>
 	<message key="rt.captureCite.online">Online</message>
 	<message key="rt.captureCite.web">Web</message>	
 	<message key="rt.colleague">Notify colleague</message>
@@ -118,7 +118,7 @@
 	<message key="rt.emailAuthor">Email the author</message>
 	<message key="rt.email.needLogin"><![CDATA[* Requires <a target="_parent" href="{$loginUrl}">registration</a>]]></message>
 	<message key="rt.email.sent">Your message has been sent.</message>
-	<message key="rt.findingReferences">Finding References</message>
+	<message key="rt.findingReferences">References in Google Scholar and others</message>
 	<message key="rt.findingReferences.googleScholar">Google Scholar</message>
 	<message key="rt.findingReferences.windowsLiveAcademic">Windows Live Academic</message>
 	<message key="rt.lookUp">Look up terms</message>
@@ -179,4 +179,5 @@
 	<message key="rt.version.title">Title</message>
 	<message key="rt.version">Version</message>
 	<message key="rt.viewMetadata">Indexing metadata</message>
+	<!--  MODIFICADO OJS V.2.4.6 / 06-2015  -->
 </locale>

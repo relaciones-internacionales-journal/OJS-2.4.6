@@ -49,9 +49,20 @@
 		{fbvFormSection label="user.profile.repeatNewPassword" for="password2"}
 			{fbvElement type="text" required=true password=true id="password2" value=$password2|escape maxlength="32" size=$fbvStyles.size.MEDIUM}
 		{/fbvFormSection}
-		{fbvFormButtons}
+		<div class="separator"><hr/></div>
+		<div class="section formButtons ">																	
+			<div style="float:right;">
+				<a href="#" id="cancelFormButton" class="btn btn-danger btn-small">{translate key="common.cancel"}</a> 
+				<button class="btn btn-small" type="submit" id="submitFormButton" translate="1">{translate key="common.save"}</button>
+			</div>
+			<div class="pkp_helpers_progressIndicator"></div>
+			<div class="clear"></div>
+		</div>				
+		</fieldset>
 	{/fbvFormArea}
 
 </form>
 
 {include file="common/footer.tpl"}
+
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

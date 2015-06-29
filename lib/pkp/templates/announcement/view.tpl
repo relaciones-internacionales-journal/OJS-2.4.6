@@ -14,11 +14,8 @@
 {include file="common/header.tpl"}
 {/strip}
 
-<table id="announcementDescription" width="100%">
-	<tr>
-		<td>{$announcement->getLocalizedDescription()|nl2br}</td>
-	</tr>
-</table>
+{$announcement->getLocalizedDescription()|nl2br}
 
 {include file="common/footer.tpl"}
 
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

@@ -35,7 +35,7 @@
 	<message key="comments.replies">Respuestas</message>
 	<message key="comments.title">Título</message>
 	<message key="comments.viewAllComments">Ver todos los comentarios</message>
-	<message key="reader.fullText">Texto completo:</message>
+	<message key="reader.fullText">Texto completo</message>
 	<message key="rt.addComment">Añadir comentario</message>
 	<message key="rt.admin.configuration">Configuración</message>
 	<message key="rt.admin.contexts.confirmDelete">¿Está seguro/a de que desea eliminar este contexto y todas las búsquedas asociadas?</message>
@@ -100,7 +100,7 @@
 	<message key="rt.admin.versions.restoreVersions">Restablecer versiones a sus valores por defecto</message>
 	<message key="rt.authorBio">Acerca del autor/a</message>
 	<message key="rt.captureCite.format">Formato de citas</message>
-	<message key="rt.captureCite">Cómo citar un elemento</message>
+	<message key="rt.captureCite">Cómo citar este artículo</message>
 	<message key="rt.captureCite.online">En línea</message>
 	<message key="rt.captureCite.web">Web</message>	
 	<message key="rt.colleague">Notificar a un compañero/a</message>
@@ -119,7 +119,7 @@
 	<message key="rt.emailAuthor">Enviar un correo electrónico al autor/a</message>
 	<message key="rt.email.needLogin"><![CDATA[* Requiere <a target="_parent" href="{$loginUrl}">registro</a>]]></message>
 	<message key="rt.email.sent">Mensaje enviado.</message>
-	<message key="rt.findingReferences">Referencias de búsqueda</message>
+	<message key="rt.findingReferences">Referencias en Google Scholar y otros</message>
 	<message key="rt.findingReferences.googleScholar">Google Académico</message>
 	<message key="rt.findingReferences.windowsLiveAcademic">Windows Live Academic</message>
 	<message key="rt.lookUp">Buscar términos</message>
@@ -180,4 +180,6 @@
 	<message key="rt.version.title">Título</message>
 	<message key="rt.version">Versión</message>
 	<message key="rt.viewMetadata">Metadatos de indexación</message>
+	
+	<!-- MODIFICADO OJS V.2.4.6 / 06-2015 -->
 </locale>

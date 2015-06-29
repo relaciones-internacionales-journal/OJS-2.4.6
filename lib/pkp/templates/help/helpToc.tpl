@@ -12,7 +12,7 @@
 {include file="help/header.tpl"}
 {/strip}
 
-<div id="main" style="margin: 0; width: 660px;">
+<div id="main">
 
 		<h4>{$applicationHelpTranslated}</h4>
 
@@ -39,9 +39,10 @@
 
 		<div id="search">
 			<h4>{translate key="help.search"}</h4>
+			<br/>
 			<form action="{url op="search"}" method="post" style="display: inline">
-			{translate key="help.searchFor"}&nbsp;&nbsp;<input type="text" name="keyword" size="30" maxlength="60" value="{$helpSearchKeyword|escape}" class="textField" />
-			<input type="submit" value="{translate key="common.search"}" class="button" />
+			{translate key="help.searchFor"}<br/><input type="text" name="keyword" size="30" maxlength="60" value="{$helpSearchKeyword|escape}" class="textField" /><br/>
+			<input type="submit" value="{translate key="common.search"}" class="btn btn-small" />
 			</form>
 		</div>
 
@@ -49,3 +50,4 @@
 </div>
 
 {include file="help/footer.tpl"}
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

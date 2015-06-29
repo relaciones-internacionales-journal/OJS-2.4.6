@@ -79,11 +79,12 @@ class PKPTemplateManager extends Smarty {
 		$cachePath = CacheManager::getFileCachePath();
 
 		// Set the default template dir (app's template dir)
+		$this->over_template_dir = $baseDir . DIRECTORY_SEPARATOR . 'override' . DIRECTORY_SEPARATOR . 'templates';
 		$this->app_template_dir = $baseDir . DIRECTORY_SEPARATOR . 'templates';
 		// Set fallback template dir (core's template dir)
 		$this->core_template_dir = $baseDir . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'pkp' . DIRECTORY_SEPARATOR . 'templates';
 
-		$this->template_dir = array($this->app_template_dir, $this->core_template_dir);
+		$this->template_dir = array($this->over_template_dir,$this->app_template_dir, $this->core_template_dir);
 		$this->compile_dir = $cachePath . DIRECTORY_SEPARATOR . 't_compile';
 		$this->config_dir = $cachePath . DIRECTORY_SEPARATOR . 't_config';
 		$this->cache_dir = $cachePath . DIRECTORY_SEPARATOR . 't_cache';
@@ -251,6 +252,14 @@ class PKPTemplateManager extends Smarty {
 
 		$this->initialized = true;
 	}
+	
+	/**
+	 * Add a directory-specific templates.
+	 * @param $url string the URL to the style sheet
+	 */
+	function addTemplateDir($args) {
+		array_unshift($this->template_dir, $args);
+	}
 
 	/**
 	 * Add a page-specific style sheet.
@@ -271,7 +280,7 @@ class PKPTemplateManager extends Smarty {
 	/**
 	 * @see Smarty::fetch()
 	 */
-	function fetch($resource_name, $cache_id = null, $compile_id = null, $display = false) {
+	function fetch($resource_name, $cache_id = null, $compile_id = '', $display = false) {
 		if (!$this->initialized) {
 			$this->initialize();
 		}
@@ -293,8 +302,31 @@ class PKPTemplateManager extends Smarty {
 			// the same scripts twice in case the template manager is called again.
 			$this->javaScripts = array();
 		}
+		
+		$compile_id = $this->getCompileID($resource_name, $compile_id);
+		
 		return parent::fetch($resource_name, $cache_id, $compile_id, $display);
 	}
+	
+	/**
+     * getCompileID
+     *
+     * Creates a unique compile_id for a given template.
+     *
+     * @author      Joe Stump <joe@joestump.net>
+     * @access      private
+     * @param       string      $template       Name of template
+     * @param       string      $compile_id     Old $compile_id
+     * @return      string
+     */
+    private function getCompileID($template, $compile_id)
+    {
+        if (strlen($compile_id)) {
+            return $compile_id;
+        }
+        $compile_id = $this->template_dir . $template;
+        return sha1($compile_id);
+    }
 
 	/**
 	 * Returns the template results as a JSON message.

@@ -278,7 +278,7 @@ class OAI {
 		// Format body of response
 		$response = "\t<Identify>\n" .
 			"\t\t<repositoryName>" . OAIUtils::prepOutput($info->repositoryName) . "</repositoryName>\n" .
-			"\t\t<baseURL>" . $this->config->baseUrl . "</baseURL>\n" .
+			"\t\t<baseURL>" . "http://www.relacionesinternacionales.info/ojs/oai" . "</baseURL>\n" .
 			"\t\t<protocolVersion>" . $this->protocolVersion . "</protocolVersion>\n" .
 			"\t\t<adminEmail>" . $info->adminEmail . "</adminEmail>\n" .
 			"\t\t<earliestDatestamp>" . OAIUtils::UTCDate($info->earliestDatestamp) . "</earliestDatestamp>\n" .
@@ -303,15 +303,18 @@ class OAI {
 			"\t\t</description>\n";
 		$response .= "\t\t<description>\n" .
 			"\t\t\t<toolkit\n" .
-			"\t\t\t\txmlns=\"http://oai.dlib.vt.edu/OAI/metadata/toolkit\"\n" .
-			"\t\t\t\txsi:schemaLocation=\"http://oai.dlib.vt.edu/OAI/metadata/toolkit\n" .
-			"\t\t\t\t\thttp://oai.dlib.vt.edu/OAI/metadata/toolkit.xsd\">\n" .
+			"\t\t\t\txmlns=\"http://www.relacionesinternacionales.info/schemas/toolkit\"\n" .
+			"\t\t\t\txmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n" .
+			"\t\t\t\txsi:schemaLocation=\"http://www.relacionesinternacionales.info/schemas\n" .
+			"\t\t\t\t\thttp://www.relacionesinternacionales.info/schemas/toolkit.xsd\">\n" .
 			"\t\t\t\t<title>" . $info->toolkitTitle . "</title>\n" .
 			"\t\t\t\t<author>\n" .
-			"\t\t\t\t\t<name>Public Knowledge Project</name>\n" .
-			"\t\t\t\t\t<email>pkp.contact@gmail.com</email>\n" .
+			"\t\t\t\t\t<name>Relaciones Internacionales</name>\n" .
+			"\t\t\t\t\t<email>administracion@relacionesinternacionales.info</email>\n" .
+			"\t\t\t\t\t<institution>GERI</institution>\n" .
 			"\t\t\t\t</author>\n" .
-			"\t\t\t\t<version>" . $info->toolkitVersion . "</version>\n" .
+			"\t\t\t\t<version>" . $info->toolkitVersion . "</version>\n" .			
+			"\t\t\t\t<toolkitIcon>http://www.relacionesinternacionales.info/schemas/toolkit</toolkitIcon>\n" .
 			"\t\t\t\t<URL>" . $info->toolkitURL . "</URL>\n" .
 			"\t\t\t</toolkit>\n" .
 			"\t\t</description>\n";
@@ -690,11 +693,16 @@ class OAI {
 		// print request params, if applicable
 		if($printParams) {
 			foreach($this->params as $k => $v) {
-				echo " $k=\"" . OAIUtils::prepOutput($v) . "\"";
+				$y = 'journal';
+				$p = 'page';
+					if (($k == $y) || ($k == $p)) {
+					echo '';}
+					else {
+				echo " $k=\"" . OAIUtils::prepOutput($v) . "\"";}
 			}
 		}
 
-		echo	">" . OAIUtils::prepOutput($this->config->baseUrl) . "</request>\n" .
+		echo	">" . "http://www.relacionesinternacionales.info/ojs/oai" . "</request>\n" .
 			$response .
 			"</OAI-PMH>\n";
 	}
@@ -854,5 +862,5 @@ class OAI {
 		return true;
 	}
 }
-
+/* MODIFICADO OJS V.2.4.6 / 06-2015*/
 ?>

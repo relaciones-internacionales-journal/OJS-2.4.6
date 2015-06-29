@@ -20,8 +20,6 @@
 
 	<h4>{$applicationHelpTranslated}</h4>
 
-	<div class="thickSeparator"></div>
-
 	<div id="breadcrumb">
 		{if $topic->getId() == "index/topic/000000"}
 			<a href="{get_help_id key="index.index" url="true"}" class="current">{translate key="navigation.home"}</a>
@@ -46,3 +44,4 @@
 
 {include file="help/footer.tpl"}
 
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

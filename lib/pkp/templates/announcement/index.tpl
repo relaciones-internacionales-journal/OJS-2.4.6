@@ -15,49 +15,43 @@
 {/strip}
 
 <div id="announcementList">
-<table class="announcements">
-{if $announcementsIntroduction != null}
-	<tr class="intro">
-		<td colspan="2" class="intro">{$announcementsIntroduction|nl2br}</td>
-	</tr>
-{/if}
-{iterate from=announcements item=announcement}
-	<tr class="title">
-	{if $announcement->getTypeId()}
-		<td class="title"><h4>{$announcement->getAnnouncementTypeName()|escape}: {$announcement->getLocalizedTitle()|escape}</h4></td>
-	{else}
-		<td class="title"><h4>{$announcement->getLocalizedTitle()|escape}</h4></td>
+<div class="news-list">
+	{if $announcementsIntroduction != null}
+		<div class="intro">
+			<{$announcementsIntroduction|nl2br}
+		</div>
 	{/if}
-		<td class="more">&nbsp;</td>
-	</tr>
-	<tr class="description">
-		<td class="description">{$announcement->getLocalizedDescriptionShort()|nl2br}</td>
-		<td class="more">&nbsp;</td>
-	</tr>
-	<tr class="details">
-		<td class="posted">{translate key="announcement.posted"}: {$announcement->getDatePosted()}</td>
-		{if $announcement->getLocalizedDescription() != null}
-			<td class="more"><a href="{url op="view" path=$announcement->getId()}">{translate key="announcement.viewLink"}</a></td>
+	{iterate from=announcements item=announcement}
+		{if $announcement->getTypeId()}
+			<h4>{$announcement->getAnnouncementTypeName()|escape}: {$announcement->getLocalizedTitle()|escape}</h4>
+		{else}
+			<h4>{$announcement->getLocalizedTitle()|escape}</h4>
 		{/if}
-	</tr>
-	<tr>
-		<td colspan="2" class="{if $announcements->eof()}end{/if}separator">&nbsp;</td>
-	</tr>
-{/iterate}
-{if $announcements->wasEmpty()}
-	<tr>
-		<td colspan="2" class="nodata">{translate key="announcement.noneExist"}</td>
-	</tr>
-	<tr>
-		<td colspan="2" class="endseparator">&nbsp;</td>
-	</tr>
-{else}
-	<tr>
-		<td align="left">{page_info iterator=$announcements}</td>
-		<td align="right">{page_links anchor="announcements" name="announcements" iterator=$announcements}</td>
-	</tr>
-{/if}
-</table>
-</div>
+		
+		<div class="news-details">
+			{translate key="announcement.posted"}: {$announcement->getDatePosted()}		
+		</div>
+		<div class="news-description">
+			{$announcement->getLocalizedDescriptionShort()|nl2br}
+			{if $announcement->getLocalizedDescription() != null}
+				<div class="news_more"><a href="{$baseUrl}/announcement/view/{$announcement->getId()}.html">{translate key="frontpage.ReadMore"}</a></div>
+			{/if}
+		</div>
+		<div class="separator"><hr/></div>
+		{*<tr>
+			<td colspan="2" class="{if $announcements->eof()}end{/if}separator">&nbsp;</td>
+		</tr>*}
+	{/iterate}
+	{if $announcements->wasEmpty()}
+		<div class="nodata">{translate key="announcement.noneExist"}</div>
+		<div class="endseparator">&nbsp;</div>
+	{else}
+		<div class="news-pagination">
+			<p class="news-pagination_text">{page_info iterator=$announcements}{page_links anchor="announcements" name="announcements" iterator=$announcements}</p>
+		</div>
+	{/if}
 
+	</div>
+</div>
 {include file="common/footer.tpl"}
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

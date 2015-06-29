@@ -21,17 +21,18 @@
 	<message key="about.contact.principalContact">Principal Contact</message>
 	<message key="about.contact.supportContact">Support Contact</message>
 	<message key="about.other">Other</message>
-	<message key="about.people">People</message>
+	<message key="about.people">Team</message>
 	<message key="about.policies">Policies</message>
+	<message key="about.info">Info</message>
 	<message key="about.siteMap">Site Map</message>
-	<message key="announcement.announcements">Announcements</message>
-	<message key="announcement.announcementsHome">Announcements</message>
-	<message key="announcement.moreAnnouncements">More Announcements...</message>
-	<message key="announcement.noneExist">No announcements have been published.</message>
+	<message key="announcement.announcements">News</message>
+	<message key="announcement.announcementsHome">News</message>
+	<message key="announcement.moreAnnouncements">More News...</message>
+	<message key="announcement.noneExist">No news have been published.</message>
 	<message key="announcement.posted">Posted</message>
 	<message key="announcement.postedOn">Posted on {$postDate}</message>
 	<message key="announcement.viewLink">More...</message>
-	<message key="announcement.view">View Announcement</message>
+	<message key="announcement.view">View News</message>
 	<message key="common.accepted">Accepted</message>
 	<message key="common.acknowledged">Acknowledged</message>
 	<message key="common.action">Action</message>
@@ -316,6 +317,13 @@
 	<message key="navigation.infoForReaders.long">Information For Readers</message>
 	<message key="navigation.items">{$from} - {$to} of {$total} Items</message>
 	<message key="navigation.login">Login</message>
+	
+	<message key="navigation.logout">Logout</message>
+	<message key="navigation.news">News</message>
+	<message key="navigation.past.issues">Issues</message>
+	<message key="navigation.indexes">Indexed in...</message>
+	<message key="navigation.ForAuthors">For authors</message>
+	
 	<message key="navigation.nextPage"><![CDATA[&gt;&gt;]]></message>
 	<message key="navigation.nextStep">Next Step</message>
 	<message key="navigation.previousPage"><![CDATA[&lt;&lt;]]></message>
@@ -396,4 +404,5 @@
 	<!-- Common -->
 	<message key="grid.action.downloadFile">Download this file</message>
 	
+	<!--MODIFICADO OJS V.2.4.6 / 06-2015-->
 </locale>

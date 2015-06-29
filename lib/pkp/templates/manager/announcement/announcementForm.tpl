@@ -20,23 +20,29 @@
 {/strip}
 
 <br/>
-<div id="announcement">
-<form id="announcementForm" method="post" action="{url op="updateAnnouncement"}">
+<div id="announcementForm">
+<script>
+	$(function() {ldelim}
+		// Attach the form handler.
+		$('#announcementForm').pkpHandler('$.pkp.controllers.form.FormHandler');
+	{rdelim});
+</script>
+<form class="pkp_form" id="announcementForm" name="announcementForm" method="post" action="{url op="updateAnnouncement"}">
 {if $announcementId}
 <input type="hidden" name="announcementId" value="{$announcementId|escape}" />
 {/if}
 
 {include file="common/formErrors.tpl"}
 
-<table class="data" width="100%">
+<table class="data_alt" width="100%">
 {if count($formLocales) > 1}
 	<tr valign="top">
 		<td width="20%" class="label">{fieldLabel name="formLocale" key="form.formLanguage"}</td>
 		<td width="80%" class="value">
-			{if $typeId}{url|assign:"announcementUrl" op="editAnnouncement" path=$announcementId escape=false}
+			{if $typeId}{url|assign:"announcementUrl" path="edit"|to_array:$announcementId}
 			{else}{url|assign:"announcementUrl" op="createAnnouncement" escape=false}
 			{/if}
-			{form_language_chooser form="announcementForm" url=$announcementUrl}
+			{form_language_chooser form="announcementForm" path=$announcementUrl}
 			<span class="instruct">{translate key="form.formLanguage.description"}</span>
 		</td>
 	</tr>
@@ -101,7 +107,7 @@
 </tr>
 </table>
 
-<p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> {if not $announcementId}<input type="submit" name="createAnother" value="{translate key="manager.announcements.form.saveAndCreateAnother"}" class="button" /> {/if}<input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url op="announcements" escape=false}'" /></p>
+<p><input type="button" value="{translate key="common.cancel"}" class="btn btn-danger btn-small" onclick="document.location.href='{url op="announcements" escape=false}'" />{if not $announcementId} <input type="submit" name="createAnother" value="{translate key="manager.announcements.form.saveAndCreateAnother"}" class="btn btn-small" />{/if} <input type="submit" value="{translate key="common.save"}" class="btn btn-small" /></p>
 
 </form>
 </div>
@@ -110,3 +116,4 @@
 
 {include file="common/footer.tpl"}
 
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

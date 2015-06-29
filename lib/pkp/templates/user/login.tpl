@@ -29,11 +29,15 @@
 {if $implicitAuth}
 	<a id="implicitAuthLogin" href="{url page="login" op="implicitAuthLogin"}">Login</a>
 {else}
-	<form id="signinForm" method="post" action="{$loginUrl}">
+	<div class="login-form">
+	<form id="signinForm" method="post" action="{$loginUrl}" class="form-horizontal">
 {/if}
 
 {if $error}
-	<span class="pkp_form_error">{translate key="$error" reason=$reason}</span>
+	<div class="alert alert-block">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<p>{translate key="$error" reason=$reason}</p>
+	</div>
 	<br />
 	<br />
 {/if}
@@ -41,40 +45,44 @@
 <input type="hidden" name="source" value="{$source|strip_unsafe_html|escape}" />
 
 {if ! $implicitAuth}
-	<table id="signinTable" class="data">
-	<tr>
-		<td class="label"><label for="loginUsername">{translate key="user.username"}</label></td>
-		<td class="value"><input type="text" id="loginUsername" name="username" value="{$username|escape}" size="20" maxlength="32" class="textField" /></td>
-	</tr>
-	<tr>
-		<td class="label"><label for="loginPassword">{translate key="user.password"}</label></td>
-		<td class="value"><input type="password" id="loginPassword" name="password" value="{$password|escape}" size="20" class="textField" /></td>
-	</tr>
-	{if $showRemember}
-	<tr valign="middle">
-		<td></td>
-		<td class="value"><input type="checkbox" id="loginRemember" name="remember" value="1"{if $remember} checked="checked"{/if} /> <label for="loginRemember">{translate key="user.login.rememberUsernameAndPassword"}</label></td>
-	</tr>
-	{/if}{* $showRemember *}
-
-	<tr>
-		<td></td>
-		<td><input type="submit" value="{translate key="user.login"}" class="button" /></td>
-	</tr>
-	</table>
-
-	<ul>
-		{if !$hideRegisterLink}<li><a href="{url page="user" op=$registerOp}">{translate key=$registerLocaleKey}</a></li>{/if}
-		<li><a href="{url page="login" op="lostPassword"}">{translate key="user.login.forgotPassword"}</a></li>
-	</ul>
+	
+	<div class="control-group">
+		<label class="control-label" for="loginUsername">{translate key="user.username"}</label>
+		<div class="input-prepend">
+		  <span class="add-on"><i class="icon-user"></i></span>
+		  <input type="text" id="loginUsername" name="username" value="{$username|escape}" size="20" maxlength="32" class="textField">
+		</div>
+	</div>
+	
+	<div class="control-group">
+		<label class="control-label" for="loginPassword">{translate key="user.password"}</label>
+		<div class="input-prepend">
+			<span class="add-on"><i class="icon-lock"></i></span>
+			<input type="password" id="loginPassword" name="password" value="{$password|escape}" size="20" maxlength="32" class="textField">
+		</div>
+	</div>
+	
+	<div class="control-group">
+		<div class="controls" style="float:right;">
+		<input type="submit" value="{translate key="user.login"}" class="btn" />
+		</div>
+	</div>
+	
+	<div class="control-group" style="float:right;">
+		{if !$hideRegisterLink}<p class="login-lostpass"><a href="{url page="user" op=$registerOp}">{translate key=$registerLocaleKey}</a></p>{/if}
+		<p class="login-lostpass"><a href="{url page="login" op="lostPassword"}">{translate key="user.login.forgotPassword"}</a></p>
+	</div>
+  
+{/if}{* !$implicitAuth *}
 
 <script type="text/javascript">
 <!--
 	document.getElementById('{if $username}loginPassword{else}loginUsername{/if}').focus();
 // -->
 </script>
-{/if}{* !$implicitAuth *}
-
 </form>
+</div>
 
 {include file="common/footer.tpl"}
+
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}
