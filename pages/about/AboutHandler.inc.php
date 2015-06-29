@@ -421,9 +421,27 @@ class AboutHandler extends Handler {
 		$this->validate();
 		$this->setupTemplate(true);
 
+		/* ADDED*/
+		$journalSettingsDao =& DAORegistry::getDAO('JournalSettingsDAO');
+		$sectionDao =& DAORegistry::getDAO('SectionDAO');
+		$sectionEditorsDao =& DAORegistry::getDAO('SectionEditorsDAO');
+		/*fin*/
+		
 		$journalDao =& DAORegistry::getDAO('JournalSettingsDAO');
 		$journal =& Request::getJournal();
-
+		
+		/* ADDED*/
+		$templateMgr =& TemplateManager::getManager();
+		$sections =& $sectionDao->getJournalSections($journal->getId());
+		$sections =& $sections->toArray();
+		$templateMgr->assign_by_ref('sections', $sections);
+		
+		$sectionEditorEntriesBySection = array();
+		foreach ($sections as $section) {
+			$sectionEditorEntriesBySection[$section->getId()] =& $sectionEditorsDao->getEditorsBySectionId($journal->getId(), $section->getId());
+		}
+		/*fin*/
+		
 		$templateMgr =& TemplateManager::getManager();
 		$journalSettings =& $journalDao->getJournalSettings($journal->getId());
 		$submissionChecklist = $journal->getLocalizedSetting('submissionChecklist');
@@ -433,6 +451,9 @@ class AboutHandler extends Handler {
 		}
 		$templateMgr->assign('submissionChecklist', $submissionChecklist);
 		$templateMgr->assign_by_ref('journalSettings', $journalSettings);
+		/* ADDED*/
+		$templateMgr->assign_by_ref('sectionEditorEntriesBySection', $sectionEditorEntriesBySection);
+		/*fin*/
 		$templateMgr->assign('helpTopicId','submission.authorGuidelines');
 		$templateMgr->display('about/submissions.tpl');
 	}
@@ -617,5 +638,5 @@ class AboutHandler extends Handler {
 		return StatisticsHandler::_getPublicStatisticsNames();
 	}
 }
-
+/*MODIFICADO OJS V.2.4.6 / 06-2015 */
 ?>
