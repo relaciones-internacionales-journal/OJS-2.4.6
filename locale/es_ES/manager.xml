@@ -180,7 +180,8 @@
 	<message key="manager.sections.identifyTypeExamples">(p. ej., Artículo evaluado por pares, Reseña de libro no evaluada, Comentario invitado, etc.)</message>
 	<message key="manager.sections.indexed">Indizado</message>
 	<message key="manager.sections.noneCreated">No se creó ninguna sección.</message>
-	<message key="manager.sections.open">Abrir envíos</message>
+	<!-- * MODIFICADO OJS V.2.4.6 / 06-2015-->
+	<message key="manager.sections.open">Se aceptan envíos</message>
 	<message key="manager.sections.policy">Política de la sección</message>
 	<message key="manager.sections.readingTools">Herramientas de lectura</message>
 	<message key="manager.sections.reviewed">Evaluado por pares</message>

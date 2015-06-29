@@ -18,7 +18,7 @@
 	<message key="author.submit.submitArticle">Submit an Article</message>
 	<message key="author.submit.stepsToSubmit">Five Steps to Submit</message>
 	<message key="author.submit.startHereTitle">Start a New Submission</message>
-	<message key="author.submit.startHereLink"><![CDATA[<a href="{$submitUrl}" class="action">Click here</a> to go to step one of the five-step submission process.]]></message>
+	<message key="author.submit.startHereLink"><![CDATA[<a href="{$submitUrl}" class="crear-general">Click here</a> to go to step one of the five-step submission process.]]></message>
 	<message key="author.submit.step1">Step 1. Starting the Submission</message>
 	<message key="author.submit.step2">Step 2. Uploading the Submission</message>
 	<message key="author.submit.step3">Step 3. Entering the Submission's Metadata</message>
@@ -126,4 +126,6 @@
 	<message key="author.article.copyeditedFile">Copyedited File</message>
 	<message key="author.article.authorRevisedFile">Author File</message>
 	<message key="author.submit.authorSubmitLoginMessage">A user account is required to submit to this journal. This allows our editors to track your submissions and contact you when the status of your submission changes, or if additional information is required from you.</message>
+	
+	<!-- * MODIFICADO OJS V.2.4.6 / 06-2015-->
 </locale>

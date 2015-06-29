@@ -42,7 +42,7 @@
 	<message key="submission.reviewFormResponse">Respuesta al formulario de revisión</message>
 
 
-	<message key="reviewer.article.enterReviewForm">Haga clic en el icono para rellenar el formulario de revisión.</message>
+	<message key="reviewer.article.enterReviewForm">Haga clic en el icono para rellenar el formulario de revisión online.</message>
 	<message key="reviewer.article.reviewFormResponse.form.responseRequired">Rellene los campos obligatorios.</message>
 
 	<!-- review forms end -->
@@ -82,7 +82,56 @@
 	<message key="navigation.competingInterestGuidelines">Directrices sobre conflictos de intereses</message>
 	<message key="navigation.infoForAuthors.long">Información para autores/as</message>
 	<message key="navigation.infoForLibrarians.long">Información para bibliotecarios/as</message>
-
+	<!-- ADDED -->
+	<message key="navigation.advanced.search">Búsqueda Avanzada</message>
+	<message key="plugins.block.user.myHome">Gestión</message>
+	<message key="submission.event.general.articlesPublished">Artículos publicados</message>
+	<message key="search.infoAboutResults">Los resultados de las búsquedas se mostrarán debajo del formulario.</message>
+	<message key="search.infoSearchResults">Resultados de la búsqueda</message>
+	<message key="form.errorTitle">Error...</message>
+	
+	<!-- Extra links header -->
+	<message key="header.indexes">Índices</message>
+	
+	<!-- Otros -->
+	<message key="reader.download">Leer online</message>
+	<message key="reader.articleShare">Compartir</message>
+	<message key="rt.resourceLink">Enlace al recurso</message>
+	<message key="announcement.announcementsRSS">RSS para noticias</message>
+	
+	<!-- Footer -->
+	<message key="footer.multilanguage"><![CDATA[<strong>Relaciones Internacionales</strong> <br> 
+	Revista acad&eacute;mica cuatrimestral de publicaci&oacute;n electr&oacute;nica | ISSN 1699 - 3950<br>
+	Grupo de Estudios de Relaciones Internacionales (GERI)<br>
+	Facultad de Derecho, Universidad Aut&oacute;noma de Madrid, Espa&ntilde;a]]></message>
+	<message key="footer.facebook.multilanguage">Síguenos en:</message>
+	<message key="footer.menuContact">Contacto</message>
+	
+	<!-- Frontpage -->
+	<message key="frontpage.downloadlastFullIssue">Descargar nº</message>
+	<message key="frontpage.full">completo</message>
+	<message key="frontpage.lastIssueCoordinators">Coordinadores:</message>
+	<message key="frontpage.CoordinatorsAnd">y</message>
+	<message key="frontpage.lastIssue">Último número</message>
+	<message key="frontpage.FebruaryIssue">Febrero</message>
+	<message key="frontpage.JuneIssue">Junio</message>
+	<message key="frontpage.OctoberIssue">Octubre</message>
+	<message key="frontpage.lastIssueIntro">Presentación</message>
+	<message key="frontpage.Editorial">Editorial</message>
+	<message key="frontpage.Articles">Artículos</message>
+	<message key="frontpage.Fragments">Fragmentos</message>
+	<message key="frontpage.SocialWindow">Ventana Social</message>
+	<message key="frontpage.ReviewEssay">Review Essay</message>
+	<message key="frontpage.Reviews">Reseñas</message>
+	<message key="frontpage.PastIssues">Números anteriores</message>
+	<message key="frontpage.More">Más...</message>
+	<message key="frontpage.ReadMore">Leer más</message>
+	<message key="frontpage.cookiesPolicy"><![CDATA[www.relacionesinternacionales.info utiliza cookies propias y de terceros para su funcionamiento, para mantener la sesión y personalizar la experiencia del usuario, así como para obtener estadísticas anónimas de uso del sitio web. Si continua navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener más información pinchando <a href="/ojs/pages/view/politica-cookies.html">aquí.</a>]]></message>
+	
+	<!--About page-->
+	<message key="about.OnlineSubmissionsInfo">Para remitir los manuscritos se utilizará el sistema de OJS de la web de la Revista que permite un seguimiento online de todos los procesos.</message>
+	<!-- / ADDED -->
+	
 	<!-- Article Queues -->
 	<message key="common.queue.long.submissionsUnassigned">Sin asignar</message>
 	<message key="common.queue.short.submissionsUnassigned">Sin asignar</message>
@@ -133,7 +182,7 @@
 	<message key="article.coverageSample"> Características de muestra de investigación</message>
 	<message key="article.type">Tipo, método o enfoque</message>
 	<message key="article.language">Idioma</message>
-	<message key="article.sectionEditor">SE</message>
+	<message key="article.sectionEditor">Editor</message>
 	<message key="article.commentsToEditor">Comentarios del autor/a</message>
 	<message key="article.submission">Envío</message>
 	<message key="article.submissions">Envíos</message>
@@ -239,7 +288,7 @@
 	<message key="issue.volume">Volumen</message>
 	<message key="issue.number">Número</message>
 	<message key="issue.vol">Vol.</message>
-	<message key="issue.no">Núm.</message>
+	<message key="issue.no">Nº</message>
 	<message key="issue.year">Año</message>
 	<message key="issue.noIssues">No hay números</message>
 	<message key="issue.toc">Tabla de contenidos</message>
@@ -427,7 +476,7 @@
 
 	<!-- Editor -->
 	<message key="editor.submissionReview.notes">
-	<![CDATA[<ol> <li>Los elementos resaltados indican que el editor debe llevar a cabo las siguientes acciones tal y como se muestra a continuación: <ul> <li class="highlightReviewerNotNotified">Hay un revisor/a asignado a quien no se le avisó por correo electrónico</li> <li class="highlightNoDecision">Todos los revisores/as enviaron sus comentarios, pero no se registró ninguna decisión</li> <li class="highlightRevisedCopyUploaded">El autor/a subió un manuscrito revisado</li> <li class="highlightReviewerConfirmationOverdue">Falta que el revisor/a confirme&nbsp;la invitación para la evaluación por pares</li> <li class="highlightReviewerCompletionOverdue">Falta&nbsp;que el revisor/a termine su tarea</li> </ul> </li> <li>La "Fecha de vencimiento" se completa cuando el revisor/a acepta la tarea y muestra el número de semanas hasta la entrega o (-) las semanas que lleva de retraso.</li> </ol>]]></message>
+	<![CDATA[<ul> <li>Los elementos resaltados indican que el editor debe llevar a cabo las siguientes acciones tal y como se muestra a continuación: <ul> <li class="highlightReviewerNotNotified">Hay un revisor/a asignado a quien no se le avisó por correo electrónico</li> <li class="highlightNoDecision">Todos los revisores/as enviaron sus comentarios, pero no se registró ninguna decisión</li> <li class="highlightRevisedCopyUploaded">El autor/a subió un manuscrito revisado</li> <li class="highlightReviewerConfirmationOverdue">Falta que el revisor/a confirme&nbsp;la invitación para la evaluación por pares</li> <li class="highlightReviewerCompletionOverdue">Falta&nbsp;que el revisor/a termine su tarea</li> </ul> </li> <li>La "Fecha de vencimiento" se completa cuando el revisor/a acepta la tarea y muestra el número de semanas hasta la entrega o (-) las semanas que lleva de retraso.</li> </ul>]]></message>
 	<message key="editor.submissionEditing.notes">
 	<![CDATA[<ol> <li>Los elementos resaltados indican que el editor debe llevar a cabo las siguientes acciones tal y como se muestra a continuación: <ul> <li class="highlightCopyediting">Es necesario tomar medidas en la fase de corrección de originales</li> <li class="highlightLayoutEditing">Es necesario tomar medidas en la fase de edición de maquetación</li> <li class="higlightProofreading">Es necesario tomar medidas en la fase de corrección de pruebas</li> </ul> </li> </ol>]]></message>
 
@@ -489,7 +538,7 @@
 	<message key="reviewer.article.restrictedFileAccess">El envío estará disponible cuando el revisor/a acceda a proceder con la revisión</message>
 	<message key="reviewer.article.submissionEditor">Editor/a del envío</message>
 	<message key="reviewer.article.reviewerCommentsDescription">Escriba o pegue los comentarios de revisión aquí</message>
-	<message key="reviewer.article.editorToEnter">Editor/a por introducir</message>
+	<message key="reviewer.article.editorToEnter">Decision del evaluador</message>
 	<message key="reviewer.article.sendReminder">Enviar un aviso</message>
 	<message key="reviewer.article.automatic">(Auto)</message>
 	<message key="reviewer.article.recommendation">Recomendación</message>
@@ -516,7 +565,7 @@
 	<message key="reviewer.article.reviewGuidelinesDescription"><![CDATA[Las directrices para el revisor/a proporcionarán a los revisores/as el criterio necesario para juzgar si un envío es adecuado para ser publicado en la revista, y puede incluir cualquier tipo de instrucciones particulares para preparar una revisión efectiva y útil. Al realizar la revisión, los revisores/as disponen de dos cuadros de texto abiertos: el primero "para el autor/a y el editor/a" y el segundo "para el editor/a". El gestor/a de la revista también puede crear un formulario de revisión por pares en el apartado Formularios de revisión. En cualquier caso, los editores/as tendrán la opción de incluir las revisiones para el autor/a.]]></message>
 	<message key="reviewer.article.notifyEditorA">Notificar al editor/a del envío</message>
 	<message key="reviewer.article.notifyEditorB">de si aceptará o no la revisión.</message>
-	<message key="reviewer.article.consultGuidelines">Si va a revisar, consulte las directrices para el revisor que aparecen a continuación.</message>
+	<message key="reviewer.article.consultGuidelines">Si va a revisar, consulte las directrices para el revisor que aparecen al inicio.</message>
 	<message key="reviewer.article.downloadSubmission">Haga clic en los nombres de los archivos relacionados con este envío que desee descargar y revisar (en pantalla o imprimiéndolos).</message>
 	<message key="reviewer.article.enterCompetingInterests"><![CDATA[Indique si tiene o no, algún conflicto de intereses en cuanto a esta investigación (consulte <a target="_new" class="action" href="{$competingInterestGuidelinesUrl}">CI&nbsp;Policy</a>).]]></message>
 	<message key="reviewer.competingInterests">Conflicto de intereses</message>
@@ -546,7 +595,7 @@
 
 	<!-- Article Submission Step 3 -->
 	<message key="author.submit.uploadInstructions"><![CDATA[
-<p>Para cargar un manuscrito en esta revista, complete los siguientes pasos:</p> <ol> <li>Haga clic en Examinar (o Seleccionar archivo) en esta página para abrir la ventana Seleccionar archivo y así poder localizarlo en su disco duro.</li> <li>Localice el archivo que desea enviar y resáltelo.</li> <li>Haga clic en Abrir (en la ventana Seleccionar archivo) y verá el nombre del archivo en esta página.</li> <li>Haga clic en Cargar para enviar el archivo al sitio web de la revista y renombrarlo según las normas de la revista.</li> <li>Una vez cargado el envío, haga clic en Guardar y continuar, en la parte inferior de esta página.</li> </ol>]]></message>
+<p>Para cargar un manuscrito en esta revista, complete los siguientes pasos:</p> <ul> <li>Haga clic en Examinar (o Seleccionar archivo) en esta página para abrir la ventana Seleccionar archivo y así poder localizarlo en su disco duro.</li> <li>Localice el archivo que desea enviar y resáltelo.</li> <li>Haga clic en Abrir (en la ventana Seleccionar archivo) y verá el nombre del archivo en esta página.</li> <li>Haga clic en Cargar para enviar el archivo al sitio web de la revista y renombrarlo según las normas de la revista.</li> <li>Una vez cargado el envío, haga clic en Guardar y continuar, en la parte inferior de esta página.</li> </ul>]]></message>
 
 	<!-- Article Submission Step 4 -->
 
@@ -615,7 +664,11 @@
 	<!-- Login -->
 	<message key="user.login.registerNewAccount">¿Aún no está registrado? Regístrese ahora</message>
 	<message key="user.login.resetPasswordInstructions"><![CDATA[Por razones de seguridad, nuestro sistema envía a nuestros usuarios/as un correo electrónico con una nueva contraseña, en vez de conservar la contraseña actual. <br /><br />Introduzca su dirección de correo electrónico en el apartado de abajo para restablecer su contraseña. Se le enviará la confirmación a la dirección de correo electrónico.]]></message>
-
+	<!-- ADDED -->
+	<message key="user.styleswitcher">Cambiar estilo:</message>
+	<message key="user.styleswitcher.dark">Oscuro</message>
+	<message key="user.styleswitcher.light">Claro</message>
+	
 	<!-- Registration -->
 	<message key="user.register.selectJournal">Seleccione una revista a la que registrarse</message>
 	<message key="user.register.noJournals">En este sitio no hay revistas en las que se pueda registrar.</message>
@@ -681,11 +734,11 @@
 	<message key="search.allJournals">Todas las revistas</message>
 	<message key="search.authorIndex">Examinar índice de autores/as</message>
 	<message key="search.authorDetails">Detalles de autor/a</message>
-	<message key="search.syntaxInstructions"><![CDATA[<h4>Consejos de búsqueda: </h4><ul> <li>Los términos de búsqueda no distinguen entre mayúsculas y minúsculas</li> <li>Las palabras comunes serán ignoradas</li> <li>Por defecto, sólo aquellos artículos que contengan<em>todos</em> los términos en consulta, serán devueltos (p. ej.: <em>Y</em> está implícito)</li> <li>Combine múltiples palabras con<em>O</em> para encontrar artículos que contengan cualquier término; p. ej., <em>educación O investigación</em></li> <li>Utilice paréntesis para crear consultas más complejas; p. ej., <em>archivo ((revista O conferencia) NO tesis)</em></li> <li>Busque frases exactas introduciendo comillas; p.ej, <em>"publicaciones de acceso abierto"</em></li> <li>Excluya una palabra poniendo como prefijo <strong>-</strong> o <em>NO</em>; p. ej. <em>-política en línea</em> o <em>NO política en línea</em></li> <li>Utilice <strong>*</strong> en un término como comodín para que cualquier secuencia de caracteres concuerde; p. ej., <em>soci* moralidad</em> hará que aparezcan aquellos documentos que contienen "sociológico" o "social"</li> </ul>]]></message>
+	<message key="search.syntaxInstructions"><![CDATA[<span class="search_suggestions"> Sugerencias de búsqueda:</span> <ul class="plain"> <li>Los términos de búsqueda no distinguen entre mayúsculas y minúsculas</li> <li>Las palabras comunes serán ignoradas</li> <li>Por defecto, sólo aquellos artículos que contengan<em>todos</em> los términos en consulta, serán devueltos (p. ej.: <em>Y</em> está implícito)</li> <li>Combine múltiples palabras con<em>O</em> para encontrar artículos que contengan cualquier término; p. ej., <em>educación O investigación</em></li> <li>Utilice paréntesis para crear consultas más complejas; p. ej., <em>archivo ((revista O conferencia) NO tesis)</em></li> <li>Busque frases exactas introduciendo comillas; p.ej, <em>"publicaciones de acceso abierto"</em></li> <li>Excluya una palabra poniendo como prefijo <strong>-</strong> o <em>NO</em>; p. ej. <em>-política en línea</em> o <em>NO política en línea</em></li> <li>Utilice <strong>*</strong> en un término como comodín para que cualquier secuencia de caracteres concuerde; p. ej., <em>soci* moralidad</em> hará que aparezcan aquellos documentos que contienen "sociológico" o "social"</li> </ul>]]></message>
 
 	<!-- Interstitial page for PDFs -->
 	<message key="article.pdf.title">Portable Document Format (PDF)</message>
-	<message key="article.pdf.download">Descargar el archivo PDF</message>
+	<message key="article.pdf.download">Descargar PDF</message>
 	<message key="article.pdf.pluginMissing"><![CDATA[<p>El archivo PDF seleccionado se debe cargar aquí si su navegador tiene instalado un módulo de lectura de PDF (por ejemplo, una versión reciente de <a href="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Acrobat Reader</a>).</p> <p>Si desea más información sobre cómo imprimir, guardar y trabajar con PDFs, Highwire Press le proporciona una guía útil de <a href="http://highwire.stanford.edu/help/pdf-faq.dtl">Preguntas frecuentes sobre PDFs</a>.</p> <p>Por otro lado, puede descargar el PDF directamente a su ordenador donde podrá abrirlo con un lector de PDF. Para descargar el PDF, haga clic en el enlace anterior.</p>]]></message>
 
 
@@ -706,24 +759,24 @@
 	<message key="current.noCurrentIssueDesc">Esta revista no ha publicado ningún número.</message>
 
 	<!-- Archive index -->
-	<message key="archive.archives">Archivos</message>
+	<message key="archive.archives">Números</message>
 	<message key="archive.browse">Examinar los números anteriores</message>
 	<message key="archive.issueUnavailable">Número no disponible</message>
 
 	<!-- About The Journal -->
 	<message key="about.statistics">Estadísticas</message>
 	<message key="about.journalContact">Contactar con la revista</message>
-	<message key="about.aboutTheJournal">Acerca de la revista</message>
-	<message key="about.history">Historial de la revista</message>
-	<message key="about.editorialTeam">Equipo editorial</message>
-	<message key="about.editorialTeam.biography">Resumen biográfico</message>
-	<message key="about.editorialPolicies">Políticas de la editorial</message>
-	<message key="about.focusAndScope">Enfoque y alcance</message>
-	<message key="about.sectionPolicies">Políticas de sección</message>
-	<message key="about.submissions">Envíos</message>
+	<message key="about.aboutTheJournal">La revista</message>
+	<message key="about.history">Historia de la revista</message>
+	<message key="about.editorialTeam">Equipo Editorial</message>
+	<message key="about.editorialTeam.biography">Biografía</message>
+	<message key="about.editorialPolicies">Información sobre la revista</message>
+	<message key="about.focusAndScope">Enfoque de la revista y alcance</message>
+	<message key="about.sectionPolicies">Secciones de la revista y envíos</message>
+	<message key="about.submissions">Envío de artículos </message>
 	<message key="about.sponsors">Patrocinadores</message>
 	<message key="about.contributors">Fuentes de ayuda</message>
-	<message key="about.onlineSubmissions">Envíos en línea</message>
+	<message key="about.onlineSubmissions">Envío de artículos en línea</message>
 	<message key="about.onlineSubmissions.haveAccount">¿Ya tiene nombre de usuario/a y contraseña para {$journalTitle}?</message>
 	<message key="about.onlineSubmissions.login">Ir a Iniciar sesión</message>
 	<message key="about.onlineSubmissions.needAccount">Necesita un nombre de usuario/a y/o contraseña?</message>
@@ -754,7 +807,7 @@
 	<message key="about.subscriptionTypes.cost">Coste</message>
 	<message key="about.availableSubscriptionTypes">Tipos de suscripción</message>
 	<message key="about.memberships">Afiliaciones</message>
-	<message key="about.journalSponsorship">Patrocinadores de la revista</message>
+	<message key="about.journalSponsorship">Editor y patrocinio de la revista</message>
 	<message key="about.aboutThisPublishingSystem">Acerca de este sistema de publicación</message>
 	<message key="about.aboutThisPublishingSystem.altText">Editorial OJS y proceso de publicación</message>
 	<message key="about.aboutOJSJournal"><![CDATA[Esta revista utiliza Open Journal Systems {$ojsVersion}, que es un gestor de revistas de acceso abierto y un software desarrollado, financiado y distribuido de forma gratuita por el proyecto<a href="http://pkp.sfu.ca/">Public Knowledge Project</a> sujeto a la Licencia General Pública de GNU.]]></message>
@@ -996,6 +1049,15 @@
 	<!-- Debug messages -->
 	<message key="debug.notes.currencyListLoad">Lista de monedas “{$filename}” cargada de XML</message>
 	<message key="debug.notes.helpMappingLoad">El archivo de asignación de ayuda XML {$filename} se ha vuelto a cargar en busca de {$id}.</message>
+	
+	<!-- Needed? To be checked -->
+	<message key="navigation.categories">Categorías</message>
+	<message key="navigation.categories.browse">Explorar</message>
+	<message key="issue.fullIssue">Número completo</message>
+	<message key="issue.nonpdf.title">Descargar la publicación</message>
+	<message key="issue.viewIssue">Ver la publicación</message>
+	<message key="issue.viewIssueDescription">Ver o descargar la publicación completa</message>
+	
 	<message key="submission.permissions">Permisos</message>
 	<message key="submission.license">Licencia</message>
 	<message key="submission.copyright">Copyright</message>
@@ -1020,4 +1082,6 @@
 	<message key="user.orcid.description"><![CDATA[Solo el <a href="http://orcid.org/" target="_blank">Registro ORCID</a> puede asignar ORCID iDs. Debes aceptar sus estándares para disponer de ORCID iDs e incluri la URL completa (pe. <em>http://orcid.org/0000-0002-1825-0097</em>).]]></message>
 	<message key="user.profile.form.orcidInvalid">El ORCID iD que has especificado no es vàlido.</message>
 	<message key="manager.setup.preservationDescription"><![CDATA[Open Journal Systems soporta el sistema <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) para asegurar seguridad y preservación permanente de su revista. Tiene múltiples opciones para incluir su revista en una red LOCKSS:]]></message>
+	
+	<!-- * MODIFICADO OJS V.2.4.6 / 06-2015-->
 </locale>

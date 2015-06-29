@@ -102,7 +102,56 @@
 	<message key="navigation.competingInterestGuidelines">Competing Interest Guidelines</message>
 	<message key="navigation.infoForAuthors.long">Information For Authors</message>
 	<message key="navigation.infoForLibrarians.long">Information For Librarians</message>
+	
+	<!-- ADDED -->
+	<message key="navigation.advanced.search">Advanced Search</message>
+	<message key="plugins.block.user.myHome">Manage</message>
+	<message key="submission.event.general.articlesPublished">Articles published</message>
+	<message key="search.infoAboutResults">Search results will be displayed under the search form.</message>
+	<message key="search.infoSearchResults">Search results</message>
+	<message key="form.errorTitle">Warning...</message>
+	
+	<!-- Extra links header -->
+	<message key="header.indexes">Indexes</message>
+	<!-- Otros -->
+	<message key="reader.download">Read online</message>
+	<message key="reader.articleShare">Share</message>
+	<message key="rt.resourceLink">Link to resource</message>
+	<message key="announcement.announcementsRSS">News RSS</message>
+	<!-- Footer -->
+	<message key="footer.multilanguage"><![CDATA[<strong>Relaciones Internacionales</strong> <br> 
+Online Academic Jounal | ISSN 1699 - 3950<br>
+International Relations Studies Group (GERI)<br>
+Law Faculty, Autonomous University of Madrid, Spain]]></message>
+	<message key="footer.facebook.multilanguage">Follow us in:</message>
+	<message key="footer.menuContact">Contact us</message>
+	
+	<!-- Frontpage -->
+	<message key="frontpage.downloadlastFullIssue">Download full issue</message>
+	<message key="frontpage.full"></message>
+	<message key="frontpage.lastIssueCoordinators">Coordinators:</message>
+	<message key="frontpage.CoordinatorsAnd">and</message>
+	<message key="frontpage.lastIssue">Last issue</message>
+	<message key="frontpage.FebruaryIssue">February</message>
+	<message key="frontpage.JuneIssue">June</message>
+	<message key="frontpage.OctoberIssue">October</message>
+	<message key="frontpage.lastIssueIntro">Introduction</message>
+	<message key="frontpage.Editorial">Editorial</message>
+	<message key="frontpage.Articles">Articles</message>
+	<message key="frontpage.Fragments">Fragments</message>
+	<message key="frontpage.SocialWindow">Snapshot of Society</message>
+	<message key="frontpage.ReviewEssay">Review Essay</message>
+	<message key="frontpage.Reviews">Reviews</message>
+	<message key="frontpage.PastIssues">Past Issues</message>
+	<message key="frontpage.More">More...</message>
+	<message key="frontpage.ReadMore">Read more</message>
+	<message key="frontpage.cookiesPolicy"><![CDATA[By continuing to use this site you consent to the use of cookies on your device as described in <a href="/ojs/pages/view/politica-cookies.html">our cookie policy</a> unless you have disabled them. You can change your <a href="/ojs/pages/view/politica-cookies.html">cookie settings</a> at any time but parts of our site will not function correctly without them.]]></message>
+	
+	<!--About page-->
+	<message key="about.OnlineSubmissionsInfo">All submissions should be made using our OJS online system, allowing users and staff to check online all due processes.</message>
 
+	<!-- / ADDED -->
+	
 	<!-- Article Queues -->
 	<message key="common.queue.long.submissionsUnassigned">Unassigned</message>
 	<message key="common.queue.short.submissionsUnassigned">Unassigned</message>
@@ -262,7 +311,7 @@
 	<message key="issue.volume">Volume</message>
 	<message key="issue.number">Number</message>
 	<message key="issue.vol">Vol</message>
-	<message key="issue.no">No</message>
+	<message key="issue.no">Nº</message>
 	<message key="issue.year">Year</message>
 	<message key="issue.noIssues">No Issues</message>
 	<message key="issue.toc">Table of Contents</message>
@@ -594,7 +643,7 @@ Active is how many reviews are currently being considered or underway.]]></messa
 	<message key="reviewer.article.restrictedFileAccess">Submission will be made available, if and when reviewer agrees to undertake review</message>
 	<message key="reviewer.article.submissionEditor">Submission Editor</message>
 	<message key="reviewer.article.reviewerCommentsDescription">Type or paste in review comments here</message>
-	<message key="reviewer.article.editorToEnter">Editor To Enter</message>
+	<message key="reviewer.article.editorToEnter">Reviewer decision</message>
 	<message key="reviewer.article.sendReminder">Send Reminder</message>
 	<message key="reviewer.article.automatic">(Auto)</message>
 	<message key="reviewer.article.recommendation">Recommendation</message>
@@ -621,12 +670,12 @@ Active is how many reviews are currently being considered or underway.]]></messa
 	<message key="reviewer.article.reviewGuidelinesDescription"><![CDATA[The Review Guidelines will provide reviewers with criteria for judging a submission's suitability for publication in the journal, and can include any special instructions for preparing an effective and helpful review. In conducting the review, reviewers are presented with with two open text boxes, the first "for author and editor," and the second "for editor." Alternatively, the Journal Manager can create a peer review form under Review Forms. In all cases, editors will have the option of including the reviews in corresponding with the author.]]></message>
         <message key="reviewer.article.notifyEditorA">Notify the submission's editor</message>
         <message key="reviewer.article.notifyEditorB">as to whether you will undertake the review.</message>
-        <message key="reviewer.article.consultGuidelines">If you are going to do the review, consult Reviewer Guidelines below.</message>
+        <message key="reviewer.article.consultGuidelines">If you are going to do the review, consult Reviewer Guidelines above.</message>
         <message key="reviewer.article.downloadSubmission">Click on file names to download and review (on screen or by printing) the files associated with this submission.</message>
         <message key="reviewer.article.enterCompetingInterests"><![CDATA[Declare whether or not you have competing interests with regard to this research (see <a target="_new" class="action" href="{$competingInterestGuidelinesUrl}">CI&nbsp;Policy</a>).]]></message>
 	<message key="reviewer.competingInterests">Competing Interests</message>
         <message key="reviewer.article.enterReviewA">Click on icon to enter (or paste) your review of this submission.</message>
-        <message key="reviewer.article.uploadFile">In addition, you can upload files for the editor and/or author to consult.</message>
+        <message key="reviewer.article.uploadFile">Click to upload the article Evaluation Form and any other file you may want.</message>
         <message key="reviewer.article.selectRecommendation">Select a recommendation and submit the review to complete the process. You must enter a review or upload a file before selecting a recommendation.</message>
 	<message key="reviewer.article.mustSelectDecision">No recommendation was selected. You must choose a recommendation to submit.</message>
 	<message key="reviewer.article.confirmDecision">Once you have recorded a decision you will no longer be able to make changes to this review. Are you sure you wish to continue?</message>
@@ -652,13 +701,13 @@ Active is how many reviews are currently being considered or underway.]]></messa
 	<!-- Article Submission Step 3 -->
 	<message key="author.submit.uploadInstructions"><![CDATA[
 <p>To upload a manuscript to this journal, complete the following steps.</p>
-<ol>
+<ul class="plain">
 <li>On this page, click Browse (or Choose File) which opens a Choose File window for locating the file on the hard drive of your computer.</li>
 <li>Locate the file you wish to submit and highlight it.</li>
 <li>Click Open on the Choose File window, which places the name of the file on this page.</li>
 <li>Click Upload on this page, which uploads the file from the computer to the journal's web site and renames it following the journal's conventions.</li>
 <li>Once the submission is uploaded, click Save and Continue at the bottom of this page.</li>
-</ol>]]></message>
+</ul>]]></message>
 
 	<!-- Article Submission Step 4 -->
 
@@ -730,6 +779,11 @@ Active is how many reviews are currently being considered or underway.]]></messa
 	<message key="user.login.resetPasswordInstructions"><![CDATA[For security reasons, this system emails a reset password to registered users, rather than recalling the
 current password.<br /><br />Enter your email address below to reset your password. A confirmation will be sent to this email address.]]></message>
 
+	<!-- ADDED -->
+	<message key="user.styleswitcher">Change style:</message>
+	<message key="user.styleswitcher.dark">Dark</message>
+	<message key="user.styleswitcher.light">Light</message>
+
 	<!-- Registration -->
 	<message key="user.register.selectJournal">Select a journal to register with</message>
 	<message key="user.register.noJournals">There are no journals you may register with on this site.</message>
@@ -795,7 +849,7 @@ current password.<br /><br />Enter your email address below to reset your passwo
 	<message key="search.allJournals">All Journals</message>
 	<message key="search.authorIndex">Browse Author Index</message>
 	<message key="search.authorDetails">Author Details</message>
-	<message key="search.syntaxInstructions"><![CDATA[<h4>Search tips: </h4><ul>
+	<message key="search.syntaxInstructions"><![CDATA[<span class="search-suggestions"> Search tips:</span> <ul>
 <li>Search terms are case-insensitive</li>
 <li>Common words are ignored</li>
 <li>By default only articles containing <em>all</em> terms in the query are returned (i.e., <em>AND</em> is implied)</li>
@@ -829,7 +883,7 @@ current password.<br /><br />Enter your email address below to reset your passwo
 	<message key="current.noCurrentIssueDesc">This journal has not published any issues.</message>
 
 	<!-- Archive index -->
-	<message key="archive.archives">Archives</message>
+	<message key="archive.archives">Issues</message>
 	<message key="archive.browse">Browse through the older issues</message>
 	<message key="archive.issueUnavailable">Issue Unavailable</message>
 
@@ -840,8 +894,8 @@ current password.<br /><br />Enter your email address below to reset your passwo
 	<message key="about.history">Journal History</message>
 	<message key="about.editorialTeam">Editorial Team</message>
 	<message key="about.editorialTeam.biography">Biography</message>
-	<message key="about.editorialPolicies">Editorial Policies</message>
-	<message key="about.focusAndScope">Focus and Scope</message>
+	<message key="about.editorialPolicies">Editorial Info</message>
+	<message key="about.focusAndScope">Journal Focus and Scope</message>
 	<message key="about.sectionPolicies">Section Policies</message>
 	<message key="about.submissions">Submissions</message>
 	<message key="about.sponsors">Sponsors</message>
@@ -877,7 +931,7 @@ current password.<br /><br />Enter your email address below to reset your passwo
 	<message key="about.subscriptionTypes.cost">Cost</message>
 	<message key="about.availableSubscriptionTypes">Subscription Types</message>
 	<message key="about.memberships">Memberships</message>
-	<message key="about.journalSponsorship">Journal Sponsorship</message>
+	<message key="about.journalSponsorship">Editor and Journal Sponsorship</message>
 	<message key="about.aboutThisPublishingSystem">About this Publishing System</message>
 	<message key="about.aboutThisPublishingSystem.altText">OJS Editorial and Publishing Process</message>
 	<message key="about.aboutOJSJournal"><![CDATA[This journal uses Open Journal Systems {$ojsVersion}, which is open source journal management and publishing software developed, supported, and freely distributed by the <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> under the GNU General Public License.]]></message>
@@ -1187,4 +1241,6 @@ Validation may fail on search URLs that require posted form data.]]></message>
 	<!-- Debug messages -->
 	<message key="debug.notes.currencyListLoad">Loaded currency list "{$filename}" from XML</message>
 	<message key="debug.notes.helpMappingLoad">Reloaded XML help mapping file {$filename} in search of {$id}.</message>
+	
+	<!-- * MODIFICADO OJS V.2.4.6 / 06-2015-->
 </locale>

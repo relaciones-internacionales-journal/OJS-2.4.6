@@ -15,16 +15,16 @@
 <locale name="es_ES" full_name="Español (España)">
 	<message key="author.submit">Nuevo envío</message>
 	<message key="author.track">Envíos activos</message>
-	<message key="author.competingInterests"><![CDATA[Conflicto&nbsp;de intereses <a target="_new" class="action" href="{$competingInterestGuidelinesUrl}">CI&nbsp;Policy</a>]]></message>
+	<message key="author.competingInterests"><![CDATA[Conflicto&nbsp;de intereses <a target="_new" class="action" href="{$competingInterestGuidelinesUrl}">Política&nbsp;de CI</a>]]></message>
 	<message key="author.submit.submitArticle">Enviar un artículo</message>
 	<message key="author.submit.stepsToSubmit">Enviar un artículo en cinco pasos</message>
 	<message key="author.submit.startHereTitle">Empezar un nuevo envío</message>
-	<message key="author.submit.startHereLink"><![CDATA[<a href="{$submitUrl}" class="action">Haga clic aquí</a> para ir al primer paso del proceso de envío en cinco pasos.]]></message>
+	<message key="author.submit.startHereLink"><![CDATA[<a href="{$submitUrl}" class="action crear-general">Haga clic aquí</a> para ir al primero de los cinco pasos del proceso de envío.]]></message>
 	<message key="author.submit.step1">Paso 1. Empezar el envío</message>
 	<message key="author.submit.step2">Paso 2. Cargar el envío</message>
 	<message key="author.submit.step3">Paso 3. Introducir los metadatos del envío</message>
 	<message key="author.submit.step4">Paso 4. Cargar los archivos complementarios</message>
-	<message key="author.submit.step4a">Paso 4a. Añadir un archivo complementario</message>
+	<message key="author.submit.step4a">Paso 4a. Editar o añadir un archivo complementario</message>
 	<message key="author.submit.step5">Paso 5. Confirmar el envío</message>
 	<message key="author.submit.start">1. Inicio</message>
 	<message key="author.submit.upload">2. Cargar el envío</message>
@@ -121,10 +121,12 @@
 	<message key="author.submit.noFiles">No se han adjuntado archivos a este envío.</message>
 	<message key="author.submit.filesSummary">Resumen del archivo</message>
 	<message key="author.submit.finishSubmission">Finalizar envío</message>
-	<message key="author.submit.submissionComplete">Envío completado. Gracias por su publicación en {$journalTitle}.</message>
+	<message key="author.submit.submissionComplete"><![CDATA[<span class="submit-completed">Envío completado.</span><br/> Gracias por su interés por publicar en {$journalTitle}.]]></message>
 	<message key="author.submit.expedite"><![CDATA[Si el envío tiene un formato que puede publicarse sin necesidad de revisión, edición o maquetación, se puede cargar directamente en el último paso de la lista de Edición <a href="{$expediteUrl}" class="action">haciendo clic aquí</a>. (Nota: Sólo los editores/as de la revista disponen de esta opción para sus envíos).]]></message>
 	<message key="author.article.uploadAuthorVersion">Cargar la versión del autor/a</message>
 	<message key="author.article.copyeditedFile">Archivo corregido</message>
 	<message key="author.article.authorRevisedFile">Archivo del autor/a</message>
 	<message key="author.submit.authorSubmitLoginMessage">Es necesario disponer de una cuenta de usuario/a para realizar envíos a la revista. Esto permite que nuestros editores/as hagan un seguimiento de sus envíos y puedan contactarle cuando cambie el estado de los mismos o si es necesario proporcionar información adicional.</message>
+	
+	<!-- * MODIFICADO OJS V.2.4.6 / 06-2015-->
 </locale>
