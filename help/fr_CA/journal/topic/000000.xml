@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000000.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Journal Management Main 
+  *
+  -->
+
+<topic id="journal/topic/000000" locale="fr_CA" title="Gestion de la revue" toc="index/toc/000000" subtoc="journal/toc/000000" key="journal.index">
+	<section>
+		<![CDATA[<p>Le directeur de revue voit à tous les aspects de la gestion de la revue, en consultation avec les rédacteurs, incluant la mise en marche et la configuration du système de la revue, au recrutement des utilisateurs pour les divers rôles requis pour opérer la revue, la mise en place des diverses rubriques, ainsi que bien d’autres tâches de gestion.</p>]]>	
+	</section>
+</topic>

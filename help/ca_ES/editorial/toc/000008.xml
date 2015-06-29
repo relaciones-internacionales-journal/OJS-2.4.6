@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE toc SYSTEM "../../../../lib/pkp/dtd/helpToc.dtd">
+<!--
+  * 000008.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Catalan_%28ca_ES%29
+  *
+  * table of contents for Editorial Process - Reviewer's Role
+  *
+  -->
+
+<toc id="editorial/toc/000008" locale="ca_ES" title="Rol de revisor/a" parent_topic="editorial/topic/000008">
+	<topic id="editorial/topic/000030" title="Trameses" />
+	<topic id="editorial/topic/000031" title="Revisió" />
+
+	<breadcrumb url="editorial/topic/000000" title="Procés editorial" />
+	<breadcrumb url="editorial/topic/000008" title="Rol de revisor/a" />
+</toc> 

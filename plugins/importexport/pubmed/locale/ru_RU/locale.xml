@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/importexport/pubmed/locale/ru_RU/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the ru_RU (Russian) locale.
+  * With updates from Pavel Pisklakov (revising translation). 
+  -->
+ 
+<locale name="ru_RU" full_name="Russian">
+	<message key="plugins.importexport.pubmed.displayName">Плагин «Экспорт в PubMed XML»</message>
+	<message key="plugins.importexport.pubmed.description">Этот плагин экспортирует метаданные статей в формате PubMed XML для индексирования в MEDLINE.</message>
+	
+	<message key="plugins.importexport.pubmed.export">Экспортировать данные</message>
+	<message key="plugins.importexport.pubmed.export.issues">Экспортировать выпуски</message>
+	<message key="plugins.importexport.pubmed.export.selectIssue">Выберите выпуск для экспорта.</message>
+	<message key="plugins.importexport.pubmed.export.articles">Экспортировать статьи</message>
+	<message key="plugins.importexport.pubmed.export.selectArticle">Выберите статьи для экспорта.</message>
+	
+	<message key="plugins.importexport.pubmed.cliUsage"><![CDATA[Вызов: 
+{$scriptName} {$pluginName} [xmlFileName] [journal_path] articles [articleId1] [articleId2] ...
+{$scriptName} {$pluginName} [xmlFileName] [journal_path] issue [issueId]
+]]></message>
+	<message key="plugins.importexport.pubmed.cliError">ОШИБКА:</message>
+
+	<message key="plugins.importexport.pubmed.export.error.issueNotFound">Нет выпуска с указанным ID выпуска «{$issueId}».</message>
+	<message key="plugins.importexport.pubmed.export.error.articleNotFound">Нет статьи с указанным ID статьи «{$articleId}».</message>
+
+
+</locale>

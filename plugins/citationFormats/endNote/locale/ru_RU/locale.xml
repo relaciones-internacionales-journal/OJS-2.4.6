@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/citationFormats/endNote/locale/ru_RU/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the ru_RU (Russian) locale.
+  * With updates from Pavel Pisklakov (revising translation). 
+  -->
+ 
+<locale name="ru_RU" full_name="Russian">
+	<message key="plugins.citationFormats.endNote.displayName">Плагин форматирования ссылок EndNote</message>
+	<message key="plugins.citationFormats.endNote.citationFormatName">EndNote - формат EndNote (Macintosh &amp; Windows)</message>
+	<message key="plugins.citationFormats.endNote.description">Этот плагин реализует формат ссылок EndNote.</message>
+</locale>

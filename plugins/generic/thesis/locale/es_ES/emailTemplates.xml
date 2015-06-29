@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!--
+  * @file plugins/generic/thesis/locale/es_ES/emailTemplates.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * Localized email templates XML file.
+  -->
+
+<email_texts locale="es_ES">
+	<email_text key="THESIS_ABSTRACT_CONFIRM">
+		<subject>Envío de resumen de tesis</subject>
+		<body>El {$journalName} formulario de envío de resumen de tesis generó de forma automática este correo electrónico.
+
+Confirme que la información enviada es correcta. Tras recibir la confirmación, el resumen se publicará en la edición en línea de la revista.
+
+Responda simplemente a {$thesisName} ({$thesisEmail}) con el contenido de este correo y la confirmación, así como cualquier clarificación o corrección que crea necesaria.
+
+Gracias.
+
+
+Título : {$title}
+Autor/a : {$studentName}
+Titulación : {$degree}
+Nombre de la titulación: {$degreeName}
+Departamento : {$department}
+Universidad : {$university}
+Fecha de aceptación: {$dateApproved}
+Supervisor/a : {$supervisorName}
+
+Resumen
+-------
+{$abstract}
+
+{$thesisContactSignature}</body>
+		<description>El estudiante usó esta plantilla de correo electrónico para confirmar el envío de resumen de tesis. Se envía al director/a del estudiante, a quien se le pide que confirme los detalles del envío del resumen de tesis.</description>
+	</email_text>
+</email_texts> 

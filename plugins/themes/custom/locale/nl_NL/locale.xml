@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/themes/custom/locale/nl_NL/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the nl_NL (Nederlands) locale.
+  *
+  * Translated by Martin van Luijt, m.van.luijt 'at' hccnet.nl
+  *
+  -->
+
+<locale name="nl_NL" full_name="Nederlands">
+	<message key="plugins.theme.custom.name">Aangepast thema plugin</message>
+	<message key="plugins.theme.custom.description">Deze plugin implementeert een aanpasbaar thema.</message>
+	<message key="plugins.theme.custom.notWritable">ATTENTIE: De stylesheet van deze plugin, "{$stylesheetFileLocation}", is momenteel niet wijzigbaar. Dit bestand moet wijzigbaar zijn voordat de plugin gebruikt kan worden.</message>
+	<message key="plugins.theme.custom.settings">Instellingen</message>
+	<message key="plugins.theme.custom.pickColour">Kies kleur</message>
+	<message key="plugins.theme.custom.header">Kop</message>
+	<message key="plugins.theme.custom.link">Link</message>
+	<message key="plugins.theme.custom.background">Achtergrond</message>
+	<message key="plugins.theme.custom.foreground">Voorgrond</message>
+	<message key="plugins.theme.custom.perJournal">Stylesheet voor het tijdschrift</message>
+	<message key="plugins.theme.custom.notWritablePlugin">Merk op: De stylesheet van het tijdschrift is ingeschakeld omdat het stylesheetbestand van deze plugin, "{$stylesheetFileLocation}", niet schrijfbaar is.</message>
+</locale>

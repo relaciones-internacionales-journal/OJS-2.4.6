@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!--
+  * 000042.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * Proofreader's Role - Submissions
+  *
+  -->
+
+<topic id="editorial/topic/000042" locale="es_ES" title="Envíos" toc="editorial/toc/000014" key="editorial.proofreadersRole.submissions">
+	<section>
+		<![CDATA[<p>Una vez que se registre el corrector/a de pruebas, si hace clic en el enlace de corrector/a de pruebas en la página del área personal se dirigirá a la cola de envíos. Esta lista es útil para aquellos que deben realizar correcciones.   Además, los correctores/as de pruebas pueden acceder a todos los envíos que completaron por medio del enlace Archivos. Para acceder a la página de corrección de pruebas del artículo, el corrector/a de pruebas debe hacer clic en el título del artículo.</p>]]>	
+	</section>
+</topic> 

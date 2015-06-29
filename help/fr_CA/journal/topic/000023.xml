@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000023.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Roles - Reader 
+  *
+  -->
+
+<topic id="journal/topic/000023" locale="fr_CA" title="Lecteur" toc="journal/toc/000003" key="journal.roles.reader">
+	<section>
+		<![CDATA[<p>Les lecteurs incluent les abonnés pour des revues pour lesquels l’accès demande un abonnement et des lecteurs qui choisissent de s’inscrire pour des revues en libre accès (Soit avec un libre accès immédiat, ou ouverts à tous après une période de temps après la publication initiale du contenu de la revue). Les lecteurs inscrits reçoivent une notification à la publication de chaque numéro laquelle inclut la table des matières de la revue. Les auteurs en s’inscrivant eux-mêmes à la revue ont aussi l’option de s’inscrire comme lecteur.</p>]]>	
+	</section>
+</topic>

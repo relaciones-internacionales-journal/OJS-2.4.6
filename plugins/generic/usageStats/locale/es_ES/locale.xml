@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!--
+  * plugins/generic/usageStats/locale/es_ES/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * Localization strings
+  -->
+
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.generic.usageStats.settings.logging">Opciones de registro de acceso</message>
+	<message key="plugins.generic.usageStats.settings.createLogFiles">Crear archivos de registro</message>
+	<message key="plugins.generic.usageStats.settings.createLogFiles.description">Si se activa esta opción, el módulo creará archivos de acceso de registro dentro del directorio de archivos. Dichos archivos se emplearán para extraer los datos de estadísticas de uso. Si no desea crear más archivos de acceso de registro, puede dejar esta opción deshabilitada y utilizar sus propios archivos de acceso de registro del servidor.</message>
+	<message key="plugins.generic.usageStats.settings.logParseRegex">Analizar archivos de registro mediante expresiones regulares</message>
+	<message key="plugins.generic.usageStats.settings.logParseRegex.description">La expresión regular predeterminada puede analizar archivos de acceso de registro apache en formato combinado, así como archivos de registro del módulo. Si los archivos de acceso de registro que tiene están en un formato diferente, deberá introducir una expresión regular que sea capaz de analizarlos y de mostrar los valores esperados. Si desea obtener más información, consulte UsageStatsLoader::_getDataFromLogEntry().</message>
+	<message key="plugins.generic.usageStats.settings.saved">Se guardó la configuración del módulo de estadísticas de uso</message>
+	
+	<message key="plugins.generic.usageStats.openFileFailed">No se pudo abrir el archivo {$file}, por lo que se rechazó.</message>
+	<message key="plugins.generic.usageStats.invalidLogEntry">El número de línea {$lineNumber} del archivo {$file} no es una entrada de registro válida por lo que se rechazó el archivo.</message>
+	<message key="plugins.generic.usageStats.displayName">Estadísticas de uso</message>
+	<message key="plugins.generic.usageStats.description">Presentar objetos de datos de estadísticas de uso. Se pueden usar los archivos de acceso de registro del servidor para extraer las estadísticas.</message>
+	
+	<message key="plugins.reports.usageStats.report.displayName">Informe de estadísticas de uso de OJS</message>
+	<message key="plugins.reports.usageStats.report.description">Informe de estadísticas de uso de OJS predeterminado (COUNTER preparado)</message>
+	
+	<message key="plugins.reports.usageStats.metricType">OJS/COUNTER</message>
+	<message key="plugins.reports.usageStats.metricType.full">Estadísticas de Open Journal Systems (COUNTER preparado)</message>
+	<message key="plugins.generic.usageStats.usageStatsLoaderName">La tarea no ha generado ningún registro.</message>
+	<message key="plugins.generic.usageStats.removeUrlError">La linea {$lineNumber} del fichero {$file} contiene una url a la que no se le puede eliminar la url base de origen.</message>
+	<message key="plugins.generic.usageStats.loadDataError">No se pueden cargar los datos esperados del fichero {$file}. El error es: {$error}. El fichero se a movido de nuevo a su origen.</message>
+	<message key="plugins.generic.usageStats.pluginDisabled">El plugin de estadísticas de uso está deshabilitado. No se han procesado ficheros de log.</message>
+	<message key="plugins.generic.usageStats.processingPathNotEmpty">El directorio {$directory} no está vacío. Esto puede indicar indicar o bien que ha fallado un proceso, o que se han ejecutado varios a la vez. Este fichero será reprocesado automáticamente si además está usando scheduledTasksAutoStage.xml, de otro modo necesitará mover manualmente cualquier fichero huérfano en el directorio de procesado de vuelta al directorio objetivo.</message>
+	<message key="plugins.generic.usageStats.noCounterBotList">No se puede encontrar la bot list could COUNTER, o hay más de una. El fichero {$file} no se puede procesar.</message>
+	<message key="plugins.generic.usageStats.failedCounterBotList">La bot list COUNTER, {$botlist}, no se puede abrir. El fichero {$file} no se puede procesar.</message>
+</locale>

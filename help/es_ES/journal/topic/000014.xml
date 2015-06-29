@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!--
+  * 000014.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * Users - Email Users
+  *
+  -->
+
+<topic id="journal/topic/000014" locale="es_ES" title="Enviar un correo electrónico a los usuarios/as" toc="journal/toc/000002" key="journal.users.emailUsers">
+	<section>
+		<![CDATA[<p>El gestor/a de la revista puede enviar correos electrónicos a todos los usuarios/as o a un subconjunto de ellos. Tenga en cuenta que, cada vez que se lleve a cabo una publicación, todos los lectores/as recibirán una notificación a través del correo electrónico con una copia de la Tabla de contenidos para ese número o, en el caso de {help_topic key="publishing.index" text="publicaciones"} continuas, con copia del título y del autor/a del envío. La revista también debería tener una política de privacidad disponible, introducida durante la Configuración y disponible en Acerca de la revista, en la que se describe cómo respetar la privacidad de los usuarios/as registrados de esta revista.</p>]]>	
+	</section>
+</topic> 

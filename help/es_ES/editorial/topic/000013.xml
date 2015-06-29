@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!--
+  * 000013.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * Layout Editor's Role Index 
+  *
+  -->
+
+<topic id="editorial/topic/000013" locale="es_ES" title="Rol de maquetista" toc="editorial/toc/000000" subtoc="editorial/toc/000013" key="editorial.layoutEditorsRole">
+	<section>
+		<![CDATA[<p>El maquetista recibe una solicitud mediante correo electrónico del corrector/a de originales o del editor/a de sección en la que se solicita la maquetación de un envío que completó la fase de corrección. Si el maquetista no puede realizar la maquetación, sólo debe informar por correo electrónico al editor/a de sección.</p>]]>	
+	</section>
+</topic> 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!--
+  * 000011.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * Users - All Users 
+  *
+  -->
+
+<topic id="journal/topic/000011" locale="es_ES" title="Usuarios/as con rol asignado en la revista" toc="journal/toc/000002" key="journal.users.allUsers">
+	<section>
+		<![CDATA[<p>Esta lista incluye en cierta medida a todos los que estén registrados en esta revista. El gestor/a de la revista puede iniciar sesión como cualquier usuario/a registrado. Esto puede ser muy útil para intentar proporcionar ayuda a distancia al usuario/a, ya que permite al gestor/a de la revista saber qué está fallando con mayor precisión.</p><p>Desde aquí, el gestor/a de la revista también podrá registrar a usuarios/as existentes desde el sitio de OJS en general, crear nuevos usuarios/as y sincronizar los registros en las revistas.</p>]]>	
+	</section>
+</topic> 

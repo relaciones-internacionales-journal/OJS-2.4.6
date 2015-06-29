@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000020.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Roles - Proofreader 
+  *
+  -->
+
+<topic id="journal/topic/000020" locale="fr_CA" title="Correcteur d’épreuves" toc="journal/toc/000003" key="journal.roles.proofreader">
+	<section>
+		<![CDATA[<p>Le correcteur d’épreuves relit attentivement les épreuves dans les divers formats dans lesquels la revue publie (tout comme le fait l’auteur). Le correcteur d’épreuves (et l’auteur) enregistrent toute erreur typographique ou de formatage pour le responsable de la mise en page qui les corrigera. Dans le cas de certaines revues, le rédacteur ou le chef de rubrique vont aussi agir comme correcteur d’épreuves.</p>]]>	
+	</section>
+</topic>

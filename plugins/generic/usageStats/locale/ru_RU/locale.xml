@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/usageStats/locale/ru_RU/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the ru_RU (Russian) locale.
+  * With updates from Pavel Pisklakov (revising translation). 
+  -->
+ 
+<locale name="ru_RU" full_name="Russian">
+	<message key="plugins.generic.usageStats.settings.logging">Настройки журнала доступа</message>
+	<message key="plugins.generic.usageStats.settings.createLogFiles">Создавать файлы журнала</message>
+	<message key="plugins.generic.usageStats.settings.createLogFiles.description">Активация этой настройки приведет к созданию плагином файлов журнала доступа в каталоге files. Эти файлы должны быть использованы для извлечения данных по статистике использования. Если вы не хотите создавать дополнительные файлы журнала доступа, вы можете оставить эту настройку отключенной и использовать файлы журнала доступа вашего сервера.</message>
+	<message key="plugins.generic.usageStats.settings.logParseRegex">Регулярное выражение для разбора файлов журнала</message>
+	<message key="plugins.generic.usageStats.settings.logParseRegex.description">Регулярное выражение, используемое по умолчанию, может разибрать файлы журнала доступа apache в комбинированном формате, а также файлы журнала, создаваемые плагином. Если ваши файлы журнала доступа формируются в другом формате, то вам необходимо вставить регулярное выражение, которое может разобрать его и выдать ожидаемые значения. Для получения более подробной информации смотрите UsageStatsLoader::_getDataFromLogEntry().</message>
+	<message key="plugins.generic.usageStats.settings.saved">Настройки плагина «Статистика использования» сохранены</message>
+	
+	<message key="plugins.generic.usageStats.usageStatsLoaderName">Задача загрузчика файлов статистики использования</message>
+	<message key="plugins.generic.usageStats.openFileFailed">Файл «{$file}» не может быть открыт и был отклонен.</message>
+	<message key="plugins.generic.usageStats.invalidLogEntry">Строка с номером  {$lineNumber} из файла «{$file}» является некорректной записью журнала и файл был отклонен.</message>
+	<message key="plugins.generic.usageStats.removeUrlError">Строка с номером {$lineNumber} из файла «{$file}» содержит URL-адрес, из которого система не может убрать свой базовый URL-адрес.</message>
+	<message key="plugins.generic.usageStats.loadDataError">Невозможно загрузить данные, извлеченные из файла «{$file}». Ошибка: {$error}. Файл был перемещен обратно на свое место.</message>
+	<message key="plugins.generic.usageStats.displayName">Плагин «Статистика использования»</message>
+	<message key="plugins.generic.usageStats.description">Этот плагин представляет статистику использования объектов данных, может использовать файлы журнала доступа сервера для извлечения статистики.</message>
+	<message key="plugins.generic.usageStats.pluginDisabled">Плагин «Статистика использования» отключен. Файлы журнала не обрабатываются.</message>
+	<message key="plugins.generic.usageStats.processingPathNotEmpty">Каталог {$directory} не является пустым. Это может означать, что предыдущая обработка завершилась неудачей или обработка запущена параллельно.  Этот файл будет автоматически заново обработан, если вы используете scheduledTasksAutoStage.xml, в противном случае вам необходимо переместить любые оставшиеся файлы в каталоге обработки обратно в каталог хранения.</message>
+	<message key="plugins.generic.usageStats.noCounterBotList">Не удается найти список ботов COUNTER или этих списков более одного. Файл {$file} не может быть обработан.</message>
+	<message key="plugins.generic.usageStats.failedCounterBotList">Список ботов COUNTER {$botlist} не удается открыть. Файл {$file} не может быть обработан.</message>
+	
+	<message key="plugins.reports.usageStats.report.displayName">Отчет о статистике использования OJS</message>
+	<message key="plugins.reports.usageStats.report.description">Отчет о статистике использования OJS, формируемый по умолчанию (готовый для COUNTER)</message>
+	
+	<message key="plugins.reports.usageStats.metricType">OJS/COUNTER</message>
+	<message key="plugins.reports.usageStats.metricType.full">Статистика Open Journal Systems (готовая для COUNTER)</message>
+</locale>

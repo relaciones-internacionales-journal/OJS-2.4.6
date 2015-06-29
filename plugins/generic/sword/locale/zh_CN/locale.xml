@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/sword/locale/zh_CN/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the zh_CN (China) locale.
+  *
+  -->
+
+<locale name="zh_CN" full_name="China">
+	<message key="plugins.generic.sword.displayName">SWORD插件</message>
+	<message key="plugins.generic.sword.description">允许期刊管理员和作者（可选）通过SWORD协议存储文章</message>
+	<message key="plugins.generic.sword.enabled">SWORD 插件已开启。</message>
+	<message key="plugins.generic.sword.settings">设置</message>
+	<message key="plugins.generic.sword.settings.allowAuthorSpecify">允许作者制定一个存储点</message>
+	<message key="plugins.generic.sword.settings.depositPoints">存储点</message>
+	<message key="plugins.generic.sword.depositPoints.create">创建一个存储点</message>
+	<message key="plugins.generic.sword.depositPoints.edit">编辑一个存储点</message>
+	<message key="plugins.generic.sword.depositPoints.type.automatic">自动</message>
+	<message key="plugins.generic.sword.depositPoints.type.optionalSelection">可选的; 灵活的</message>
+	<message key="plugins.generic.sword.depositPoints.type.optionalFixed">可选的; 固定的</message>
+	<message key="plugins.generic.sword.depositPoints.type.manager">只允许管理员</message>
+	<message key="plugins.generic.sword.depositPoints.type.description"><![CDATA[<h4>存储点类型:</h4>
+<p><strong>自动</strong>:存储自动完成。完整的存储点已指定。需指定一个用户名和密码。通知作者接受后，存储进行。<br/>
+<strong>可选的; 灵活的</strong>: 作者选择是否存储。指定文档显示一个服务文档，并且作者从文件中选择指定的存储点。通知作者接受后，存储进行。<br/>
+<strong>可选的; 固定的</strong>:作者选择是否存储。网址指定SWORD存储点。通知作者接受后，存储进行。<br/>
+<strong>只允许管理员</strong>：只有管理员使用存储点。网址显示服务文档。存储由期刊管理员在期刊管理界面的导入/导出插件完成。]]></message>
+	<message key="plugins.generic.sword.depositPoints.password.description">如果您没有指定密码，存储进行时，系统将提示您或者作者。注意：密码对所有期刊管理员都是可见的，并且不会以加密的形式存在数据库里。</message>
+	<message key="plugins.generic.sword.depositPoints.name">姓名</message>
+	<message key="plugins.generic.sword.automaticDepositComplete">项目"{$itemTitle}"自动存储到资源库 "{$repositoryName}"。</message>
+	<message key="plugins.generic.sword.depositComplete">项目"{$itemTitle}"自动存储到资源库 "{$repositoryName}"。</message>
+	<message key="plugins.generic.sword.authorDepositDescription"><![CDATA[<p>您可以选择以下格式存储您提交的文件, "{$submissionTitle}" 在列出的资源库。使用左边的复选框选择资源库；每个资源库实现从下拉列表指定一个存储点。</p>]]></message>
+	<message key="plugins.generic.sword.authorCustomDepositDescription"><![CDATA[<p>在以下表格中，您可以随意指定一个SWORD兼容存储点。如果需要，请指定一个SWORD网址，用户名和密码到您的资源库，提交文件将被存储。</p>]]></message>
+
+	<message key="plugins.importexport.sword.displayName">SWORD 导入/导出存储插件</message>
+	<message key="plugins.importexport.sword.description">按照SWORD 存储协议在远程资源库存储文章。</message>
+	<message key="plugins.importexport.sword.deposit">存储</message>
+	<message key="plugins.importexport.sword.serviceDocUrl">服务文档网址</message>
+	<message key="plugins.importexport.sword.depositUrl">存储点网址</message>
+	<message key="plugins.importexport.sword.depositPoint">存储点</message>
+	<message key="plugins.importexport.sword.depositPoint.addRemove">增加/删除</message>
+	<message key="plugins.importexport.sword.depositGalleys">存储样稿</message>
+	<message key="plugins.importexport.sword.depositEditorial">存储最近编辑文件</message>
+	<message key="plugins.importexport.sword.depositSuccessful">存储成功</message>
+	<message key="plugins.importexport.sword.depositSuccessfulDescription">所选项目已存储。</message>
+	<message key="plugins.importexport.sword.depositFailed">存储失败</message>
+	<message key="plugins.generic.sword.descriptionUnsupported">所有的期刊管理者和（可选的）作者可以通过SWORD协议后存取文章。注意： 这个插件需要ZIP扩展，但是这个扩展尚未安装。</message>
+</locale>

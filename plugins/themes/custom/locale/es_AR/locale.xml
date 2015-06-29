@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the es_AR (Español (Argentina)) locale.
+  *
+  -->
+ 
+<locale name="es_AR" full_name="Español (Argentina)">
+	<message key="plugins.theme.custom.name">Plugin de  Aspecto Personalizados</message>
+	<message key="plugins.theme.custom.description">Este plugin permite personalizar el  aspecto del sitio</message>
+	<message key="plugins.theme.custom.notWritable">NOTA: El archivo de hoja de estilos de este plugin, "{$stylesheetFileLocation}", no es escribible actualmente. Este archivo debe ser escribible antes de que el plugin pueda ser utilizado.</message>
+	<message key="plugins.theme.custom.settings">Opciones</message>
+	<message key="plugins.theme.custom.pickColour">Escoja un color</message>
+	<message key="plugins.theme.custom.header">Encabezado</message>
+	<message key="plugins.theme.custom.link">Enlace</message>
+	<message key="plugins.theme.custom.background">Fondo</message>
+	<message key="plugins.theme.custom.foreground">Primer plano</message>
+	<message key="plugins.theme.custom.notWritablePlugin">NOTA: La  opción de hojas de estilos propias para revista esta habilitada automáticamente debido a que el archivo de hoja de estilo de este plugin  "{$stylesheetFileLocation}", no se puede escribir.</message>
+	<message key="plugins.theme.custom.perJournal">Hoja de estilo propia para revista</message>
+</locale>

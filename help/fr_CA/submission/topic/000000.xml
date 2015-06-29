@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000000.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Author Submission Process Index 
+  *
+  -->
+
+<topic id="submission/topic/000000" locale="fr_CA" title="Processus de soumission" toc="index/toc/000000" subtoc="submission/toc/000000" key="submission.index">
+	<section>
+		<![CDATA[<p>La revue permet aux auteurs de télécharger leur soumission directement au serveur du site Web de la revue. Dépendant des options choisies par le directeur de revue pour cette revue (Étape 4.1), les auteurs peuvent avoir l’option, en s’inscrivant comme auteur, d’aussi s’inscrire comme évaluateur (d’être appelés à entreprendre une évaluation par les pairs d’autres soumissions) et/ou de lecteur (pour être notifié de la table des matières d’un nouveau numéro de revue). En complétant l’enregistrement, l’auteur est amené directement à la page d’accueil des utilisateurs, laquelle énumère les divers rôles que l’utilisateurs a avec cette revue (par ex. auteur, évaluateur, etc.). Cliquer sur le rôle d’auteur amène l’utilisateur à sa page des soumissions, sur laquelle sont listées les soumissions courantes et antérieures, et d’où une nouvelle soumission à la revue peut être lancée. Le processus de soumission pour les auteurs est divisé en cinq étapes, avec un guide expliquant chaque étape. Les auteurs n’ont pas à compléter les cinq étapes en une seule session, mais peuvent retourner à ce qui sera alors listé dans le tableau des présentations comme «incomplet»</p>]]>	
+	présentations</section>
+</topic>

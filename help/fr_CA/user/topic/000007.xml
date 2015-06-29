@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000007.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * User Interface - User Home
+  *
+  -->
+
+<topic id="user/topic/000007" locale="fr_CA" title="Page d’accueil de l’utilisateur" toc="user/toc/000000" key="user.userHome">
+	<section>
+		<![CDATA[<p>La page d’accueil de l’utilisateur apparaît dans la barre de navigation de la page Web de la revue, après avoir ouvert une session. Elle énumère tous les rôles pour lesquels l’utilisateur est présentement inscrit (i.e. réviseur, auteur, lecteur, etc.). Elle inclut aussi le compte de l’utilisateur, lequel inclut des liens vers d’autres revues dans lesquels l’utilisateur est aussi inscrit dans un rôle ou un autre. <strong>Mon profil</strong> donne aussi accès au profil de l’usager, où les contacts et les informations biographiques peuvent être ajoutés ou modifiés. L’utilisateur peut aussi y créer un nouveau mot de passe lors de la maintenance de sa page d’accueil.</p>]]>	
+	</section>
+</topic>

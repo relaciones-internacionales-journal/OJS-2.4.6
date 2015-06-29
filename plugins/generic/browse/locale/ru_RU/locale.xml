@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/browse/locale/ru_RU/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the ru_RU (Russian) locale.
+  * With updates from Pavel Pisklakov (revising translation). 
+  -->
+ 
+<locale name="ru_RU" full_name="Russian">
+	<!-- плагин -->
+	<message key="plugins.generic.browse.displayName">Плагин «Браузер»</message>
+	<message key="plugins.generic.browse.description">Этот плагин позволяет просматривать по разделам и/или их идентификационным типам.</message>
+
+	<!-- парметры менеджера URN, настройка -->
+	<message key="plugins.generic.browse.manager.settings">Настройки</message>
+	<message key="plugins.generic.browse.manager.settings.description"><![CDATA[Пожалуйста, установите следующие дополнительные возможности просмотра:]]></message>
+
+	<message key="plugins.generic.browse.manager.settings.browseSettings">Настройки просмотра</message>
+	<message key="plugins.generic.browse.manager.settings.browse">Просмотр</message>
+	<message key="plugins.generic.browse.manager.settings.browseByObjects">Выберите объекты, по которым можно будет осуществлять просмотр.</message>
+	<message key="plugins.generic.browse.manager.settings.enableBrowseBySections">По разделам</message>
+	<message key="plugins.generic.browse.manager.settings.enableBrowseByIdentifyTypes">По идентификационным типам</message>
+	<message key="plugins.generic.browse.manager.settings.excludedSections">Исключенные разделы</message>
+	<message key="plugins.generic.browse.manager.settings.excludedSections.description">Выберите разделы, которые не следует включать в просмотр.</message>
+	<message key="plugins.generic.browse.manager.settings.excludedIdentifyTypes">Исключенные идентификационные типы</message>
+	<message key="plugins.generic.browse.manager.settings.excludedIdentifyTypes.description">Выберите идентификационные типы, которые не следует включать в просмотр.</message>
+
+	<message key="plugins.generic.browse.search.sections">По разделам</message>
+	<message key="plugins.generic.browse.search.sectionIndex">Просмотр списка разделов</message>
+	<message key="plugins.generic.browse.search.sectionDetails">Информация о разделе</message>
+	<message key="plugins.generic.browse.search.identifyTypes">По идентификационным типам</message>
+	<message key="plugins.generic.browse.search.identifyTypeIndex">Просмотр списка идентификационных типов</message>
+	<message key="plugins.generic.browse.search.identifyTypeDetails">Информация об идентификационном типе</message>
+
+</locale>

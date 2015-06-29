@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * @file plugins/generic/objectsForReview/locale/tr_TR/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Objects for review plugin localization strings for the en_US (U.S. English) locale.
+  -->
+
+<locale name="tr_TR" full_name="U.S. English">
+
+	<!-- Objects For Review Plug-In -->
+	<message key="plugins.generic.objectsForReview.displayName">Nesneler için değerlendirme</message>
+	<message key="plugins.generic.objectsForReview.editor.objectTypes.update">Güncelleme</message>
+	<message key="plugins.generic.objectsForReview.editor.objectTypes.install">Yükle</message>
+	<message key="plugins.generic.objectsForReview.editor.objectType.name">İsim</message>
+	<message key="plugins.generic.objectsForReview.editor.objectType.description">Açıklama ve Talimatlar</message>
+	<message key="plugins.generic.objectsForReview.editor.objectType.metadata">Üst Veri</message>
+	<message key="plugins.generic.objectsForReview.editor.objectType.preview">Ön İzleme</message>
+
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.none">Hiçbiri</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.copyTo">Şuraya Kopyala:</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.copy">Kopyala</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.name">İsim</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.required">Gerekli</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.display">Görüntüle</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.type.chooseType">Üst veri türü seç</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.type.smalltextfield">Tek kelimelik metin kutusu</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.type.textfield">Tek satırlık metin kutusu</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.type.textarea">Genişletilmiş metin kutusu</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.type.checkboxes">Onay kutusu (bir veya daha fazla seçebilirisniz)</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.type.radiobuttons">Radyo Düğmeleri (yalnızca bir tane seçebilirisniz)</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.type.dropdownbox">Açılır kutu</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.type.roledropdownbox">Açılır kutu görevi</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.type.langdropdownbox">Açılır kutu dili</message>
+
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.changeType">Türü değiştir</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.metadataType">Üst veri türü</message>
+
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.possibleOptions">Olası seçenekler</message>
+	<message key="plugins.generic.objectsForReview.editor.objectMetadata.addOptionItem">Seçim ekle</message>
+
+	<!-- Objects For Review Settings -->
+	<message key="plugins.generic.objectsForReview.settings">Ayarlar</message>
+	<message key="plugins.generic.objectsForReview.settings.objectsForReviewMode">Yönetim</message>
+	<message key="plugins.generic.objectsForReview.settings.displayMetadata">Üst veri nesnesi görüntüle</message>
+	<message key="plugins.generic.objectsForReview.settings.displayAbstract">Makale özet sayfasında üst veri nesnesi görüntüle</message>
+
+	<!-- Search, filter, sort -->
+	<message key="plugins.generic.objectsForReview.search.field.title">Başlık</message>
+	<message key="plugins.generic.objectsForReview.search.field.abstract">Özet</message>
+	<message key="plugins.generic.objectsForReview.search.noResults">Hiç bir sonuç bulunamadı</message>
+	<message key="plugins.generic.objectsForReview.sort.sortDirectionAsc">Artan sıralama</message>
+	<message key="plugins.generic.objectsForReview.sort.sortDirectionDesc">Azalan sıralama</message>
+
+	<!-- Objects For Review -->
+	<message key="plugins.generic.objectsForReview.objectsForReview.title">Başlık</message>
+	<message key="plugins.generic.objectsForReview.objectsForReview.dateCreated">Oluşturuldu</message>
+	<message key="plugins.generic.objectsForReview.objectsForReview.status">Durum</message>
+	<message key="plugins.generic.objectsForReview.objectsForReview.objectReviewer">Hakem Nesnesi</message>
+	<message key="plugins.generic.objectsForReview.objectsForReview.objectType">Tür Nesnesi</message>
+	<message key="plugins.generic.objectsForReview.objectsForReview.editor">Editör</message>
+
+	<!-- Object For Review Assignments -->
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.pageTitleAll">Değerlendirme atamaları için nesneler - Tüm</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.all">Tüm</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.pageTitleRequested">Değerlendirme atamaları için nesneler - Gerekli</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.requested">Yapılan istek</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.pageTitleAssigned">Değerlendirme atamaları için nesneler - Atanlar</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.assigned">Atananlar</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.pageTitleMailed">Değerlendirme atamaları için nesneler - Postalandı</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.mailed">Postalandı</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.pageTitleSubmitted">Değerlendirme atamaları için nesneler - Gönderilenler</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.submitted">Gönderilenenler</message>
+
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.title">Başlık</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.status">Durum</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.objectReviewer">Hakem Nesnesi</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.dateCreated">Oluşturuldu</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.dueDate">Beklenen</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.submission">Gönderi</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.editor">Editör</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignments.noneCreated">Hakem atamaları için hiçbir nesne yok</message>
+
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignment.status">Durum</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignment.status.available">Kullanılabilir</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignment.status.requested">Talep</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignment.status.assigned">Atandı</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignment.status.mailed">Postalandı</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignment.status.submitted">Gönderildi</message>
+
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignment.additionalNotes">Ek notlar</message>
+	<message key="plugins.generic.objectsForReview.objectForReviewAssignment.notes">Notlar</message>
+
+	<!-- Objects For Review Assignments Management by Editor -->
+	<message key="plugins.generic.objectsForReview.editor.assignments">Atamalar</message>
+	<!--  Actions -->
+	<message key="plugins.generic.objectsForReview.editor.select">Seçim</message>
+	<message key="plugins.generic.objectsForReview.editor.assignObjectReviewer">Ata</message>
+	<message key="plugins.generic.objectsForReview.editor.acceptObjectReviewer">Kabul et</message>
+	<message key="plugins.generic.objectsForReview.editor.denyObjectReviewer">Reddet</message>
+	<message key="plugins.generic.objectsForReview.editor.notifyObjectMailed">Postalanan Nesne</message>
+	<message key="plugins.generic.objectsForReview.editor.removeObjectReviewer">Sil</message>
+	<message key="plugins.generic.objectsForReview.editor.selectSubmission">Gönderi seç</message>
+	<!-- Assign Author -->
+	<message key="plugins.generic.objectsForReview.editor.assignAuthor">Yazar Ata</message>
+	<message key="plugins.generic.objectsForReview.editor.assignAuthor.assign">Ata</message>
+	<message key="plugins.generic.objectsForReview.editor.assignAuthor.createNewUser">Yeni kullanıcı oluştur</message>
+
+	<message key="plugins.generic.objectsForReview.editor.noMailingAddress">Dosyada herhangi bir gönderi yok</message>
+
+	<!-- Object For Review Edit -->
+	<message key="plugins.generic.objectsForReview.editor.objectForReview">Değerlendirme için nesne</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.chooseLanguage">Dil seç</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.chooseOption">Seçenek seç</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.chooseRole">Tol Seç</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.noAnswer">Herhangi bir cevap yok</message>
+	<message key="plugins.generic.objectsForReview.editor.edit">Düzelt</message>
+	<message key="plugins.generic.objectsForReview.editor.create">Değerlendirme için nesne oluştur</message>
+	<message key="plugins.generic.objectsForReview.editor.saveAndCreateAnother">Kaydet ve yenisini oluştur</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.addPerson">Kişi ekle</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.deletePerson">Sil</message>
+
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.coverPage">Kapak Sayfası</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.coverPageInstructions">(Kabuledilen biçimler: .gif, .jpg, veya .png )</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.coverPageUploaded">Yüklenen</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.removeCoverPage">Kapak sayfası silinsin mi?</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.remove">Sil</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.coverImage">Kapak sayfası</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.coverImageAltText">kapak görseli alternatif metni</message>
+
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.additionalNotes">Ek notlar</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.notes">Notlar</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.assignEditor">Bir editör ata</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.editor">Editör</message>
+
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.available">Kullanılabilir</message>
+
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.status.available">Kullanılabilir</message>
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.status.notAvailable">Kullanılamaz</message>
+
+	<message key="plugins.generic.objectsForReview.editor.objectForReview.delete">Sil</message>
+
+	<!-- Public -->
+	<message key="plugins.generic.objectsForReview.public.headerLink">Değerlendirme için nesne</message>
+	<message key="plugins.generic.objectsForReview.public.objectsForReview">Değerlendirme için nesne</message>
+	<message key="plugins.generic.objectsForReview.public.objectForReview">Değerlendirme için nesne</message>
+	
+	<!-- Article Abstract Page -->
+	<message key="plugins.generic.objectsForReview.public.articleObjectsForReview">Bu makalede nesneler değerlendirildi</message>
+
+
+	<!-- Author -->
+	<message key="plugins.generic.objectsForReview.author.objectsForReview">Değerlendirme için nesne</message>
+	<message key="plugins.generic.objectsForReview.author.myObjectsForReview">Nesnelerim</message>
+	<!--  Actions -->
+
+	<message key="plugins.generic.objectsForReview.author.submit">Gönder</message>
+	<message key="plugins.generic.objectsForReview.author.view">Göster</message>
+	<!-- Submission -->
+
+
+	<!-- Notifications -->
+	<message key="plugins.generic.objectsForReview.notification.objectTypeInstalled">Değerlendirme nesne türü yüklendi.</message>
+	<message key="plugins.generic.objectsForReview.notification.objectTypeCreated">Değerlendirme nesne türü oluşturuldu.</message>
+	<message key="plugins.generic.objectsForReview.notification.objectTypeUpdated">Değerlendirme nesne türü güncellendi.</message>
+	<message key="plugins.generic.objectsForReview.notification.objectTypeActivated">Değerlendirme nesne türü etkinleştirildi.</message>
+	<message key="plugins.generic.objectsForReview.notification.objectTypeDeactivated">Değerlendirme nesne türü pasifleştirildi.</message>
+	<message key="plugins.generic.objectsForReview.notification.ofrCreated">Değerlendirmee oluşturulması için yeni nesne.</message>
+	<message key="plugins.generic.objectsForReview.notification.ofrUpdated">Değerlendirme güncellemesi için nesne.</message>
+
+	<message key="plugins.generic.objectsForReview.settings.modeRequired">Bir mod gerekli.</message>
+
+	<!-- Objects for Review and their Metadata -->
+	<!-- Common Metadata -->
+	<message key="plugins.generic.objectsForReview.object.metadata.title">Başlık</message>
+	<message key="plugins.generic.objectsForReview.object.metadata.person">Kişi</message>
+	<message key="plugins.generic.objectsForReview.object.metadata.date">Tarih</message>
+	<message key="plugins.generic.objectsForReview.object.metadata.language">Dil</message>
+	<message key="plugins.generic.objectsForReview.object.metadata.shortTitle">Kısa Başlık</message>
+	<message key="plugins.generic.objectsForReview.object.metadata.url">URL</message>
+	<message key="plugins.generic.objectsForReview.object.metadata.rights">Haklar</message>
+	<message key="plugins.generic.objectsForReview.object.metadata.abstract">Özet</message>
+	<message key="plugins.generic.objectsForReview.object.metadata.copyAvailable">Kullanılabilir kopya</message>
+	<message key="plugins.generic.objectsForReview.object.metadata.copyAvailable.yes">Evet</message>
+	<message key="plugins.generic.objectsForReview.object.metadata.copyAvailable.no">Hayır</message>
+	<message key="plugins.generic.objectsForReview.object.metadata.coverPage">Kapak Sayfası</message>
+	<!-- Artwork -->
+	<message key="plugins.generic.objectsForReview.object.artwork">Yapıt</message>
+	<message key="plugins.generic.objectsForReview.object.artwork.person.artist">Sanatçı</message>
+	<message key="plugins.generic.objectsForReview.object.artwork.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.artwork.medium">Orta</message>
+	<message key="plugins.generic.objectsForReview.object.artwork.size">Boyut</message>
+	<!-- Audio Recording -->
+	<message key="plugins.generic.objectsForReview.object.audioRecording">Ses Kaydı</message>
+	<message key="plugins.generic.objectsForReview.object.audioRecording.person.performer">Oyuncu</message>
+	<message key="plugins.generic.objectsForReview.object.audioRecording.person.composer">Besteci</message>
+	<message key="plugins.generic.objectsForReview.object.audioRecording.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.audioRecording.format">Biçim</message>
+	<message key="plugins.generic.objectsForReview.object.audioRecording.seriesTitle">Seri Başlıkları</message>
+	<message key="plugins.generic.objectsForReview.object.audioRecording.volume">Cilt</message>
+	<message key="plugins.generic.objectsForReview.object.audioRecording.numberOfVolumes">Cilt Sayısı</message>
+	<message key="plugins.generic.objectsForReview.object.audioRecording.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.audioRecording.label">Etiket</message>
+	<message key="plugins.generic.objectsForReview.object.audioRecording.runningTime">Çalışma Süresi</message>
+	<message key="plugins.generic.objectsForReview.object.audioRecording.isbn">ISBN</message>
+	<!-- Bill -->
+	<message key="plugins.generic.objectsForReview.object.bill">Fatura</message>
+	<message key="plugins.generic.objectsForReview.object.bill.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.bill.person.cosponsor">Sponsorla Desteklemek</message>
+	<message key="plugins.generic.objectsForReview.object.bill.number">Fatura Numamarsı</message>
+	<message key="plugins.generic.objectsForReview.object.bill.code">Kod</message>
+	<message key="plugins.generic.objectsForReview.object.bill.codeVolume">Kod Cildi</message>
+	<message key="plugins.generic.objectsForReview.object.bill.section">Bölüm</message>
+	<message key="plugins.generic.objectsForReview.object.bill.codePages">Kod Sayfası</message>
+	<message key="plugins.generic.objectsForReview.object.bill.session">Oturum</message>
+	<message key="plugins.generic.objectsForReview.object.bill.history">Geçmiş</message>
+	<!-- Blog Post -->
+	<message key="plugins.generic.objectsForReview.object.blogPost">Blog Gönderisi</message>
+	<message key="plugins.generic.objectsForReview.object.blogPost.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.blogPost.person.commenter">Yorumcu</message>
+	<message key="plugins.generic.objectsForReview.object.blogPost.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.blogPost.blogTitle">Blog Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.blogPost.websiteTitle">Web Sayfası Başlığı</message>
+	<!-- Book -->
+	<message key="plugins.generic.objectsForReview.object.book">Kitap</message>
+	<message key="plugins.generic.objectsForReview.object.book.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.book.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.book.person.editor">Editör</message>
+	<message key="plugins.generic.objectsForReview.object.book.person.seriesEditor">Seri Editörü</message>
+	<message key="plugins.generic.objectsForReview.object.book.person.translator">Çeviren</message>
+	<message key="plugins.generic.objectsForReview.object.book.series">Seriler</message>
+	<message key="plugins.generic.objectsForReview.object.book.seriesNumber">Seri Numalarsı</message>
+	<message key="plugins.generic.objectsForReview.object.book.volume">Cilt</message>
+	<message key="plugins.generic.objectsForReview.object.book.numberOfVolumes">Cilt Sayısı</message>
+	<message key="plugins.generic.objectsForReview.object.book.edition">Edisyon</message>
+	<message key="plugins.generic.objectsForReview.object.book.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.book.publisher">Yayıncı</message>
+	<message key="plugins.generic.objectsForReview.object.book.publisherURL">Yayıncı URL'si</message>
+	<message key="plugins.generic.objectsForReview.object.book.numberOfPages">Sayfa Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.book.isbn">ISBN</message>
+	<!-- Book Section -->
+	<message key="plugins.generic.objectsForReview.object.bookSection">Kitap Bölümü</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.person.bookAuthor">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.person.editor">Editör</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.person.seriesEditor">Seri Editörü</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.person.translator">Çeviren</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.bookTitle">Kitap Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.series">Seriler</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.seriesNumber">Seri Numaraları</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.volume">Cilt</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.numberOfVolumes">Cilt Sayısı</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.edition">Edisyon</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.publisher">Yayıncı</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.publisherURL">Yayıncı URL'si</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.numberOfPages">Sayfa Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.bookSection.isbn">ISBN</message>
+	<!-- Case -->
+	<message key="plugins.generic.objectsForReview.object.case">Vaka</message>
+	<message key="plugins.generic.objectsForReview.object.case.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.case.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.case.person.counsel">Danışman</message>
+	<message key="plugins.generic.objectsForReview.object.case.reporter">Muhabir</message>
+	<message key="plugins.generic.objectsForReview.object.case.reporterVolume">Reporter Volume</message>
+	<message key="plugins.generic.objectsForReview.object.case.court">Mahkeme</message>
+	<message key="plugins.generic.objectsForReview.object.case.docketNo">Dosya Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.case.firstPage">İlk Sayfa</message>
+	<message key="plugins.generic.objectsForReview.object.case.history">Geçmiş</message>
+	<!-- Computer Program -->
+	<message key="plugins.generic.objectsForReview.object.computerProgram">Vaka</message>
+	<message key="plugins.generic.objectsForReview.object.computerProgram.person.programmer">Programcı</message>
+	<message key="plugins.generic.objectsForReview.object.computerProgram.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.computerProgram.seriesTitle">Seeri Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.computerProgram.version">Sürüm</message>
+	<message key="plugins.generic.objectsForReview.object.computerProgram.system">Sistem</message>
+	<message key="plugins.generic.objectsForReview.object.computerProgram.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.computerProgram.programmingLanguage">Programlama Dili</message>
+	<message key="plugins.generic.objectsForReview.object.computerProgram.isbn">ISBN</message>
+	<!-- Conference Paper -->
+	<message key="plugins.generic.objectsForReview.object.conferencePaper">Konferans Metni</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.person.editor">Editör</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.person.seriesEditor">Seri Editörü</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.person.translator">Çeviren</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.proceedingsTitle">Bildiri Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.conferenceName">Konferans Adı</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.publisher">Yayıncı</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.publisherURL">Yayıncı URL'si</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.volume">Cilt</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.pages">Sayfalar</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.series">Seriler</message>
+	<message key="plugins.generic.objectsForReview.object.conferencePaper.isbn">ISBN</message>
+	<!-- Dictinary Entry -->
+	<message key="plugins.generic.objectsForReview.object.dictionaryEntry">Sözlüğe Giriş</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryEntry.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryEntry.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryEntry.person.editor">Editör</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryEntry.person.seriesEditor">Seri Editörü</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryEntry.person.translator">Çeviren</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryEntry.dictionaryTitle">Sözlük Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryTitle.series">Seriler</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryTitle.seriesNumber">Seri Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryTitle.volume">Cilt</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryTitle.numberOfVolumes">Cilt Sayısı</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryTitle.edition">Edisyon</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryTitle.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryTitle.publisher">Yayıncı</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryTitlek.numberOfPages">Sayfa Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.dictionaryTitle.isbn">ISBN</message>
+	<!-- Document -->
+	<message key="plugins.generic.objectsForReview.object.document">Doküman</message>
+	<message key="plugins.generic.objectsForReview.object.document.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.document.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.document.person.editor">Editör</message>
+	<message key="plugins.generic.objectsForReview.object.document.person.reviewedAuthor">Reviewed Author</message>
+	<message key="plugins.generic.objectsForReview.object.document.person.translator">Çeviren</message>
+	<message key="plugins.generic.objectsForReview.object.document.publisher">Yayıncı</message>
+	<!-- E-mail -->
+	<message key="plugins.generic.objectsForReview.object.email">E-posta</message>
+	<message key="plugins.generic.objectsForReview.object.email.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.email.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.email.person.recipient">Alıcı</message>
+	<!-- Encyclopedia Article -->
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle">Ansiklopedi Makalesi</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.person.editor">Editör</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.person.seriesEditor">Seri Editörü</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.person.translator">Çeviren</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.encyclopediaTitle">Ansiklopedi Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.series">Seriler</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.seriesNo">Zeri Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.volume">Cilt</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.volumeNo">Cilt Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.edition">Edisyon</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.publisher">Yayıncı</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.pages">Sayfa Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.encyclopediaArticle.isbn">ISBN</message>
+	<!-- Film -->
+	<message key="plugins.generic.objectsForReview.object.film">Film</message>
+	<message key="plugins.generic.objectsForReview.object.film.person.director">Yönetmen</message>
+	<message key="plugins.generic.objectsForReview.object.film.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.film.person.producer">Yapımcı</message>
+	<message key="plugins.generic.objectsForReview.object.film.person.scriptwriter">Senarist</message>
+	<message key="plugins.generic.objectsForReview.object.film.distributor">Dağıtıcı</message>
+	<message key="plugins.generic.objectsForReview.object.film.genre">Tür</message>
+	<message key="plugins.generic.objectsForReview.object.film.format">Biçim</message>
+	<message key="plugins.generic.objectsForReview.object.film.runningTime">Çalışma Süresi</message>
+	<!-- Forum Post -->
+	<message key="plugins.generic.objectsForReview.object.forumPost">Forum Gönderisi</message>
+	<message key="plugins.generic.objectsForReview.object.forumPost.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.forumPost.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.forumPost.forumTitle">Forum Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.forumPost.postType">Gönderi Türü</message>
+	<!-- Hearing -->
+	<message key="plugins.generic.objectsForReview.object.hearing">İşitme</message>
+	<message key="plugins.generic.objectsForReview.object.hearing.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.hearing.committee">Komite</message>
+	<message key="plugins.generic.objectsForReview.object.hearing.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.hearing.publisher">Yayıncı</message>
+	<message key="plugins.generic.objectsForReview.object.hearing.numberOfVolumes">Cilt Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.hearing.documentNo">Doküman Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.hearing.pages">Sayfalar</message>
+	<message key="plugins.generic.objectsForReview.object.hearing.legislativeBody">Legislative Body</message>
+	<message key="plugins.generic.objectsForReview.object.hearing.session">Oturum</message>
+	<message key="plugins.generic.objectsForReview.object.hearing.history">Geçmiş</message>
+	<!-- Instant Message -->
+	<message key="plugins.generic.objectsForReview.object.instantMessage">Anlık İleti</message>
+	<message key="plugins.generic.objectsForReview.object.instantMessage.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.instantMessage.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.instantMessage.person.recipient">Alıcı</message>
+	<!-- Interview -->
+	<message key="plugins.generic.objectsForReview.object.interview">Röportaj</message>
+	<message key="plugins.generic.objectsForReview.object.interview.person.interviewWith">İle Röportaj</message>
+	<message key="plugins.generic.objectsForReview.object.interview.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.interview.person.interviewer">Röportaj</message>
+	<message key="plugins.generic.objectsForReview.object.interview.person.translator">Çeviren</message>
+	<message key="plugins.generic.objectsForReview.object.interview.medium">Orta</message>
+	<!-- Journal Article -->
+	<message key="plugins.generic.objectsForReview.object.journalArticle">Dergi Makalesi</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.person.editor">Editör</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.person.reviewedAuthor">Reviewed Author</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.person.translator">Çeviren</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.publication">Yayıncı</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.volume">Cilt</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.issue">Sayı</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.pages">Sayfalar</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.series">Seriler</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.seriesTitle">Seri Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.seriesText">Seri Metni</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.journalAbbr">Dergi Kısaltması</message>
+	<message key="plugins.generic.objectsForReview.object.journalArticle.issn">ISSN</message>
+	<!-- Letter -->
+	<message key="plugins.generic.objectsForReview.object.letter">Mektup</message>
+	<message key="plugins.generic.objectsForReview.object.letter.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.letter.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.letter.type">Mektup Türü</message>
+	<!-- Magazine Article -->
+	<message key="plugins.generic.objectsForReview.object.magazineArticle">Magazin Makalesi</message>
+	<message key="plugins.generic.objectsForReview.object.magazineArticle.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.magazineArticle.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.magazineArticle.person.reviewedAuthor">Reviewed Author</message>
+	<message key="plugins.generic.objectsForReview.object.magazineArticle.person.translator">Çeviren</message>
+	<message key="plugins.generic.objectsForReview.object.magazineArticle.publication">Yayıncı</message>
+	<message key="plugins.generic.objectsForReview.object.magazineArticle.volume">Cilt</message>
+	<message key="plugins.generic.objectsForReview.object.magazineArticle.issue">Sayı</message>
+	<message key="plugins.generic.objectsForReview.object.magazineArticle.pages">Sayfalar</message>
+	<message key="plugins.generic.objectsForReview.object.magazineArticle.issn">ISSN</message>
+	<!-- Manuscript -->
+	<message key="plugins.generic.objectsForReview.object.manuscript">Makale</message>
+	<message key="plugins.generic.objectsForReview.object.manuscript.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.manuscript.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.manuscript.person.translator">Çeviren</message>
+	<message key="plugins.generic.objectsForReview.object.manuscript.type">Tür</message>
+	<message key="plugins.generic.objectsForReview.object.manuscript.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.manuscript.numberOfPages">Sayfa Numarası</message>
+	<!-- Map -->
+	<message key="plugins.generic.objectsForReview.object.map">Harita</message>
+	<message key="plugins.generic.objectsForReview.object.map.person.cartographer">Haritacı</message>
+	<message key="plugins.generic.objectsForReview.object.map.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.map.person.seriesEditor">Seri Editörü</message>
+	<message key="plugins.generic.objectsForReview.object.map.type">Tür</message>
+	<message key="plugins.generic.objectsForReview.object.map.scale">Ölçek</message>
+	<message key="plugins.generic.objectsForReview.object.map.seriesTitle">Seri Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.map.edition">Edisyon</message>
+	<message key="plugins.generic.objectsForReview.object.map.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.map.publisher">Yayıncı</message>
+	<message key="plugins.generic.objectsForReview.object.map.isbn">ISBN</message>
+	<!-- Newspaper Article -->
+	<message key="plugins.generic.objectsForReview.object.newspaperArticle">Gazete Makalesi</message>
+	<message key="plugins.generic.objectsForReview.object.newspaperArticle.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.newspaperArticle.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.newspaperArticle.person.reviewedAuthor">Reviewed Author</message>
+	<message key="plugins.generic.objectsForReview.object.newspaperArticle.person.translator">Çeviren</message>
+	<message key="plugins.generic.objectsForReview.object.newspaperArticle.publication">Yayıncı</message>
+	<message key="plugins.generic.objectsForReview.object.newspaperArticle.edition">Edisyon</message>
+	<message key="plugins.generic.objectsForReview.object.newspaperArticle.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.newspaperArticle.section">Bölüm</message>
+	<message key="plugins.generic.objectsForReview.object.newspaperArticle.pages">Sayfalar</message>
+	<message key="plugins.generic.objectsForReview.object.newspaperArticle.issn">ISSN</message>
+	<!-- Patent -->
+	<message key="plugins.generic.objectsForReview.object.patent">Patent</message>
+	<message key="plugins.generic.objectsForReview.object.patent.person.inventor">Yaratıcı</message>
+	<message key="plugins.generic.objectsForReview.object.patent.person.attorney">Avukat / Aracı</message>
+	<message key="plugins.generic.objectsForReview.object.patent.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.patent.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.patent.country">Ülke</message>
+	<message key="plugins.generic.objectsForReview.object.patent.assignee">Vekil</message>
+	<message key="plugins.generic.objectsForReview.object.patent.issuingAuthority">Düzenleyen Yetkili Makam</message>
+	<message key="plugins.generic.objectsForReview.object.patent.number">Numara</message>
+	<message key="plugins.generic.objectsForReview.object.patent.pages">Sayfalar</message>
+	<message key="plugins.generic.objectsForReview.object.patent.appNumber">Uygulama Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.patent.priorityNumbers">Öncelikli Numaralar</message>
+	<message key="plugins.generic.objectsForReview.object.patent.filingDate">Dosyalama Tarihi</message>
+	<message key="plugins.generic.objectsForReview.object.patent.references">Referanslar</message>
+	<message key="plugins.generic.objectsForReview.object.patent.legalStatus">Yasal Durum</message>
+	<!-- Podcast -->
+	<message key="plugins.generic.objectsForReview.object.podcast">Podcast</message>
+	<message key="plugins.generic.objectsForReview.object.podcast.person.podcaster">Oyuncu</message>
+	<message key="plugins.generic.objectsForReview.object.podcast.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.podcast.person.guest">Misafir</message>
+	<message key="plugins.generic.objectsForReview.object.podcast.seriesTitle">Seri Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.podcast.episodeNo">Bölüm Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.podcast.fileType">Dosya Türü</message>
+	<message key="plugins.generic.objectsForReview.object.podcast.runningTime">Oynama Süresi</message>
+	<!-- Presentation -->
+	<message key="plugins.generic.objectsForReview.object.presentation">Sunum</message>
+	<message key="plugins.generic.objectsForReview.object.presentation.person.presenter">Sunucu</message>
+	<message key="plugins.generic.objectsForReview.object.presentation.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.presentation.type">Tür</message>
+	<message key="plugins.generic.objectsForReview.object.presentation.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.presentation.meetingName">Toplantı Adı</message>
+	<!-- Radio Broadcast -->
+	<message key="plugins.generic.objectsForReview.object.radioBroadcast">Radyo Yayını</message>
+	<message key="plugins.generic.objectsForReview.object.radioBroadcast.person.director">Yönetmen</message>
+	<message key="plugins.generic.objectsForReview.object.radioBroadcast.person.castMember">Cast Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.radioBroadcast.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.radioBroadcast.person.guest">Misafir</message>
+	<message key="plugins.generic.objectsForReview.object.radioBroadcast.person.producer">Yaapımcı</message>
+	<message key="plugins.generic.objectsForReview.object.radioBroadcast.person.scriptWriter">Senaryo Yazarı</message>
+	<message key="plugins.generic.objectsForReview.object.radioBroadcast.programTitle">Program Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.radioBroadcast.episodeNo">Bölüm Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.radioBroadcast.format">Biçim</message>
+	<message key="plugins.generic.objectsForReview.object.radioBroadcast.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.radioBroadcast.network">Ağ</message>
+	<message key="plugins.generic.objectsForReview.object.radioBroadcast.runningTime">Oynama Süresi</message>
+	<!-- Report -->
+	<message key="plugins.generic.objectsForReview.object.report">Rapor</message>
+	<message key="plugins.generic.objectsForReview.object.report.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.report.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.report.person.seriesEditor">Seri Editörü</message>
+	<message key="plugins.generic.objectsForReview.object.report.person.translator">Çeviren</message>
+	<message key="plugins.generic.objectsForReview.object.report.no">Numara</message>
+	<message key="plugins.generic.objectsForReview.object.report.type">Tür</message>
+	<message key="plugins.generic.objectsForReview.object.report.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.report.seriesTitle">Seri Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.report.institution">Enstitü</message>
+	<message key="plugins.generic.objectsForReview.object.report.pages">Sayfalar</message>
+	<!-- Statute -->
+	<message key="plugins.generic.objectsForReview.object.statute">Tüzük</message>
+	<message key="plugins.generic.objectsForReview.object.statute.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.statute.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.statute.code">Kod</message>
+	<message key="plugins.generic.objectsForReview.object.statute.codeNo">Kod Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.statute.publicLawNo">Kanun Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.statute.pages">Sayfalar</message>
+	<message key="plugins.generic.objectsForReview.object.statute.section">Bölüm</message>
+	<message key="plugins.generic.objectsForReview.object.statute.session">Sürüm</message>
+	<message key="plugins.generic.objectsForReview.object.statute.history">Geçmiş</message>
+	<!-- Thesis -->
+	<message key="plugins.generic.objectsForReview.object.thesis">Tez</message>
+	<message key="plugins.generic.objectsForReview.object.thesis.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.thesis.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.thesis.type">Tür</message>
+	<message key="plugins.generic.objectsForReview.object.thesis.university">Üniversite</message>
+	<message key="plugins.generic.objectsForReview.object.thesis.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.thesis.numberOfPages">Sayfa Numarası</message>
+	<!-- TV Broadcast -->
+	<message key="plugins.generic.objectsForReview.object.tvBroadcast">TV Yayını</message>
+	<message key="plugins.generic.objectsForReview.object.tvBroadcast.person.director">Yönetmen</message>
+	<message key="plugins.generic.objectsForReview.object.tvBroadcast.person.castMember">Cast Üyesi</message>
+	<message key="plugins.generic.objectsForReview.object.tvBroadcast.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.tvBroadcast.person.guest">Misafir</message>
+	<message key="plugins.generic.objectsForReview.object.tvBroadcast.person.producer">Oyuncu</message>
+	<message key="plugins.generic.objectsForReview.object.tvBroadcast.person.scriptWriter">Seneryo Yazarı</message>
+	<message key="plugins.generic.objectsForReview.object.tvBroadcast.programTitle">Program Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.tvBroadcast.episodeNo">Bölüm Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.tvBroadcast.format">Biçim</message>
+	<message key="plugins.generic.objectsForReview.object.tvBroadcast.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.tvBroadcast.network">Ağ</message>
+	<message key="plugins.generic.objectsForReview.object.tvBroadcast.runningTime">Oynama Süresi</message>
+	<!-- Video Recording -->
+	<message key="plugins.generic.objectsForReview.object.videoRecording">Video Kaydı</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.person.director">Yönetmen</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.person.castMember">Cast Üyesi</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.person.guest">Misafir</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.person.producer">Yapımcı</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.person.scriptWriter">Seneryo Yazarı</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.format">Biçim</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.seriesTitle">seri Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.volume">Cilt</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.numberOfVolumes">Cilt Numarası</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.place">Yer</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.studio">Sütüdyo</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.runningTime">Oynama Süresi</message>
+	<message key="plugins.generic.objectsForReview.object.videoRecording.isbn">ISBN</message>
+	<!-- Web Page -->
+	<message key="plugins.generic.objectsForReview.object.webPage">Web Sayfası</message>
+	<message key="plugins.generic.objectsForReview.object.webPage.person.author">Yazar</message>
+	<message key="plugins.generic.objectsForReview.object.webPage.person.contributor">Katkı Sağlayan</message>
+	<message key="plugins.generic.objectsForReview.object.webPage.person.translator">Çeviren</message>
+	<message key="plugins.generic.objectsForReview.object.webPage.websiteTitle">Web Sitesi Başlığı</message>
+	<message key="plugins.generic.objectsForReview.object.webPage.websiteType">Web Sitesi Türü</message>
+
+
+	<message key="plugins.generic.objectsForReview.object.audioRecording.person.wordsBy">Kelimeye Göre</message>
+	<message key="plugins.generic.objectsForReview.object.letter.person.recipient">Alıcı</message>
+	<message key="plugins.generic.objectsForReview.notification.ofrAuthorAssigned">Yazar inceleme için öğeye atandı.</message>
+</locale>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!--
+  * 000011.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * Author's Role Editing Index 
+  *
+  -->
+
+<topic id="editorial/topic/000011" locale="es_ES" title="Edición" toc="editorial/toc/000009" subtoc="editorial/toc/000011" key="editorial.authorsRole.editing">
+	<section>
+		<![CDATA[<p>El autor/a contribuye tanto en la corrección de originales como en la corrección de pruebas del envío durante la fase de edición, ya que el envío se prepara tanto para publicaciones electrónicas, como impresas.</p>]]>	
+	</section>
+</topic> 

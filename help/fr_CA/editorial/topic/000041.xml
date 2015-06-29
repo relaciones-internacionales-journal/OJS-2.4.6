@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000041.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Layout Editor's Role - Proofreading
+  *
+  -->
+
+<topic id="editorial/topic/000041" locale="fr_CA" title="Correction des épreuves" toc="editorial/toc/000013" key="editorial.layoutEditorsRole.proofreading">
+	<section>
+	  <![CDATA[<p>L&#x2019;auteur et le correcteur d&#x2019;épreuves vont corriger les épreuves dans leurs divers formats pour les erreurs de typographie et de formatage. Ils enregistreront les corrections requises dans la zone de texte  &#x00AB;&#x00A0;Commentaires&#x00A0;&#x00BB;, en suivant les instructions pour la correction d&#x2019;épreuves. Une fois que le correcteur d&#x2019;épreuves envoie un courriel au responsable de la mise en page lorsque leur correction est terminée, le responsable de la mise en page retourne à  &#x00AB;&#x00A0;Format de l&#x2019;épreuve&#x00A0;&#x00BB; dans  &#x00AB;&#x00A0;Mise en page&#x00A0;&#x00BB; et fait les changements demandés, effaçant les fichiers à corriger et en remplaçant par leurs versions corrigées. Tout en accomplissant cette tâche le responsable de la mise en page peut souhaiter ajouter des commentaires dans la zone de texte de Corrections. (Par ex. expliquer un changement fait), avant de cliquer sur l&#x2019;icône de courriel sous  &#x00AB;&#x00A0;Terminé&#x00A0;&#x00BB;, ce qui mènera à un courriel pour aviser le chef de rubrique que la soumission est prête pour être mise au calendrier pour publication.</p>]]>	
+	</section>
+</topic>

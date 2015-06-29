@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+
+<!--
+  * @file plugins/generic/thesis/locale/ru_RU/emailTemplates.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the ru_RU (Russian) locale.
+  * With updates from Pavel Pisklakov (revising translation). 
+  -->
+
+<email_texts locale="ru_RU">
+	<email_text key="THESIS_ABSTRACT_CONFIRM">
+		<subject>Отправка автореферата диссертации</subject>
+		<body>Это письмо было автоматически сгенерировано формой отправки на публикацию в журнале «{$journalName}» автореферата диссертации.
+
+Пожалуйста подтвердите правильность полученной нами информации. После получения Вашего подтверждения, автореферат будет опубликован в онлайн-версии журнала.
+
+Просто напишите письмо на адрес {$thesisEmail} ({$thesisName}), включив в него содержание этого письма, Ваше подтверждение, а также все необходимые уточнения и дополнения.
+
+Заранее спасибо!
+
+
+Название: {$title} 
+Автор: {$studentName}
+Степень: {$degree}
+Название степени: {$degreeName}
+Подразделение: {$department}
+Университет: {$university}
+Дата защиты: {$dateApproved}
+Руководитель: {$supervisorName}
+
+Автореферат
+-----------
+{$abstract}
+
+{$thesisContactSignature}</body>
+		<description>Этот шаблон письма используется для подтверждения отправленного соискателем автореферата диссертации. Оно отправляется руководителю соискателя, которого просят подтвердить информацию о предоставленном в редакцию автореферате диссертации.</description>
+	</email_text>
+</email_texts>

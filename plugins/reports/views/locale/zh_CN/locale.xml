@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/reports/views/locale/zh_CN/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the zh_CN (China) locale.
+  *
+  -->
+
+<locale name="zh_CN" full_name="China">
+	<message key="plugins.reports.views.displayName">查看报告</message>
+	<message key="plugins.reports.views.description">该插件实行CSV 报告来为每篇文章说明读者数量。</message>
+	<message key="plugins.reports.views.articleId">文章标识</message>
+	<message key="plugins.reports.views.articleTitle">文章标题</message>
+	<message key="plugins.reports.views.datePublished">出版日期</message>
+	<message key="plugins.reports.views.abstractViews">摘要浏览</message>
+	<message key="plugins.reports.views.galleyViews">全部格式浏览</message>
+</locale>

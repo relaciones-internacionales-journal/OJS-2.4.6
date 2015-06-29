@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/customLocale/locale/el_GR/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the el_GR (Greek) locale.
+  *
+  -->
+ 
+<locale name="el_GR" full_name="Greek">
+	<message key="plugins.generic.customLocale.name">Πρόσθετο προσαρμογής διεπαφής</message>
+	<message key="plugins.generic.customLocale.description">Το πρόσθετο αυτό ενεργοποιεί την δυνατότητα προσαρμογής του προκαθορισμένου κειμένου διεπαφής του χρήστη που χρησιμοποιεί το OJS.</message>
+
+	<message key="plugins.generic.customLocale.longDescription">Αυτή η σελίδα εμφανίζει όλες τις τρέχουσες γλώσσες που είναι εγκατεστημένες για αυτό το περιοδικό.</message>
+	<message key="plugins.generic.customLocale.localeDescription">Αυτή η σελίδα εμφανίζει όλα αρχεία που είναι διαθέσιμα για την επιλεγμένη γλώσσα.</message>
+	<message key="plugins.generic.customLocale.fileDescription">Εισάγετε το κείμενό σας στο αντίστοιχο πεδίο προσαρμογής κειμένου. Αφήστε το πεδίο κενό αν επιθυμείτε να χρησιμοποιήσετε το προκαθορισμένο κείμενο του OJS.</message>
+	<message key="plugins.generic.customLocale.localeName">Όνομα γλώσσας</message>
+	<message key="plugins.generic.customLocale.localeKey">Κλειδί</message>
+	<message key="plugins.generic.customLocale.localeKey.description">Εισάγετε ένα ολόκληρο κλειδί γλώσσας για να το αναζητήσετε.</message>
+	<message key="plugins.generic.customLocale.localeKeyValue">Τιμή</message>
+	<message key="plugins.generic.customLocale.customize">Προσαρμογή</message>
+	<message key="plugins.generic.customLocale.availableLocales">Διαθέσιμες γλώσσες</message>
+
+	<message key="plugins.generic.customLocale.locale">{$locale} γλώσσα</message>
+	<message key="plugins.generic.customLocale.localeFiles">Αρχεία γλωσσών</message>
+	<message key="plugins.generic.customLocale.file.filename">Όνομα αρχείου</message>
+	<message key="plugins.generic.customLocale.file.edit">Επεξεργασία {$filename}</message>
+	<message key="plugins.generic.customLocale.file.reference">Προκαθορισμένο κείμενο</message>
+	<message key="plugins.generic.customLocale.file.custom">Προσαρμοσμένο κείμενο</message>
+</locale>

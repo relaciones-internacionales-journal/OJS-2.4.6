@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000016.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Roles - Editor 
+  *
+  -->
+
+<topic id="journal/topic/000016" locale="fr_CA" title="Rédacteur" toc="journal/toc/000003" key="journal.roles.editor">
+	<section>
+		<![CDATA[<p>Le rédacteur supervise le processus éditorial et de publication dans son entier. Le rédacteur, travaillant conjointement avec le directeur de revue, typiquement établit les politiques et les procédures pour la revue, lesquelles sont entrées dans {help_topic key="journal.managementPages.setup" text="Setup"}. Dans le processus éditorial, le rédacteur assigne les soumissions aux chefs de rubriques à ce qu’ils voient à l'évaluation des soumissions et l’édition de celles-ci. Le rédacteur garde un œil sur la progression de la soumission et aide s’il y a des difficultés. Une fois que l'évaluation est complétée, le rédacteur typiquement voit la présentation par le {help_topic key="editorial.sectionEditorsRole.editing" text="Editing"} processus (incluant la révision, la mise en page et la correction des épreuves), bien que dans certaines revues ceci demeure la responsabilité du chef de rubrique en charge du processus {help_topic key="editorial.sectionEditorsRole.review" text="Review"} de la soumission. Le rédacteur met les présentations au calendrier pour publication, organise la table des matières et publie le numéro comme partie de {help_topic key="publishing.index" text="Publishing Process"}. Le rédacteur peut remettre comme étant actives les soumissions archivées dans «En évaluation» ou dans «En révision» tel que détaillé dans {help_topic key="editorial.editorsRole.submissions.archives" text="Archives"}.</p>]]>	
+	</section>
+</topic>

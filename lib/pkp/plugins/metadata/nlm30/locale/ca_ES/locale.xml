@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../dtd/locale.dtd">
+<!--
+  * plugins/metadata/nlm30/locale/ca_ES/locale.xml
+  *
+  * Copyright (c) 2014-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Catalan_%28ca_ES%29
+  *
+  * Localization strings for the ca_ES (Català) locale.
+  -->
+ 
+<locale name="ca_ES" full_name="Català">
+	<!-- plug-in -->
+	<message key="plugins.metadata.nlm30.displayName">Metadades NLM 3.0</message>
+	<message key="plugins.metadata.nlm30.description">Contribueix als esquemes i adaptacions d'aplicacions NLM 3.0.</message>
+
+	<!-- citation meta-data adapter -->
+	<message key="plugins.metadata.nlm30.citationAdapter.displayName">Adaptador de citacions NLM 3.0</message>
+	<message key="plugins.metadata.nlm30.citationAdapter.description">Extreu o inclou metadades des de o en citacions.</message>
+
+	<!-- citation parsers (citation extraction services) -->
+	<message key="plugins.metadata.nlm30.citationParsers.displayName">Serveis d’extracció de citacions"</message>
+	<message key="plugins.metadata.nlm30.citationParsers.description">Transforma una citació en text net a un marcatge «element-citation» NLM 3.0."</message>
+
+	<!-- citation lookup (citation database/improvement/lookup services) -->
+	<message key="plugins.metadata.nlm30.citationLookup.displayName">Serveis de bases de dades de citacions"</message>
+	<message key="plugins.metadata.nlm30.citationLookup.description">Milloreu el marcatge «element-citation» NLM 3.0, p. ex. amb la cerca de citacions en bases de dades externes."</message>
+
+	<!-- citation output -->
+	<message key="plugins.metadata.nlm30.citationOutput.displayName">Serveis de format de citació</message>
+	<message key="plugins.metadata.nlm30.citationOutput.description">Transforma el marcatge «element-citation» NLM 3.0 en una citació en sortida estàndard en text net.</message>
+	<message key="plugins.metadata.nlm30Xml.citationOutput.displayName">Serveis de format de citació (XML)</message>
+	<message key="plugins.metadata.nlm30Xml.citationOutput.description">Transforma el marcatge «element-citation» NLM 3.0 en una citació en sortida estàndard en XML.</message>
+
+	<!-- NLM 3.0 output -->
+	<message key="plugins.metadata.nlm30.nlm30XmlOutput.displayName">Sortida de Publicació de revistes NLM 3.0</message>
+	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">Transforma un article/document OJS o OCS a NLM 3.0.</message>
+
+	<!-- NLM 2.3 output -->
+	<message key="plugins.metadata.nlm30.nlm23XmlOutput.displayName">Sortida de Publicació de revistes NLM 2.3</message>
+	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">Transforma un article/document OJS o OCS a NLM 2.3.</message>
+
+	<!-- NLM 3.0 to 2.3 downgrade -->
+	<message key="plugins.metadata.nlm30.nlm30ToNlm23Xml.displayName">Actualitzar Publicació de revistes NLM 3.0 a la versió anterior 2.3</message>
+	<message key="plugins.metadata.nlm30.nlm30ToNlm23Xml.description">Canvia NLM 3.0 per la versió més antiga NLM 2.3.</message>
+
+	<!-- Plain text reference list output -->
+	<message key="plugins.metadata.nlm30.refList.displayName">Generació d'una llista de referències en text net</message>
+	<message key="plugins.metadata.nlm30.refList.description">Genera una llista de referències formatada en text net des d'una tramesa de referències OJS, OCS o OMP</message>
+</locale>

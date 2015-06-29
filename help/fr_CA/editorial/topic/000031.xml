@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000031.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Reviewer's Role Index - Review
+  *
+  -->
+
+<topic id="editorial/topic/000031" locale="fr_CA" title="Évaluation" toc="editorial/toc/000008" key="editorial.reviewersRole.review">
+	<section>
+	  <![CDATA[<p>Le processus d&#x2019;évaluation est divisé en six étapes, dont l&#x2019;intention est de guider l&#x2019;évaluateur à travers le processus d&#x2019;évaluation</p>
+		<p><em>Étape 1 ;</em><br />L&#x2019;évaluateur doit premièrement signifier au chef de rubrique qu&#x2019;il va se charger de l&#x2019;évaluation. La décision de le faire devrait être faite après avoir vu le résumé de la soumission et peut-être regarder la soumission en cliquant sur le nom du fichier à l&#x2019;étape 3. (Dépendant des politiques de la revue, le fichier peut ne pas être disponible avant que l&#x2019;évaluateur ait accepté de le réviser).</p>
+		<p><em>Si l&#x2019;évaluateur est incapable de faire l&#x2019;évaluation. </em> L&#x2019;évaluateur qui est dans l&#x2019;incapacité de faire une évaluation clique sur  &#x00AB;&#x00A0;Ne fera pas l&#x2019;évaluation&#x00A0;&#x00BB; ce qui mène à un courriel déjà préparé au chef de rubrique, que l&#x2019;évaluateur peut modifier pour indiquer, s&#x2019;il le désire, pourquoi il ne peut pas faire l&#x2019;évaluation (i.e. n&#x2019;a pas le temps, conflit d&#x2019;intérêts, manque d&#x2019;expérience, etc.)</p>
+		<p><em>S&#x2019;il est capable de faire l&#x2019;évaluation. </em>L&#x2019;évaluateur qui peut faire l&#x2019;évaluation clique sur  &#x00AB;&#x00A0;Fera l&#x2019;évaluation&#x00A0;&#x00BB; ce qui mène à un courriel standard au chef de rubrique, lequel indiquera au chef de rubrique et à l&#x2019;auteur que l&#x2019;évaluation est en marche.</p>
+		<p><em>Étape 2&#x00A0;: </em><br />Le guide de l&#x2019;évaluateur a été préparé par les rédacteurs de la revue pour s&#x2019;assurer que l&#x2019;évaluation soit autant que possible utile à eux et l&#x2019;auteur.</p>
+		<p><em>Étape 3&#x00A0;: </em><br />L&#x2019;auteur a téléchargé vers le serveur sa soumission sous forme de fichier, que le réviseur peut télécharger du site Web de la revue sur l&#x2019;ordinateur de l&#x2019;évaluateur en cliquant sur le nom du fichier. Le fichier peut être ouvert ou sauvegardé sur l&#x2019;ordinateur et ouvert, en employant les programmes  disponibles tel que Word ou Acrobat. Il peut être imprimé ou lu sur le moniteur. Les fichiers supplémentaires réfèrent au matériel qui peut avoir téléchargé vers le serveur en plus de la soumission, tel un jeu de données, des instruments de recherche, ou des sources de texte.</p>
+		<p><em>Étape 4&#x00A0;: </em><br />L&#x2019;évaluateur prépare une évaluation de la soumission, en suivant les directives d&#x2019;évaluation du journal, soit avec en utilisant un logiciel de traitement de texte et puis en le collant dans la zone de texte d&#x2019;évaluation, ou en écrivant directement dans la zone de texte, à laquelle on accède en cliquant sur l&#x2019;icône  &#x00AB;&#x00A0;Évaluation&#x00A0;&#x00BB;. L&#x2019;évaluateur peut entrer tout le texte en une fois, ou l&#x2019;entrer en parties, en sauvegardant à chaque fois. De cette manière, l&#x2019;évaluateur peut indiquer dans la zone de texte si toute l'évaluation, ou des parties de celle-ci ne devraient pas être partagé avec l&#x2019;auteur. Selon les restrictions de l&#x2019;évaluateur, s&#x2019;il y en a, le chef de rubrique a l&#x2019;option de partager toute ou des parties de l&#x2019;évaluation avec l&#x2019;auteur.</p>
+		<p><em>Étape 5&#x00A0;: </em><br />L&#x2019;évaluateur a aussi l&#x2019;option, en plus d&#x2019;entrer en évaluation, de télécharger vers le serveur des fichiers que le chef de rubrique et/ou l&#x2019;auteur peuvent voir. Ces fichiers peuvent être une version de la soumission annotée par l&#x2019;évaluateur, ou des informations pertinentes ou autres matériels qui assisteront le rédacteur et/ou l&#x2019;auteur. Il sera à la discrétion du rédacteur si ces fichiers seront montrés à l&#x2019;auteur ou pas, mais les évaluateurs peuvent certainement les commenter dans l&#x2019;évaluation à l&#x2019;étape 4.</p>
+		<p><em>Étape 6&#x00A0;: </em><br />L&#x2019;évaluateur doit choisir une recommandation pour la soumission parmi les options suivantes&#x00A0;: &#x00AB;&#x00A0;Accepter la soumission, Révisions requises, Soumettre à nouveau pour évaluation, Soumettre à nouveau ailleurs, Refuser la soumission, Voir les commentaires&#x00A0;&#x00BB;. Quand l&#x2019;évaluateur clique  &#x00AB;&#x00A0;Soumettre l&#x2019;évaluation au rédacteur&#x00A0;&#x00BB; il est dirigé vers un courriel déjà préparé pour informer le chef de rubrique, et cela permet aussi de rendre visible la recommandation au rédacteur, l&#x2019;évaluation et tout fichier téléchargé vers le serveur. Le courriel peut être édité par l&#x2019;évaluateur avant l&#x2019;envoi.</p>]]>
+	</section>
+</topic>

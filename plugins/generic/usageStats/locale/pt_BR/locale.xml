@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/usageStats/locale/pt_BR/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
+
+<locale name="pt_BR" full_name="Português (Brasil)">
+	<message key="plugins.generic.usageStats.settings.logging">Opções de log de acessos</message>
+	<message key="plugins.generic.usageStats.settings.createLogFiles">Criar arquivos de log</message>
+	<message key="plugins.generic.usageStats.settings.createLogFiles.description">Ativar esta opção fará com que o plugin crie arquivos de log dentro da sua pasta de arquivos. Os arquivos devem ser usados para extração de dados estatísticos. Caso não deseje criar mais arquivos de log, deixe a opção desabilitada e use os arquivos de log do próprio servidor.</message>
+	<message key="plugins.generic.usageStats.settings.logParseRegex">Expressão regular de tratamento de arquivos de log</message>
+	<message key="plugins.generic.usageStats.settings.logParseRegex.description">A expressão regular padrão pode ser usada para tratar arquivos de log do apache em formato combinado, bem como os arquivos de log do plugin. Caso seus arquivos de log estejam em formato diferente, será necessário inserir uma regex capaz de tratá-los e recuperar os valores esperados. Veja UsageStatsLoader::_getDataFromLogEntry() para mais informações.</message>
+	<message key="plugins.generic.usageStats.settings.saved">Configurações do plugin de estatísticas de uso salvas com sucesso</message>
+	
+	<message key="plugins.generic.usageStats.openFileFailed">O arquivo {$file} não pôde ser aberto e foi rejeitado.</message>
+	<message key="plugins.generic.usageStats.invalidLogEntry">A linha {$lineNumber} do arquivo {$file} não é uma entrada de log válida e o arquivo foi rejeitado.</message>
+	<message key="plugins.generic.usageStats.displayName">Estatísticas de uso</message>
+	<message key="plugins.generic.usageStats.description">Apresentar estatísticas de uso de objetos de dados. Pode usar arquivos de log de acesso para extrair estatísticas.</message>
+	
+	<message key="plugins.reports.usageStats.report.displayName">Relatório de estatísticas de uso do OJS</message>
+	<message key="plugins.reports.usageStats.report.description">Relatório de estatísticas de uso padrão do OJS (pronto para COUNTER)</message>
+	
+	<message key="plugins.reports.usageStats.metricType">OJS/COUNTER</message>
+	<message key="plugins.reports.usageStats.metricType.full">Estatísticas Open Journal Systems (pronto para COUNTER)</message>
+	<message key="plugins.generic.usageStats.usageStatsLoaderName">Estatísticas de uso do carregador de arquivos</message>
+	<message key="plugins.generic.usageStats.removeUrlError">A linha {$lineNumber} do arquivo {$file} contém uma URL que o sistema não pode consegue remover a URL base.</message>
+	<message key="plugins.generic.usageStats.loadDataError">Não foi possível carregar os dados extraídos do arquivo {$file}. O erro foi: {$error}. O arquivo foi movido para o estágio novamente.</message>
+	<message key="plugins.generic.usageStats.pluginDisabled">O plugin de estatísticas de uso está desativado. Nenhum arquivo de log processado.</message>
+	<message key="plugins.generic.usageStats.processingPathNotEmpty">O diretório {$directory} não está vazio. Isto pode indicar um processo que falhou anteriormente, ou um processo atualmente em execução. Este arquivo será reprocessado automaticamente se você estiver usando o scheduledTasksAutoStage.xml, caso contrário, você precisará mover manualmente quaisquer arquivos órfãos :( deixados no diretório de processamento de volta para o diretório de estagiamento (preprocessamento).</message>
+	<message key="plugins.generic.usageStats.noCounterBotList">A lista de bot do COUNTER não pôde ser encontrado, ou mais de uma lista está presente. O arquivo {$file} não pôde ser processado.</message>
+	<message key="plugins.generic.usageStats.failedCounterBotList">A lista de bot do COUNTER não pôde ser encontrado. O arquivo {$file} não pôde ser processado.</message>
+</locale>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000000.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Index Help Page 
+  *
+  -->
+
+<topic id="index/topic/000000" locale="fr_CA" title="Aide pour OJS" toc="index/toc/000000" key="index.index">
+	<section>
+	  <![CDATA[<p> Le document d&#x2019;aide pour le Système Open Journal (OJS) est destiné à aider les usagers dans le processus de lecture, de présentation, d&#x2019;édition et la publication d&#x2019;articles dans les revues académiques et d&#x2019;intérêt général. Il est aussi destiné à servir de manuel pour OJS, en décrivant l&#x2019;étendue et les fonctions de ce logiciel de gestion pour une revue académique. Le document d&#x2019;aide fournit aussi des conseils d&#x2019;édition sur les pratiques courantes dans la publication de revues académiques. En plus de ce document, les usagers ont accès à la personne chargée du support technique dont le nom apparaitra sous l&#x2019;onglet  &#x00AB;&#x00A0;À propos&#x00A0;&#x00BB; dans la listes des  &#x00AB;&#x00A0;contacts&#x00A0;&#x00BB; </p>
+		<p> Parce qu&#x2019;OJS a des rôles et des titres bien définis pour chaque fonction et procédure de la publication.&mdash; depuis le directeur de la revue qui voit à la mise en place de celui-ci, à l&#x2019;auteur qui révise les épreuves.&mdash; chaque sujet couvert dans  &#x00AB;&#x00A0;aide&#x00A0;&#x00BB; réfère à qui devrait s&#x2019;occuper de chaque tâche. Basé sur le même principe, l&#x2019;accès au document est déterminé par qui fait quoi, et où dans le système. La page d&#x2019;aide est spécifique au contexte. Ce que l&#x2019;on peut visioner dépend de son rôle. Les usagers peuvent avoir plus d&#x2019;un rôle dans OJS. Un évaluateur peut aussi être un auteur, et un Directeur de revue peut aussi être un rédacteur. Ce que quelqu&#x2019;un voit dépend aussi de l&#x2019;endroit où il travaille à l&#x2019;intérieur d&#x2019;OJS. Le rôle et l&#x2019;endroit déterminent quelles rubriques d&#x2019;aide apparaissent à l&#x2019;écran, bien que l&#x2019;usager puisse naviguer vers des sujets reliés pour explorer toutes les facettes du système.</p>]]>
+	</section>
+</topic>
+

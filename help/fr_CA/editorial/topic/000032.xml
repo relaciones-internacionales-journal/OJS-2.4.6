@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000032.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Author's Role Index - Submissions
+  *
+  -->
+
+<topic id="editorial/topic/000032" locale="fr_CA" title="Soumissions" toc="editorial/toc/000009" key="editorial.authorsRole.submissions">
+	<section>
+	  <![CDATA[<p>En se connectant à la revue et en sélectionnant le rôle d&#x2019;auteur (un auteur peut aussi avoir d&#x2019;autres rôles, tel celui d&#x2019;évaluateur) sur la page d&#x2019;accueil de l&#x2019;usager, l&#x2019;auteur est amené à la file d&#x2019;attente des soumissions. Cette page énumère les soumissions actuellement dans le processus éditorial. L&#x2019;auteur a aussi accès aux soumissions antérieures qui ont été faites au journal.</p>]]>	
+	</section>
+</topic>

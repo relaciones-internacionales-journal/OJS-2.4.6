@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!--
+  * 000000.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * Journal Management Main 
+  *
+  -->
+
+<topic id="journal/topic/000000" locale="es_ES" title="Gestión de la revista" toc="index/toc/000000" subtoc="journal/toc/000000" key="journal.index">
+	<section>
+		<![CDATA[<p>El gestor/a de la revista trata todos los aspectos relacionados con su gestión en consulta con los editores. Esto incluye la instalación y configuración del sistema de la revista, el registro de usuarios en los distintos roles necesarios y la configuración de las distintas secciones, así como otras tareas de gestión.</p>]]>	
+	</section>
+</topic> 

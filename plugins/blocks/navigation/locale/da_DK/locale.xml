@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/blocks/navigation/locale/da_DK/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the da_DK (Danish) locale.
+  *
+  -->
+ 
+<locale name="da_DK" full_name="Danish">
+	<message key="plugins.block.navigation.displayName">Navigeringsfunktion</message>
+	<message key="plugins.block.navigation.description">Dette plugin indsætter funktion til navigationslinks i sidekolonnen.</message>
+	<message key="plugins.block.navigation.journalContent">Tidsskriftsindhold</message>
+	<message key="plugins.block.navigation.searchScope">Søgeområde</message>
+</locale>

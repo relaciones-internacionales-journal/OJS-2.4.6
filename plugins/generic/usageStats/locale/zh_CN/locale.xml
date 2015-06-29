@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/usageStats/locale/zh_CN/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
+
+<locale name="zh_CN" full_name="China">
+	<message key="plugins.generic.usageStats.settings.logging">访问日志选项</message>
+	<message key="plugins.generic.usageStats.settings.createLogFiles">创建日志文件</message>
+	<message key="plugins.generic.usageStats.settings.createLogFiles.description">激活该选项可能使插件在文件目录中生成访问日志。这些文件呗用来提取使用统计数据。如果您不希望生成更多的访问日志文件，您可以禁用该选项，或者使用自己的服务器日志访问文件。</message>
+	<message key="plugins.generic.usageStats.settings.logParseRegex">正则表达式解析日志文件</message>
+	<message key="plugins.generic.usageStats.settings.logParseRegex.description">默认的正则表达式可以解析合并格式的Apache的访问日志文件和插件的日志文件。如果您的访问日志文件是不同的格式，那么请插入一个可以解析它们的正则表达式。关于更多信息详见：UsageStatsLoader::_getDataFromLogEntry()</message>
+	<message key="plugins.generic.usageStats.settings.saved">使用统计插件设置保存</message>
+	
+	<message key="plugins.generic.usageStats.usageStatsLoaderName">使用统计文件加载任务</message>
+	<message key="plugins.generic.usageStats.invalidLogEntry">在文件{$file} 中文件号为{$lineNumber} 不是一个有效的日至条目，文件被拒绝。</message>
+	<message key="plugins.generic.usageStats.removeUrlError">文件{$file} 中{$lineNumber}包含一个系统无法删除的网址。</message>
+	<message key="plugins.generic.usageStats.loadDataError">无法加载从文件{$file}提取的数据。出现错误：{$error}。文件再次被移动到之前阶段。</message>
+	<message key="plugins.generic.usageStats.displayName">使用统计</message>
+	<message key="plugins.generic.usageStats.description">呈现数据对象的使用统计。可以使用服务器访问日志文件提取数据。</message>
+	
+	<message key="plugins.reports.usageStats.report.displayName">OJS使用统计报告</message>
+	<message key="plugins.reports.usageStats.report.description">OJS默认使用统计报告（计数器准备）</message>
+	
+	<message key="plugins.reports.usageStats.metricType">OJS/计数器</message>
+	<message key="plugins.reports.usageStats.metricType.full">OJS系统数据（计数器准备）</message>
+	<message key="plugins.generic.usageStats.openFileFailed">{$file}文件无法打开，被拒绝了。</message>
+	<message key="plugins.generic.usageStats.pluginDisabled">使用统计插件被禁用。没有日志文件进行处理。</message>
+	<message key="plugins.generic.usageStats.processingPathNotEmpty">目录{$directory}不是空的。这就意味着之前的进程失败，或者同时运行进程。如果您正在使用scheduledTasksAutoStage.xml，文件将被自动重新处理，否则您需要手动将处理目录中的孤立文件直接移动到阶段目录中去。</message>
+	<message key="plugins.generic.usageStats.noCounterBotList">COUNTER bot{$botlist} 列表没有找到，或多个列表存在。文件{$}无法处理。</message>
+	<message key="plugins.generic.usageStats.failedCounterBotList">COUNTER bot{$botlist} 列表无法打开。文件{$}无法处理。</message>
+</locale>

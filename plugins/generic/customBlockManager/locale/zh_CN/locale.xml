@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/customBlockManager/locale/zh_CN/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the zh_CN (China) locale.
+  *
+  -->
+ 
+<locale name="zh_CN" full_name="China">
+	<message key="plugins.generic.customBlockManager.displayName">自定义区块管理(Custom Block Manager)</message>
+	<message key="plugins.generic.customBlockManager.description">本插件允许在边栏增加区块，和对边栏区块的重新排序。(This plugin lets you create addition sidebar blocks.  Once they are created, you can edit their content and rearrange them within the sidebars.)</message>	
+	<message key="plugin.generic.customBlockManager.introduction"><![CDATA[你可以使用本插件来添加和删除自定义的块插件。然后，可以在<a href="{$systemPluginsUrl}">System Plugins</a>页面编辑内容。在<a href="{$setupStep56}">Setup step 5.6</a>页面设定插件在边栏所需的位置。]]></message>
+	<message key="plugins.generic.customBlockManager.settings">设置</message>
+	<message key="plugins.generic.customBlockManager.blockName">区块名称</message>	
+	<message key="plugins.generic.customBlockManager.action">行为</message>	
+	<message key="plugins.generic.customBlockManager.delete">删除</message>	
+	<message key="plugins.generic.customBlockManager.addBlock">添加</message>	
+
+	<message key="plugins.generic.customBlock.content">内容</message>
+	<message key="plugins.generic.customBlock.saved">区块内容已保存。</message>
+	<message key="plugins.generic.customBlock.nameSuffix">(自定义块插件)</message>
+	<message key="plugins.generic.customBlock.description">这是一个用户生成的区块。</message>
+	<message key="plugins.generic.customBlock.editContent">编辑侧边栏内容</message>
+	<message key="plugins.generic.customBlock.contentRequired">有些内容是必须的。你可以在区块管理插件中处理，或者在期刊创建的第五步中取消对此区块的选择。</message>
+	<message key="plugins.generic.customBlock.edit">编辑(Edit)</message>
+</locale>

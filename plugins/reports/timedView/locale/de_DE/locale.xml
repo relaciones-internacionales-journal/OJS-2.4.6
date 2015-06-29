@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/reports/timedView/locale/de_DE/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization strings for the de_DE (Deutsch (Deutschland)) locale.
+  * Please contact Marco Tullney, marco.tullney@fu-berlin.de, with any questions regarding this translation.
+  -->
+
+<locale name="de_DE" full_name="Deutsch (Deutschland)">
+	<message key="plugins.reports.timedView.displayName">Zeitbezogener Lese-Bericht</message>
+	<message key="plugins.reports.timedView.description">Dieses Plug-In implementiert einen CSV-Bericht, der die Lesezugriffe für jeden Artikel, gefiltert für eine benutzerdefinierte Zeitspanne, auflistet.</message>
+
+	<message key="plugins.reports.timedView.form.dateStartRequired">Ein Anfangsdatum wird benötigt.</message>
+	<message key="plugins.reports.timedView.form.dateStartValid">Bitte wählen Sie ein gültiges Anfangsdatum aus.</message>
+	<message key="plugins.reports.timedView.form.dateEndRequired">Ein Enddatum wird benötigt.</message>
+	<message key="plugins.reports.timedView.form.dateEndValid">Bitte wählen Sie ein gültiges Enddatum aus.</message>
+	<message key="plugins.reports.timedView.form.generate">Bericht erzeugen</message>
+	<message key="plugins.reports.timedView.form.clearLogs">Logdateien löschen</message>
+	<message key="plugins.reports.timedView.form.clearLogs.description">Wählen Sie ein Datum aus, um Logdateien zu löschen. Alle Logeinträge, die vor dem gewählten Datum angelegt worden sind, werden gelöscht. Beachten Sie, dass dies nur das Zeitbezogene Lese-Plug-In betrifft und nicht andernorts erzeugte Leseprotokolle (z.B. für das allgemeine Lese-Berichts-Plug-In).</message>
+	<message key="plugins.reports.timedView.form.clearLogs.confirm">Sind Sie sicher, dass Sie diese Berichte löschen möchten? Dieser Prozess kann nicht rückgängig gemacht werden.</message>
+	<message key="plugins.reports.timedView.form.useTimedViewRecords">Verwendung von Statistiken aus dem alten Plug-In für zeitbezogene Leseberichte aktivieren. Wenn Sie einen Bericht über zeitbezogene Zugriffe mit neuen statistischen Daten erzeugen wollen, lassen Sie dieses Feld deaktiviert.</message>
+	<message key="plugins.reports.timedView.form.largeSetOfDataIssue">Wenn Sie einen großen Zeitraum mit einer großen Menge statistischer Daten auswählen, kann die Fertigstellung des  Berichts eine Weile dauern. Wenn es zu lange dauert, könnte die Verbindung wegen einer Zeitüberschreitung beendet werden und Sie würden die Datei mit dem Bericht nicht erhalten. Wenn dies passiert, probieren Sie es erneut mit einem kürzeren Zeitraum.</message>
+
+	<message key="plugins.reports.timedView.report.articleId">Artikel-ID</message>
+	<message key="plugins.reports.timedView.report.articleTitle">Artikeltitel</message>
+	<message key="plugins.reports.timedView.report.datePublished">Veröffentlichungsdatum</message>
+	<message key="plugins.reports.timedView.report.abstractViews">Abstract-Ansichten</message>
+	<message key="plugins.reports.timedView.report.galleyViews">Gesamte Fahnen-Ansichten</message>
+</locale>

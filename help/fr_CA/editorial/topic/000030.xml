@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000030.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Reviewer's Role Index - Submissions 
+  *
+  -->
+
+<topic id="editorial/topic/000030" locale="fr_CA" title="Soumissions" toc="editorial/toc/000008" key="editorial.reviewersRole.submissions">
+	<section>
+	  <![CDATA[<p>En entrant sur le site de la revue, l&#x2019;évaluateurr arrive à la page d&#x2019;accueil. En cliquant sur le rôle d&#x2019;évaluateur (il se peut qu&#x2019;un évaluateur soit inscrit sous d&#x2019;autres rôles, tel celui d&#x2019;auteur), l&#x2019;évaluateur est alors dirigé vers les pages des soumissions. Cette page énumère les soumissions que l&#x2019;évaluateur a été invité à évaluer, ou est actuellement en train d&#x2019;évaluer. La ligne d&#x2019;attente des évaluations indique aussi à quelle étape l&#x2019;évaluation en est, car certaines évaluations en sont peut-être à la deuxième étape, après que le chef de rubrique eut décidé qu&#x2019;une soumission devait être soumise à nouveau pour être ré-évaluée. Cette page donne aussi accès aux évaluations antérieures que l&#x2019;évaluateur a déjà faites pour la revue.</p>]]>	
+	</section>
+</topic>

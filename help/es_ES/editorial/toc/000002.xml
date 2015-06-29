@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE toc SYSTEM "../../../../lib/pkp/dtd/helpToc.dtd">
+<!--
+  * 000002.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * table of contents for Editorial Process - Editor's Role - Submissions
+  *
+  -->
+
+<toc id="editorial/toc/000002" locale="es_ES" title="Envíos" parent_topic="editorial/topic/000002">
+	<topic id="editorial/topic/000015" title="Sin asignar" />
+	<topic id="editorial/topic/000016" title="En revisión" />
+	<topic id="editorial/topic/000017" title="En edición" />
+	<topic id="editorial/topic/000018" title="Archivos" />
+
+	<breadcrumb url="editorial/topic/000000" title="Proceso editorial" />
+	<breadcrumb url="editorial/topic/000001" title="Rol del editor/a" />
+	<breadcrumb url="editorial/topic/000002" title="Envíos" />
+</toc> 

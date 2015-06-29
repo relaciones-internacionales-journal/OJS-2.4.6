@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!--
+  * 000020.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * Editor's Role Submission Summary - Submission Metadata
+  *
+  -->
+
+<topic id="editorial/topic/000020" locale="es_ES" title="Metadatos del envío" toc="editorial/toc/000003" key="editorial.editorsRole.submissionSummary.submissionMetadata">
+	<section>
+		<![CDATA[<p>Los metadatos que se utilizarán para indexar el envío en la publicación los introduce el autor/a, pero tanto el editor/a de sección como el autor/a y el corrector/a de originales pueden editarlos durante el proceso editorial.</p>]]>	
+	</section>
+</topic> 

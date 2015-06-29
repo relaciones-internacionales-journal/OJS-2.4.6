@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000033.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Author's Role Review Index - Peer Review
+  *
+  -->
+
+<topic id="editorial/topic/000033" locale="fr_CA" title="Évaluation par les pairs" toc="editorial/toc/000010" key="editorial.authorsRole.review.peerReview">
+	<section>
+	  <![CDATA[<p>Plusieurs dates sont enregistrées sur cette page, incluant la date de la demande du rédacteur aux évaluateurs, les dates quand les évaluations ont débutées, et les dates où les évaluations sont complétées par chaque évaluateur. L&#x2019;auteur peut consulter la politique d&#x2019;évaluation pour en connaître plus sur comment les soumissions sont évaluées par le journal. Les évaluateurs peuvent télécharger vers le serveur des fichiers à consulter par l&#x2019;auteur, incluant des versions annotées de la soumission. (pour consulter les fichiers téléchargés, l&#x2019;auteur clique sur le nom du fichier, et ouvre le fichier ou sauvegarde le fichier sur son ordinateur et l&#x2019;ouvre ensuite.</p>]]>	
+	</section>
+</topic>

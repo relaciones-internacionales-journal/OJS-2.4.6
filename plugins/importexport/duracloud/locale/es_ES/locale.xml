@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!--
+  * plugins/importexport/duracloud/locale/es_ES/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * Localization strings
+  -->
+
+<locale name="es_ES" full_name="Español (España)">
+    <message key="plugins.importexport.duracloud.displayName">Módulos de importación/exportación DuraCloud</message>
+	<message key="plugins.importexport.duracloud.description">Archivar y restaurar los números utilizando un servicio externo de almacenamiento de DuraCloud</message>
+
+	<message key="plugins.importexport.duracloud.configuration">Configuración de DuraCloud</message>
+	<message key="plugins.importexport.duracloud.configuration.unconfigured.description">Actualmente no está registrado en una cuenta DuraCloud. Introduzca las credenciales a continuación. Ésto no se almacenará después de la sesión actual.</message>
+	<message key="plugins.importexport.duracloud.configuration.configured.description"><![CDATA[Está registrando DuraCloud en <a href="{$url}">{$escapedUrl}</a> con nombre de usuario "{$username}". Estas credenciales no se almacenarán después de la sesión actual. Para eliminar las credenciales de inmediato, haga clic en <a href="{$logoutUrl}">cerrar sesión</a> de DuraCloud.]]></message>
+	<message key="plugins.importexport.duracloud.configuration.urlRequired">Es necesaria una URL base válida de DuraCloud.</message>
+	<message key="plugins.importexport.duracloud.configuration.usernameRequired">Es necesario un nombre de usuario/a de DuraCloud.</message>
+	<message key="plugins.importexport.duracloud.configuration.passwordRequired">Es necesaria una contraseña de DuraCloud.</message>
+	<message key="plugins.importexport.duracloud.configuration.credentialsInvalid">No se puede conectar a la instancia de DuraCloud indicada con las credenciales proporcionadas. Compruebe las credenciales y vuelva a intentarlo.</message>
+	<message key="plugins.importexport.duracloud.configuration.space">Espacio</message>
+	<message key="plugins.importexport.duracloud.cliUsage"><![CDATA[Uso: {$scriptName} {$pluginName} [base_url] [username] [password] [ojs_journal_path] [duracloud_space_id] [command] ... Comandos: importarNúmeros [user_name] [issueId1] [issueId2] ... exportarNúmeros [issueId1] [issueId2] ... Ejemplo: php {$scriptName} {$pluginName} \ https://pkp.duracloud.org myUsername myPassword \ demojournal testspace \ exportIssues 1
+]]></message>
+	<message key="plugins.importexport.duracloud.export">Exportar datos</message>
+	<message key="plugins.importexport.duracloud.export.issues">Exportar números</message>
+	<message key="plugins.importexport.duracloud.export.results">Exportar resultados</message>
+	<message key="plugins.importexport.duracloud.export.results.description">Aquí están los resultados de la exportación para cada uno de los números seleccionados.</message>
+	<message key="plugins.importexport.duracloud.export.results.success"><![CDATA[{$issueIdentification} se exportó con éxito en<a href="{$targetLocation}">{$targetLocationEscaped}</a>.]]></message>
+	<message key="plugins.importexport.duracloud.export.results.failure">{$issueIdentification} no se puede exportar.</message>
+	<message key="plugins.importexport.duracloud.import.results">Importar resultados</message>
+	<message key="plugins.importexport.duracloud.import.results.description">Aquí están los resultados de la importación para cada uno de los números seleccionados.</message>
+	<message key="plugins.importexport.duracloud.import.results.success"><![CDATA[{$issueIdentification} se importó con éxito de "{$contentId}".]]></message>
+	<message key="plugins.importexport.duracloud.import.results.failure">{$contentId} no se puede importar.</message>
+
+	<message key="plugins.importexport.duracloud.selectIssue">Seleccionar un número</message>
+
+	<message key="plugins.importexport.duracloud.import.issues">Importar números</message>
+	<message key="plugins.importexport.duracloud.import.description">Este módulo admite la importación de datos basada en la definición del tipo de documento nativo.dtd. Los nódulos de raíz soportados son &amp;lt;article&amp;gt;, &amp;lt;articles&amp;gt;, &amp;lt;issue&amp;gt;, y &amp;lt;issues&amp;gt;.</message>
+
+	<message key="plugins.importexport.duracloud.import.error">Error de importación</message>
+	<message key="plugins.importexport.duracloud.import.error.description">Se produjeron uno o más errores durante la importación. Compruebe que el formato del archivo de importación corresponde con la especificación. A continuación se muestran los detalles de los errores de importación.</message>
+
+	<message key="plugins.importexport.duracloud.cliError">ERROR:</message>
+	<message key="plugins.importexport.duracloud.export.error.couldNotWrite">No se puede editar el archivo "{$fileName}".</message>
+
+	<message key="plugins.importexport.duracloud.import.success">Importación realizada con éxito</message>
+	<message key="plugins.importexport.duracloud.import.success.description">La importación se realizó con éxito. A continuación se muestran los elementos importados con éxito.</message>
+</locale>

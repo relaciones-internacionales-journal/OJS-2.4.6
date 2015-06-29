@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/citationFormats/abnt/locale/cs_CZ/locale.xml
+  *
+  * Copyright (c) 2014-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for this plugin in Czech.
+  *
+  * Translated by František Chmelik, frantisek.chmelik 'at' upol.cz
+  *
+  -->
+ 
+<locale name="cs_CZ" full_name="Čeština">
+	<message key="plugins.citationFormats.abnt.displayName">Plugin pro citační formát ABNT</message>
+	<message key="plugins.citationFormats.abnt.citationFormatName">ABNT</message>
+	<message key="plugins.citationFormats.abnt.description">Tento plugin zavádí citační formát ABNT.</message>
+	<message key="plugins.citationFormats.abnt.retrieved"><![CDATA[Dostupné na: &lt;<a href="{$url}" target="_new">{$url}</a>&gt;. Datum přístupu: {$retrievedDate}]]></message>
+	<message key="plugins.citationFormats.abnt.manager.settings">Nastavení</message>
+	<message key="plugins.citationFormats.abnt.manager.AbntCitationSettings">Nastavení pluginu citačního formátu ABNT</message>
+	<message key="plugins.citationFormats.abnt.manager.settings.description">Nastavení používaná pro tvorbu citací podle normy ABNT.</message>
+	<message key="plugins.citationFormats.abnt.manager.settings.location">Místo</message>
+</locale>

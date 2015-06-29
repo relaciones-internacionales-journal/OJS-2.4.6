@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!--
+  * 000015.xml
+  *
+  * Aquesta traducció al català de l’OJS (versió 2.2.3) fou realitzada per Judith Rodriguez
+  * amb el suport de la revista Athenea Digital i el Departament de Psicologia Social de la
+  * Universitat Autònoma de Barcelona.
+  * La traducció amplia la tasca previament realitzada per a la UOC i l'IEC incorporant les
+  * eines de lectura i l’ajuda.
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Catalan_%28ca_ES%29
+  *
+  * Roles - Subscription Manager 
+  *
+  -->
+
+<topic id="journal/topic/000032" locale="ca_ES" title="Subscription Manager" toc="journal/toc/000003" key="journal.roles.subscriptionManager">
+	<section>
+		<![CDATA[<p>The Subscription Manager manages the journal's Subscriptions and Subscription Types.</p><p>More information on managing subscriptions can be found {help_topic key="journal.managementPages.subscriptions" text="here"}.</p>]]>
+	</section>
+</topic>

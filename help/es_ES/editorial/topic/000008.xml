@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!--
+  * 000008.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * Reviewer's Role Index 
+  *
+  -->
+
+<topic id="editorial/topic/000008" locale="es_ES" title="Rol de revisor/a" toc="editorial/toc/000000" subtoc="editorial/toc/000008" key="editorial.reviewersRole">
+	<section>
+		<![CDATA[<p>El revisor/a recibirá un correo electrónico en el que se le asignará un envío donde se incluyen el título, el resumen, la URL de la revista y un usuario y contraseña que deberá utilizar para acceder a la revista. La revista puede utilizar la opción del revisor, remitiendo a éste último el envío como un archivo adjunto de correo electrónico junto con una invitación de revisión. En este caso, el revisor/a contestará por correo electrónico. Lo que aquí se describe es el principal método de revisión y verificación de que se lleva un registro completo del proceso. Esto implica que el revisor/a deba gestionar la revisión en el sitio web de la revista.</p>]]>	
+	</section>
+</topic> 

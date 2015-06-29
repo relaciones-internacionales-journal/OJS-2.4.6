@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!--
+  * 000039.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * Layout Editor's Role - Submissions
+  *
+  -->
+
+<topic id="editorial/topic/000039" locale="es_ES" title="Envíos" toc="editorial/toc/000013" key="editorial.layoutEditorsRole.submissions">
+	<section>
+		<![CDATA[<p>Al registrarse, el maquetista tendrá acceso a la página del área personal. Esta página incluye un enlace a la página de envíos activos del maquetista, así como otro enlace a los envíos previamente realizados a través del enlace Archivos, y un enlace para ver la tabla de contenidos para próximos números, dependiendo de la disponibilidad.</p><p><em>Envíos activos</em><br />Al hacer clic en el enlace Activo desde la página del área personal, el maquetista será dirigido a la página de envíos activos. Esta lista mostrará aquellos trabajos pendientes de maquetación. El proceso de maquetación se puede iniciar haciendo clic en el título de un envío de la lista.</p><p><em>Archivo</em><br />Al hacer clic en el enlace Archivo desde la página del área personal, el maquetista será dirigido a la página de Archivo. Esta lista incluye todos los trabajos que han completado el proceso de maquetación y que han sido publicados.</p><p><em>Números</em><br />Al hacer clic en el enlace Próximos números desde la página del área personal, el maquetista será dirigido a una lista de próximos números que aún no se han publicado. Esto permite que el maquetista corrija un número en su totalidad.</p>]]>	
+	</section>
+</topic> 

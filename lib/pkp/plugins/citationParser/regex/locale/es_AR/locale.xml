@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the es_AR (Español (Argentina)) locale.
+  -->
+
+<locale name="es_AR" full_name="Español (Argentina)">
+	<message key="plugins.citationParser.regex.displayName">Extractor de Citas con Expresiones Regulares.</message>
+	<message key="plugins.citationParser.regex.description">Extrae campos desde las citas en texto plano, a través del uso de Expresiones Regulares.</message>
+</locale>

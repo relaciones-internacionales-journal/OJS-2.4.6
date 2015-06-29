@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!--
+  * 000023.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * Section Editor's Role Index - Archives
+  *
+  -->
+
+<topic id="editorial/topic/000023" locale="es_ES" title="Archivos" toc="editorial/toc/000005" key="editorial.sectionEditorsRole.submissions.archives">
+	<section>
+		<![CDATA[<p>Los envíos que se encuentran en esta lista pasaron por el proceso editorial, independientemente de si se rechazaron o están ya publicados. La lista proporciona a los editores/as y a los editores/as de sección asignados total acceso al historial de edición del envío (resumen, envío, revisión, edición e historial).</p>]]>	
+	</section>
+</topic> 

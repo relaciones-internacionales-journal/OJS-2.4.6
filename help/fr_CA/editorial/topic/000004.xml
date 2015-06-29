@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000004.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Section Editor's Role Index 
+  *
+  -->
+
+<topic id="editorial/topic/000004" locale="fr_CA" title="Rôle du chef de rubrique" toc="editorial/toc/000000" subtoc="editorial/toc/000004" key="editorial.sectionEditorsRole">
+	<section>
+		<![CDATA[<p>Les chefs de rubriques gèrent habituellement la révision des soumissions et la révision de celles qui sont acceptées. Cependant, dépendamment des politiques de la revue, un chef de rubrique initialement assigné à une soumissions par un rédacteur, peut être appelé à seulement la voir à l’étape de révision, après laquelle, si la soumission est acceptée, le rédacteur la prend en charge (dont le rôle de chef de rubrique). Les rédacteur envoient leurs demandes au chef de rubrique pour voir une soumission passer au processus éditorial.</p>]]>	
+	</section>
+</topic>

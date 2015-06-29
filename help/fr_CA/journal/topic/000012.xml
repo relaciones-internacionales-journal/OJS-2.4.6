@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000012.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Users - Create New User 
+  *
+  -->
+
+<topic id="journal/topic/000012" locale="fr_CA" title="Créer un nouvel utilisateur" toc="journal/toc/000002" key="journal.users.createNewUser">
+	<section>
+	  <![CDATA[<p>Le directeur de revue peut utiliser le lien  &#x00AB;&#x00A0;Création d&#x2019;un nouvel utilisateur&#x00A0;&#x00BB; pour inscrire quelqu&#x2019;un et lui assigner un rôle, allant de directeur de revue à lecteur. L&#x2019;utilisateur peut, en ouvrant une séance dans la revue, compléter et modifier l&#x2019;information de son profil entrée par le directeur de revue.</p>
+		<p><em>Changer un mot de passe. </em>Les utilisateurs peuvent changer leur mot de passe une fois qu&#x2019;ils sont connectés à la revue. Le directeur de revue n&#x2019;a pas accès  à un mot de passe une fois qu&#x2019;il a été assigné. Cependant, le système va générer un nouveau mot de passe et l&#x2019;envoyer par courriel aux utilisateurs qui auront cliqué sur le lien  &#x00AB;&#x00A0;Mot de passe oublié&#x00A0;&#x00BB; sous le cadre d&#x2019;ouverture de session.</p>]]>	
+	</section>
+
+	<section title="Inscrire un utilisateur existant">
+	  <![CDATA[<p>Le directeur de revue peut assigner à un utilisateur existant à un ou plusieurs nouveaux rôles.</p>]]>
+	</section>
+
+	<section title="Synchronisation des utilisateurs">
+	  <![CDATA[<p>La synchronisation de l&#x2019;inscription  inscrira tous les utilisateurs déjà inscrits dans un rôle spécifique dans un journal spécifique, dans le même rôle dans cette revue. Cette fonction permet d&#x2019;avoir une série d&#x2019;utilisateurs (par ex. Évaluateurs) d&#x2019;être synchronisés entre divers revues.</p>]]>
+	</section>
+</topic>

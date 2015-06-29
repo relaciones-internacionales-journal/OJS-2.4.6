@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the es_AR (Español (Argentina)) locale.
+  -->
+ 
+<locale name="es_AR" full_name="Español (Argentina)">
+	<!-- plug-in -->
+	<message key="plugins.metadata.dc11.displayName">Metadatos Dublin Core 1.1</message>
+	<message key="plugins.metadata.dc11.description">Contribuye con los esquemas y adaptadores de aplicación de Dublin Core 1.1</message>
+</locale>

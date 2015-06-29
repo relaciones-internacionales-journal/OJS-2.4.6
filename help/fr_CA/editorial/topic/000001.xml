@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000001.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Editor's Role Index 
+  *
+  -->
+
+<topic id="editorial/topic/000001" locale="fr_CA" title="Rôle du rédacteur " toc="editorial/toc/000000" subtoc="editorial/toc/000001" key="editorial.editorsRole">
+	<section>
+		<![CDATA[<p>Le rédacteur supervise le processus éditorial, en commençant avec l’assignement du chef de rubrique à une soumission. Le rédacteur joue souvent le rôle, dépendamment des politiques du revue, de chef de rubrique en voyant les soumissions acceptées à travers le stage d’édition du processus éditorial.</p>]]>	
+	</section>
+</topic>
+
+

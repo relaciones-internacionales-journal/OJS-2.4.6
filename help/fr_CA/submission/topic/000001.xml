@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000001.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Author Submission Process - Author Guidelines 
+  *
+  -->
+
+<topic id="submission/topic/000001" locale="fr_CA" title="Directives aux auteurs" toc="submission/toc/000000" key="submission.authorGuidelines">
+	<section>
+		<![CDATA[<p>Le journal met un guide à la disposition des auteurs, lequel est trouvé dans «À propos de la revue» et qui couvre les formats bibliographiques et autres standards de formatage utilisés par la revue. Pour les aspects non couverts dans les exemples du guide, les auteurs peuvent aussi vouloir naviguer à travers les articles publiés dans la revue pour voir comment celle-ci traite d’autres catégories de matières.</p>]]>	
+	</section>
+</topic>

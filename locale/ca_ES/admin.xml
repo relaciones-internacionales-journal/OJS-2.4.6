@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!--
+  * locale/ca_ES/admin.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Catalan_%28ca_ES%29
+  *
+  * Localization strings.
+  -->
+
+<locale name="ca_ES" full_name="Català">
+	<message key="admin.hostedJournals">Revistes allotjades</message>
+	<message key="admin.settings.journalRedirect">Redirecció a la revista</message>
+	<message key="admin.settings.options">Opcions</message>
+	<message key="admin.settings.useAlphalist">A llocs web que contenen moltes revistes, mostra a la portada una llista ordenada alfabèticament que permet la navegació ràpida entre revistes.</message>
+	<message key="admin.settings.usePaging">A llocs web que contenen moltes revistes, divideix la llista de revistes en vàries pàgines.</message>
+	<message key="admin.settings.journalRedirectInstructions">Les peticions al lloc web principal són redireccionades a aquesta revista. Això pot ser útil si el lloc web únicament allotja una sola revista, per exemple.</message>
+	<message key="admin.settings.noJournalRedirect">No redireccionis</message>
+	<message key="admin.settings.journalsList">Elements de les revistes</message>
+	<message key="admin.settings.journalsList.description">Trieu els elements que es mostren per a cada revista del lloc web.</message>
+	<message key="admin.settings.journalsList.showThumbnail">Miniatures de les revistes</message>
+	<message key="admin.settings.journalsList.showTitle">Títol de la revista</message>
+	<message key="admin.settings.journalsList.showDescription">Descripció de la revista</message>
+	<message key="admin.settings.defaultMetricDescription">La vostra instal·lació de l'OJS està configurada per registrar més d'una mètrica d'utilització. Les estadístiques d'utilització es mostren en diferents contexts. Hi ha casos on només es fa servir una estadística d'ús, p. ex. per mostrar una llista ordenada dels articles més utilitzats o per ordenar resultats d'una cerca. Seleccioneu una de les mètriques configurades com a opció predeterminada.</message>
+	<message key="admin.languages.primaryLocaleInstructions">Aquesta és la llengua predeterminada per al lloc web i per a qualsevol revista allotjada.</message>
+	<message key="admin.languages.supportedLocalesInstructions">Seleccioneu totes les configuracions regionals que oferirà el lloc web. Les configuracions regionals seleccionades estan disponibles per al seu ús a totes les revistes allotjades al lloc web, i també apareixen a un menú de selecció d'idioma disponible a cada pàgina del lloc web (que es pot desactivar en pàgines concretes de les revistes). Si no se seleccionen diferents configuracions regionals, el menú de selecció de llengua no apareix i la configuració avançada de llengua no està disponible a les revistes.</message>
+	<message key="admin.locale.maybeIncomplete">Les configuracions regionals marcades poden estar incompletes.</message>
+	<message key="admin.languages.confirmUninstall">Esteu segurs que voleu suprimir aquesta configuració regional? Aquesta acció pot afectar les revistes allotjades que fan servir aquesta configuració regional.</message>
+	<message key="admin.languages.installNewLocalesInstructions">Seleccioneu les llengües addicionals que vulgueu utilitzar en aquest sistema. Cal que instal·leu les configuracions regionals abans que les revistes allotjades les puguin fer servir. Consulteu la documentació de l'OJS per obtenir més informació sobre com instal·lar llengües addicionals.</message>
+	<message key="admin.languages.downloadLocales">Descarrega configuracions regionals</message>
+	<message key="admin.languages.downloadFailed">La descàrrega de la configuració regional ha fallat. El missatge d'error a continuació descriu el problema.</message>
+	<message key="admin.languages.localeInstalled">La configuració regional "{$locale}" s'ha instal·lat.</message>
+	<message key="admin.languages.download">Descarrega la configuració regional</message>
+	<message key="admin.languages.download.cannotOpen">No s'ha pogut obrir el descriptor de llengua des del lloc web de PKP.</message>
+	<message key="admin.languages.download.cannotModifyRegistry">No s'ha pogut afegir la nova configuració regional al fitxer de registre de configuracions regionals, normalment «registry/locales.xml».</message>
+	<message key="admin.auth.ojs">Base de dades d'usuaris/àries de l'OJS</message>
+	<message key="admin.auth.enableSyncProfiles">Habilita la sincronització de perfils d'usuari/ària (si ho admet aquest connector d'autenticació). La informació del perfil d'usuari/ària s'actualitza automàticament des de la font remota quan un usuari/ària inicia la sessió, i els canvis al perfil (també els canvis de contrasenya) fets dins de l'OJS s'actualitzen automàticament a la font remota. Si aquesta opció no està habilitada, la informació de perfil de l'OJS es mantindrà separada de la de la font remota.</message>
+	<message key="admin.auth.enableSyncPasswords">Habilita la modificació de contrasenyes d'usuari/ària (si ho admet aquest connector d'autenticació). L'habilitació d'aquesta opció permet que els usuaris/àries modifiquin la seva contrasenya de l'OJS i facin servir la característica «recuperar contrasenya» per restablir la contrasenya oblidada. Si no s'habilita l'opció, aquestes funcions no estan disponibles pels usuaris/àries amb aquesta font d’autenticació.</message>
+	<message key="admin.auth.enableCreateUsers">Habilita la creació d'usuaris/àries (si ho admet aquest connector d'autenticació). Els usuaris/àries creats a l'OJS amb aquesta font d'autenticació s'afegeixen automàticament a la font d’autenticació remota si és que encara no hi són. A més, si aquesta font és la font d'autenticació predeterminada, els comptes de l'OJS creats mitjançant el registre d'usuaris/àries també s'afegeixen a la font d'autenticació remota.</message>
+	<message key="admin.systemVersion">Versió de l'OJS</message>
+	<message key="admin.systemConfiguration">Configuració de l'OJS</message>
+	<message key="admin.systemConfigurationDescription"><![CDATA[Configuració de l'OJS a <tt>config.inc.php</tt>.]]></message>
+	<message key="admin.journals.journalSettings">Configuració de la revista</message>
+	<message key="admin.journals.noneCreated">No s'ha creat cap revista.</message>
+	<message key="admin.journals.confirmDelete">Esteu segurs que voleu suprimir aquesta revista i els seus continguts de manera permanent?</message>
+	<message key="admin.journals.create">Crea una revista</message>
+	<message key="admin.journals.createInstructions">Rebreu automàticament el rol de director d'aquesta revista. Després de crear una revista nova, entreu-hi com a administradors per continuar amb la configuració i l'alta d'usuaris/àries.</message>
+	<message key="admin.journals.urlWillBe">Introduïu una paraula curta o un acrònim que identifiqui la revista. L'URL de la revista és {$sampleUrl}</message>
+	<message key="admin.journals.form.titleRequired">Cal que introduïu un títol.</message>
+	<message key="admin.journals.form.pathRequired">Cal que introduïu una ruta.</message>
+	<message key="admin.journals.form.pathAlphaNumeric">La ruta només pot contenir caràcters alfanumèrics, guions baixos i guionets i ha de començar i acabar amb un caràcter alfanumèric.</message>
+	<message key="admin.journals.form.pathExists">Ja hi ha una altra revista que utilitza la ruta seleccionada.</message>
+	<message key="admin.journals.enableJournalInstructions">Permet que aquesta revista aparegui públicament al lloc web</message>
+	<message key="admin.journals.journalDescription">Descripció de la revista</message>
+	<message key="admin.journal.pathImportInstructions">Ruta existent a la revista o ruta que s'ha de crear (p. ex., «ojs»).</message>
+	<message key="admin.journals.importSubscriptions">Importa subscripcions</message>
+	<message key="admin.journals.transcode">Metadades de l'article Transcode de l’ISO8859-1</message>
+	<message key="admin.journals.redirect">Genera el codi per mapar els URL OJS 1 amb els URL OJS 2</message>
+	<message key="admin.journals.form.importPathRequired">Cal que introduïu una ruta d'importació.</message>
+	<message key="admin.journals.importErrors">La importació no s'ha completat.</message>
+	<message key="admin.mergeUsers">Fusiona els usuaris/àries</message>
+	<message key="admin.mergeUsers.mergeUser">Fusiona l’usuari/ària</message>
+	<message key="admin.mergeUsers.into.description">Seleccioneu l’usuari/ària al qual vulgueu assignar les autories, encàrrecs d’edició, etc. de l’usuari/ària anterior.</message>
+	<message key="admin.mergeUsers.from.description">Seleccioneu un usuari/ària (o més d'un) que vulgueu fusionar amb un altre compte d’usuari/ària (p. ex, un usuari/ària que en tingui dos de diferents). Amb aquesta acció se suprimeix el primer compte (o el primer grup de comptes) que hàgiu seleccionat i les seves trameses, assignacions, etc., s’assignen al segon compte.</message>
+	<message key="admin.mergeUsers.allUsers">Tots els usuaris/àries donats d’alta</message>
+	<message key="admin.mergeUsers.confirm">Esteu segurs que voleu fusionar el comptes seleccionats {$oldAccountCount} amb el compte amb nom d’usuari/ària «{$newUsername}»? Si ho feu, els comptes amb el nom d’usuari/ària {$oldAccountCount} ja no existiran. Aquesta acció no es pot desfer.</message>
+	<message key="admin.mergerUsers.noneEnrolled">No s’ha donat d’alta cap usuari/ària.</message>
+
+	<!-- Categories -->
+	<message key="admin.categories">Categories</message>
+	<message key="admin.categories.enable.description">L'Administrador/a del lloc web pot definir un grup de categories per ajudar a organitzar grups grans de revistes. Els Administradors/ores de revistes poden triar diverses d'aquestes categories per a cada revista, i els lectors/ores poden navegar a través de col·leccions de revistes agrupades per categoria.</message>
+	<message key="admin.categories.disableCategories">No organitzis revistes en categories.</message>
+	<message key="admin.categories.enableCategories">Permet que els Administradors/ores de revistes les organitzin en categories.</message>
+	<message key="admin.categories.editTitle">Edita una categoria</message>
+	<message key="admin.categories.createTitle">Crea una categoria</message>
+	<message key="admin.categories.create">Crea una nova categoria</message>
+	<message key="admin.categories.noneCreated">No s'ha creat cap categoria.</message>
+	<message key="admin.categories.confirmDelete">Esteu segurs que voleu suprimir aquesta categoria?</message>
+	<message key="admin.categories.name">Nom</message>
+	<message key="admin.categories.nameRequired">Cal que introduïu un nom de categoria.</message>
+	
+	<message key="admin.copyAccessLogFileTool.usage">Copia els fitxers d'accés d'Apache al directori de fitxers actual dins del directori UsageStatsPlugin i filtra les entrades relacionades amb la instal·lació. Cal que l'executi un usuari/ària que tingui permisos de lectura per als fitxers de registre d'Apache.
+
+Aquesta eina només copia fitxers que no són encara dins dels directoris d'estadístiques d'utilització de càrrega de fitxers (preparació, en procés, arxivat, rebutjat).
+
+Utilització: {$scriptName} ruta/al/registre/apache/fitxer.log
+Utilització (processament dels fitxers dins d'un directori): {$scriptName} ruta/apache/al/directori
+Utilització (processament dels fitxers dins d'un directori amb cadena d'inici): {$scriptName} ruta/apache/al/directori cadena_inici
+	</message>
+	<message key="admin.copyAccessLogFileTool.error.creatingFolder">Error: no s'ha pogut crear el directori temporal {$tmpDir}</message>
+	<message key="admin.copyAccessLogFileTool.error.acessingFile">Error: El fitxer {$filePath} no existeix o no s'hi pot accedir.</message>
+	<message key="admin.copyAccessLogFileTool.error.copyingFile">Error: no s'ha pogut copiar l'arxiu de {$filePath} a {$tmpFilePath}</message>
+	<message key="admin.copyAccessLogFileTool.error.deletingFile">Error: no s'ha pogut esborrar l'arxiu {$tmpFilePath}</message>
+	<message key="admin.copyAccessLogFileTool.warning.fileAlreadyExists">Avís: el fitxer {$filePath} ja es troba dins del directori d'estadístiques d'utilització.</message>
+	<message key="admin.copyAccessLogFileTool.success">Èxit: {$filePath} a {$destinationPath}</message>
+	<message key="admin.settings.security">Seguretat</message>
+	<message key="admin.settings.security.plugins">Impedir que els/les gestors/es de la revista puguin instalar, actualitzar o suprimir mòduls.</message>
+	<message key="admin.languages.reloadDefaultEmailTemplates">Recarregar les plantilles de correu per defecte</message>
+</locale>

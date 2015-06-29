@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/thesis/locale/ru_RU/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the ru_RU (Russian) locale.
+  * With updates from Pavel Pisklakov (revising translation). 
+  -->
+ 
+<locale name="ru_RU" full_name="Russian">
+
+	<!-- Управление «Авторефераты диссертаций» -->
+	<message key="plugins.generic.thesis.manager.settings">Настройки</message>
+	<message key="plugins.generic.thesis.manager.theses">Авторефераты диссертаций</message>
+	<message key="plugins.generic.thesis.manager.status">Статус</message>
+	<message key="plugins.generic.thesis.manager.status.inactive">Неактивен</message>
+	<message key="plugins.generic.thesis.manager.status.active">Активен</message>
+	<message key="plugins.generic.thesis.manager.degree">Степень</message>
+	<message key="plugins.generic.thesis.manager.degree.masters">Магистр</message>
+	<message key="plugins.generic.thesis.manager.degree.doctorate">Доктор</message>
+	<message key="plugins.generic.thesis.manager.dateApproved">Дата защиты</message>
+	<message key="plugins.generic.thesis.manager.studentName">Имя соискателя</message>
+	<message key="plugins.generic.thesis.manager.title">Название</message>
+	<message key="plugins.generic.thesis.manager.keyword">Ключевые слова</message>
+	<message key="plugins.generic.thesis.manager.studentFirstName">Имя</message>
+	<message key="plugins.generic.thesis.manager.studentLastName">Фамилия</message>
+	<message key="plugins.generic.thesis.manager.studentEmail">E-mail</message>
+	<message key="plugins.generic.thesis.manager.department">Подразделение</message>
+	<message key="plugins.generic.thesis.manager.university">Университет</message>
+	<message key="plugins.generic.thesis.manager.abstract">Автореферат</message>
+	<message key="plugins.generic.thesis.manager.confirmDelete">Вы уверены, что хотите навсегда удалить этот автореферат диссертации?</message>
+	<message key="plugins.generic.thesis.manager.noneCreated">Нет авторефератов диссертаций</message>
+	<message key="plugins.generic.thesis.manager.noResults">Нет результатов</message>
+	<message key="plugins.generic.thesis.manager.create">Создать новый автореферат диссертации</message>
+	<message key="plugins.generic.thesis.manager.createTitle">Создать</message>
+	<message key="plugins.generic.thesis.manager.edit">Редактировать автореферат диссертации</message>
+	<message key="plugins.generic.thesis.manager.editTitle">Редактировать</message>
+	<message key="plugins.generic.thesis.manager.form.status">Статус</message>
+	<message key="plugins.generic.thesis.manager.form.statusRequired">Статус автореферата диссертации обязателен.</message>
+	<message key="plugins.generic.thesis.manager.form.statusValid">Пожалуйста, выберите правильный статус.</message>
+	<message key="plugins.generic.thesis.manager.form.degree">Степень</message>
+	<message key="plugins.generic.thesis.manager.form.degreeRequired">Степень, на соискание которой представлена диссертация, обязательна.</message>
+	<message key="plugins.generic.thesis.manager.form.degreeValid">Пожалуйста, выберите правильную степень.</message>
+	<message key="plugins.generic.thesis.manager.form.degreeName">Название степени</message>
+	<message key="plugins.generic.thesis.manager.form.degreeNameRequired">Название степени, на соискание которой представлена диссертация, обязательно.</message>
+	<message key="plugins.generic.thesis.manager.form.degreeNameInstructions">Название степени (например, магистр искусств, доктор философии и т.д.).</message>
+	<message key="plugins.generic.thesis.manager.form.department">Подразделение</message>
+	<message key="plugins.generic.thesis.manager.form.departmentRequired">Название подразделения (диссертационного совета) обязательно.</message>
+	<message key="plugins.generic.thesis.manager.form.university">Университет</message>
+	<message key="plugins.generic.thesis.manager.form.universityRequired">Название университета обязательно.</message>
+	<message key="plugins.generic.thesis.manager.form.dateApproved">Дата защиты</message>
+	<message key="plugins.generic.thesis.manager.form.dateApprovedRequired">Дата защиты обязательна.</message>
+	<message key="plugins.generic.thesis.manager.form.dateApprovedValid">Пожалуйста, введите правильную дату защиты.</message>
+	<message key="plugins.generic.thesis.manager.form.title">Название</message>
+	<message key="plugins.generic.thesis.manager.form.titleRequired">Название диссертации обязательно.</message>
+	<message key="plugins.generic.thesis.manager.form.comment">Комментарии</message>
+	<message key="plugins.generic.thesis.manager.form.author">Автор и руководитель</message>
+	<message key="plugins.generic.thesis.manager.form.studentEmailPublish">Опубликовать адрес электронной почты соискателя</message>
+	<message key="plugins.generic.thesis.manager.form.studentEmailPublishInstructions">Если включен, то адрес электронной почты соискателя будет опубликован вместе с авторефератом диссертации.</message>
+	<message key="plugins.generic.thesis.manager.form.studentBio">Биография соискателя</message>
+	<message key="plugins.generic.thesis.manager.form.studentBioInstructions"><![CDATA[Вставляйте пустые строки для разделения абзацев. Ставьте текст между &lt;b&gt;&lt;/b&gt;, &lt;i&gt;&lt;/i&gt;, и &lt;u&gt;&lt;/u&gt; для отображения его жирным начертанием, курсивом или с подчеркиванием соответственно (напр. это &lt;i&gt;слово&lt;/i&gt; будет показано курсивом.)]]></message>
+	<message key="plugins.generic.thesis.manager.form.indexing">Индексирование</message>
+	<message key="plugins.generic.thesis.manager.form.indexingDescription">Выберите ключевые слова, которые наилучшим образом описывают содержание диссертации, в соответствии с категориями, используемыми этим журналом. Разделяйте слова точками с запятой (слово1; слово2; слово3).</message>
+	<message key="plugins.generic.thesis.manager.form.discipline">Академическая дисциплина и  разделы дисциплины</message>
+	<message key="plugins.generic.thesis.manager.form.subjectClass">Тематическая классификация</message>
+	<message key="plugins.generic.thesis.manager.form.keyword">Ключевые слова</message>
+	<message key="plugins.generic.thesis.manager.form.coverageGeo">Гео-пространственный охват</message>
+	<message key="plugins.generic.thesis.manager.form.coverageChron">Хронологический или исторический охват</message>
+	<message key="plugins.generic.thesis.manager.form.coverageSample">Характеристики исследуемого образца</message>
+	<message key="plugins.generic.thesis.manager.form.method">Тип, метод или подход</message>
+	<message key="plugins.generic.thesis.manager.form.language">Язык</message>
+	<message key="plugins.generic.thesis.manager.form.languageInstructions"><![CDATA[Английский=en; Французский=fr; Spanish=es; Русский=ru. <a href="http://www.loc.gov/standards/iso639-2/langcodes.html" target="_blank">Другие коды</a>.]]></message>
+	<message key="plugins.generic.thesis.manager.form.urlPrefixIncluded">Пожалуйста, укажите полный адрес (URL), включая http:// или ftp:// в начале.</message>
+	<message key="plugins.generic.thesis.manager.form.abstract">Автореферат</message>
+	<message key="plugins.generic.thesis.manager.form.abstractRequired">Автореферат диссертации обязателен.</message>
+	<message key="plugins.generic.thesis.manager.form.abstractInstructions"><![CDATA[Вставляйте пустые строки для разделения абзацев. Ставьте текст между &lt;b&gt;&lt;/b&gt;, &lt;i&gt;&lt;/i&gt;, и &lt;u&gt;&lt;/u&gt; для отображения его жирным начертанием, курсивом или с подчеркиванием соответственно (напр. это &lt;i&gt;слово&lt;/i&gt; будет показано курсивом.)]]></message>
+	<message key="plugins.generic.thesis.manager.form.url">Адрес (URL)</message>
+	<message key="plugins.generic.thesis.manager.form.urlInstructions">Если диссертация опубликована в интернете. Добавьте http://, ftp:// в начале адреса (например, http://www.sfu.ca/path/to/thesis.pdf).</message>
+	<message key="plugins.generic.thesis.manager.form.studentFirstName">Имя соискателя</message>
+	<message key="plugins.generic.thesis.manager.form.studentFirstNameRequired">Имя соискателя обязательно.</message>
+	<message key="plugins.generic.thesis.manager.form.studentLastName">Фамилия соискателя</message>
+	<message key="plugins.generic.thesis.manager.form.studentLastNameRequired">Фамилия соискателя обязательна.</message>
+	<message key="plugins.generic.thesis.manager.form.studentMiddleName">Отчество соискателя</message>
+	<message key="plugins.generic.thesis.manager.form.studentEmail">E-mail соискателя</message>
+	<message key="plugins.generic.thesis.manager.form.studentEmailValid">Правильный адрес электронной почты соискателя обязателен.</message>
+	<message key="plugins.generic.thesis.manager.form.supervisorFirstName">Имя руководителя</message>
+	<message key="plugins.generic.thesis.manager.form.supervisorFirstNameRequired">Имя руководителя обязательно.</message>
+	<message key="plugins.generic.thesis.manager.form.supervisorLastName">Фамилия руководителя</message>
+	<message key="plugins.generic.thesis.manager.form.supervisorLastNameRequired">Фамилия руководителя обязательна.</message>
+	<message key="plugins.generic.thesis.manager.form.supervisorMiddleName">Отчество руководителя</message>
+	<message key="plugins.generic.thesis.manager.form.supervisorEmail">E-mail руководителя</message>
+	<message key="plugins.generic.thesis.manager.form.supervisorEmailValid">Правильный адрес электронной почты руководителя обязателен.</message>
+	<message key="plugins.generic.thesis.manager.form.saveAndCreateAnother">Сохранить и создать новый</message>
+
+	<!-- Управление настройками «Авторефераты диссертаций» -->
+	<message key="plugins.generic.thesis.settings.description"><![CDATA[<p>При включенном плагине соискатели могут отправлять их авторефераты диссертаций в журнал, используя форму онлайн-отправки.</p><p>После отправки руководитель диссертации автоматически получает уведомление по электронной почте об отправке автореферата с просьбой подтвердить правильность отправленной информации, отправив ответ контактному лицу по авторефератам диссертаций, указанному ниже (это лицо должно быть управляющим журналом). Как только такое подтверждение будет получено, контактное лицо по авторефератам диссертаций может активировать отправку автореферата диссертации, отредактировав соответствующую запись и изменив статус с «Неактивен» на «Активен». После этого автореферат диссертации становится доступен читателям журнала.</p>]]></message>
+	<message key="plugins.generic.thesis.settings.thesisContact">Контактное лицо по авторефератам диссертаций</message>
+	<message key="plugins.generic.thesis.settings.submissions">Отправленные материалы</message>
+	<message key="plugins.generic.thesis.settings.uploadCode">Использовать следующий код загрузки для материалов, отправляемых подразделением:</message>
+	<message key="plugins.generic.thesis.settings.uploadCodeDescription">Код загрузки (последовательность букв или цифр) может быть передана подразделениям, которые хотят загружать авторефераты диссертаций от имени соискателей. Когда код загрузки вводится подразделением, автоматическое письмо руководителю этой диссертации для проверки отправляться не будет.</message>
+	<message key="plugins.generic.thesis.settings.uploadCodeRequired">Пожалуйста, введите код загрузки.</message>
+	<message key="plugins.generic.thesis.settings.publishing">Публикация</message>
+	<message key="plugins.generic.thesis.settings.order">Порядок публикации</message>
+	<message key="plugins.generic.thesis.settings.order.submissionDateAsc">Дата отправки (по возрастанию)</message>
+	<message key="plugins.generic.thesis.settings.order.submissionDateDesc">Дата отправки (по убыванию)</message>
+	<message key="plugins.generic.thesis.settings.order.approvalDateAsc">Дата защиты (по возрастанию)</message>
+	<message key="plugins.generic.thesis.settings.order.approvalDateDesc">Дата защиты (по убыванию)</message>
+	<message key="plugins.generic.thesis.settings.order.lastNameAsc">Фамилия соискателя (по возрастанию)</message>
+	<message key="plugins.generic.thesis.settings.order.lastNameDesc">Фамилия соискателя (по убыванию)</message>
+	<message key="plugins.generic.thesis.settings.order.titleAsc">Название (по возрастанию)</message>
+	<message key="plugins.generic.thesis.settings.order.titleDesc">Название (по убыванию)</message>
+	<message key="plugins.generic.thesis.settings.thesisIntroduction">Введение</message>
+	<message key="plugins.generic.thesis.settings.thesisIntroductionDescription">Введение будет отображаться в верхней части страницы «Авторефераты диссертаций».</message>
+	<message key="plugins.generic.thesis.settings.thesisNameRequired">Необходимо ввести имя контактного лица по авторефератам диссертаций.</message>
+	<message key="plugins.generic.thesis.settings.thesisEmailRequired">Необходимо ввести адрес электронной почты контактного лица по авторефератам диссертаций.</message>
+	<message key="plugins.generic.thesis.settings.thesisOrderValid">Пожалуйста, выберите правильный порядок публикации.</message>
+
+	<!-- «Авторефераты диссертаций» -->
+	<message key="plugins.generic.thesis.displayName">Плагин «Авторефераты диссертаций»</message>
+	<message key="plugins.generic.thesis.description">Этот плагин позволяет получать и публиковать авторефераты диссертаций.</message>
+	<message key="plugins.generic.thesis.searchLink">Поиск по авторефератам диссертаций</message>
+	<message key="plugins.generic.thesis.theses">Авторефераты диссертаций</message>
+	<message key="plugins.generic.thesis.headerLink"><![CDATA[Авторефераты&nbsp;диссертаций]]></message>
+	<message key="plugins.generic.thesis.submit">Отправить автореферат диссертации</message>
+	<message key="plugins.generic.thesis.submitLink">Отправить автореферат диссертации</message>
+	<message key="plugins.generic.thesis.submitButton">Отправить</message>
+	<message key="plugins.generic.thesis.view">Автореферат</message>
+	<message key="plugins.generic.thesis.viewTitle">Автореферат</message>
+	<message key="plugins.generic.thesis.noneExist">Нет авторефератов диссертаций</message>
+	<message key="plugins.generic.thesis.noResults">Нет результатов</message>
+	<message key="plugins.generic.thesis.title">Название</message>
+	<message key="plugins.generic.thesis.keyword">Ключевые слова</message>
+	<message key="plugins.generic.thesis.studentFirstName">Имя</message>
+	<message key="plugins.generic.thesis.studentLastName">Фамилия</message>
+	<message key="plugins.generic.thesis.department">Подразделение</message>
+	<message key="plugins.generic.thesis.university">Университет</message>
+	<message key="plugins.generic.thesis.abstract">Автореферат</message>
+	<message key="plugins.generic.thesis.fullText">Полный текст (внешний сайт)</message>
+	<message key="plugins.generic.thesis.studentFullNameLast">{$lastName}, {$firstName}{$space}{$middleName}</message>
+	<message key="plugins.generic.thesis.studentFullName">{$firstName} {$middleName}{$space}{$lastName}</message>
+	<message key="plugins.generic.thesis.supervisorFullNameLast">{$lastName}, {$firstName}{$space}{$middleName}</message>
+	<message key="plugins.generic.thesis.supervisorFullName">{$firstName} {$middleName}{$space}{$lastName}</message>
+	<message key="plugins.generic.thesis.form.introduction">После отправки этой формы руководитель диссертации получит электронной почтой сообщение с просьбой подтвердить правильность отправленной информации. Как только такое подтверждение будет получено журналом, автореферат диссертации будет опубликован на сайте.</message>
+	<message key="plugins.generic.thesis.form.status">Статус</message>
+	<message key="plugins.generic.thesis.form.statusValid">Пожалуйста, выберите правильный статус.</message>
+	<message key="plugins.generic.thesis.form.degree">Степень</message>
+	<message key="plugins.generic.thesis.form.degreeRequired">Степень, на соискание которой представлена диссертация, обязательна.</message>
+	<message key="plugins.generic.thesis.form.degreeValid">Пожалуйста, выберите правильную степень.</message>
+	<message key="plugins.generic.thesis.form.degreeName">Название степени</message>
+	<message key="plugins.generic.thesis.form.degreeNameRequired">Название степени, на соискание которой представлена диссертация, обязательно.</message>
+	<message key="plugins.generic.thesis.form.degreeNameInstructions">Название степени (например, магистр искусств, доктор философии и т.д.).</message>
+	<message key="plugins.generic.thesis.form.department">Подразделение</message>
+	<message key="plugins.generic.thesis.form.departmentRequired">Название подразделения (диссертационного совета) обязательно.</message>
+	<message key="plugins.generic.thesis.form.university">Университет</message>
+	<message key="plugins.generic.thesis.form.universityRequired">Название университета обязательно.</message>
+	<message key="plugins.generic.thesis.form.dateApproved">Дата защиты</message>
+	<message key="plugins.generic.thesis.form.dateApprovedRequired">Дата защиты обязательна.</message>
+	<message key="plugins.generic.thesis.form.dateApprovedValid">Пожалуйста, введите правильную дату защиты.</message>
+	<message key="plugins.generic.thesis.form.title">Название</message>
+	<message key="plugins.generic.thesis.form.titleRequired">Название диссертации обязательно.</message>
+	<message key="plugins.generic.thesis.form.comment">Комментарии</message>
+	<message key="plugins.generic.thesis.form.commentInstructions">Пожалуйста, введите необходимые дополнительные комментарии, соответствующие вашему материалу.</message>
+	<message key="plugins.generic.thesis.form.author">Автор и руководитель</message>
+	<message key="plugins.generic.thesis.form.studentBio">Биография соискателя</message>
+	<message key="plugins.generic.thesis.form.studentBioInstructions"><![CDATA[Вставляйте пустые строки для разделения абзацев. Ставьте текст между &lt;b&gt;&lt;/b&gt;, &lt;i&gt;&lt;/i&gt;, и &lt;u&gt;&lt;/u&gt; для отображения его жирным начертанием, курсивом или с подчеркиванием соответственно (напр. это &lt;i&gt;слово&lt;/i&gt; будет показано курсивом.)]]></message>
+	<message key="plugins.generic.thesis.form.indexing">Индексирование</message>
+	<message key="plugins.generic.thesis.form.indexingDescription">Выберите ключевые слова, которые наилучшим образом описывают содержание диссертации, в соответствии с категориями, используемыми этим журналом. Разделяйте слова точками с запятой (слово1; слово2; слово3).</message>
+	<message key="plugins.generic.thesis.form.discipline">Академическая дисциплина и  разделы дисциплины</message>
+	<message key="plugins.generic.thesis.form.subjectClass">Тематическая классификация</message>
+	<message key="plugins.generic.thesis.form.keyword">Ключевые слова</message>
+	<message key="plugins.generic.thesis.form.coverageGeo">Гео-пространственный охват</message>
+	<message key="plugins.generic.thesis.form.coverageChron">Хронологический или исторический охват</message>
+	<message key="plugins.generic.thesis.form.coverageSample">Характеристики исследуемого образца</message>
+	<message key="plugins.generic.thesis.form.method">Тип, метод или подход</message>
+	<message key="plugins.generic.thesis.form.language">Язык</message>
+	<message key="plugins.generic.thesis.form.languageInstructions"><![CDATA[Английский=en; Французский=fr; Spanish=es; Русский=ru. <a href="http://www.loc.gov/standards/iso639-2/langcodes.html" target="_blank">Другие коды</a>.]]></message>
+	<message key="plugins.generic.thesis.form.urlPrefixIncluded">Пожалуйста, укажите полный адрес (URL), включая http:// или ftp:// в начале.</message>
+	<message key="plugins.generic.thesis.form.abstract">Автореферат</message>
+	<message key="plugins.generic.thesis.form.abstractRequired">Автореферат диссертации обязателен.</message>
+	<message key="plugins.generic.thesis.form.abstractInstructions"><![CDATA[Вставляйте пустые строки для разделения абзацев. Ставьте текст между &lt;b&gt;&lt;/b&gt;, &lt;i&gt;&lt;/i&gt;, и &lt;u&gt;&lt;/u&gt; для отображения его жирным начертанием, курсивом или с подчеркиванием соответственно (напр. это &lt;i&gt;слово&lt;/i&gt; будет показано курсивом.)]]></message>
+	<message key="plugins.generic.thesis.form.url">Адрес (URL)</message>
+	<message key="plugins.generic.thesis.form.urlInstructions">Если диссертация опубликована в интернете. Добавьте http://, ftp:// в начале адреса (например, http://www.sfu.ca/path/to/thesis.pdf).</message>
+	<message key="plugins.generic.thesis.form.uploadCode">Код загрузки</message>
+	<message key="plugins.generic.thesis.form.uploadCodeInstructions">Используется только подразделением.</message>
+	<message key="plugins.generic.thesis.form.studentFirstName">Имя соискателя</message>
+	<message key="plugins.generic.thesis.form.studentFirstNameRequired">Имя соискателя обязательно.</message>
+	<message key="plugins.generic.thesis.form.studentLastName">Фамилия соискателя</message>
+	<message key="plugins.generic.thesis.form.studentLastNameRequired">Фамилия соискателя обязательна.</message>
+	<message key="plugins.generic.thesis.form.studentMiddleName">Отчество соискателя</message>
+	<message key="plugins.generic.thesis.form.studentEmail">E-mail соискателя</message>
+	<message key="plugins.generic.thesis.form.studentEmailValid">Правильный адрес электронной почты соискателя обязателен.</message>
+	<message key="plugins.generic.thesis.form.studentEmailPublish">Опубликовать адрес электронной почты соискателя</message>
+	<message key="plugins.generic.thesis.form.studentEmailPublishInstructions">Если включен, то адрес электронной почты соискателя будет опубликован вместе с авторефератом диссертации.</message>
+	<message key="plugins.generic.thesis.form.supervisorFirstName">Имя руководителя</message>
+	<message key="plugins.generic.thesis.form.supervisorFirstNameRequired">Имя руководителя обязательно.</message>
+	<message key="plugins.generic.thesis.form.supervisorLastName">Фамилия руководителя</message>
+	<message key="plugins.generic.thesis.form.supervisorLastNameRequired">Фамилия руководителя обязательна.</message>
+	<message key="plugins.generic.thesis.form.supervisorMiddleName">Отчество руководителя</message>
+	<message key="plugins.generic.thesis.form.supervisorEmail">E-mail руководителя</message>
+	<message key="plugins.generic.thesis.form.supervisorEmailValid">Правильный адрес электронной почты руководителя обязателен.</message>
+
+</locale>

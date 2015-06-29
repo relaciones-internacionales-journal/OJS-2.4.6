@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!--
+  * 000002.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * User Interface - About
+  *
+  -->
+
+<topic id="user/topic/000002" locale="es_ES" title="Acerca de" toc="user/toc/000000" key="user.about">
+	<section>
+		<![CDATA[<p>En la sección Acerca de la revista, se presentan las políticas, los procedimientos y otro material relevante, con la intención de hacer lo más transparente posible su funcionamiento. Este es el material al que normalmente se hace referencia como páginas preliminares en las revistas. Aquí es donde los posibles autores/as de la revista pueden conocer el ámbito y el enfoque de la revista, su política de evaluación por pares y cómo dar formato y preparar un envío, así como la forma de enviar un artículo a la revista.</p>]]>	
+	</section>
+</topic> 

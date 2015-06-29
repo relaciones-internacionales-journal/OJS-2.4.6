@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!--
+  * plugins/pubIds/doi/locale/es_ES/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  *
+  * DOI plugin localization strings
+  -->
+
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.pubIds.doi.displayName">Identificador de objeto digital (DOI)</message>
+	<message key="plugins.pubIds.doi.description">Este módulo activa la asignación del Identificador de objetos digitales a números, artículos, galeradas y archivos complementarios en OJS.</message>
+
+	<!-- settings form -->
+	<message key="plugins.pubIds.doi.manager.settings.doiSettings">Configuración del módulo DOI</message>
+	<message key="plugins.pubIds.doi.manager.settings.description">Configure el módulo DOI para poder gestionar y usar los Identificadores de objetos digitales en OJS:</message>
+	
+	<message key="plugins.pubIds.doi.manager.settings.doiObjects">Contenido de la revista</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiObjectsRequired">Seleccione los elementos DOI que desea asignar.</message>
+	<message key="plugins.pubIds.doi.manager.settings.explainDois">Seleccione los objetos publicados a los que desea asignar el Identificador de objetos digitales (DOI):</message>
+	<message key="plugins.pubIds.doi.manager.settings.explainCrossRefDois"><![CDATA[<strong>NOTA:</strong> Seleccione los artículos durante el uso de los DOI de <a href="http://www.crossref.org" target="_new">CrossRef</a>. El artículo se considera como trabajo, es decir, una entidad de contenido intelectual y artístico. Por consiguiente, el artículo es el objeto publicado sobre el que se basa la exportación y el registro DOI de CrossRef.]]></message>
+	<message key="plugins.pubIds.doi.manager.settings.enableIssueDoi">Números</message>
+	<message key="plugins.pubIds.doi.manager.settings.enableArticleDoi">Artículos</message>
+	<message key="plugins.pubIds.doi.manager.settings.enableGalleyDoi">Galeradas</message>
+	<message key="plugins.pubIds.doi.manager.settings.enableSuppFileDoi">Archivos complementarios</message>
+	
+	<message key="plugins.pubIds.doi.manager.settings.doiPrefix">Prefijo del DOI</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiPrefixDescription"><![CDATA[El prefijo del DOI se asigna a través de las agencias de registro (p. ej. <a href="http://www.crossref.org" target="_new">CrossRef</a>) y su formato es 10.xxxx (p. ej. 10.1234):]]></message>
+	<message key="plugins.pubIds.doi.manager.settings.doiPrefixPattern">El prefijo del DOI es obligatorio y debe respetar la forma 10.xxxx.</message>
+
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffix">Sufijo del DOI</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixDescription">El sufijo del DOI puede tener cualquier forma, pero debe ser único para cada elemento publicado con un mismo prefijo.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern">Usar el patrón introducido a continuación para generar los sufijos del DOI. Usar %j para las iniciales de la revista, %v para el número del volumen, %i para el número de expedición, %Y para el año, %a para el Id. del artículo de OJS, %g para el Id. de las galeradas de OJS, %s para el Id. de los archivos complementarios de OJS, %p para el número de página y %x para el "Identificador personalizado" (debe habilitarse en el paso 4.3 de la Instalación).</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.issues">para números</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.articles">para artículos</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.galleys">para galeradas</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.suppFiles">para archivos complementarios.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.example">Por ejemplo, vol%viss%ipp%p sirve para el DOI 10.1234/vol3iss2pp230</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixDefault">Usar modelos predeterminados.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixDefault.description"><![CDATA[%j.v%vi%i para números<br />%j.v%vi%i.%a para artículos<br />%j.v%vi%i.%a.g%g para galeradas <br />%j.v%vi%i.%a.s%s para archivos complementarios.]]></message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixCustomIdentifier">Introduzca un único sufijo del DOI para cada elemento publicado. Encontrará un campo de entrada del DOI adicional en cada página de metadatos de elementos.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiIssueSuffixPatternRequired">Introduzca el patrón del sufijo del DOI para números.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiArticleSuffixPatternRequired">Introduzca el patrón del sufijo del DOI para artículos.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiGalleySuffixPatternRequired">Introduzca el patrón del sufijo del DOI para galeradas.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuppFileSuffixPatternRequired">Introduzca el patrón del sufijo del DOI para archivos complementarios.</message>
+	
+	<message key="plugins.pubIds.doi.manager.settings.doiReassign">Asignar los DOI de nuevo</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiReassign.description">Cualquier modificación de la configuración del DOI no afecta a los DOI asignados previamente. Una vez guardada la configuración del DOI, haga clic en este botón para borrar todos los DOI existentes para que la nueva configuración se aplique en los artículos existentes.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiReassign.confirm">¿Está seguro/a de que desea eliminar todos los DOI existentes?</message>	
+
+
+	<!-- metadata form -->
+	<message key="plugins.pubIds.doi.editor.doi">Identificador de objeto digital (DOI)</message>
+	<message key="plugins.pubIds.doi.editor.doiObjectTypeIssue">número</message>
+	<message key="plugins.pubIds.doi.editor.doiObjectTypeArticle">artículo</message>
+	<message key="plugins.pubIds.doi.editor.doiObjectTypeGalley">galerada</message>
+	<message key="plugins.pubIds.doi.editor.doiObjectTypeSuppFile">archivo complementario</message>
+	<message key="plugins.pubIds.doi.editor.doiNotYetGenerated">Podría estar visualizando una vista previa incompleta de los DOI. No se generó un DOI. Se generará automaticamente un único DOI para {$pubObjectType} publicando el número y viendo la página pública {$pubObjectType}.</message>
+	<message key="plugins.pubIds.doi.editor.doiSuffixCustomIdentifierNotUnique">El sufijo del DOI indicado ya ha sido asignado a otro elemento publicado. Introduzca un único sufijo del DOI para cada elemento.</message>
+	<message key="plugins.pubIds.doi.editor.excludePubObject">No asignar DOI a {$pubObjectType}</message>
+	<message key="plugins.pubIds.doi.editor.doiReassign">Reasignar DOI</message>
+	<message key="plugins.pubIds.doi.editor.doiReassign.description">Seleccione este checkbox para quitar el DOI de este {$pubObjectType}.</message>
+	<message key="plugins.pubIds.doi.editor.excludeIssueObjectsDoi.description">Use este botón para excluir los objetos (artículos, galeradas y ficheros complementarios) que están actualmente programados para este número de ser asignados a este DOI. Note que los objetos que sean añadidos o programados más tarde no estarán afectados. Tendrá aún la posibilidad de usar la opción de exclusión del objeto mismo.</message>
+	<message key="plugins.pubIds.doi.editor.clearIssueObjectsDoi">Borrar los DOIs de los objetos del número</message>
+	<message key="plugins.pubIds.doi.editor.clearIssueObjectsDoi.description">Use este botón para borrar los DOIs de todos los objetos  (artículos, galeradas y ficheros complementarios) actualmente programados para este número.</message>
+	<message key="plugins.pubIds.doi.editor.excludeIssueObjectsDoi">Excluir los objetos del número</message>
+</locale>
