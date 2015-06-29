@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/addCssJs/locale/en_US/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.generic.addCssJs.displayName">Add new CSS Stylesheets and/or Javascript libraries</message>
+	<message key="plugins.generic.addCssJs.description">Allows to add external CSS and JS libraries as FontAwesome or Bootstrap to head and/or after pageFooter div. You can also add custom CSS stylesheets or Javascript files uploaded to your server.</message>
+	<message key="plugins.generic.addCssJs.settings">Configuration</message>
+	<message key="plugins.generic.addCssJs.settings.saved">Settings saved for Add new CSS Stylesheets and/or Javascript libraries Plugin</message>
+	<message key="plugins.generic.addCssJs.importantNotice">All this CSS and JS added will be included at the end of the "head" Html tag. They will follow the order inserted in these fields, overwriting previous files. This could lead to some JS or CSS conflicts.</message>
+	<message key="plugins.generic.addCssJs.addCssURL">Add the external CSS Stylesheets URLs</message>
+	<message key="plugins.generic.addCssJs.addCssURLDetails">If more than one URL is added, separate them with commas. Example: To include Font Awesome and Twitter Bootstrap: //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css, https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css</message>
+	<message key="plugins.generic.addCssJs.addJsURL">Add the external JS URLs</message>
+	<message key="plugins.generic.addCssJs.addJsURLDetails">If more than one URL is added, separate them with commas. Example: To include Modernizr y Twitter Bootstrap: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js, http://s.codepen.io/assets/libs/modernizr.js</message>
+	<message key="plugins.generic.addCssJs.addJsURLFooter">Add JS URLs that will be included in the footer</message>
+	<message key="plugins.generic.addCssJs.addJsURLFooterDetails">Add here the JS that will be included in the footer</message>
+	<message key="plugins.generic.addCssJs.installedCss">Currently installed CSS Stylesheets</message>
+	<message key="plugins.generic.addCssJs.installedJs">Currently installed JS</message>
+	<message key="plugins.generic.addCssJs.footerInstalledJs">Currently JS on the after pageFooter div</message>
+</locale>

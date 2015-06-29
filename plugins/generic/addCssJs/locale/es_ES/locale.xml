@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/addCssJs/locale/es_ES/locale.xml
+  *
+  * Copyright (c) 2013-2015 Simon Fraser University Library
+  * Copyright (c) 2003-2015 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
+
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.generic.addCssJs.displayName">Añadir nuevas hojas de estilo CSS o librerias Javascript</message>
+	<message key="plugins.generic.addCssJs.description">Permite añadir hojas de estilo CSS externas tipo Font Awesome y librerias JS externas tipo Bootstrap. También se puede añadir hojas de estilo CSS y librerias Javascript subidas al servidor donde se aloja OJS.</message>
+	<message key="plugins.generic.addCssJs.settings">Configuración</message>
+	<message key="plugins.generic.addCssJs.settings.saved">Opciones guardadas para el módulo Añadir nuevas hojas de estilo CSS o librerias Javascript</message>
+	<message key="plugins.generic.addCssJs.importantNotice">Todas estas hojas de estilo CSS y librerias JS añadidas se insertarán al final de de la etiqueta "head" en el orden insertado, sobreescribiendo archivos anteriores. Si el orden no es correcto, pueden darse algunos fallos de funcionamiento, sobre todo en el caso de las librerias JS.</message>
+	<message key="plugins.generic.addCssJs.addCssURL">Introduzca las URLs de las hojas de estilo CSS externas</message>
+	<message key="plugins.generic.addCssJs.addCssURLDetails">Si introduce varias URL, sepárelas con comas. Ejemplo: Para insertar Font Awesome y Twitter Bootstrap: //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css, https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css</message>
+	<message key="plugins.generic.addCssJs.addJsURL">Introduzca las URLs de las librerias JS externas</message>
+	<message key="plugins.generic.addCssJs.addJsURLDetails">Si introduce varias URL, sepárelas con comas. Ejemplo: Para insertar Modernizr y Twitter Bootstrap: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js, http://s.codepen.io/assets/libs/modernizr.js</message>
+		<message key="plugins.generic.addCssJs.addJsURLFooter">Introduzca las URLs de las librerias JS para incluir en el Footer</message>
+	<message key="plugins.generic.addCssJs.addJsURLFooterDetails">Introduzca las URLs de las librerias JS para incluir en el Footer</message>
+	<message key="plugins.generic.addCssJs.installedCss">Hojas CSS actualmente instaladas</message>
+	<message key="plugins.generic.addCssJs.installedJs">JS actualmente instalados</message>
+	<message key="plugins.generic.addCssJs.footerInstalledJs">JS actualmente instalados después del div pageFooter</message>
+</locale>
