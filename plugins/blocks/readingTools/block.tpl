@@ -13,62 +13,64 @@
 
 <div class="block" id="sidebarRTArticleTools">
 
-	<span class="blockTitle">{translate key="plugins.block.readingTools.articleTools"}</span>
+	<div class="blockTitleModified">{translate key="plugins.block.readingTools.articleTools"}
+	</div>
+	
+	<ul class="sidebar-block-RTools">
 	{if $journalRt->getAbstract() && $galley && $article->getLocalizedAbstract()}
-		<div class="articleToolItem">
-			<img src="{$baseUrl}/plugins/blocks/readingTools/icons/abstract.png" class="articleToolIcon" alt="" /> <a href="{url page="article" op="view" path=$articleId}" target="_parent">{translate key="article.abstract"}</a><br />
-		</div>
+		<li class="articleToolItem">
+			<a href="{url page="article" op="view" path=$articleId}" target="_parent">{translate key="article.abstract"}</a><br />
+		</li>
 	{/if}
 	{if $journalRt->getPrinterFriendly()}
-		<div class="articleToolItem">
-			<img src="{$baseUrl}/plugins/blocks/readingTools/icons/printArticle.png" class="articleToolIcon" alt="" /> <a href="{if !$galley || $galley->isHtmlGalley()}javascript:openRTWindow('{url page="rt" op="printerFriendly" path=$articleId|to_array:$galleyId}');{else}{url page="article" op="download" path=$articleId|to_array:$galleyId}{/if}">{translate key="plugins.block.readingTools.printThisArticle"}</a>
-		</div>
+		<li class="printArticle">
+			<a href="{if !$galley || $galley->isHtmlGalley()}javascript:openRTWindow('{url page="rt" op="printerFriendly" path=$articleId|to_array:$galleyId}');{else}{url page="article" op="download" path=$articleId|to_array:$galleyId}{/if}">{translate key="plugins.block.readingTools.printThisArticle"}</a>
+		</li>
 	{/if}
 	{if $journalRt->getViewMetadata()}
-		<div class="articleToolItem">
-			<img src="{$baseUrl}/plugins/blocks/readingTools/icons/metadata.png" class="articleToolIcon" alt=""/> <a href="javascript:openRTWindow('{url page="rt" op="metadata" path=$articleId|to_array:$galleyId}');">{translate key="rt.viewMetadata"}</a><br />
-		</div>
+		<li class="metadata">
+			<a href="javascript:openRTWindow('{url page="rt" op="metadata" path=$articleId|to_array:$galleyId}');">{translate key="rt.viewMetadata"}</a><br />
+		</li>
 	{/if}
 	{if $journalRt->getCaptureCite()}
-		<div class="articleToolItem">
-			<img src="{$baseUrl}/plugins/blocks/readingTools/icons/citeArticle.png" class="articleToolIcon" alt=""/> <a href="javascript:openRTWindow('{url page="rt" op="captureCite" path=$articleId|to_array:$galleyId}');">{translate key="rt.captureCite"}</a><br />
-		</div>
+		<li class="citeArticle">
+			<a href="javascript:openRTWindow('{url page="rt" op="captureCite" path=$articleId|to_array:$galleyId}');">{translate key="rt.captureCite"}</a><br />
+		</li>
 	{/if}
 	{if $journalRt->getSupplementaryFiles() && is_a($article, 'PublishedArticle') && $article->getSuppFiles()}
-		<div class="articleToolItem">
-			<img src="{$baseUrl}/plugins/blocks/readingTools/icons/suppFiles.png" class="articleToolIcon" alt=""/> <a href="javascript:openRTWindow('{url page="rt" op="suppFiles" path=$articleId|to_array:$galleyId}');">{translate key="rt.suppFiles"}</a><br />
-		</div>
+		<li class="suppFiles">
+			<a href="javascript:openRTWindow('{url page="rt" op="suppFiles" path=$articleId|to_array:$galleyId}');">{translate key="rt.suppFiles"}</a><br />
+		</li>
 	{/if}
 	{if $journalRt->getFindingReferences()}
-		<div class="articleToolItem">
-			<img src="{$baseUrl}/plugins/blocks/readingTools/icons/findingReferences.png" class="articleToolIcon" alt=""/> <a href="javascript:openRTWindow('{url page="rt" op="findingReferences" path=$article->getId()|to_array:$galleyId}');">{translate key="rt.findingReferences"}</a>
-		</div>
+		<li class="findingReferences">
+			<a href="javascript:openRTWindow('{url page="rt" op="findingReferences" path=$article->getId()|to_array:$galleyId}');">{translate key="rt.findingReferences"}</a>
+		</li>
 	{/if}
 	{if $journalRt->getViewReviewPolicy()}
-		<div class="articleToolItem">
-			<img src="{$baseUrl}/plugins/blocks/readingTools/icons/editorialPolicies.png" class="articleToolIcon" alt=""/> <a href="{url page="about" op="editorialPolicies" anchor="peerReviewProcess"}" target="_parent">{translate key="rt.reviewPolicy"}</a>
-		</div>
+		<li class="editorialPolicies">
+			<a href="{url page="about" op="editorialPolicies" anchor="peerReviewProcess"}" target="_parent">{translate key="rt.reviewPolicy"}</a>
+		</li>
 	{/if}
 	{if $journalRt->getEmailOthers()}
-		<div class="articleToolItem">
-			<img src="{$baseUrl}/plugins/blocks/readingTools/icons/emailArticle.png" class="articleToolIcon" alt=""/>
+		<li class="emailArticle">	
 			{if $isUserLoggedIn}<a href="javascript:openRTWindow('{url page="rt" op="emailColleague" path=$articleId|to_array:$galleyId}');">{translate key="plugins.block.readingTools.emailThisArticle"}</a>
 			{else}{translate key="plugins.block.readingTools.emailThisArticle"} <span style="font-size: 0.8em">({translate key="plugins.block.readingTools.loginRequired"})</span>{/if}
-		</div>
+		</li>
 	{/if}
 	{if $journalRt->getEmailAuthor()}
-		<div class="articleToolItem">
-			<img src="{$baseUrl}/plugins/blocks/readingTools/icons/emailArticle.png" class="articleToolIcon" alt=""/>
+		<li class="emailArticle">
 			{if $isUserLoggedIn}<a href="javascript:openRTWindow('{url page="rt" op="emailAuthor" path=$articleId|to_array:$galleyId}');">{translate key="rt.emailAuthor"}</a>
 			{else}{translate key="rt.emailAuthor"} <span style="font-size: 0.8em">({translate key="plugins.block.readingTools.loginRequired"})</span>{/if}
-		</div>
+		</li>
 	{/if}
 	{if $enableComments}
-		<div class="articleToolItem">
-			<img src="{$baseUrl}/plugins/blocks/readingTools/icons/postComment.png" class="articleToolIcon" alt=""/>
+		<li class="postComment">
 			{if $postingLoginRequired}{translate key="plugins.block.readingTools.postComment"} <span style="font-size: 0.8em">({translate key="plugins.block.readingTools.loginRequired"})</span>
 			{else}<a href="{url page="comment" op="add" path=$article->getId()|to_array:$galleyId}">{translate key="plugins.block.readingTools.postComment"}</a>{/if}
-		</div>
+		</li>
 	{/if}
 </div>
 {/if}
+
+{* MODIFICADO OJS V.2.4.6 / 06-2015 *}

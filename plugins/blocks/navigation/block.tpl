@@ -10,7 +10,7 @@
  *}
 {if !$currentJournal || $currentJournal->getSetting('publishingMode') != $smarty.const.PUBLISHING_MODE_NONE}
 <div class="block" id="sidebarNavigation">
-	<span class="blockTitle">{translate key="plugins.block.navigation.journalContent"}</span>
+	{**<span class="blockTitleModified">{translate key="plugins.block.navigation.journalContent"}</span>
 
 	<form id="simpleSearchForm" method="post" action="{url page="search" op="search"}">
 		<table id="simpleSearchInput">
@@ -41,19 +41,21 @@
 	</form>
 
 	<br />
-
+	*}
 	{if $currentJournal}
-	<span class="blockSubtitle">{translate key="navigation.browse"}</span>
-	<ul>
-		<li><a href="{url page="issue" op="archive"}">{translate key="navigation.browseByIssue"}</a></li>
-		<li><a href="{url page="search" op="authors"}">{translate key="navigation.browseByAuthor"}</a></li>
-		<li><a href="{url page="search" op="titles"}">{translate key="navigation.browseByTitle"}</a></li>
+	<span class="blockSubtitle"></span>
+	<ul class="sidebar_block_list_search">
+		<li class="sd-bl-search-issue"><a href="{$baseUrl}/issue/archive.html">{translate key="navigation.browseByIssue"}</a></li>
+		<li class="sd-bl-search-author"><a href="{$baseUrl}/search/authors.html">{translate key="navigation.browseByAuthor"}</a></li>
+		<li class="sd-bl-search-title"><a href="{$baseUrl}/search/titles.html">{translate key="navigation.browseByTitle"}</a></li>
+		<li class="sd-bl-search"><a href="{$baseUrl}/search/index.html">{translate key="navigation.advanced.search"}</a></li>
 		{call_hook name="Plugins::Blocks::Navigation::BrowseBy"}
-		{if $hasOtherJournals}
+		{**{if $hasOtherJournals}
 			<li><a href="{url journal="index"}">{translate key="navigation.otherJournals"}</a></li>
 			{if $siteCategoriesEnabled}<li><a href="{url journal="index" page="search" op="categories"}">{translate key="navigation.categories"}</a></li>{/if}
-		{/if}
+		{/if}*}
 	</ul>
 	{/if}
 </div>
 {/if}
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

@@ -21,6 +21,7 @@
 	<message key="plugins.block.readingTools.articleTools">Herramientas del artículo</message>
 	<message key="plugins.block.readingTools.emailThisArticle">Envíe este artículo por correo electrónico</message>
 	<message key="plugins.block.readingTools.loginRequired">Inicie sesión</message>
-	<message key="plugins.block.readingTools.printThisArticle">Imprima este artículo</message>
+	<message key="plugins.block.readingTools.printThisArticle">Imprimir el resumen</message>
 	<message key="plugins.block.readingTools.postComment">Publique un comentario</message>
 </locale>
+<!-- MODIFICADO OJS V.2.4.6 / 06-2015 -->

@@ -78,11 +78,18 @@ class KeywordCloudBlockPlugin extends BlockPlugin {
 		// Now sort the array alphabetically
 		ksort($keywords);
 
+		$page = Request::getRequestedPage();
+		$op = Request::getRequestedOp();
+		
 		$templateMgr->assign_by_ref('cloudKeywords', $keywords);
 		$templateMgr->assign_by_ref('maxOccurs', $maxOccurs);
 
-		return parent::getContents($templateMgr);
+		if (($page == 'index' && $op == 'index') || ($page == 'issue') || ($page == 'search')) {
+			return parent::getContents($templateMgr);
+		} else {
+			return '';
+		}
 	}
 }
-
+/* MODIFICADO OJS V.2.4.6 / 06-2015*/
 ?>

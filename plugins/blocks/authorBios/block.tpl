@@ -9,7 +9,7 @@
  *
  *}
 
-<div class="block" id="sidebarRTAuthorBios">
+<div class="block" id="sidebarRTAuthorBios" style="display:none;">
 	<span class="blockTitle">
 		{if count($article->getAuthors()) gt 1}
 			{translate key="plugins.block.authorBios.aboutTheAuthors"}
@@ -34,3 +34,5 @@
 
 	{/foreach}
 </div>
+
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

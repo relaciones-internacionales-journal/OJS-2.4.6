@@ -14,7 +14,9 @@
 <locale name="en_US" full_name="U.S. English">
 	<message key="plugins.block.relatedItems.displayName">Related Items Block</message>
 	<message key="plugins.block.relatedItems.description">This plugin displays a block containing related items in the reading tools sidebar.</message>
-	<message key="plugins.block.relatedItems.title">Related Items</message>
+	<message key="plugins.block.relatedItems.title">Search related Items</message>
 	<message key="plugins.block.relatedItems.hide">Hide</message>
 	<message key="plugins.block.relatedItems.show">Show all</message>
 </locale>
+
+<!-- MODIFICADO OJS V.2.4.6 / 06-2015-->

@@ -10,6 +10,7 @@
  *}
 
 {if $enableLanguageToggle}
+{* 
 <div class="block" id="sidebarLanguageToggle">
 	<script type="text/javascript">
 		<!--
@@ -31,4 +32,20 @@
 		<input type="submit" class="button" value="{translate key='form.submit'}" onclick="changeLanguage(); return false;" />
 	</form>
 </div>
+{/if} 
+*}
+<div class="block-nav sidebarLanguageToggle" style="display:none;">
+	<div class="blockTitle">{translate key="common.language"}</div>
+	{foreach from=$languageToggleLocales key=langkey item=langname}
+      {if $langkey == $currentLocale}
+         <a class="icon" href="#"><img src="{$baseUrl}/plugins/blocks/languageToggle/locale/{$langkey}/flag.png" alt="{$langname}" title="{$langname}" width="18" height="12" /></a>
+      {else}
+         <a class="icon" href={if $languageToggleNoUser}'{$currentUrl|escape}{if strstr($currentUrl, '?')}&{else}?{/if}setLocale={$langkey}'{else}'{url page="user" op="setLocale" path=$langkey source=$smarty.server.REQUEST_URI escape=false}'{/if}>
+            <img src="{$baseUrl}/plugins/blocks/languageToggle/locale/{$langkey}/flag.png" alt="{$langname}" title="{$langname}" width="18" height="12" />
+         </a>
+      {/if}
+   {/foreach}
+</div>
 {/if}
+
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

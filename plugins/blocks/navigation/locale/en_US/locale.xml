@@ -14,6 +14,7 @@
 <locale name="en_US" full_name="U.S. English">
 	<message key="plugins.block.navigation.displayName">Navigation Block</message>
 	<message key="plugins.block.navigation.description">This plugin provides sidebar navigation links.</message>
-	<message key="plugins.block.navigation.journalContent">Journal Content</message>
+	<message key="plugins.block.navigation.journalContent">Browse</message>
 	<message key="plugins.block.navigation.searchScope">Search Scope</message>
 </locale>
+<!-- * MODIFICADO OJS V.2.4.6 / 06-2015-->

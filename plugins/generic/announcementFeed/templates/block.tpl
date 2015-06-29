@@ -9,13 +9,18 @@
  *
  *}
 <div class="block" id="sidebarAnnouncementFeed">
-	<span class="blockTitle">{translate key="announcement.announcements"}</span>
+	<div class="blockTitleModified">{translate key="announcement.announcements"}</div>
+	{*
 	<a href="{url page="gateway" op="plugin" path="AnnouncementFeedGatewayPlugin"|to_array:"atom"}">
 	<img src="{$baseUrl}/plugins/generic/announcementFeed/templates/images/atom10_logo.gif" alt="{translate key="plugins.generic.announcementfeed.atom.altText"}" border="0" /></a>
 	<br/>
-	<a href="{url page="gateway" op="plugin" path="AnnouncementFeedGatewayPlugin"|to_array:"rss2"}">
-	<img src="{$baseUrl}/plugins/generic/announcementFeed/templates/images/rss20_logo.gif" alt="{translate key="plugins.generic.announcementfeed.rss2.altText"}" border="0" /></a>
+	*}
+	<a href="{url page="gateway" op="plugin" path="AnnouncementFeedGatewayPlugin"|to_array:"rss2"} class="rss" target="_blank">RSS 2.0</a>
+	{*
 	<br/>
 	<a href="{url page="gateway" op="plugin" path="AnnouncementFeedGatewayPlugin"|to_array:"rss"}">
 	<img src="{$baseUrl}/plugins/generic/announcementFeed/templates/images/rss10_logo.gif" alt="{translate key="plugins.generic.announcementfeed.rss1.altText"}" border="0" /></a>
+	*}
 </div>
+
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

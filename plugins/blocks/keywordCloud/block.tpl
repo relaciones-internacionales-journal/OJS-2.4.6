@@ -9,8 +9,12 @@
  *
  *}
 <div class="block" id="sidebarKeywordCloud">
-	<span class="blockTitle">{translate key="plugins.block.keywordCloud.title"}</span>
+	<div class="blockTitleModified">{translate key="plugins.block.keywordCloud.title"}</div>
+	<ul class="sd-bl-keywords">
 	{foreach name=cloud from=$cloudKeywords key=keyword item=count}
-		<a href="{url page="search" subject=$keyword}"><span style="font-size: {math equation="round(((x-1) / y * 100)+75)" x=$count y=$maxOccurs}%;">{$keyword}</span></a>
+		<li><a href="{url page="search" subject=$keyword}">{$keyword}</a></li>
 	{/foreach}
+	</ul>
 </div>
+
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

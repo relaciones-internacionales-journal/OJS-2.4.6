@@ -22,7 +22,7 @@
 
 {include file="common/formErrors.tpl"}
 
-<table width="100%" class="listing">
+<table width="100%" class="data_alt">
 	<tr><td colspan="3" class="headseparator">&nbsp;</td></tr>
 	<tr class="heading" valign="bottom">
 		<td width="20%">{translate key="plugins.generic.staticPages.path"}</td>
@@ -51,12 +51,14 @@
 {/if}
 
 </table>
-<a class="action" href={plugin_url path="add"}>{translate key="plugins.generic.staticPages.addNewPage"}</a>
-
-<p><input type="button" value="{translate key="common.done"}" class="button defaultButton" onclick="document.location.href='{url page="manager" op="plugins" escape=false}'" /></p>
+<a class="action crea-_general" href={plugin_url path="add"}>{translate key="plugins.generic.staticPages.addNewPage"}</a>
+<div id="separator"><hr/></div>
+<p style="text-align:right"><input type="button" value="{translate key="common.done"}" class="btn btn-small" onclick="document.location.href='{url page="manager" op="plugins" escape=false}'" /></p>
 
 </form>
 
 <p><span class="formRequired">{translate key="common.requiredField"}</span></p>
 
 {include file="common/footer.tpl"}
+
+{* MODIFICADO OJS V.2.4.6 / 06-2015*}

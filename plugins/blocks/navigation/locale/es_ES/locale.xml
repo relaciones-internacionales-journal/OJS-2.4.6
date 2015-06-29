@@ -15,6 +15,7 @@
 <locale name="es_ES" full_name="Español (España)">
 	<message key="plugins.block.navigation.displayName">Bloque de navegación</message>
 	<message key="plugins.block.navigation.description">Este módulo proporciona enlaces de navegación en la barra lateral.</message>
-	<message key="plugins.block.navigation.journalContent">Contenido de la revista</message>
+	<message key="plugins.block.navigation.journalContent">Examinar</message>
 	<message key="plugins.block.navigation.searchScope">Ámbito de la búsqueda</message>
 </locale>
+<!-- * MODIFICADO OJS V.2.4.6 / 06-2015-->

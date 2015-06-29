@@ -20,6 +20,7 @@
 	<message key="plugins.block.readingTools.articleTools">Article Tools</message>
 	<message key="plugins.block.readingTools.emailThisArticle">Email this article</message>
 	<message key="plugins.block.readingTools.loginRequired">Login required</message>
-	<message key="plugins.block.readingTools.printThisArticle">Print this article</message>
+	<message key="plugins.block.readingTools.printThisArticle">Print this abstract</message>
 	<message key="plugins.block.readingTools.postComment">Post a Comment</message>
 </locale>
+<!-- MODIFICADO OJS V.2.4.6 / 06-2015 -->

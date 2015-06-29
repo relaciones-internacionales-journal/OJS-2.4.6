@@ -15,7 +15,9 @@
 <locale name="es_ES" full_name="Español (España)">
 	<message key="plugins.block.relatedItems.displayName">Bloque de elementos relacionados</message>
 	<message key="plugins.block.relatedItems.description">Este módulo muestra un bloque con elementos relacionados en la barra lateral de herramientas de lectura.</message>
-	<message key="plugins.block.relatedItems.title">Elementos relacionados</message>
+	<message key="plugins.block.relatedItems.title">Buscar elementos relacionados</message>
 	<message key="plugins.block.relatedItems.hide">Ocultar</message>
 	<message key="plugins.block.relatedItems.show">Mostrar todos</message>
 </locale>
+
+<!-- MODIFICADO OJS V.2.4.6 / 06-2015-->
