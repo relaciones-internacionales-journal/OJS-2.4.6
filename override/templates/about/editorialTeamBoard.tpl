@@ -23,28 +23,29 @@
 	{assign var=groupId value=$group->getId()}
 	{assign var=members value=$teamInfo[$groupId]}
 
-	<ol class="editorialTeam">
+	<ol class="editorial-team">
 		{foreach from=$members item=member}
 			{assign var=user value=$member->getUser()}
 			<div class="member">			
-			    <div class="profilePicContent">
+			    <div class="profile-pic-content">
 					{assign var="profileImage" value=$user->getSetting('profileImage')}
 					{if $profileImage}
 						<img height="{$profileImage.height|escape}" width="{$profileImage.width|escape}" alt="{translate key="user.profile.profileImage"}" src="{$sitePublicFilesDir}/{$profileImage.uploadName}" />
 					{/if}
 				</div>
-				<div class="mainContentBio">       
-					<div class="contentBio">
-						<p><span class="staff_name">{$user->getFullName()|escape}</span>
-								{assign_mailto var=address address=$user->getEmail()|escape}
-								<a href="mailto:{$user->getEmail()|escape:"quotes"}"><img src="http://www.relacionesinternacionales.info/ojs/templates/images/style_dark/mail_12x9.png" alt="{translate key="user.email}" width="12" height="9" class="staff_email" align="bottom"/></a>
-								{*{icon name="mail" url=$address}*}
-							</p>
-							<p>
-							{if $user->getUrl()}<a href="{$user->getUrl()|escape:"quotes"}" target="_new">{$user->getUrl()|escape}</a><br/>{/if}
-							{if $user->getLocalizedAffiliation()}{$user->getLocalizedAffiliation()|escape}{assign var=needsComma value=1}<br />{/if}
-							{if $country}{if $needsComma}, {/if}{$country|escape}{/if}
-							{$user->getLocalizedBiography()|nl2br|strip_unsafe_html}</p>
+				<div class="main-content-bio">       
+					<div class="content-bio">
+						<p><span class="staff-name">{$user->getFullName()|escape}</span>
+							{assign_mailto var=address address=$user->getEmail()|escape}
+							<a href="mailto:{$user->getEmail()|escape:"quotes"}"><i class="fa fa-envelope"></i></a>
+							{*{icon name="mail" url=$address}*}
+						</p>
+						<p>
+						{if $user->getUrl()}<a href="{$user->getUrl()|escape:"quotes"}" target="_new">{$user->getUrl()|escape}</a><br/>{/if}
+						{if $user->getLocalizedAffiliation()}{$user->getLocalizedAffiliation()|escape}{assign var=needsComma value=1}<br />{/if}
+						{if $country}{if $needsComma}, {/if}{$country|escape}{/if}
+						{$user->getLocalizedBiography()|nl2br|strip_unsafe_html}
+						</p>
 					</div>
 				</div>
 			</div>

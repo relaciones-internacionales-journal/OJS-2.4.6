@@ -1,0 +1,4670 @@
+/**
+* custom.css
+*
+* Relaciones Internacionales OJS Journal CSS Customization
+* OJS 2.4.6
+* July 2015
+*/
+
+/**
+* 0. Let's start with a Meyer reset? Nope.
+*/
+
+
+/**
+* 1. Common HTML elements
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #333;
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+    text-align: center;
+}
+
+div {
+    line-height: 140%;
+    text-align: justify;
+}
+
+table {
+    border: 0;
+    border-spacing: 0;
+    font-size: 1.0em;
+}
+
+form {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #444;
+}
+
+a:active {
+    color: #444;
+}
+
+a:visited {
+    color: #444;
+}
+
+a:hover {
+    color: #717171;
+    text-decoration:none;
+    background: none;
+}
+
+a.plain {
+    text-decoration: none;
+}
+
+ul, ol {
+    margin: 0.25em 0 0.75em 0;
+    padding: 0 0 0 2.5em;
+    font-size:12px;
+    list-style-type:square;
+}
+
+li {
+    padding-bottom: 0.5em;
+}
+
+tt {
+    font-size: 1.25em;
+}
+
+em {
+    font-style:italic;
+}
+
+label,
+.label {
+    color: #444;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+p {
+    padding-bottom:1em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+input {
+    cursor:pointer;
+}
+
+select, 
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input { 
+    height: 30px;
+    background-color: #fff;   
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;  
+    color: #555;  
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.checkbox, 
+.radio {
+    margin-left:30px!important;
+
+}
+
+input[type="checkbox"], 
+input[type="radio"]{
+    margin-top:1px!important;
+}
+
+input.button {
+    padding: 3px 10px;
+    background-color: #e8e8e8;
+    font-size: 1em;
+    border: none;
+    color:#000;
+    border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+
+
+input.defaultButton {
+    background-color: #e8e8e8;
+    color: #FBFBF3;
+    font-weight: normal;
+    border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+hr {
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:0;
+    border-top:1px solid #e8e8e8; 
+    border-bottom: 0px; 
+}
+
+.btn {
+    background-color: #e8e8e8;
+    color:#000;
+    font-size: 13px;
+}
+
+.btn-danger {
+    background-color: #D9534F!important;
+}
+
+input.button:hover,
+input.button:focus,
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #B90504;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.nav-pills {
+    background: #e8e8e8 none repeat scroll 0% 0%;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;  
+}
+
+.nav-pills li{
+    margin:0!important;
+    padding-bottom: 0px;  
+}
+
+.nav-pills > li.active,
+.nav-pills > li.active > a {
+    background-color: #B90504!important;
+}
+
+.nav-pills > li > a:focus, 
+.nav-pills > li > a:hover,
+.nav-pills > li.active > a:hover {
+    text-decoration: none;
+    background-color: #000;
+    border-radius: 0px;
+}
+
+td.table-results-pagination,
+.page-pagination {
+    padding:10px;
+    background:#e8e8e8; 
+    font-weight:bold; 
+    font-size:12px;
+    border-right:20px #e8e8e8 solid;
+}
+
+td.table-results-pagination-pages,
+.page-pagination-pages {
+    background:#e8e8e8; 
+    font-weight:bold;
+}
+
+.page-pagination-pages {
+    display: inline-block;
+}
+
+.alert.alert-block {
+    float: left;
+    background: #990100; 
+    border:#444 1px;
+    text-shadow:none;
+}
+
+.alert.alert-danger h4 {
+    padding-left:22px;
+    color:#ccc; 
+    text-transform:uppercase;
+}
+
+.alert.alert-block p:first-of-type:before {
+    content: "\f071";
+    font-family: FontAwesome;
+    float: left;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 32px;    
+    color: #ccc;
+}
+
+.alert.alert-danger p, 
+.alert.alert-danger > ul.plain > li a {
+    color:#f6f6f6;
+}
+
+.alert.alert-danger > ul.plain > li a:hover {
+    color: #ccc;
+}
+
+.back-to-top {
+    position: fixed;
+    width: 25px;
+    height: 23px;
+    right: 20px;
+    bottom: 15px;
+}
+
+.back-to-top a {
+    text-indent: -9999px;
+    display: block;
+}
+
+.back-to-top:before {
+    position:absolute;
+    content: "\f102"; 
+    font-family: FontAwesome;   
+    font-size:36px; 
+    font-weight: bold;
+    color:#292929!important;
+}
+
+.back-to-top:hover:before { 
+    color:#ccc!important;  
+    transition: all 0.5s ease-in; 
+}
+
+.accept-general:before,
+.add-user:before,
+.assign-general:before,
+.ban:before,
+.common-preview:before,
+.copiar-general:before,
+.crear-general:before,
+.delete:before,
+.descargar-general:before,
+.document:before,
+.editar-general:before,
+.folder-general:before,
+.merge-flash:before,
+.notify-general:before,
+.puzzle-general:before,
+.question-general:before,
+.reset:before,
+.search-general:before,
+.settings-cog:before,
+.turn-on:before,
+.turn-off:before,
+.update-refresh:before {
+    font-family: FontAwesome; 
+    padding-right: 10px;
+    font-weight: normal; 
+    font-size: 1.25em;
+    color: #333;
+}
+
+.accept-general:before {
+    content:"\f00c";
+}
+
+.add-user:before {
+    content:"\f234";
+}
+
+.assign-general:before {
+    content: "\f0a4";
+}
+
+.ban:before {
+    content:"\f05e";
+}
+
+.common-preview:before {
+    content:"\f06e";
+}
+
+.copiar-general:before {
+    content:"\f0c5";
+}
+
+.crear-general:before {
+    content:"\f067";
+}
+
+.delete:before {
+    content:"\f1f8";
+}
+
+.descargar-general:before {
+    content:"\f019";
+}
+
+.document:before {
+    content:"\f15b";
+}
+
+.editar-general:before {
+    content:"\f044";
+}
+
+.folder-general:before {
+    content:"\f07b";
+}
+
+.merge-flash:before {
+    content:"\f0e7";
+}
+
+.notify-general:before {
+    content:"\f0a1";
+}
+
+.puzzle-general:before {
+    content:"\f12e";
+}
+
+.question-general:before {  
+    content:"\f059";
+}
+
+.reset:before {
+    content:"\f1b8";
+}
+
+.search-general:before {
+    content:"\f002";
+}
+
+.settings-cog:before {
+    content:"\f013";
+}
+
+.turn-on:before {
+    content:"\f1e6";
+}
+
+.turn-off:before {
+    content:"\f011";
+}
+
+.update-refresh:before {
+    content:"\f021";
+}
+
+/**
+* Pages subtitles styles / arrow-down-box style
+*/
+
+.arrow-down-box {
+    position: relative;
+    width:50%;
+    margin:20px 0px 35px 0px;
+    padding:10px;
+    line-height:18px;
+    background-color:#e8e8e8;
+}
+
+.arrow-down-box:after {
+    position: absolute;
+    top: 100%;
+    content: " ";
+    height: 0;
+    width: 0;
+    border: solid transparent;
+    pointer-events: none;
+}
+
+.arrow-down-box:after {
+    left: 45%;
+    margin-left: 0px;
+    border-color: rgba(59, 59, 59, 0);
+    border-top-color: #e8e8e8;
+    border-width: 15px;
+}
+
+.arrow-down-box h3{
+    margin:0px!important;
+    padding:0!important;
+    font-weight:bold!important; 
+    font-size:12px!important; 
+    letter-spacing: 0.1em; 
+    text-transform: uppercase;
+    line-height:18px!important;
+}
+
+/**
+* 2. Container and Header Elements
+*/
+
+#container {
+    width:100% !important;
+    margin: 0px auto;
+    line-height: 125%;
+    text-align: center;
+    background-color:#f6f6f6;
+}
+
+#header {
+    display:inline-block;
+    width:100%;
+    height: 80px;
+    margin-top:0px;
+    padding: 0px 10px;
+    background: #1a1a1a; 
+    transition: all 0s ease;
+}
+
+#header.sticky {
+    position: fixed; 
+    top:0px;
+    right:0px;
+    width:90px;   
+    z-index: 9999;
+    text-align: left;
+    padding-left: 20px;background: #1a1a1a; 
+    transition: all 1.1s ease;
+}
+
+#header.sticky:hover {    
+    max-width:100%;
+    width:100%;
+    padding: 0px 10px;
+    transition:  1.1s ease;
+}
+
+#header-container {
+    width: 920px;
+    margin: 10px auto;
+    background-color: #1a1a1a;
+}
+
+.header-title {
+    width:52%;
+    float:left;
+    padding: 10px 0px 10px 70px;
+    background: #1a1a1a url("../templates/images/style-light/icons-light.png") no-repeat;
+    background-position: -10px -162px;
+    text-align: left;
+}
+
+#header h1 {
+    font-family: 'Crimson Text', serif;
+    font-size:27px;
+    text-transform:uppercase;
+    padding-left:0;
+    padding-top:7px;
+}
+
+#header h1 a {
+    color:#ffffff;
+}
+
+/**
+* 2.1. User Menu TOP
+*/
+.user-menu {
+    width:195px;
+    float:left;
+    margin-top:23px;
+    margin-left:10px;
+    margin-right:4px;
+    background-color:  #1a1a1a;
+    text-align:right;
+}
+
+.user-menu ul li {
+    display:inline; 
+    padding:10px;
+    font-family:'Roboto Condensed',Arial,Helvetica,sans-serif;
+    font-size:12px;
+    font-weight: 700;  
+    color:#ccc; 
+    background-color: #1a1a1a;
+}
+
+.user-menu ul li:hover {
+    background-color: #B90504; 
+    cursor:pointer;
+    box-shadow:4px 8px 8px rgba(0,0,0,0.2);
+}
+
+.user-menu ul li a:link, 
+.user_menu ul li a:hover, 
+.user-menu ul li a:active,
+.user-menu ul li a:visited {
+    color: #e8e8e8;
+    text-decoration:none;
+}
+
+/**
+* 2.1.1. User Menu Modal Login
+*/
+
+.user-menu .modal {
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    z-index: 1050;
+    width: 390px;
+    max-height:430px;
+    background-color: #fff;
+}
+
+.user-menu .modal-header{
+    height:70px;
+    margin:20px 20px 0px 20px;
+    padding:0px 25px 0px 52px;
+    background: url("../templates/images/style-light/icons-light.png") no-repeat;
+    background-position: -10px -160px;
+}
+
+.user-menu .modal-header p {
+    padding-left: 20px;
+    font-size:14px;
+    font-weight:bold; 
+    color:#717171;
+    line-height: 1em;
+    text-align: left;     
+}
+
+.user-menu .modal-body {
+    padding:20px;    
+    font-size:12px;
+    font-weight: bold;
+    color:#1a1a1a;
+}
+
+.user-menu .modal-body form table {
+    float: left;
+    width:100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-menu .modal-body form table tr {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.user-menu .modal-body form table td{
+    float: left;
+    width:100%;
+    font-weight: bold;
+    text-align: center;  
+}
+
+.user-menu .modal-body form table td:first-of-type {
+    padding-bottom: 0px;
+}
+
+.user-menu .modal-body form table td input {
+    min-width:200px;
+    font-weight: normal;
+}
+
+.user-menu .modal-body a {
+    color:#1a1a1a;
+}
+
+.user-menu .modal-body a:hover {
+    color:#333;
+}
+
+.user-menu .modal-body .btn {
+    float: left;
+    display: block;
+    width:33%;
+    margin-left: 33%; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.user-menu .modal-body .modal-lost-pass {
+    width:100%;
+    clear:both; 
+    float: left;
+    margin:20px 0px 10px 0px;
+    text-align: center; 
+}
+
+.user-menu .modal-body .modal-lost-pass a:before {
+    padding-right: 5px;
+    content:"\f059";
+    font-family: FontAwesome;
+    font-size: 1.25em;
+    color: #666;
+}
+
+.user-menu .modal-body .modal-close {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.user-menu .modal-body .modal-close p:before {
+    padding-right: 5px;
+    content:"\f00d";
+    font-family: FontAwesome;
+    font-size: 1.25em;
+    color: #666;
+}
+
+/**
+* 2.1.2. User Menu Languages
+*/
+#sidebar-language-toggle {
+    width: 80px;  
+    float:left; 
+    margin-top:26px; 
+    margin-left:15px;
+}
+
+#sidebar-language-toggle .block-title {
+    display:none;
+}
+
+#sidebar-language-toggle a.icon {
+    padding:8px 7px 7px 12px;
+}
+
+#sidebar-language-toggle a.icon:hover {
+    background-color:  #B90504; 
+    box-shadow:4px 8px 8px rgba(0,0,0,0.2); 
+}
+
+#sidebar-language-toggle a.icon img {
+    margin: 0; 
+    padding:0;
+}
+
+/**
+* 2.1.3. Style Switcher
+*/
+#style-switcher {
+    float:right; 
+    width:120px; 
+    height:20px;
+    margin-top:28px;
+    margin-right:0px;
+    color:#f2f2f2;
+}
+
+#style-switcher p {
+    float:left; 
+    font-size:10px;
+    line-height:20px;
+}
+
+.circle-dark {
+    float:left;
+    width: 9px;
+    height: 9px;
+    margin: 6px 10px 0 10px;
+    border-radius: 50%; 
+    background-color:#555;
+    line-height: 2px;
+    text-align: center;
+    color:#555;
+}
+
+.circle-light {
+    float:left;
+    width: 9px;
+    height: 9px;
+    margin-top:6px;
+    border-radius: 50%; 
+    background-color:#fff;
+    line-height: 2px;
+    text-align: center;
+    color:#fff;
+}
+
+.circle-dark:hover,
+.circle-light:hover {
+    box-shadow:0px 0px 2px rgba(255,255,255,1);
+}
+
+.circle-dark a,
+.circle-dark a:hover {
+    color:#555;
+}
+
+.circle-light a,
+.circle-light a:hover {
+    color:#fff;
+}
+
+.circle-dark a i,
+.circle-light a i {
+    font-size:5px;
+}
+
+/**
+* 2.2. General Menu under TOP
+*/
+#menu-principal-container{
+    float:left;
+    width:100%; 
+    background: #f6f6f6;
+}
+
+#menu-principal {
+    width: 920px;	
+    margin: 5px auto;	
+    background-color: #f6f6f6;	
+    border-bottom: none;
+}
+
+#menu-principal ul {
+    float:left; 
+    display:block; 
+    width:65%; 
+    margin-top:12px; 
+    padding:0;
+    text-align:left; 
+}
+
+#menu-principal ul li {
+    display:inline; 
+}
+
+#menu-principal ul li a {
+    padding:8px 10px 8px 10px; 
+    font-family:'Roboto Condensed',Arial,Helvetica,sans-serif;  
+    font-size:16px;  
+    font-weight: 700;  
+    color:#333; 
+    text-transform:uppercase;
+}
+
+#menu-principal ul li  a:hover {
+    background-color: #B90504; 
+    box-shadow:4px 8px 8px rgba(0,0,0,0.2);
+    cursor:pointer; 
+    text-decoration:none; 
+}
+
+#menu-principal ul li a:link {
+    color: #333;
+}
+#menu-principal ul li a:hover, 
+#menu_principal ul li a:active {
+    color: #e8e8e8;
+    text-decoration:none;
+}
+
+/**
+* 2.3. Social under TOP
+*/
+#social-menu {
+    float:right; 
+    display:block; 
+    width:11%; 
+    height:32px;
+    margin-top:7px; 
+    margin-right: 0px;
+    padding:0; 
+    background-color: #e8e8e8;
+}
+
+#social-menu .social-menu-facebook,
+#social-menu .social-menu-twitter {
+    float:right;
+    padding:7px 15px 6px 10px;   
+    position: relative;  
+    color:transparent;
+}
+
+#social-menu .social-menu-facebook:before,
+#social-menu .social-menu-twitter:before {   
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 1.2em;
+    color:#333;
+}
+
+#social-menu .social-menu-facebook:before {
+    content: "\f230"; 
+}
+
+#social-menu .social-menu-twitter:before {   
+    content: "\f099"; 
+}
+
+#social-menu .social-menu-academia {
+    float:right;
+    padding:7px 15px 6px 8px;
+    background: url("../templates/images/style-light/icons-light.png")no-repeat;  
+    background-position: -4px -2px;
+    color:transparent!important;
+}
+
+#social-menu .social-menu-academia:hover {
+    background: url("../templates/images/style-dark/icons-dark.png")no-repeat;
+    background-position: -4px -2px;
+    background-color:  #666; 
+}
+
+#social-menu a:hover {
+    background-color:  #666;  
+    box-shadow:4px 8px 8px rgba(0,0,0,0.2);    
+    cursor:pointer;  
+}
+
+#social-menu .social-menu-twitter:hover:before,
+#social-menu .social-menu-facebook:hover:before {
+    color:#fff;
+}
+
+/**
+* 2.4. Search under TOP
+*/
+#block-search {
+    float:right;  
+    width: 30px;
+    height:32px;
+    margin: 7px 0px 20px 0px;
+    padding:4px 10px 0px 0px;
+    background-color: #1A1A1A;
+    font-size:10px; 
+}
+
+#block-search:hover {
+    background-color: #666;  
+    box-shadow:4px 8px 8px rgba(0,0,0,0.2);    
+    cursor:pointer;
+}
+
+/*BOOTSTRAP CUSTOM BUTTON*/
+.btn-searchcustom {
+    background: none!important;
+    padding: 0px 7px;
+    color: #ccc!important;
+}
+
+.btn-searchcustom:hover,
+.btn-searchcustom:focus,
+.open .dropdown-toggle.btn-searchcustom {
+    color: #fff;
+}
+
+.btn-searchcustom:before { 
+    content: "\f002"; 
+    font-family: FontAwesome; 
+    font-size:1.2em; 
+}
+
+#block-search .dropdown-menu {
+    top:25px;
+    left:-172px; 
+    height:45px;
+    background-color:#333; 
+    border-radius: 0px;
+    border-radius: 0px;
+    font-size: 12px;
+}
+
+#block-search .dropdown-menu .input-group  input#query {
+    margin-left: 7px;
+    background-color:#333; 
+    color:#ccc;
+    border: none;
+}
+
+#block-search .dropdown-menu .input-group .input-group-btn .btn { 
+    padding-top:0px;
+    padding-bottom: 0px;
+    background-color: #333;
+    border-color: #333; 
+    color: #000;  
+}
+
+#block-search .dropdown-menu .input-group .input-group-btn .btn .fa-search {
+    color:#ccc;
+}
+
+#block-search .dropdown-menu>.arrow{
+    border-width:0px;
+}
+
+/**
+* 2.4. Containers no Frontpage
+*/
+#general {
+    width:100%; 
+    float:left; 
+    clear:both;
+    margin-top: 0px; 
+    margin-bottom:0px; 
+    background-color: #f6f6f6;
+}
+
+#sub-container{
+    width: 920px;
+    clear:both;
+    margin: 0px auto;
+    padding:0px;
+    background-color: #f6f6f6;
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+/**
+* 2.5. Breadcrumbs
+*/
+#breadcrumb {
+    width:100%;
+    margin:0px 0px 20px 0px; 
+    padding: 10px;	
+    background: #e8e8e8;	
+    font-size: 0.8em;
+}
+
+#breadcrumb a {	
+    text-decoration: none;
+}
+
+#breadcrumb a.current {
+    font-weight: bold;
+}
+
+/**
+* 2.6. Sidebar
+*/
+#sidebar-phones {
+    display:none;
+}
+
+#sidebar {
+    float: left;
+    width: 22%;
+    height: 100%;
+    font-size: 12px;
+    background-color: #f6f6f6;
+}
+
+#sidebar div.block {
+    margin:0px 0px 30px 0px;
+    padding:0px;
+    background: #f6f6f6;
+}
+
+#sidebar div.block span.block-title {
+    display: block;
+    font-weight:bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#sidebar div.block-title-modified {
+    margin-bottom:10px;
+    padding: 10px;
+    font-weight:bold;
+    color:#333;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: left;
+    background-color:#e8e8e8;	
+}
+
+#sidebar div.block span.block-subtitle {
+    display: block;
+    padding: 0px;
+    color:#333;
+}
+
+/**
+* 2.6.1. Sidebar Blocks
+* Navigation, User, Call 4 Papers, Keyword Cloud, Reading Tools and Related Items blocks
+*/	
+.sidebar-block-list-search { 
+    list-style-type:none; 
+    padding:0px 0px 0px 8px;
+}
+
+.sd-bl-search-issue,
+.sd-bl-search-author,
+.sd-bl-search-title,
+.sd-bl-search,
+li#linkBrowseBySections {
+    padding-left:30px; 
+    margin:5px 0px 5px 0px;
+}
+
+.sd-bl-call4papers,
+.sd-bl-keywords,
+.sd-bl-user,
+.sidebar-block-RTools {
+    padding-left:37px; 
+    margin:5px 0 5px 0;
+    list-style-type:none; 
+}
+
+.sd-bl-search-issue:before,
+.sd-bl-search-author:before,
+.sd-bl-search-title:before,
+.sd-bl-search:before,
+li#linkBrowseBySections:before,
+.sd-bl-call4papers li:before,
+.sd-bl-keywords li:before,
+.sidebar-block-user-home:before,
+.sidebar-block-user-profile:before,
+.sidebar-block-user-change-pass:before,
+.sidebar-block-user-logout:before,
+.sidebar-block-user-logoff:before,
+.sidebar-block-RTools .print-article:before, 
+.sidebar-block-RTools .metadata:before,
+.sidebar-block-RTools .cite-article:before,
+.sidebar-block-RTools .supp-files:before,
+.sidebar-block-RTools .finding-references:before{
+    font-family: FontAwesome; 
+    margin-left: -25px; 
+    padding-right: 12px;
+    color:#333;
+}
+
+.sd-bl-search-issue:before {
+    content:"\f15b";
+}
+
+.sd-bl-search-author:before {
+    content:"\f007";
+}
+
+.sd-bl-search-title:before {
+    content:"\f031";
+}
+
+.sd-bl-search:before,
+.sidebar-block-RTools .finding-references:before {
+    content:"\f002";
+}
+
+li#linkBrowseBySections:before {
+    content:"\f07c";
+}
+
+.sd-bl-call4papers li:before,
+.sidebar-block-RTools .metadata:before {
+    content:"\f05a";
+    font-size: 1.2em;
+}
+
+.sd-bl-keywords li:before { 
+    content:"\f02b";
+    font-size: 1.2em;
+}
+
+.sidebar-block-user-home:before{
+    content:"\f013";
+}
+
+.sidebar-block-user-profile:before{
+    content:"\f234";
+}
+
+.sidebar-block-user-change-pass:before {
+    content: "\f084";
+}
+
+.sidebar-block-user-logout:before {
+    content:"\f011";
+}
+
+.sidebar-block-user-logoff:before {
+    content:"\f011";
+}
+
+.sidebar-block-RTools .print-article:before{
+    content:"\f02f";
+} 
+
+.sidebar-block-RTools .cite-article:before{
+    content:"\f0e6";
+}
+
+.sidebar-block-RTools .supp-files:before{
+    content:"\f0c6";
+}
+
+#sidebar-rtrelated-items table {
+    margin:5px 0px 5px 10px;
+}
+
+#sidebar-rtrelated-items table ul.plain {
+    margin-left:0px;
+}
+
+#sidebar-rtrelated-items a.rtitems {
+    position:relative;
+    color: transparent;
+}
+
+#sidebar-rtrelated-items a.rtitems:before{
+    position: absolute;
+    font-family: FontAwesome; 
+    padding-right: 12px;
+    font-size: 1.2em;
+    color:#333;
+}
+
+#sidebar-rtrelated-items a.rtitems:before {
+    content:"\f00e";
+}
+
+/**
+* 2.7. Right content with sidebar left + tipos 4 it (Issues, articles, about pages etc.)
+*/
+
+#supramain {
+    float: left;
+    width: 74.7%;
+    margin: 0px 0px 10px 30px; 
+    padding: 0px; 
+}
+
+#main {
+    float: left;
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+
+#main h1{
+    width:98%;
+    margin:0px;
+    padding:0px;
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif; 
+    font-weight:bold;
+    font-size:1.7em; 
+    line-height:1.2em; 
+}
+
+#main h2 {
+    width:50%;
+    margin:0px;
+    padding: 10px;
+    background-color:#e8e8e8;
+    color:#333;
+    font-family:'Open Sans',Arial,Helvetica,sans-serif;
+    font-weight:bold;
+    font-size:12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: left;
+    line-height:18px;
+}
+
+#main h3 {
+    margin: 0em 1em 0.5em 0em;
+    padding-top: 0em;
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+    font-size: 1.4em;
+    font-weight: normal;
+    font-style:italic;
+    text-align:center;
+}
+
+.main-arrow-right {
+    position:relative;
+    top:-38px; 
+    left:50%; 
+    margin-bottom:-37px;
+    width: 0px; 
+    height: 0px; 
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;	
+    border-left: 22px solid #e8e8e8;
+}
+
+#content {
+    margin-top: 10px;
+    padding: 0px;
+    border-top: none;
+    font-size: 0.8em;
+}
+
+#content div.content h1,
+#content h2,
+#content h3,
+#content h4,
+#content p {
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+}
+
+#content div.content h1 {
+    text-align:center;
+    font-size:1.5em;
+    line-height:2.2em;
+}
+
+#content h2 { 
+    text-align:center;
+    font-size:2em; 
+    line-height:1.1em;
+}
+
+#content h3 {
+    margin: 0em 1em 0.25em 0em;
+    padding-top: 0.75em;
+    text-align: left;
+    font-size: 1.8em;
+    line-height: 1.35em;
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+#content h4 {
+    margin: 0.75em 1em 0.25em 0em;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+#content h5 {
+    margin: 0em 1em 0.25em 0em;
+    padding-top: 0.75em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#content p { 
+    font-size:12px;
+    line-height:1.5em;
+}
+
+/**
+* 2.8.Footer
+*/
+#footer {
+    float:left;
+    width:100%; 
+    background: #1a1a1a;
+}
+.footer-container {
+    width:920px; 
+    margin:0px auto;
+    padding-top:30px; 
+    padding-bottom:30px;
+}
+
+.footer-about-journal h2 {
+    font-family:'Roboto Condensed',Arial,Helvetica,sans-serif; 
+    font-size:20px; 
+    font-weight:bold; 
+    color: #333; 
+    text-transform: uppercase;
+}
+
+.footer-about-journal p {
+    font-family:'Open Sans',Arial,Helvetica,sans-serif;
+    font-weight:normal;
+    font-size:12px; 
+    color:#ccc; 
+    line-height:1.5em; 
+    text-transform:none;
+}
+
+.footer-logo-uam {
+    height: 59px;	
+    line-height: 22px;	
+    padding: 0px;
+    background: #1a1a1a url("../templates/images/style-light/icons-light.png") no-repeat;  
+    background-position: 40px -301px;
+}
+
+.footer-logo-uam > a {
+    float:right; 
+    margin:15px 0px 0px 0px;
+    padding-right:10px;
+    font-size:56px;
+    letter-spacing:0px;
+    color:transparent!important;
+}
+
+.footer-logo-uam:active, 
+.footer-logo-uam:focus, 
+.footer-logo-uam:hover {
+    background: #1a1a1a url("../templates/images/style-light/icons-light.png") no-repeat;  
+    background-position: 40px -237px;
+    cursor:pointer;
+}
+
+.footer-ojs-tools ul {
+    margin-top:20px;
+    padding:0px; 
+    list-style:none; 
+}
+
+.footer-ojs-tools ul li{
+    display:inline; 
+    padding-right:15px;
+}
+
+.footer-ojs-tools ul li a {
+    font-family:'Roboto Condensed',Arial,Helvetica,sans-serif; 
+    font-size:16px; 
+    font-weight:bold; 
+    color: #333;
+}
+
+#footer .footer-nav {
+    margin-top:20px;
+}
+
+#footer .footer-nav ul {
+    display:inline; 
+    padding:0px;
+    list-style-type:none;
+    font-size:12px; 
+    color:#ccc; 
+    text-align:right;
+}
+
+#footer .footer-nav ul li a {
+    font-family:'Roboto Condensed',Arial,Helvetica,sans-serif; 
+    font-size:16px; 
+    font-weight:bold; 
+    color: #333; 
+    text-transform: uppercase; 
+    padding:7px;
+}
+
+.footer-ojs-tools ul li a:hover,
+#footer .footer-nav ul li a:hover {
+    color:#ccc; 
+    text-decoration:none;
+}
+
+#footer .debugStats {
+    font-size: 0.6em;
+    color: #fff;
+    background-color:#000;
+}
+
+/**
+* 2.9. Additional text styles
+*/
+
+span.disabled, label.disabled {
+    color: #999;
+}
+
+a.action, a.file {
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+
+a.icon {
+    text-decoration: none;
+}
+
+a.icon img {
+    border: 0;
+}
+
+a.icon:hover {
+    background: none;
+}
+
+span.formRequired {
+    color: #333;
+    font-size: 0.9em;
+}
+
+span.help-block{
+    width:50%;
+    margin:0px 0 20px 0;
+    color:#333;
+}
+
+span.heading {
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+
+span.highlight {
+    border-bottom: 1px dotted #000;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+pre {
+    float:left; 
+    font-size: 12px!important;
+    background-color: #F0F0E8;
+    color: #000;
+    font-size: 1.25em;
+}
+
+/**
+* 2.9.1. Table styles
+*/
+
+table.info {
+}
+
+table.info td {
+    padding: 0;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+}
+
+table.listing {
+    float: left;
+    margin-bottom:20px;
+}
+
+table.listing tr.highlight {
+    background: green;
+}
+
+table.listing td {
+    padding: 0.25em 1.5em 0.25em 0.5em; 
+    border:none;
+    font-size:11px;	
+}
+
+table.listing tr.heading td, 
+table.listing td.heading, 
+table.info td.heading {
+    font-size: 0.85em;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 120%;
+    padding: 0.75em 1.5em 1em 0.5em;
+}
+
+table.listing tr.fastTracked {
+    background-color: #ABA;
+}
+
+table.info td.heading {
+    padding-left: 0;
+}
+
+
+table.listing td.nodata, table.info td.nodata {
+    text-align: center;
+    font-style: italic;
+}
+
+table.listing td.headseparator {
+    border-top: none;
+    font-size: 0.1em;
+    line-height: 1%;
+}
+
+table.listing td.endseparator {
+    border-top: none;
+    font-size: 0.25em;
+    line-height: 10%;
+}
+
+table.listing td.separator, 
+table.info td.separator {
+    border-top: 1px solid #444;	
+    font-size: 0.1em;
+    line-height: 1%;
+}
+
+table.listing tr.data td {
+    border:none;
+}
+
+table.listing tr.data td.drag {
+    border:none;
+}
+
+table.data {
+    float:left;
+    background:none; 
+    margin:0px; 
+    padding:0;   
+}
+
+table.data tr {
+    float:left;
+    width:100%;
+    margin:0px 0px 20px 0px;
+    padding:0;
+
+}
+
+table.data td {
+    width:100%;
+    padding:0;
+    vertical-align: top;
+}
+
+table.data td.label {
+    float:left;
+    width:20%;
+    background:none; 
+    margin:0px 0px 20px 0px;
+    text-align:right; 
+    vertical-align: top;
+}
+
+table.data td.label h4 {
+    padding: 10px; 
+    background:#e8e8e8;
+}
+
+table.data td.value {
+    width:30%; 
+    vertical-align: top;
+}
+
+table.data td.separator {
+    border-top: 1px solid #444;	
+    font-size: 0.1em;
+    line-height: 1%;
+}
+
+table.data-profile {
+    float:left;
+    margin:0px; 
+    padding:0;
+    background:none; 
+}
+
+table.data-profile tr {
+    margin:0px 0px 20px 0px;
+    padding:0;
+}
+
+table.data-profile td.label {
+    float:left;
+    width:75%;
+    margin:0px;
+    background:none; 
+    text-align:right; 
+    padding-top:0px;
+    vertical-align: top;
+}
+
+table.data-profile td.value {
+    width:80%;
+    margin:0px 0px 0px 40%;
+    padding:0; 
+    vertical-align: top;
+}
+
+table.data-profile td.separator {
+    border-top: 1px solid #444;	
+    font-size: 0.1em;
+    line-height: 1%;
+}
+
+table.data-alt  {
+    float:left;
+}
+
+
+table.data-alt td {
+    padding-bottom: 0.25em;
+    background:none; 
+}
+
+table.data-alt td.label {
+    padding-right: 1em;
+    vertical-align: top;
+}
+
+table.data-alt td.value {
+    vertical-align: top;
+    padding-bottom: 10px;
+}
+
+table.data-alt td.heading {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/**
+* 2.9.2. Form-specific elements
+*/
+
+span.formError {
+    color: green;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+ul.formErrorList {
+    color: blue;
+}
+
+/**
+* 2.9.3. Other organizational elements
+*/
+
+ul.menu {
+    background-image:none;
+    margin: 0 0 0 12px;
+    padding: 0;
+    text-align:center;
+}
+
+ul.menu li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 100%;
+    position: relative;
+    text-align: center;
+    float: left;
+}
+
+ul.menu li.first {
+    margin: 0;
+    padding: 7px 1em 2px 0;
+    list-style-type: none;
+    font-size: 100%;
+    position: relative;
+    text-align: left;
+
+    float: left;line-height: 12px;
+}
+ul.menu li.second, ul.menu li#register {
+    margin: 0;
+    padding: 7px 1em 2px 1em;
+    list-style-type: none;
+    font-size: 100%;
+    position: relative;
+    text-align: center;
+
+    float: left;line-height: 12px;
+}
+
+ul.menu li.last {
+    margin: 0;
+    padding: 7px 1em 2px 1em;
+    list-style-type: none;
+    font-size: 100%;
+    position: relative;
+    text-align: center;
+    float: left;line-height: 12px;
+}
+
+ul.menu li:hover {
+    border-bottom:#FF9B01 1px solid;
+    color:#9b6f6f;
+
+}
+
+ul.menu li.current {
+    font-weight: bold;color:#9b6f6f;
+}
+
+ul.menu a {
+    font-size: 0.65em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul.steplist {
+    margin: 0;
+    padding: 0;
+    list-style-type: decimal;
+}
+
+ul.steplist li {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    padding-right: 0.5em;
+    display: inline;
+    text-transform: uppercase;
+}
+
+ul.steplist li.current {
+    font-weight: bold;
+}
+
+ul.steplist a {
+    text-decoration: none;
+}
+
+ul.plain {
+    list-style-type:square;    
+    margin-top:15px;
+    margin-left:20px; 
+    clear:both;
+}
+
+ul.plain li {
+    margin-bottom: 7px;
+    font-size:12px;
+    line-height: 1.5em;;
+}
+
+ul.filter {
+    margin: 0;
+    padding: 1.5em 0 1.5em 0;
+    list-style-type: none;
+}
+
+ul.filter li {
+    padding-right: 1.5em;
+    display: inline;
+}
+
+div.separator {
+    width: 100%;
+    float:left;	
+    clear:both;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+    padding: 0;
+    border-bottom: none;
+    font-size: 0.5em;
+    line-height: 25%;	
+}
+
+div.separatorHome1 {
+    width: 100%;
+    margin-top: 43em;
+    margin-bottom: 0.25em;
+    padding: 0;
+    line-height: 25%;
+}
+
+div.separatorHome2 {
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 0.25em;
+    padding: 0;
+    line-height: 25%;
+}
+
+div.progressbar {
+    background-image: url("http://www.relacionesinternacionales.info/ojs/styles/../templates/images/progbg.gif");
+    background-repeat: no-repeat;
+    height: 27px;
+    width: 505px;
+    z-index:1;
+}
+
+ul.bottom {
+    margin: 0;
+    padding-top: 0.5em;
+    padding-right: 5em;
+}
+
+ul.bottom li {
+    margin: 0;
+    padding: 0;
+    padding-right: 1.5em;
+    display: inline;
+}
+
+/**
+* 2.9.4. Some icons
+*/
+
+a.icon:hover {
+    background: none;
+}
+
+#notes {
+    float:left;
+    width:97%;
+    clear:left; 
+    margin:20px 0 20px 0; 
+}
+
+
+/**
+* 3. FRONT-END PAGES STYLES
+*/
+
+/**
+* 3.1 Frontpage 
+*/
+
+.fp-issue-block {
+    width:99%; 
+    float:left; 
+    margin: 10px 0px; 
+    clear:both;
+}
+
+.fp-issue-bignumber {
+    float:left; 
+    margin-top:50px;
+    margin-right:20px; 
+}
+
+.fp-issue-bignumber a {
+    font-size:120px; 
+    font-weight:bold; 
+    line-height:10px; 
+    color:#2b2b2b;
+} 
+
+.fp-issue-bignumber a:hover{
+    text-decoration:none; cursor:text;
+}
+
+.fp-issue-title {
+    width:100%;
+    margin-top:9px;
+    padding:0;
+}
+
+.fp-issue-title a {
+    color:#444;
+}
+
+.fp-issue-title a:hover {
+    color: #222; 
+    text-decoration:none; 
+}
+
+.fp-issue-title h2 {
+    font-size:2em; 
+    font-weight:bold; 
+    line-height:1.1em; 
+    color:#717171; 
+    text-align:left;
+}
+
+.fp-issue-description {
+    float:left; 
+    width:70%;
+}
+
+.fp-issue-meta {
+    float:left; 
+    padding-top:7px;
+}
+
+.fp-issue-meta p {
+    font-size: 9pt; 
+    color:#444;
+}
+
+.fp-issue-meta p a.download {
+    cursor:pointer;
+    color: #444;
+}
+
+.fp-issue-meta p a.download:before {
+    content:"\f019";
+    font-family: FontAwesome;
+    padding-right:5px; 
+}
+
+/**
+* 3.1.1. Frontpage Tabs
+*/
+.fp-tabbed-area {
+    width: 100%; 
+    float:left; 
+    clear:both; 
+}
+
+.nav-tabs {
+    padding-left:0; 
+    padding-bottom:0; 
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.nav-tabs > li {
+    min-width:13%;
+    margin:0px;
+    padding-bottom:0px;
+}
+
+.nav-tabs > li > a { 
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font-size:14px;
+    text-align: center;
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#999;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+    background-color: #e8e8e8;
+    border:none;
+    color: #333;
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus { 
+    background-color: #e8e8e8!important;
+    border: none!important;
+    border-bottom-color: transparent!important;
+    color: #333!important;
+}
+.tab-content{
+    min-height:120px;
+    padding: 20px 14px;
+}
+
+.fp-tabbed-area .toc-article {
+    width:100%;
+    float:left;
+    font-size:12px;
+}
+
+.fp-tabbed-area .toc-article {
+    width:100%;
+    float:left;
+}
+
+.fp-tabbed-area .toc-title {
+    font-size:13px;
+    font-weight:bold;
+    line-height:1.5em;  
+}
+
+.fp-tabbed-area .toc-title em {
+    font-weight: bold;
+}
+
+.fp-tabbed-area .toc-authors {
+    margin-top:7px;
+
+}
+
+.fp-tabbed-area .toc-abstract {
+    float:left;
+    margin-top:12px; 
+    margin-right:20px;
+    line-height:1.5em;
+}
+
+.fp-tabbed-area .toc-galleys {
+    float:left;
+    margin:12px 0px 50px 0px;
+    padding-left:20px;
+    line-height:1.5em;
+}
+
+.fp-tabbed-area .toc-authors:before,
+.fp-tabbed-area .toc-abstract:before,
+.fp-tabbed-area .toc-galleys:before {
+    font-family: FontAwesome;
+    padding-right: 5px;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.fp-tabbed-area .toc-authors:before {    
+    content:"\f040";
+}
+
+.fp-tabbed-area .toc-abstract:before {    
+    content:"\f05a";
+}
+
+.fp-tabbed-area .toc-galleys:before {    
+    content:"\f15b";
+}
+
+/**
+* 3.1.2. Frontpage News
+*/
+
+.fp-sidebar-left {
+    float:left; 
+    width:30%; 
+    margin:40px 20px 20px 0px; 
+    padding-top:0px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.fp-announcements-home {
+    float:left; 
+    width:100%; 
+    margin:0px; 
+    padding-top:0px;
+    border-top: none;
+    font-size:12px;
+}
+
+.fp-announcements-home h3 a,
+.fp-sidebar-left .fp-user-logged h3 {
+    margin:20px 0px; 
+    padding:0px;
+    font-size:22px; 
+    font-weight:bold; 
+    color:#333; 
+}
+
+.fp-announcements-home h3 a:hover {
+    color:#222;
+}
+
+.fp-announcements-home .fp-news-single {
+    float:left;    
+    width:100%; 
+    margin-bottom:20px;
+}
+
+.fp-announcements-home .fp-news-single .details {
+    float:left; 
+    width:100%; 
+    margin-top:10px;
+    font-weight:bold; 
+    color:#222;
+}
+
+.fp-announcements-home .fp-news-single .details span.details_changecolor {
+    color:#333;
+}
+
+.fp-announcements-home .fp-news-single .description {
+    float:left; 
+    width:100%; 
+    font-size:12px; 
+    line-height:1.5em;
+}
+
+.fp-announcements-home .fp-news-single p.more a {
+    font-weight:bold; 
+    color:#2b2b2b;
+}
+
+.fp-announcements-home .fp-news-single p.more a:hover{
+    color:#222;
+}
+
+
+/**
+* 3.1.3. Frontpage Other Issues Carrousel / 4 Carrousel CSS see carrousel.css
+*/
+
+.fp-past-issues-carrousel-container {
+    float:left; 
+    width:67%;
+    margin:40px 0px 20px 0px; 
+    padding-top:15px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.ca-item-main,
+.ca-item-main .ca-more,
+.ca-content-wrapper {
+    background: #f6f6f6;   
+}
+
+.ca-issue-title {
+    background: #e8e8e8;
+}
+
+.ca-content-text {
+    color: #333;
+}
+
+.ca-content ul li a {
+    background-color: #e8e8e8;
+    color:#333;
+    font-size: 12px;
+    font-weight:bold;
+}
+
+.ca-article-title {
+    border-color: #ccc;
+}
+
+.other-issues p {
+    margin:10px 0px; 
+    padding:0px;
+    font-size:22px; 
+    font-weight:bold; 
+    color:#2b2b2b; 
+}
+
+
+/**
+* 3.2. Announcements Page + Announcements elements
+*/
+
+#announcements {
+    width: 100%;
+}
+
+#announcement-list .news-list {
+    float:left;
+    width:100%; 
+    margin-bottom:20px;
+    font-size: 12px;
+}
+
+#announcement-list .news_more {
+    float:left;
+    width:100%;
+    clear: both;
+}
+
+.news-list h4 {
+    font-size:16px!important; 
+    font-weight:bold!important;
+}
+
+.news-list .news-details {
+    float:left; 
+    width:100%; 
+    margin-bottom:10px;
+    font-weight:bold; 
+    color:#999;
+}
+
+.news-list .news_description {
+    float:left; 
+    width:100%; 
+    line-height:1.5em;
+}
+
+.news-list .news_more a {
+    float: left;
+    margin-top: 10px;
+    font-weight:bold; 
+    color:#999;
+}
+
+.news-list .news_more a:hover {
+    font-weight:bold; 
+    color:#aaa;
+}
+
+.news-list .news-details:before,
+.news-list .news_more a:before {
+    content:"\f067";
+    font-family: FontAwesome;
+    font-weight: normal;
+    padding-right: 5px;
+}
+
+.news-list .news-details:before {
+    content:"\f073";    
+}
+
+.news-list .news-more a:before {
+    content:"\f067";
+}
+
+.news-pagination {
+    float:right;
+    margin-top:20px;
+}
+
+.news-pagination p.news-pagination-text {
+    padding:10px;
+    background: #e8e8e8; 
+    font-size:10px; 
+    font-weight:bold;
+}
+
+/**
+* 3.3. About Pages
+*/
+#about-people h3,
+#about-policies h3, 
+#about-submissions h3, 
+#about-other h3 {
+    padding: 7px 0px 7px 10px;
+    font-size: 14px;
+    font-weight:bold; 
+    text-transform:uppercase;
+}
+
+#about-people h3:before,
+#about-policies h3:before, 
+#about-submissions h3:before, 
+#about-other h3:before {
+    padding-right:15px;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-size: 15pt;
+    color: #333;
+}
+
+#about-people h3:before {
+    content:"\f0c0";
+}
+
+#about-policies h3:before {
+    content:"\f05a";
+}
+
+#about-submissions h3:before {
+    content:"\f1d8";
+}
+
+#about-other h3:before {
+    content:"\f067";
+}
+
+/**
+* 3.3.1. Editorial Team About Page
+*/
+
+.editorial-team {
+    margin: 0px;
+    padding: 0px;
+}
+
+.editorial-team .member {
+    float:left; 
+    width:100%;
+    min-height:140px!important; 
+    margin-bottom:20px;
+}
+
+.profile-pic-content {
+    float:left; 
+    width:120px; 
+    padding-top:4px;
+}
+
+.profile-pic-content img { 
+    max-width: 100%;
+    height: auto;   
+    border-radius:5px;
+}
+
+.main-content-bio {
+    float:left; 
+    width:80%; 
+    margin-left:15px;
+    padding-bottom:20px; 
+
+}
+.content-bio {
+    margin-left: 0px; 
+    border: none;   
+    text-align: justify; 
+    border: none;
+}
+
+span.staff-name{
+    font-size:14px; 
+    font-weight:bold;
+}
+
+.content-bio p:first-of-type a i {
+    padding-left:7px;
+    font-size:14px; 
+    font-weight:normal;
+}
+
+/**
+* 3.3.2. Subsmissions About Page
+*/
+#section-policies h4 {
+    margin-bottom:5px; 
+    font-size:12px;
+    font-weight:bold; 
+    letter-spacing: 0.1em; 
+    text-transform: uppercase;  
+    line-height:18px;
+}
+
+#section-policies table.plain {
+    margin-bottom:20px;
+}
+
+#section-policies table.plain td{
+    float:left;
+    width:100%;
+}
+
+#section-policies p.icon-checked,
+#section-policies p.icon-unchecked {
+    padding-left:22px;
+}
+#section-policies p.icon-checked:before {
+    content:"\f00c"; 
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+#section-policies p.icon-unchecked:before {
+    content:"\f00d"; 
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+#peer-review-process ul, 
+#submission-preparation-checklist ol {
+    list-style-type:square; 
+    margin-top:15px;
+    margin-left:20px;   
+}
+
+#online-submissions p a:before {
+    padding: 0px 3px;
+    content:"\f0c1"; 
+    font-family: FontAwesome;
+}
+
+/**
+* 3.3.3. About OJS Page
+*/
+p#aboutThisPublishingSystem{margin:20px 0;}
+
+
+/**
+* 3.4. Issues Archive and Issue pages
+*/
+.issue {
+    float:left;
+    width:100%;
+    margin-bottom:20px;
+    padding:0;}
+
+.issues-archive {
+    font-size:24px; 
+    margin:-20px 0px 20px 0px;
+    height:70px;
+    padding:0; 
+    width:100%;
+}
+
+.issue .issue-cover-image {
+    float: left;
+    width: 150px;	      
+    margin:20px 20px 0px 0px;
+    padding:0;
+}
+
+.issue .issue-cover-image img { 
+    width: 130px; 
+}
+
+.issue-archives-title {
+    float:right;
+    width:75%;
+    text-align: left;
+}
+
+.issue h4 a {
+    font-size:22px; 
+    font-weight:bold;
+    line-height:1.5em;
+}
+
+.issue .issue-cover-description {
+    float:left; 
+    width:70%; 
+    margin-left:10px;
+    font-size:15px;
+}
+
+.year-separator {
+    float:left; 
+    width:100%;
+    height:50px;
+    display:block;
+}
+
+.issues .issues_pagination {
+    float:right;
+    margin:20px 0 20px 0;
+}
+
+.issues-pagination > p.issues-pagination-text{
+    padding:10px;
+    background: #e8e8e8; 
+    font-size:10px; 
+    font-weight:bold;
+}
+
+#main .issue-block {
+    position: relative;
+    float:left;
+    width:100%;
+    height: auto!important; 
+    clear:both; 
+    margin-bottom: 30px;
+    padding:20px 0 20px 20px;
+    line-height:8px;
+    background-color:#e8e8e8;
+}
+
+#main .issue-block:after {
+    position: absolute;
+    top: 100%;
+    content: " ";
+    height: 0;
+    width: 0;
+    border: solid transparent;
+    pointer-events: none;
+}
+
+#main .issue-block:after {
+    left: 45%;
+    margin-left: 0px;
+    border-color: rgba(59, 59, 59, 0);
+    border-top-color: #e8e8e8;
+    border-width: 15px;
+}
+
+#main .issue-block .issue-bignumber {
+    float:left; 
+    margin-top:30px;
+    margin-right:20px;
+}
+
+#main .issue-block .issue-bignumber a {
+    font-size:90px; 
+    font-weight:bold; 
+    line-height:10px; 
+    color:#2b2b2b;
+} 
+
+#main .issue-block .issue-bignumber a:hover {
+    text-decoration:none; 
+    cursor:text;
+}
+
+#main .issue-block .issue-description {
+    float:left; 
+    width:70%;
+}
+
+#main .issue-block .issue-title h2 {
+    width:95%;
+    padding:0;
+    font-size:22px; 
+    font-weight:bold; 
+    line-height:1.4em; 
+    color:#2b2b2b; 
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+#main .issue-block .issue-meta {
+    float:left; 
+    padding-top:7px;
+    padding-bottom:0px;
+    color:#2b2b2b;
+}
+
+#main .issue-block .issue-meta p {
+    font-size: 14px;
+}
+
+#main .issue-section-title {
+    width:98.3%;
+    clear:both;
+    margin:20px 0px 15px 0px;
+    padding:10px;
+    line-height:10px;
+    background-color:#e8e8e8; 
+}
+
+#main .issue-section-title h4 {
+    margin:0px;
+    padding:0px;
+    font-size:12px;
+    font-weight:bold;  
+    letter-spacing: 0.1em; 
+    text-transform: uppercase; 
+    line-height:18px;
+}
+
+#main .toc-article {
+    float:left;
+    width:100%;
+    font-size:12px;
+    margin-bottom: 50px;
+}
+
+#main .toc-title {
+    font-size:13px;
+    font-weight:bold;
+    line-height:1.5em;
+} 
+
+#main .toc-title em {
+    font-weight:bold;
+}
+
+#main .toc-authors {
+    margin-top:7px;
+    line-height:2.5em;}
+
+#main .toc-abstract {
+    float:left;
+    margin-top:12px; 
+    margin-right:20px;
+    line-height:1.5em;  
+}
+
+#main .toc-galleys a {
+    float:left;
+    margin-top:12px;
+    line-height:1.5em;
+}
+
+#main .toc-authors:before,
+#main .toc-abstract:before,
+#main .toc-galleys a:before {
+    padding-right: 5px;
+    font-family: FontAwesome;
+    font-weight: normal; 
+    font-size: 1.25em;
+    color: #333;
+}
+
+#main .toc-authors:before {    
+    content:"\f040";
+}
+
+#main .toc-abstract:before {    
+    content:"\f05a";
+}
+
+#main .toc-galleys a:before {    
+    content:"\f15b";
+}
+
+/**
+* 3.5. Articles Page
+*/
+#content-article {
+    font-size: 12px;
+}
+
+#content-article #article-title {
+    width:100%;
+    margin:0px;
+    position:relative;
+    padding:0px 10px 10px 10px;
+}
+
+#content-article #article-title:after {
+    position: absolute;
+    top: 95%;
+    width: 0px;
+    height: 0px;
+    content: " ";
+    border: solid transparent;
+    pointer-events: none;
+}
+
+#content-article #article-title:after {
+    left: 45%;
+    border-color: rgba(59, 59, 59, 0);
+    border-top-color: #e8e8e8;
+    border-width: 15px; 
+}
+
+#content-article #article-title h2{
+    width:94%; 
+    background:none;
+    font-weight:bold; 
+    font-size:20px; 
+    letter-spacing: 0; 
+    text-align: center;
+    line-height:27px;
+    text-transform: none;
+}
+
+#content-article #article-title h2 em { 
+    font-weight:bold;
+}
+
+#content-article #author-string {
+    float:left;
+    margin-top:20px;
+    margin-bottom: 20px; 
+}
+
+#content-article .author-bio {
+    margin:10px 0px 0px 10px;
+}
+
+#content-article .author-bio:before {
+    float:left;
+    margin-top: -4px;
+    content:"\f040";
+    font-family: FontAwesome;
+    font-weight: normal; 
+    font-size: 1.25em;
+    color: #333;   
+}
+
+#content-article .author-bio p {
+    padding-left: 20px;
+    font-size:12px;
+    font-weight:bold;
+    text-transform: uppercase;
+    line-height:8px;
+}
+
+#content-article .author-bio p.p-author-bio {
+    text-transform:none; 
+    color:#333;
+    line-height:14px;
+}
+
+#content-article #article-abstract {
+    float: left;
+}
+
+#content-article #article-abstract h3,
+#content-article #article-subject h3,
+#content-article #article-full-text h3, 
+#content-article .addthis-container h3 {
+    padding: 10px;
+    background: #e8e8e8;
+    font-style:normal;
+    font-weight:bold;
+    font-size:12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: left;
+    line-height:18px; 
+}
+
+#content-article #article-abstract h3 {
+    width:100%;
+    margin:0px 0px 20px 0px;
+}
+
+#content-article #article-subject h3,
+#content-article #article-full-text h3,
+#content-article .addthis-container h3 {
+    margin:0px;
+}
+
+#content-article #article-abstract h3:before ,
+#content-article #article-subject h3:before,
+#content-article #article-subject ul li:before,
+#content-article #article-full-text h3:before {
+    font-family: FontAwesome; 
+    padding-right: 10px;
+    font-weight: normal; 
+    font-size: 1.25em;
+    color: #333;
+}
+
+#content-article #article-abstract h3:before {
+    content:"\f05a";
+}
+
+#content-article #article-subject h3:before {
+    content:"\f084";
+}
+
+#content-article #article-subject ul li:before {
+    content:"\f02b";
+}
+
+#content-article #article-abstract p {
+    padding:0px 10px;
+}
+
+#content-article #article-full-text h3:before {
+    content:"\f15b";
+}
+
+#content-article #article-subject,
+#content-article #article-full-text,
+#content-article .addthis-container {
+    float:left;
+    width:45%; 
+    margin-top:20px;
+}
+
+#content-article #article-subject {
+    margin-right:10%;
+}
+
+#content-article #article-subject ul {
+    list-style-type:none; 
+    margin-top:-5px;
+    padding-left:3px;   
+}
+
+#content-article #article-subject ul li {
+    margin:0px;
+    padding-left:10px; 
+}
+
+#content-article #article-full-text > div {
+    padding-left:10px;
+}
+
+.addthis_toolbox.addthis-default-style {
+    margin-top:20px;
+    padding-left:10px;
+}
+
+.addthis_toolbox.addthis-default-style a {
+    display: inline-block; 
+    padding-right: 10px; 
+}
+
+.addthis_toolbox.addthis-default-style a:first-of-type {
+    padding-left: 10px;
+}
+
+.addthis_toolbox.addthis-default-style a span{
+    background-image: none; 
+    background-color: transparent!important;
+}
+
+a.addtoemail,
+a.addtofacebook,
+a.addtotwitter {
+    position: relative;
+    color: #333;
+}
+
+a.addtoemail:before,
+a.addtofacebook:before,
+a.addtotwitter:before {
+    position: absolute;
+    font-family: FontAwesome; 
+    font-size:1.5em;
+    color: #333;
+}
+
+a.addtoemail:before{
+    content:"\f0e0"; 
+}
+
+a.addtofacebook:before {
+    content:"\f230"; 
+}
+
+a.addtotwitter:before {
+    content:"\f081"; 
+}
+
+a.addtotuenti,
+a.addtomendeley,
+a.addtociteulike {
+    height:18px; 
+    width:18px;
+    background: url("../templates/images/style-light/icons-light.png")no-repeat;  
+
+}
+
+a.addtotuenti {
+    background-position: -10px -124px;
+}
+
+a.addtomendeley {
+    background-position: -10px -86px;
+}
+
+a.addtociteulike  {
+    background-position: -10px -48px;
+}
+
+#pkp-rt-viewMetadata,
+#pkp-rt-captureCite,
+#pkp-rt-suppFiles,
+#pkp-article-suppFile,
+#pkp-rt-findingReferences {
+    background-color: #f6f6f6;
+}
+
+#pkp-rt-viewMetadata .listing {
+    text-align: left;
+}
+
+h2.rt-info-title {
+    margin-top: 20px!important;
+}
+
+#pkp-rt-captureCite h3 {
+    padding-bottom: 10px;
+}
+
+#pkp-rt-suppFiles h4 {
+    font-weight: bold;
+}
+
+#pkp-rt-findingReferences table.data-alt{
+    margin-top: 20px;
+}
+
+#pkp-rt-captureCite #citation {
+    font-size:13px;
+}
+
+#pkp-rt-viewMetadata #content div.separator:last-of-type,
+#pkp-rt-captureCite .separator:last-of-type,
+#pkp-rt-suppFiles .separator:last-of-type,
+#pkp-article-suppFile #content div.separator:last-of-type,
+#pkp-rt-findingReferences .separator:last-of-type {
+    border-bottom: 1px solid #333;
+}
+
+#pkp-rt-viewMetadata .btn,
+#pkp-rt-captureCite .btn,
+#pkp-rt-suppFiles .btn,
+#pkp-article-suppFile .btn,
+#pkp-rt-findingReferences  #content > .btn:last-of-type {
+    float: right;
+}
+
+
+/**
+* 3.6. Indexes & universities Page
+*/
+
+.logos-indices-page {
+    float:left;
+    width:100%;
+}
+
+.logos-indices-page .indexes-group {
+    float:left; 
+    width: 100%;
+    margin: 5px 0px; 
+    padding: 0px 0px 0px 20px;
+    background-color: #fff;
+}
+
+.logos-indices-page .indexes-group >div {
+    float: left;
+    width: 25%;      
+    text-align: center;      
+}
+
+.universities-ref {
+    float:left; 
+    width:100%;
+    margin-top:20px;
+}
+
+#content .universities-ref h3 {
+    margin:0px;
+    padding:10px; 
+    background:#e8e8e8; 
+    font-size:13px;
+    font-weight:bold; 
+    text-transform:uppercase;
+}
+
+.universities-ref .col-1 {
+    width:45%; 
+    float:left; 
+    margin-top:20px;
+    margin-right:20px;   
+}
+
+.universities-ref .col-2  {
+    width:45%; 
+    float:right;
+    margin-top:20px;
+}
+
+.universities-ref .worldrefs {
+    font-weight: bold;
+    border-bottom: 1px solid #444;
+}
+
+.universities-ref .worldrefs:before {
+    content:"\f041";
+    font-family:FontAwesome;
+    font-weight: normal;
+    padding-right: 5px;
+}
+
+/**
+* 3.7. Search Pages
+*/
+
+/**
+* 3.7.1. Authors Search and Singe Author Details Pages
+*/
+
+.search-results-list-authors {
+    width:100%;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+}
+
+.search-results-list-authors li {
+    display:inline;
+    font-size:17px;
+}
+
+#authors-list {
+    font-size:12px;
+    color:#333;
+}
+
+#authors-list h3{
+    font-size:32px;
+    font-weight:bold; 
+    color:#1a1a1a;
+}
+
+#authors-list a {
+    font-weight:bold;
+}
+
+#authors-list p.single-author {
+    margin:0px;
+}
+
+#authors-list p.pagination {
+    float:right; 
+    margin-top:20px;
+    padding:10px; 
+    background:#e8e8e8; 
+}
+
+#author-details-single-author h3 {
+    font-weight:bold;
+}
+
+#author-details-single-author h3:before {
+    font-family: FontAwesome; 
+    padding-right:10px; 
+    color:#333;
+}
+
+#author-details-single-author h3:before {
+    content:"\f19d";
+}
+
+#author-details-single-author .author-affiliation{
+    padding-left:38px;
+}
+
+#author-details-single-author .author-articles {
+    padding-left:38px; 
+    padding-bottom:10px;
+    font-weight:bold; 
+    text-transform: uppercase;
+}
+
+#author-details-single-author ul {
+    padding-left:38px;
+    list-style-type:none; 
+    font-size:12px;
+    border-bottom: 1px solid #777;
+}
+
+#author-details-single-author ul:after {
+    content:"";
+    float:right;
+    width:100%;
+    margin-bottom: 10px;
+    border-top: 1px solid #666;
+}
+
+#author-details-single-author ul li.author-articles-title {
+    margin-bottom: 10px;
+    margin-left:24px; 
+}
+
+#author-details-single-author ul li.author-articles-abstract,
+#author-details-single-author ul li.author-articles-galley {
+    display:inline; 
+    padding: 0px 25px;
+}
+
+#author-details-single-author ul li.author-articles-issue {
+    margin-top:10px;
+    margin-bottom:50px;
+    padding: 0 25px;
+}
+
+#author-details-single-author .author-articles:before,
+#author-details-single-author ul li.author-articles-title:before,
+#author-details-single-author ul li.author-articles-abstract:before,
+#author-details-single-author ul li.author-articles-galley:before,
+#author-details-single-author ul li.author-articles-issue:before {
+    font-family: FontAwesome; 
+    padding-right:10px; 
+    color:#333;
+    font-size: 1.15em;
+}
+
+#author-details-single-author .author-articles:before {
+    content:"\f07c";
+}
+
+#author-details-single-author ul li.author-articles-title:before {
+    content:"\f15c"; 
+}
+
+#author-details-single-author ul li.author-articles-abstract:before {
+    content:"\f05a"; 
+}
+
+#author-details-single-author ul li.author-articles-galley:before {
+    content:"\f1c1"; 
+}
+
+#author-details-single-author ul li.author-articles-issue:before {
+    content:"\f059";
+}
+
+/**
+* 3.7.2. Title Search and Advanced Search Pages
+*/
+#title-results table.listing tbody tr.heading td.long_result, 
+#advanced-search-results table.listing tbody tr.heading td.long_result {
+    padding:10px;
+    background-color:#e8e8e8; 
+    border-right:20px #e8e8e8 solid;
+}
+
+#title-results table.listing tbody tr.heading td.short_result, 
+#advanced-search-results table.listing tbody tr.heading td.short_result {
+    padding:10px;
+    background-color:#e8e8e8;
+}
+
+#title-results p, 
+#advanced-search-results p {
+    margin:0px;
+    line-height: 1.3em;
+    text-align: left;
+}
+
+#title-results p, 
+#advanced-search-results p  {
+    padding-left: 10px;
+}
+
+#title-results p.title-issue:before,
+#title-results p.title-abstract:before,
+#title-results p.title-galley:before, 
+#advanced-search-results p.title-issue:before,
+#advanced-search-results p.title-abstract:before,
+#advanced-search-results p.title-galley:before {
+    font-family: FontAwesome; 
+    padding-right:10px; 
+    color:#333;
+    font-size: 1.15em;
+}
+
+#title-results p.title-issue:before,
+#advanced-search-results p.title-issue:before {
+    content:"\f07c"; 
+}
+
+
+#title-results p.title-abstract:before,
+#advanced-search-results p.title-abstract:before {
+    content:"\f05a"; 
+}
+
+#title-results p.title-galley:before, 
+#advanced-search-results p.title-galley:before {
+    content:"\f1c1"; 
+}
+
+#advanced-search {
+    float:left;
+    width:97%;
+}
+
+#advanced-search #searchForm  {
+    margin-top: -30px;
+}
+
+#advanced-search .col-1 {
+    float:left;
+    width:45%;  
+    margin-right:20px;
+}
+
+#advanced-search .col-2  {
+    float:right;
+    width:45%; 
+}
+
+#advanced-search .search-filters .arrow-down-box, 
+#advanced-search-results .search-filters .arrow-down-box {
+    width:100%;
+    margin:0px 0px 35px 0px;
+}
+#advanced-search .search-filters .arrow-down-box h4, 
+#advanced-search-results .search-filters .arrow-down-box h4 {
+    margin:0; 
+    font-size:12px; 
+    font-weight:bold; 
+    letter-spacing: 0.1em; 
+    text-transform: uppercase; 
+    line-height:18px;
+}
+
+#advanced-search .col-1 .control-group,
+#advanced-search .col-2 .control-group {
+    width:100%; 
+    margin-bottom: 20px;
+}
+
+#advanced-search .col-1 .control-group .control-label,
+#advanced-search .col-2 .control-group .control-label {
+    width:40%; 
+    font-size:12px; 
+    text-align: left; 
+    vertical-align: top;
+}
+
+#advanced-search .col-1 .control-group .controls,
+#advanced-search .col-2 .control-group .controls {
+    width:40%; 
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#advanced-search .col-1 .control-group .controls input,
+#advanced-search .col-2 .control-group .controls input{
+    width: 150px;
+}
+
+#advanced-search .date-search {
+    float:left; 
+    width:100%;
+    clear:both;
+}
+
+#advanced-search .date-search .control-group {
+    width:45%; 
+    float:left;
+}
+
+#advanced-search .date-search .control-group .control-label {
+    margin:0px; 
+    font-size:12px; 
+    text-align:left;
+}
+
+#advanced-search .date-search .control-group .controls {
+    display:inline; 
+    padding-left: 10px;
+}
+
+#advanced-search .btn {
+    float: right;
+}
+
+#advanced-search-results {
+    float:left; 
+    width:100%;
+    margin-top:20px;
+}
+
+span.search_suggestions {
+    padding:10px;
+    clear:both;
+    background:#e8e8e8; 
+    font-weight:bold; 
+    font-size:12px;
+}
+
+/**
+* 3.8. Log in, log out, register and reset password pages
+*/
+
+body#pkp-user-login .input-group {
+    float:left;
+    width:40%;
+    clear: both; 
+    margin-bottom: 20px;
+}
+
+body#pkp-user-login .btn,
+body#pkp-user-login p {
+    float:left;
+    clear: both;
+}
+
+body#pkp-user-login p.login-register {
+    margin-top: 20px;
+}
+
+body#pkp-user-login p.login-lost-password {
+    margin-top: -10px;
+}
+
+body#pkp-user-login p.login-register:before,
+body#pkp-user-login p.login-lost-password:before {
+    padding-right: 5px;
+    font-family: FontAwesome;
+    font-size: 1.15em;
+    color:#333;
+}
+
+body#pkp-user-login p.login-register:before {
+    content:"\f234";
+}
+
+body#pkp-user-login p.login-lost-password:before {
+    content:"\f059";
+}
+
+.user-register-form {
+    float:left; 
+    margin-top:10px;
+}
+
+.user-register-form form#registerForm h3 {
+    margin:10px 0px 20px 0px;
+    padding:10px 0px 10px 10px; 
+    background:#e8e8e8; 
+    font-size:12px;
+    font-weight:bold; 
+    text-transform:uppercase;
+}
+
+.user-register-form #languageSelector .button {
+    margin-left: 10px;
+}
+
+.user-register-form form#registerForm .form-group {
+    font-size:12px;
+}
+
+.user-register-form form#registerForm .form-group label.checkbox {
+    text-align: left;
+}
+
+.user-register-form span.help-block {
+    width:85%!important; 
+    text-align: left; 
+    font-size: 11px;
+    color:#333;
+    margin:5px 0 20px 0;
+}
+
+.user-register-form span.help-inline {
+    color:#333;
+}
+
+/**
+* 3.9. Help Pop up
+*/
+
+body.modal-help {
+    background: #f6f6f6;
+}
+
+/**
+* 3.10. 404 Page
+*/
+
+#four-o-four #general {
+    width:100%; 
+    position:absolute; 
+    top:0%; 
+    background: none;
+}
+
+#four-o-four #sub-container {
+    background: none;
+}
+
+#fail-container {
+    width:100%; 
+    margin:70px auto 0px auto;
+    text-align:center;
+}
+
+#fail-container p.fail-p-big {
+    margin:0px 0px 20px 0px;
+    padding:0px;
+    font-size:18em; 
+    font-weight:bold;
+    line-height:1em;
+}
+
+#fail-container p {
+    text-align: center;
+}
+
+ul.fail-comeback {
+    width:100%; 
+    list-style-type:none;
+}
+
+ul.fail-comeback li {
+    float: left; 
+    width:20%;
+}
+
+ul.fail-comeback li i {
+    padding-right: 7px;
+}
+
+#four-o-four .footer-container {
+    width: 940px;
+    clear: both;
+    margin: 0px auto;
+}
+
+#four-o-four #footer h2 {
+    padding-bottom: 30px; 
+    text-align: center;   
+    line-height: 0.5em;
+}
+
+#four-o-four #footer .footer-logo-uam { 
+    background-position:48% -981px;
+}
+
+/**
+* END OF FRONTEND PAGES STYLING 
+*/
+
+/**
+* 4. BACKEND PAGES STYLES
+*/
+
+/**
+* 4.1 User's Index Page
+*/
+#journal-Relaciones_Internacionales{float:left;width:50%;}
+
+.users-home-user-cat p.user-cat {
+    padding-top:7px; 
+    padding-left:10px; 
+    font-size:20px; 
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.users-home-user-cat p.user-cat-content {
+    padding-left:40px; 
+    font-weight:bold;
+}
+
+.users-home-user-cat p.user-cat-content span.medium-number{
+    font-size:20px;
+}
+
+.users-home-user-cat p.user-cat-actions-create,
+.users-home-user-cat p.user-cat-actions-notify {margin-left:40px;}
+
+.users-home-user-cat p.user-cat:before,
+.users-home-user-cat p.user-cat-actions-create:before,
+.users-home-user-cat p.user-cat-actions-notify:before {
+    padding-right: 10px;
+    font-family: FontAwesome; 
+    font-weight: normal; 
+    color:#333;
+}
+
+.users-home-user-cat p.user-cat:before {
+    content:"\f0ad";
+    font-size: 24px;
+}
+
+.users-home-user-cat p.user-cat-actions-create:before {
+    content:"\f067";
+    font-size: 18px;
+}
+
+.users-home-user-cat p.user-cat-actions-notify:before {
+    content:"\f0a1";
+    font-size: 18px;
+}
+
+/**
+* 4.2. Admin Pages (AddCssJsPlugin do not work on these pages, so style is really ugly but functional)
+*/
+#pkp-admin-siteAdmin #login-modal,
+#pkp-admin-siteSettings #login-modal,
+#pkp-journal-journals #login-modal,
+#pkp-common-languages #login-modal,
+#pkp-admin-authSources #login-modal,
+#pkp-admin-categories #login-modal,
+#pkp-admin-systemInformation #login-modal,
+#pkp-admin-mergeUsers #login-modal {
+    display: none;
+}
+
+/**
+* 4.3. Manager Pages (and some rules for the Admin)
+*/
+#manager-roles select,
+#manager-roles input.textField,
+#manager-users-enroll select,
+#manager-users-enroll input.textField,
+#manager-search-users select,
+#manager-search-users input.textField{
+    width: 220px!important;
+    height:30px!important;
+}
+
+#manager-roles input.textField,
+#manager-users-enroll input.textField {
+    margin:12px 0;
+}
+
+#manager-search-users .btn {
+    margin-top: 20px;
+}
+
+
+/**
+* 4.4. Editor's pages
+*/
+#editor-home-article-submissions {
+    margin-right: 5%;
+}
+
+#editor-home-article-submissions ul.plain,
+#editor-home-issues ul.plain {
+    list-style-type:none;
+}
+
+#editor-home-search {
+    margin-top:20px; 
+}
+
+#editor-home-search select,
+#editor-home-search input.textField{
+    width: 220px!important;
+    height:30px!important;
+}
+
+.editor-article-list-head {
+    padding:10px;
+    background:#e8e8e8; 
+    font-size:12px;
+}
+
+.editor-article-list {
+    padding:10px;
+    font-size:11px; 
+    text-transform:uppercase;
+    border-bottom:1px solid #777;
+}
+
+.editor-article-list-head .date,
+.editor-article-list .date{
+    float:left;
+    width:10%;
+}
+
+.editor-article-list-head .section,
+.editor-article-list .section {
+    float:left;
+    width:7%;
+    text-align:center;
+}
+
+.editor-article-list-head .author,
+.editor-article-list .author {
+    float:left;
+    width:15%;
+}
+
+.editor-article-list-head .title,
+.editor-article-list .title {
+    float:left;
+    width:59%;
+    text-align:left;
+}
+
+.editor-article-list-head .status,
+.editor-article-list .status {
+    float:left;
+    width:10%;
+    text-align:left;
+}
+
+.editor-article-list-head .peer-review,
+.editor-article-list .peer-review {
+    float:left;
+    width:25%;
+}
+
+.editor-article-list-head .correccion,
+.editor-article-list-head .maquetacion,
+.editor-article-list-head .prueba,
+.editor-article-list .correccion,
+.editor-article-list .maquetacion,
+.editor-article-list .prueba {
+    float:left;
+    width:9%;
+    text-align:center;
+}
+
+.editor-article-list-head .editor-decision,
+.editor-article-list .editor-decision {
+    float:left;
+    width:7%;
+    text-align:center;
+}
+
+#editor-submissions .editor-article-list-head .id,
+#editor-submissions .editor-article-list .id{
+    float:left;
+    width:5%;
+    text-align:center;
+}
+
+#editor-submissions .editor-article-list-head .title-shorter,
+#editor-submissions .editor-article-list .title-shorter{
+    float:left;
+    width:40%;
+    text-align:left;
+}
+
+#editor-submissions-inreview .editor-article-list-head .author, 
+#editor-submissions-inreview .editor-article-list .author {
+    float:left;
+    width:12%;
+}
+
+#editor-submissions-inreview .editor-article-list-head .title,
+#editor-submissions-inreview .editor-article-list .title {
+    width:30%;
+}
+
+#editor-submissions-inreview .editor-article-list-head .editor-selected,
+#editor-submissions-inreview .editor-article-list .editor-selected {
+    float:left;
+    width:7%;
+    text-align:center;
+}
+
+#editor-submissions-inreview .editor-article-list .editor-selected {
+    font-size:10px;
+    overflow:hidden;
+}
+
+#pkp-editor-issues-createIssue form:first-of-type select { 
+    max-width: 50%;
+    height:25px;
+}
+
+.issue-create-form #languageSelector select {
+    margin-right:10px;
+}
+
+.issue-create-form,
+#notifyUsers {
+    margin-top:10px; 
+}
+
+.issue-create-form #issue-identification,
+.issue-create-form .save,
+#notifyUsers #recipients  { 
+    margin-right:8%;
+}
+
+.issue-create-form span.help-block{
+    width:50%;
+    margin:5px 0px 20px 0px;
+    color:#333;
+}
+
+.issue-create-form span.help-inline {
+    color:#333;
+}
+
+#pkp-editor-issues-backIssues #content p:first-of-type a.action {
+    float:right; 
+    width:35%; 
+    margin:-10px 0px;
+    padding:10px; 
+    background-color: #B90504; 
+    font-weight:bold;
+}
+#pkp-editor-issues-backIssues #content p:first-of-type a.action:before  {    
+    content:"\f1b8";
+    font-family: FontAwesome; 
+    padding-right: 10px;
+    font-weight: normal; 
+    font-size: 1.25em;
+    color: #333; 
+}
+
+.editor-issues-list-head { 
+    padding: 10px;   
+    background: #e8e8e8;
+    font-size: 12px;
+}
+
+.editor-issues-list-head .long-title,
+.editor-issues-list .long-title {
+    float:left;
+    width:70%;
+    text-align:left;
+}
+
+.editor-issues-list-head .title,
+.editor-issues-list-head .date,
+.editor-issues-list-head .issue-number,
+.editor-issues-list-head .order,
+.editor-issues-list-head .issue-action,
+.editor-issues-list .title,
+.editor-issues-list .date,
+.editor-issues-list .issue-number,
+.editor-issues-list .order,
+.editor-issues-list .issue-action {  
+    float: left;
+}
+
+.editor-issues-list-head .title,
+.editor-issues-list .title {  
+    width: 51%;
+    text-align: left;
+}
+
+.editor-issues-list-head .date,
+.editor-issues-list-head .issue-number,
+.editor-issues-list-head .order,
+.editor-issues-list-head .issue-action,
+.editor-issues-list .date,
+.editor-issues-list .issue-number,
+.editor-issues-list .order,
+.editor-issues-list .issue-action {
+    width: 11%; 
+    text-align: center;
+}
+
+.editor-issues-list .title,
+.editor-issues-list .date,
+.editor-issues-list .issue-number,
+.editor-issues-list .order,
+.editor-issues-list .issue-action {
+    padding:5px;
+}
+
+.editor-issues-list .title:before {
+    content:"\f044";
+    font-family: FontAwesome; 
+    padding-right: 10px;
+    font-weight: normal; 
+    color: #333; 
+}
+
+#editor-issues .no-issues {
+    clear: both;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    font-weight: bold;
+}
+
+.editor-past-issues-current-issue p {   
+    font-weight: bold;
+}
+
+.editor-toc-sections {
+    float:left; 
+    width:50%;
+    clear: both;
+}
+.editor-toc-table {
+    clear:both;
+    font-size:10px;
+}
+
+.editor-toc-table-head {
+    margin-bottom:20px; 
+    text-transform:uppercase;
+}
+
+.editor-toc-table-list  >div {
+    padding-bottom:10px;
+}
+
+.editor-toc-table-head .title, 
+.editor-toc-table-list .title {
+    text-align:left;
+}
+
+.editor-toc-table-head .author, 
+.editor-toc-table-list .author,
+.editor-toc-table-head .id, 
+.editor-toc-table-list .id {
+    width:15%;
+    float:left; 
+}
+
+.editor-toc-table-head .order, 
+.editor-toc-table-list .order,
+.editor-toc-table-head .remove, 
+.editor-toc-table-list .remove,
+.editor-toc-table-head .revised, 
+.editor-toc-table-list .revised { 
+    float:left;
+    width:7%;
+    text-align:center;
+}
+
+.editor-toc-table-head .order {
+    color:transparent;
+}
+
+.submissions-pagination {
+    float: left;
+    clear:both;
+    margin-top: 20px;
+}
+
+.submissions-pagination p {
+    font-size: 10px!important;
+}
+
+#notes ul li {
+    background: none!important;
+}
+
+/**
+* 4.5. Submissions Management pages
+*/
+#pkp-manager-people-enrollment #main form:first-of-type select,
+#pkp-manager-people-enrollment #main form:first-of-type input.textField,
+#pkp-user-role-editors .select-editor select,
+#pkp-user-role-editors .select-editor input.textField,
+#pkp-user-role-reviewers #select-reviewer select,
+#pkp-user-role-reviewers #select-reviewer input.textField {
+    width: 220px!important;
+    height:30px!important;
+}
+
+#pkp-manager-people-enrollment #main form:first-of-type .btn,
+#pkp-user-role-editors .select-editor .btn,
+#pkp-user-role-reviewers #select-reviewer .btn {
+    margin-top: 20px;
+}
+
+#modal-instructions {
+    background: #f6f6f6;
+}
+
+#container-instructions {
+    padding: 20px;
+}
+
+#container-instructions .btn {
+    float: right;
+}
+
+/**
+* 4.6. Reviewer Form response Pages
+*/
+#reviewer-review-form-response > p:last-of-type {
+    margin-bottom: -40px;
+}
+
+#reviewer-review-form-response > form#saveReviewFormResponse > div.control-group > label > p {
+    width: 100%;  
+    margin: 40px 0px 0px 0px; 
+    padding:10px; 
+    background:#e8e8e8;
+}
+
+#reviewer-review-form-response > form#saveReviewFormResponse > div.control-group,
+#reviewer-review-form-response > form#saveReviewFormResponse div.controls {
+    float:left; 
+    width:100%; 
+    clear:both; 
+    margin-bottom:10px;
+}
+
+#reviewer-review-form-response > form#saveReviewFormResponse > div.control-group > div.controls > label {
+    width:10%; 
+    clear:none; 
+    margin:0px;
+    padding:0px;
+}
+
+#reviewer-review-form-response > form#saveReviewFormResponse > div.control-group > div.controls > textarea {
+    float:left;
+    width:50%;
+    clear:none; 
+    margin-top:3px;
+}
+
+/**
+* 4.7. Author's Submit pages
+*/
+#author-submit-top-menu ul.nav.nav-pills {
+    margin-bottom:20px;
+    background: #e8e8e8; 
+}
+
+#author-submit-top-menu ul.nav.nav-pills li {
+    margin:0px;
+    padding:10px;
+}
+
+#author-submit-top-menu ul.nav.nav-pills li a{
+    margin:0px;
+    padding:0px;
+}
+
+#author-submit-top-menu ul.nav.nav-pills li.active, 
+ul.nav.nav-pills li.active a {
+    background:#B90504;
+    color:#e8e8e8;
+    border-radius:0px; 
+}
+#author-submit-top-menu ul.nav.nav-pills li:hover, 
+#author-submit-top-menu ul.nav.nav-pills li a:hover {
+    background:#1a1a1a;
+    color:#e8e8e8;
+    border-radius:0px; 
+}
+
+#pkp-author-submit-step2 #add-submission-file .btn:last-of-type,
+#pkp-author-submit-step4 input#upload-supp-file {
+    margin: 20px 10px;
+}
+
+#pkp-author-submit-step3 #languageSelector select,
+#pkp-author-submit-step4a #languageSelector select {
+    margin-right: 10px;
+}
+
+#pkp-author-submit-step3 #content label,
+#pkp-author-submit-step4a #content label {
+    font-size: 12px;
+}
+
+#author-submit-indexing span.help-block  { 
+    width:75%;
+    text-align: right;
+} 
+
+#author-submit-meta-authors h3 i,
+#author-submit-title-and-abstract h3 i,
+#author-submit-indexing h3 i, 
+#author-submit-submission-supporting-agencies h3 i {
+    padding-left: 5px;
+}
+
+#pkp-author-submit-step4 #main h2,
+#pkp-author-submit-step4a #main h2 {
+    width:70%;
+}
+
+#pkp-author-submit-step4 #main .main-arrow-right,
+#pkp-author-submit-step4a #main .main-arrow-right {
+    left:70%;
+}
+
+#author-submission-complete .big {
+    float:left;
+    width:100%; 
+    margin-top: 60px; 
+    margin-bottom:30px;
+    padding-left: 145px; 
+    font-size:14px;
+}
+
+#author-submission-complete .big span {
+    font-size:47px;
+}
+
+#author-submission-complete .big:before {
+    content:"\f164"; 
+    font-family: FontAwesome; 
+    float:left;
+    margin-left:-145px;
+    font-size:140px; 
+    color:#333;
+}
+
+/**
+* 4.8. Lots of dimensions and floats for Back-end Pages
+*/
+
+#metadata #openAIRE {
+    float:left;
+    width:25%;
+    margin:0px;
+    padding:0px;
+}
+
+#metadata #authors {
+    float:left;
+    width:30%;
+    margin:0 7% 0 0;
+    padding:0;}
+
+#metadata #title-and-abstract, 
+#peerReview {
+    float:left;
+    width:62%;
+    margin:0px;
+    padding:0px; 
+    clear:right;}
+
+#author-copyright-notice,
+#editor-home-article-submissions,
+#editor-home-issues,
+.editor-toc-table-head .title, 
+.editor-toc-table-list .title,
+.issue-create-form #issue-cover,
+.issue-create-form #issue-identification,
+.issue-create-form .save,
+#notifyUsers #issue,
+#notifyUsers #recipients,
+#review-schedule,
+#rtAdminConfig,
+#rtAdminSharing,
+#submission-locale, 
+#status {
+    float:left;
+    width:45%;
+}
+
+#author-submit-section, 
+#author-checklist,
+#submission-management, 
+#submission-to-be-reviewed,
+#rt-admin-status,
+#rt-admin-manage {
+    float:left;
+    width:45%;
+    margin:0 7% 0 0;
+    padding:0px;
+}
+
+#editor-home-search,
+.issue-create-form,
+#metadata #edit-metadata,
+#notifyUsers {
+    float:left;
+    width:97%;
+}
+
+#author-comments-for-editor,
+#author-privacy-statement,
+#author-submission-file,
+#author-submit-end-summary,
+#author-submit-indexing,
+#author-submit-meta-authors,
+#author-submit-meta-citations,
+#author-submit-submission-supporting-agencies,
+#author-submit-supplementary-file-data,
+#author-submit-supplementary-file-upload,
+#author-submit-title-and-abstract,
+#copyedit,
+.editor-article-list-head,
+.editor-article-list,
+#editor-decision,
+.editor-issues-list-head,
+#editor-issues .no-issues,
+.editor-past-issues-current-issue,
+.editor-toc-table,
+.editor-toc-table-head,
+.editor-toc-table-list,
+#editors-management,
+#email-log-entries,
+#event-log-entries,
+#galley-form,
+#layout,
+#manager-add-item-to-about-journal,
+#manager-announcements-section,
+#manager-author-copyright-notice,
+#manager-author-guidelines-info,
+#manager-citation-assistant,
+#manager-competing-interests,
+#manager-contributors,
+#manager-copyediting,
+#manager-create-user,
+#manager-editor-decision,
+#manager-files-index,
+#manager-focus-and-scope-description,
+#manager-for-authors-to-index-their-work,
+#manager-general-information,
+#manager-journal-archiving,
+#manager-journal-history,
+#manager-journal-homepage-content,
+#manager-journal-homepage-header,
+#manager-journal-layout,
+#manager-journal-page-footer-info,
+#manager-journal-page-header-info,
+#manager-layout-and-galleys,
+#manager-lists,
+#manager-navigation-bar,
+#manager-notifications,
+#manager-peer-review-policy,
+#manager-permissions,
+#manager-principal-contact,
+#manager-privacy-statement-info,
+#manager-proofreading,
+#manager-publication-scheduling,
+#manager-public-identifier,
+#manager-register-journal-for-indexing,
+#manager-reports,
+#manager-reviewer-database-link,
+#manager-search-engine-indexing,
+#manager-section-editors,
+#manager-security-settings,
+#manager-select-merge-users #manager-roles,
+#manager-setup,
+#manager-setup-emails,
+#manager-setup-info,
+#manager-setup-publisher,
+#manager-sponsors,
+#manager-statistics,
+#manager-submission-preparation-checklist,
+#manager-technical-support-contact,
+#manager-user-profile,
+#manager-users-enroll,
+#metadata,
+#metadata-cover,
+#metadata-display,
+#metadata-supporting-agencies,
+#preview-review-form,
+#proofread,
+#reviewer-review-form-response,
+#reviewer-guidelines,
+#reviewer-recommendation,
+#review-steps,
+#rounds #regrets-and-cancels,
+#rt-admin-options,
+#rt-admin-related-items,
+#scheduling,
+.select-editor,
+#select-reviewer,
+#select-review-form,
+#set-due-date,
+#submission-editing, 
+#submission-email-log,
+#submission-event-log,
+#submission-management-review .submission-management-reviewdetails,
+#submission-metadata-view-authors,
+#submission-metadata-view-title-and-abstract,
+#submission-metadata-view-cover,
+#submission-metadata-view-indexing,
+#submission-metadata-view-supporting-agencies,
+#submission-notes,
+#submit-start,
+#supplementary-file-data,
+#supplementary-file-upload {
+    float:left;
+    width:100%;
+}
+
+#metadata #indexing,
+#metadata #supporting-agencies {
+    float:right;
+    width:62%;
+    clear:left;
+    margin:0px;
+    padding:0px; 
+}
+
+/**
+* 4.9. Back-end Pages Typos
+*/
+
+/* H3 */
+#management-pages h3,
+#manager-users h3,
+#manager-roles h3 {
+    float:left; 
+    width:100%; 
+    margin:0px 0px 20px 0px; 
+    padding:10px; 
+    background:#e8e8e8; 
+    font-size:14px;  
+    font-weight:bold;
+}
+
+#author-checklist h3,
+#author-comments-for-editor h3,
+#author-copyright-notice h3,
+#author-privacy-statement h3,
+#author-submission-file h3,
+#author-submit-end-summary h3,
+#author-submit-indexing h3,
+#author-submit-meta-authors h3,
+#author-submit-meta-citations h3,
+#author-submit-section h3,
+#author-submit-submission-supporting-agencies h3,
+#author-submit-supplementary-file-data h3,
+#author-submit-supplementary-file-upload h3,
+#author-submit-title-and-abstract h3,
+#content .select-editor h3,
+#copyedit h3,
+#editor-decision h3,
+#editor-home-article-submissions h3,
+#editor-home-issues h3,
+#editor-home-search h3,
+.editor-issue-toc h3,
+#editors-management h3,
+#email-log-entries h3,
+#email-template-form h3,
+#event-log-entries h3,
+#galley-form h3,
+#layout h3,
+#manager-add-item-to-about-journal h3,
+#manager-announcements-section h3,
+#manager-author-copyright-notice h3,
+#manager-author-guidelines-info h3,
+#manager-citation-assistant h3,
+#manager-competing-interests h3,
+#manager-contributors h3,
+#manager-copyediting h3,
+#manager-create-user h3,
+#manager-editor-decision h3,
+#manager-files-index h3,
+#manager-focus-and-scope-description h3,
+#manager-for-authors-to-index-their-work h3,
+#manager-general-information h3,
+#manager-journal-archiving h3,
+#manager-journal-history h3,
+#manager-journal-homepage-content h3,
+#manager-journal-homepage-header h3,
+#manager-journal-layout h3,
+#manager-journal-page-footer-info h3,
+#manager-journal-page-header-info h3,
+#manager-layout-and-galleys h3,
+#manager-lists h3,
+#manager-navigation-bar h3,
+#manager-notifications h3,
+#manager-peer-review-policy h3,
+#manager-permissions h3,
+#manager-principal-contact h3,
+#manager-privacy-statement-info h3,
+#manager-proofreading h3,
+#manager-publication-scheduling h3,
+#manager-public-identifier h3,
+#manager-register-journal-for-indexing h3,
+#manager-reports h3,
+#manager-reviewer-database-link h3,
+#manager-search-engine-indexing h3,
+#manager-section-editors h3,
+#manager-security-settings h3,
+#manager-select-merge-users #manager-roles h3,
+#manager-setup h3,
+#manager-setup-emails h3,
+#manager-setup-info h3,
+#manager-setup-publisher h3,
+#manager-sponsors h3,
+#manager-statistics h3,
+#manager-submission-preparation-checklist h3,
+#manager-technical-support-contact h3,
+#manager-user-profile h3,
+#manager-users-enroll h3,
+#metadata h3,
+#metadata-cover h3,
+#metadata-display h3,
+#metadata-supporting-agencies h3,
+#peer-review h3,
+#preview-review-form h3,
+#proofread h3,
+#reviewer-review-form-response h3,
+#reviewer-guidelines h3,
+#reviewer-recommendation h3,
+#review-schedule h3,
+#review-steps h3,
+#rounds #regrets-and-cancels h3,
+#rtAdminConfig h3,
+#rtAdminManage h3,
+#rtAdminOptions h3,
+#rtAdminRelatedItems h3,
+#rtAdminSharing h3,
+#rtAdminStatus h3,
+#scheduling h3,
+#select-reviewer h3,
+#select-review-form h3,
+#set-due-dDate h3,
+#status h3,
+#submission-editing h3,
+#submission-email-log h3,
+#submission-event-log h3,
+#submission-management h3,
+#submission-management-review h3,
+#submission-metadata-view-authors h3,
+#submission-metadata-view-title-and-abstract h3,
+#submission-metadata-view-cover h3,
+#submission-metadata-view-indexing h3,
+#submission-metadata-view-supporting-agencies h3,
+#submission-locale h3,
+#submission-notes h3,
+#submission-to-be-reviewed h3,
+#supplementary-file-upload h3,
+#supplementary-file-data h3 {
+    float:left; 
+    width:100%;
+    margin:20px 0px;
+    padding:10px; 
+    background:#e8e8e8;
+    color:#333; 
+    font-size:11px;  
+    font-weight:bold; 
+    text-transform:uppercase;
+}
+
+/* H4 */
+#manager-user-profile #enrollment h4, 
+#manager-user-profile #profile h4, 
+#manager-journal-description h4, 
+#manager-homepage-image h4, 
+#manager-current-issue h4, 
+#manager-additional-content h4, 
+#manager-journal-homepage-header h4, 
+#manager-journal-homepage-content h4, 
+#manager-journal-page-header-info h4, 
+#manager-journal-page-footer-info h4, 
+#manager-navigation-bar h4, 
+#manager-journal-layout h4, 
+#manager-setup-info h4, 
+#manager-lists h4, 
+#manager-security-settings h4, 
+#manager-publication-scheduling h4, 
+#manager-public-identifier h4, 
+#manager-announcements-section h4, 
+#manager-copyediting h4, 
+#manager-layout-and-galleys h4, 
+#manager-proofreading h4, 
+#manager-author-guidelines-Info h4, 
+#manager-submission-preparation-checklist h4, 
+#manager-author-copyright-notice h4, 
+#manager-competing-interests h4, 
+#manager-for-authors-to-index-their-work h4, 
+#manager-register-journal-for-indexing h4, 
+#manager-notifications h4, 
+#manager-citation-assistant h4, 
+#manager-focus-and-scope-description h4, 
+#manager-peer-review-policy h4 {
+    padding-bottom:5px; 
+    font-size:12px; 
+    font-weight:bold; 
+    color:#f6f6f6; 
+    text-transform:uppercase; 
+    border-bottom:1px solid #777;
+}
+
+#notes h4,
+.editor-toc-sections > h4 {
+    margin:20px 0px!important;
+    padding:10px; 
+    background:#e8e8e8; 
+    font-size:12px!important;  
+    font-weight:bold!important;
+}
+
+.editor-toc-sections > h4 a:first-of-type  {
+    padding-left: 7px;
+}
+
+#authors h4,
+#indexing h4,
+#openAIRE h4,
+#reviewers> #reviewers,
+#submit-start h4,
+#supporting-agencies h4,
+#title-and-abstract h4 {
+    float:left; 
+    width:97%;
+    margin:20px 0px;
+    padding:10px; 
+    background:#e8e8e8; 
+    font-size:11px;  
+    font-weight:bold;
+}
+
+#peer-review h4 {
+    font-size:11px; 
+    font-weight:bold;
+    text-transform:uppercase; 
+}
+
+#submission-management-review h4 {
+    width:40%; 
+    clear:both;
+    margin: 10px 0px 20px 0px;
+    padding:10px; 
+    background:#e8e8e8; 
+    font-size:11px;
+}
+
+/**
+* END OF BACKEND PAGES STYLING 
+*/
+
+
+/**
+* 5. Other: fixes for small desktops or other things
+*/
+
+/**
+* 5.1. Misc
+*/
+
+/* Not to be shown on Desktops */
+.menu-mobile-container,
+.submenu-mobile-container,
+#last-issues-phone {
+    display: none;
+}
+
+/* Cookies banner */
+.cc_banner-wrapper{
+    z-index:9001;
+    position:relative;
+}
+
+.cc_container{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow:hidden;
+    padding:10px;
+    background:#222;
+    color:#fff;
+    font-size:12px;
+    box-sizing:border-box;
+}
+
+.cc_subcontainer {   
+    max-width: 940px;
+    margin:0 auto;
+}
+
+
+.cc_container .cc_btn{
+    text-align:center;
+    width:33%;
+    margin-left:10px;
+    float:right;
+    max-width:120px
+}
+
+
+.cc_container p { 
+    margin:0 auto;
+}
+
+.cc_container .cc_btn,
+.cc_container .cc_btn:visited{
+    color:#fff;
+    background-color:#B90504;
+    transition:background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
+    -webkit-transition:background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
+    border-radius:5px;
+    -webkit-border-radius:5px
+}
+
+.cc_container .cc_btn:hover,.cc_container .cc_btn:active{
+    background-color:#fff;
+    color:#000
+}
+
+.cc_container a,.cc_container a:visited{
+    text-decoration:none;
+    color:#ccc;
+    transition:200ms color;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px){
+    .cc_subcontainer {
+        padding-top: 10px;
+        text-align: center;
+        
+    }
+
+    .cc_container .cc_btn{
+        float:none; 
+        margin:10px auto; 
+        padding: 7px 50px;
+        text-align: center;
+    }
+
+    .cc_container .cc_message{
+        clear:both; 
+        margin-top: 20px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px){
+    .cc_container .cc_btn{
+        font-size:1em
+    }
+
+    .cc_container .cc_message{
+        font-size:1em;
+        line-height:1em
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    .cc_container{
+        padding:15px 30px 15px
+    }
+
+    .cc_container .cc_btn{
+        font-size:1em;
+        padding:8px 15px
+    }
+
+    .cc_container .cc_message{
+        font-size:1em
+    }
+
+}
+
+
+/* 5.2. Fix the gap between max-width 4 tablets defined in tablet.css and min-width 4 desktops defined in custom.css
+* So min-width: 801px and max-width:939px
+* Should find a cleaner fix
+*/
+
+@media only screen and (min-width:801px) 
+    and (max-width:939px) {
+        #container {
+            width: 100% !important;	
+            max-width: 940px!important;
+        }
+
+        #header {
+            width:100%;
+            height:100px;
+        }
+        
+        #header.sticky {
+            position: fixed; 
+            top:0px;
+            right:-92%;
+            width:100%;   
+            padding-left: 0px;
+        }
+
+        #header.sticky:hover {              
+            right:0;
+            max-width:100%;
+            width:100%;
+            padding: 0px 10px;
+            transition:  1.1s ease;
+        }
+
+        #header-container {
+            padding-bottom:0;
+            max-width: 98%!important; 
+            margin-left:10px; 
+        }
+
+        .header-title {
+            width:40%;
+            padding-top:1px; 
+            background-position: -10px -152px
+        }
+
+        #header h1{
+            font-size:22px;
+            line-height:30px;
+        }
+
+        #menu-principal-container {
+            width:100%;
+            max-width: 940px!important;
+        }
+
+        #menu-principal {
+            width:95%;
+        }
+
+        #menu-principal ul {
+            width: 70%!important;
+        }       
+
+        #menu-principal ul li a {
+            font-size:14px;
+        }
+
+        #social-menu {
+            width: 15%;
+        }
+
+        #general {
+            width:100%;
+        }
+
+        #sub-container {
+            width:97%; 
+            margin:0px 0px 0px 10px;
+        }
+
+        #supramain {
+            width:75%;
+            margin:0px 10px;
+        }
+
+        #main {
+            width:100%;
+        }
+
+        .footer-container {
+            float:left; 
+            width:97%;            
+            margin-left:10px;
+        }
+
+        .footer-container .row .col-md-9 {
+            float: left;
+        }
+
+        .footer-container .row .col-md-3 { 
+            min-width: 250px;
+            display: inline-block;
+            margin:10px 0px;          
+        }
+
+
+        .footer-logo-uam {
+            background-position: 50% -301px;
+        }
+
+        .footer-logo-uam:hover {
+            background-position: 50% -237px;
+        }
+
+        .footer-ojs-tools ul {
+            margin-top:10px;
+        }
+
+        #footer .footer-nav {
+            margin-top:0px;
+        }
+
+        #footer .footer-nav ul{
+            text-align:right;
+        }
+
+        /* PAGES */
+        /* FP */
+        .fp_issue_title  {width:100%;}
+        .fp_issue_meta {width:66%; float:left;}
+        .fp_tabbed_area .nav-tabs  li  a {font-size:11px;}
+        #last_issues_phone {display:none;}
+        .ca-container {margin:0 auto;}
+        .ca-wrapper {width:95%;}
+        .ca-close{left:35%;}
+        .ca-item{width:45%;}
+        .ca-content {width:38%;}
+
+        /* 	ABOUT */
+        .main-content-bio {
+            width:75%;
+        }
+
+        #pkp-about-aboutThisPublishingSystem #content p:nth-child(2) img {
+            max-width:100%;
+        }
+
+        /* ISSUES & ARTICLES */
+        .issue-archives-title {
+            float:left; 
+            width:70%; 
+            text-align:left;
+        }
+
+        .issue .issue-cover-description {
+            width:45%;
+        }
+
+        #main .issue-block .issue-bignumber a {
+            font-size:76px;
+        }
+
+        #main .issue-block .issue-description {
+            float:left;
+            width:69%; 
+        }
+
+    }

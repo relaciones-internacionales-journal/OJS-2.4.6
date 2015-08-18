@@ -192,7 +192,7 @@
 						});
 						
 						// click to open the item(s)
-						$el.find('a.ca-more').live('click.contentcarousel', function( event ) {
+						$el.find('.ca-item-main').on('click.contentcarousel', '.ca-more', function( event ) {
 							if( cache.isAnimating ) return false;
 							cache.isAnimating	= true;
 							$(this).hide();
@@ -202,7 +202,7 @@
 						});
 						
 						// click to close the item(s)
-						$el.find('a.ca-close').live('click.contentcarousel', function( event ) {
+						$el.find('.ca-content').on('click.contentcarousel', '.ca-close', function( event ) {
 							if( cache.isAnimating ) return false;
 							cache.isAnimating	= true;
 							var $item	= $(this).closest('div.ca-item');

@@ -140,10 +140,10 @@
 	{/foreach}
 	<tr valign="top">
 		<td width="10%">
-			<input value="{translate key="common.search"}" type="button" onclick="addKeywords({$key+2});" class="btn btn-small" />
+			<input value="{translate key="common.search"}" type="button" onclick="addKeywords({$key+2});" class="btn btn-sm" />
 		</td>
 		<td width="2%">{$key+1}.</td>
-		<td width="88%">{$search->getTitle()|escape} <a target="_new" href="{$search->getUrl()|escape}" class="action link-general">{translate key="navigation.about"}</a></td>
+		<td width="88%">{$search->getTitle()|escape} <a target="_new" href="{$search->getUrl()|escape}" class="action search-general">Link</a></td>
 	</tr>
 	<tr><td colspan="3" class="{if $smarty.foreach.searches.last}end{/if}separator">&nbsp;</td></tr>
 	</form>

@@ -16,8 +16,8 @@
 </script>
 
 
-<div class="block" id="sidebarRTRelatedItems">
-	<div class="blockTitleModified">{translate key="plugins.block.relatedItems.title"}
+<div class="block" id="sidebar-rtrelated-items">
+	<div class="block-title-modified">{translate key="plugins.block.relatedItems.title"}
 	</div>
 	<table width="100%">
 		<tr>
@@ -29,7 +29,7 @@
 					<ul class="plain">
 					{foreach from=$version->getContexts() item=context}
 						{if !$context->getDefineTerms()}
-							<li><a href="javascript:openRTWindowWithToolbar('{url page="rt" op="context" path=$articleId|to_array:$galleyId:$context->getContextId()}');">{$context->getTitle()|escape}</a></li>
+							<li><a href="javascript:openRTWindow('{url page="rt" op="context" path=$articleId|to_array:$galleyId:$context->getContextId()}');">{$context->getTitle()|escape}</a></li>
 						{/if}
 					{/foreach}
 					</ul>

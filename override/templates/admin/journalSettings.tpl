@@ -77,7 +77,7 @@ function doSubmit() {
 	</tr>
 </table>
 
-<p><input type="button" value="{translate key="common.cancel"}" class="btn btn-danger btn-small" onclick="document.location.href='{url op="journals" escape=false}'" /> <input type="button" id="saveJournal" value="{translate key="common.save"}" class="btn btn-small" onclick="doSubmit()" /></p>
+<p><input type="button" value="{translate key="common.cancel"}" class="btn btn-danger btn-sm" onclick="document.location.href='{url op="journals" escape=false}'" /> <input type="button" id="saveJournal" value="{translate key="common.save"}" class="btn btn-sm" onclick="doSubmit()" /></p>
 
 </form>
 

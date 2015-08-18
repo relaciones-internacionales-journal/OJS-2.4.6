@@ -31,7 +31,6 @@
 	{else}<h3 style="display:none;">{$journal->getLocalizedTitle()|escape}</h3>{/if}
 	{assign var="journalId" value=$journal->getId()}
 	{assign var="journalPath" value=$journal->getPath()}
-	<table width="100%" class="info">
 		{if $isValid.JournalManager.$journalId}
 			<div class="users-home-user-cat">
 				<p class="user-cat"><a href="{url journal=$journalPath page="manager"}">{translate key="user.role.manager"}</a></p>
@@ -45,10 +44,11 @@
 			</div>
 		{/if}
 		{if $isValid.Editor.$journalId || $isValid.SectionEditor.$journalId || $isValid.LayoutEditor.$journalId || $isValid.Copyeditor.$journalId || $isValid.Proofreader.$journalId}
-			{}
+			
 		{/if}
 		{if $isValid.Editor.$journalId}
-			<div class="users-home-user-cat">
+			{assign var="editorSubmissionsCount" value=$submissionsCount.Editor.$journalId}
+			<div class="users-home-user-cat">		
 				<p class="user-cat"><a href="{url journal=$journalPath page="editor"}">{translate key="user.role.editor"}</a></p>
 				<p class="user-cat-content">{if $editorSubmissionsCount[0]}
 						<a href="{url journal=$journalPath page="editor" op="submissions" path="submissionsUnassigned"}"><span class="medium-number">{$editorSubmissionsCount[0]}</span> {translate key="common.queue.short.submissionsUnassigned"}</a>
@@ -69,6 +69,7 @@
 				<hr/>
 			</div>
 		{/if}
+		
 		{if $isValid.SectionEditor.$journalId}
 			{assign var="sectionEditorSubmissionsCount" value=$submissionsCount.SectionEditor.$journalId}
 			<div class="users-home-user-cat">
@@ -135,7 +136,7 @@
 						<a href="{url journal=$journalPath path="completed" page="author"}"><span class="medium-number">{$authorSubmissionsCount[1]}</span> {translate key="common.queue.short.completed"}</a>
 					{else}<span class="disabled">0 {translate key="common.queue.short.completed"}</span>{/if}
 				</p>
-				<p class="user-cat_actions_create">[<a href="{url journal=$journalPath page="author" op="submit"}">{translate key="author.submit"}</a>]</p>
+				<p class="user-cat-actions-create">[<a href="{url journal=$journalPath page="author" op="submit"}">{translate key="author.submit"}</a>]</p>
 				<hr/>
 			</div>
 		{/if}
@@ -189,47 +190,6 @@
 		</div>
 	{/if}{* $currentJournal *}
 {/if}{* !$hasRole *}
-
-<div id="myAccount">
-<div class="arrow-down-box">
-<h3>{translate key="user.myAccount"}</h3>
-</div>
-<ul>
-	{*{if $hasOtherJournals}
-		{if !$showAllJournals}
-			<li><a href="{url journal="index" page="user"}">{translate key="user.showAllJournals"}</a></li>
-		{/if}
-	{/if}*}
-	{if $currentJournal}
-		{if $subscriptionsEnabled}
-			<li><a href="{url page="user" op="subscriptions"}">{translate key="user.manageMySubscriptions"}</a></li>
-		{/if}
-	{/if}
-	{if $currentJournal}
-		{if $acceptGiftPayments}
-			<li><a href="{url page="user" op="gifts"}">{translate key="gifts.manageMyGifts"}</a></li>
-		{/if}
-	{/if}
-	<li class="edit"><a href="{url page="user" op="profile"}">{translate key="user.editMyProfile"}</a></li>
-
-	{if !$implicitAuth}
-		<li class="edit"><a href="{url page="user" op="changePassword"}">{translate key="user.changeMyPassword"}</a></li>
-	{/if}
-
-	{if $currentJournal}
-		{if $journalPaymentsEnabled && $membershipEnabled}
-			{if $dateEndMembership}
-				<li><a href="{url page="user" op="payMembership"}">{translate key="payment.membership.renewMembership"}</a> ({translate key="payment.membership.ends"}: {$dateEndMembership|date_format:$dateFormatShort})</li>
-			{else}
-				<li><a href="{url page="user" op="payMembership"}">{translate key="payment.membership.buyMembership"}</a></li>
-			{/if}
-		{/if}{* $journalPaymentsEnabled && $membershipEnabled *}
-	{/if}{* $userJournal *}
-
-	<li class="logout"><a href="{url page="login" op="signOut"}">{translate key="user.logOut"}</a></li>
-	{call_hook name="Templates::User::Index::MyAccount"}
-</ul>
-</div>
 
 {include file="common/footer.tpl"}
 

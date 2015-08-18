@@ -9,7 +9,7 @@
  *
  *}
 {foreach name=sections from=$publishedArticles item=section key=sectionId}
-{if $section.title}<div class="issue_section_title"><h4 class="tocSectionTitle">{$section.title|escape}</h4>{/if}
+{if $section.title}<div class="issue-section-title"><h4 class="toc-section-title">{$section.title|escape}</h4></div>{/if}
 
 {foreach from=$section.articles item=article}
 	{assign var=articlePath value=$article->getBestArticleId($currentJournal)}
@@ -33,7 +33,7 @@
 		{assign var=hasAccess value=0}
 	{/if}
 
-<div class="tocArticle">
+<div class="toc-article">
 	{if $article->getLocalizedFileName() && $article->getLocalizedShowCoverPage() && !$article->getHideCoverPageToc($locale)}
 		<div>
 			<div class="tocArticleCoverImage">
@@ -43,7 +43,7 @@
 	{/if}
 	{call_hook name="Templates::Issue::Issue::ArticleCoverImage"}
 
-	<div class="tocTitle">
+	<div class="toc-title">
 		{if !$hasAccess || $hasAbstract}
 			<a href="{$baseUrl}/article/view/{$articlePath}.html">{$article->getLocalizedTitle()|strip_unsafe_html}</a>
 		{else}
@@ -52,25 +52,25 @@
 	</div>
 	
 	{if (!$section.hideAuthor && $article->getHideAuthor() == $smarty.const.AUTHOR_TOC_DEFAULT) || $article->getHideAuthor() == $smarty.const.AUTHOR_TOC_SHOW}
-		<div class="tocAuthors">
+		<div class="toc-authors">
 			{foreach from=$article->getAuthors() item=author name=authorList}
 				{$author->getFullName()|escape}{if !$smarty.foreach.authorList.last},{/if}
 			{/foreach}
 		</div>
 	{/if}
 	
-	<div class="tocPages">
+	<div class="toc-pages">
 		{$article->getPages()|escape}
 	</div>	
 	
 	{if !$hasAccess || $hasAbstract}
-		<div class="tocAbstract">
+		<div class="toc-abstract">
 			{if $hasAbstract}<a href="{$baseUrl}/article/view/{$articlePath}.html">{translate key=article.abstract}</a>
 			{/if}
 		</div>
 	{/if}
 
-	<div class="tocGalleys">
+	<div class="toc-galleys">
 		{if $hasAccess || ($subscriptionRequired && $showGalleyLinks)}
 			{foreach from=$article->getGalleys() item=galley name=galleyList}
 				<a href="{$baseUrl}/article/download/{$articlePath}/{$galley->getBestGalleyId($currentJournal)}.pdf" class="file" target="_blank">{$galley->getGalleyLabel()|escape}</a>

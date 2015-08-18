@@ -1,0 +1,231 @@
+/**
+* help.css
+*
+* Relaciones Internacionales OJS Journal CSS Customization
+* Help Stylesheet
+* OJS 2.4.6
+* July 2015
+*/
+
+body.modal-help a {
+    text-decoration: none;
+}
+
+body.modal-help a:link,
+body.modal-help a:active,
+body.modal-help a:visited {
+    color: #444;
+}
+
+body.modal-help a:hover {
+    color: #717171;
+    text-decoration:none;
+    background: none;
+}
+
+body.modal-help div, 
+body.modal-help p, 
+body.modal-help ol, 
+body.modal-help ul {
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif; 
+    font-size:12px;
+}
+
+body.modal-help hr {
+    width:75%;
+}
+
+body.modal-help #headerTitle {
+    width: 100%;
+}
+
+body.modal-help #body {
+    width: 100%; 
+}
+
+body.modal-help #header {
+    float:left;
+    width:100%;	
+    background-color: #1a1a1a;   
+    margin:0px 0px 20px 0px;  
+    padding: 10px 0px;
+}
+
+body.modal-help #header-container {  
+    width: 100%x;
+    margin: 0px 0px 0px 20px;
+    background-color: #1a1a1a;
+}
+
+body.modal-help #header h1 a{
+    font-family: 'Crimson Text', serif;
+    font-size:28px;
+    text-transform:uppercase;
+    line-height:25px;
+    color:#fff;
+}
+
+body.modal-help #header h1 a:hover {
+    text-decoration:none;
+}
+
+body.modal-help #container {
+    width: 100%;
+}
+
+body.modal-help #sidebar {
+    float: right;
+    width: 20%;
+    height: 100%;	
+    margin-right: 2%;
+    padding: 1em 0em 1em 0em;	
+    font-size: 0.65em;
+}
+
+body.modal-help #main {
+    float:left;
+    width: 70%;
+}
+
+body.modal-help #main h2 {
+    width: 100%; 
+    padding:10px;
+    background: #e8e8e8; 
+    font-family: 'Roboto Condensed',Arial,Helvetica,sans-serif;
+    font-size:18px; 
+    font-weight:bold;
+}
+
+body.modal-help #main h3 {
+    width:50%;
+    margin-left:-20px;
+    margin-bottom:20px;
+    padding:10px;
+    background: #e8e8e8; 
+    font-size:14px; font-family: 'Open Sans',Arial,Helvetica,sans-serif;  
+    font-weight:bold; 
+    text-transform:uppercase;
+    border:none; 
+}
+
+body.modal-help #content { 
+    width:100%;
+    padding-left:20px;
+    border:none;
+    text-align:justify;
+}
+
+body.modal-help #content p {
+    text-align:justify;
+}
+
+body.modal-help #content ul {
+    font-size:11px; 
+    list-style-type:square;
+}
+
+body.modal-help #footerContent {
+    width: 100%;
+}
+
+body.modal-help #main h4 {
+    width: 100%; 
+    margin:0px;
+    padding:10px;
+    background: #e8e8e8; 
+    font-family: 'Roboto Condensed',Arial,Helvetica,sans-serif;
+    font-size:18px; 
+    font-weight:bold; 
+    text-transform:uppercase; 
+    border:none;
+}
+
+body.modal-help #toc ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+body.modal-help #toc li {
+    list-style-type: none;
+    font-size: 1.2em;
+    padding: 1px 0px 1px 0px;
+}
+
+body.modal-help div.thickSeparator, 
+body.modal-help div.separator {	
+    width: 80%;
+    padding: px;	
+    border-bottom: 1px solid #e8e8e8;	
+    line-height: 0px;}
+
+
+body.modal-help .code {
+    font-size: 1.2em;
+    padding-left: 5px;
+    color: #666;
+}
+
+body.modal-help span.blockTitle {
+    color: #375;
+}
+
+/**
+* Sidebar
+*/
+
+body.modal-help #sidebar div.block span.blockTitle {
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif; 
+    font-size:10px; 
+    font-weight:bold; 
+    text-transform:uppercase;
+}
+
+body.modal-help #sidebar a {
+    text-decoration: none;
+}
+
+
+/**
+* Breadcrumb
+*/
+
+body.modal-help #breadcrumb {
+    width:100%; 
+    padding:10px; 
+    font-family: 'Roboto Condensed',Arial,Helvetica,sans-serif;
+    font-size:13px; 
+    font-weight:bold; 
+    text-transform:uppercase;
+}
+
+body.modal-help li.current, body.modal-help a.current {
+    font-weight: bold;
+}
+
+body.modal-help .searchBreadcrumb {
+    font-size: 0.8em;
+}
+
+body.modal-help .searchBreadcrumb a {
+    text-decoration: none;
+}
+
+body.modal-help #search li {
+    margin: 10px 0px 10px 0px;
+}
+
+body.modal-help #search p {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media only screen and (min-width:50px) 
+    and (max-width:600px) {
+        
+    body.modal-help #sidebar {
+        float: left;
+        width: 100%; 
+        margin-left: 20px;
+    }
+
+}

@@ -51,9 +51,9 @@
 {/if}
 
 </table>
-<a class="action crea-_general" href={plugin_url path="add"}>{translate key="plugins.generic.staticPages.addNewPage"}</a>
+<a class="action crear-general" href="{plugin_url path="add"}">{translate key="plugins.generic.staticPages.addNewPage"}</a>
 <div id="separator"><hr/></div>
-<p style="text-align:right"><input type="button" value="{translate key="common.done"}" class="btn btn-small" onclick="document.location.href='{url page="manager" op="plugins" escape=false}'" /></p>
+<p style="text-align:right"><input type="button" value="{translate key="common.done"}" class="btn btn-sm" onclick="document.location.href='{url page="manager" op="plugins" escape=false}'" /></p>
 
 </form>
 

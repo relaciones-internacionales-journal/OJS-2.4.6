@@ -303,30 +303,20 @@ class PKPTemplateManager extends Smarty {
 			$this->javaScripts = array();
 		}
 		
-		$compile_id = $this->getCompileID($resource_name, $compile_id);
+		if (!$compile_id) $compile_id = $this->getCompileId($resource_name);
 		
 		return parent::fetch($resource_name, $cache_id, $compile_id, $display);
 	}
 	
 	/**
-     * getCompileID
-     *
-     * Creates a unique compile_id for a given template.
-     *
-     * @author      Joe Stump <joe@joestump.net>
-     * @access      private
-     * @param       string      $template       Name of template
-     * @param       string      $compile_id     Old $compile_id
-     * @return      string
-     */
-    private function getCompileID($template, $compile_id)
-    {
-        if (strlen($compile_id)) {
-            return $compile_id;
-        }
-        $compile_id = $this->template_dir . $template;
-        return sha1($compile_id);
-    }
+	 * Calculate a compile ID for a resource.
+	 * @param $resourceName string Resource name.
+	 * @return string
+	 */
+	function getCompileId($resourceName) {
+		return sha1($resourceName);
+	}
+	/**
 
 	/**
 	 * Returns the template results as a JSON message.

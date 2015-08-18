@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2013 Projecte ictino (projecteictineo.com)
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the ca_ES (Català) locale.
+  *
+  * $Id$
+  -->
+ 
+<locale name="ca_ES" full_name="Català">
+	<message key="plugins.generic.issuecarousel.displayName">Mostra els números en Carrousel</message>
+	<message key="plugins.generic.issuecarousel.description">Mostra els números històrics en un carrousel que podràs insertar en qualsevol punt dels templates. Tria si vols usar les portades per defecte o imatges a mida dins del directori públic de la revista /covers-volum-numer-locale.png. Per més informació llegeix el README</message>
+	<message key="plugins.generic.issuecarousel.settings">Configuració</message>
+	<message key="plugins.generic.issuecarousel.settings.custom">Avançat: Utilitza imatges a mida (més informació al README)</message>
+	<message key="plugins.generic.issuecarousel.settings.generic">Utilitza les imatges de la portada</message>
+	<message key="plugins.generic.issuecarousel.chooseIssues">Choose issues to show</message>
+	<message key="plugins.generic.issuecarousel.current">Número actual</message>
+</locale>

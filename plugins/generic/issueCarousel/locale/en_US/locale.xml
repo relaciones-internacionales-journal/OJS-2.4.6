@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2013 Projecte ictino (projecteictineo.com)
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Updated for 2.4.6 by Relaciones Internacionales OJS Team
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  *
+  * $Id$
+  -->
+ 
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.generic.issuecarousel.displayName">Display issues as Carrousel</message>
+	<message key="plugins.generic.issuecarousel.description">Display all issues in a carousel that can be inserted into any point of the templates. Choose whether to use the cover or custom images in the public directory of the journal/covers-volume-number-locale.png. For more information please read the README</message>
+	<message key="plugins.generic.issuecarousel.settings">Settings</message>
+	<message key="plugins.generic.issuecarousel.settings.custom">Advanced: Use custom images (read README file for more info)</message>
+	<message key="plugins.generic.issuecarousel.settings.generic">Use the cover images</message>
+	<message key="plugins.generic.issuecarousel.chooseIssues">Choose issues to show</message>
+	<message key="plugins.generic.issuecarousel.current">Current issue</message>
+</locale>

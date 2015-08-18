@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2013 Projecte ictino (projecteictineo.com)
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Updated for 2.4.6 by Relaciones Internacionales OJS Team
+  *
+  * Localization strings for the es_ES (Español (España)) locale.
+  *
+  * $Id$
+  -->
+ 
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.generic.issuecarousel.displayName">Mostrar los números en Carrousel</message>
+	<message key="plugins.generic.issuecarousel.description">Mostrar los números históricos del carrousel que podras insertar en cualquier punto del template. Elige si vas a usar las portadas por defecto o una imagen a medida dentro del directorio publico de la revista /vovers/volumen-numero-locale.png. Para mas información lee README</message>
+	<message key="plugins.generic.issuecarousel.settings">Configuración</message>
+	<message key="plugins.generic.issuecarousel.settings.custom">Avanzado: Usar imagenes a medida (mas información en el README)</message>
+	<message key="plugins.generic.issuecarousel.settings.generic">Usar imagenes de portada</message>
+	<message key="plugins.generic.issuecarousel.chooseIssues">Elegir números para mostrar</message>
+	<message key="plugins.generic.issuecarousel.current">Número actual</message>
+</locale>

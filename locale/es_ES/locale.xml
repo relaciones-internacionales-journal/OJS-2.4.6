@@ -89,6 +89,8 @@
 	<message key="search.infoAboutResults">Los resultados de las búsquedas se mostrarán debajo del formulario.</message>
 	<message key="search.infoSearchResults">Resultados de la búsqueda</message>
 	<message key="form.errorTitle">Error...</message>
+	<message key="user.langSelect">Idioma</message>
+	<message key="user.mobileSelectStyle">Estilo</message>
 	
 	<!-- Extra links header -->
 	<message key="header.indexes">Índices</message>
@@ -126,7 +128,8 @@
 	<message key="frontpage.PastIssues">Números anteriores</message>
 	<message key="frontpage.More">Más...</message>
 	<message key="frontpage.ReadMore">Leer más</message>
-	<message key="frontpage.cookiesPolicy"><![CDATA[www.relacionesinternacionales.info utiliza cookies propias y de terceros para su funcionamiento, para mantener la sesión y personalizar la experiencia del usuario, así como para obtener estadísticas anónimas de uso del sitio web. Si continua navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener más información pinchando <a href="/ojs/pages/view/politica-cookies.html">aquí.</a>]]></message>
+	<message key="frontpage.cookiesPolicy"><![CDATA[www.relacionesinternacionales.info utiliza cookies propias y de terceros para su funcionamiento, para mantener la sesión y personalizar la experiencia del usuario, así como para obtener estadísticas anónimas de uso del sitio web. Si continua navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener más información pinchando en ]]></message>
+	<message key="frontpage.cookiesPolicyAccept">Acepto</message>
 	
 	<!--About page-->
 	<message key="about.OnlineSubmissionsInfo">Para remitir los manuscritos se utilizará el sistema de OJS de la web de la Revista que permite un seguimiento online de todos los procesos.</message>

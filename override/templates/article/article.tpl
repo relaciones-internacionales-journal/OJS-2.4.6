@@ -43,12 +43,12 @@
 		</div>
 	{/if}
 	{call_hook name="Templates::Article::Article::ArticleCoverImage"}
-	<div id="articleTitle"><h2 itemprop="name">{$article->getLocalizedTitle()|strip_unsafe_html}</h2></div>
-	<div id="authorString">
+	<div id="article-title"><h2 itemprop="name">{$article->getLocalizedTitle()|strip_unsafe_html}</h2></div>
+	<div id="author-string">
 	{foreach from=$article->getAuthors() item=author name=authors}
-	<div class="authorBio">
+	<div class="author-bio">
 	<p itemprop="author">{$author->getFullName()|escape}</p>
-	<p class="p_authorBio">{if $author->getUrl()}<a href="{$author->getUrl()|escape:"quotes"}">{$author->getUrl()|escape}</a><br/>{/if}
+	<p class="p-author-bio">{if $author->getUrl()}<a href="{$author->getUrl()|escape:"quotes"}">{$author->getUrl()|escape}</a><br/>{/if}
 		{assign var=authorAffiliation value=$author->getLocalizedAffiliation()}
 		{if $authorAffiliation}{$authorAffiliation|escape}{/if}
 		{if !$authorAffiliation}{$author->getLocalizedBiography()|strip_unsafe_html|nl2br}{/if}
@@ -59,7 +59,7 @@
 	{/foreach}</div>
 	<br />
 	{if $article->getLocalizedAbstract()}
-		<div id="articleAbstract">		       
+		<div id="article-abstract">		       
 			<h3>{translate key="article.abstract"}</h3>		
 			<div itemprop="about">{$article->getLocalizedAbstract()|strip_unsafe_html|nl2br}</div>
 		</div>
@@ -70,7 +70,7 @@
 		{assign var='numberOfDelimiters' value=$localizedSubjectString|substr_count:";"}
 		{assign var='subjects' value=$localizedSubjectString|explode:";":$numberOfDelimiters+1}
 
-		<div id="articleSubject">
+		<div id="article-subject">
 		<h3>{translate key="article.subject"}</h3>
 		<br />
 		<ul>
@@ -90,13 +90,13 @@
 	{/if}
 
 	{if $galleys}
-		<div id="articleFullText">
+		<div id="article-full-text">
 		<h3>{translate key="reader.fullText"}</h3>
 		<br />
 		{if $hasAccess || ($subscriptionRequired && $showGalleyLinks)}
 			{foreach from=$article->getGalleys() item=galley name=galleyList}
-				<div><a itemprop="articleBody" href="{$baseUrl}/article/view/{$article->getBestArticleId($currentJournal)}/{$galley->getBestGalleyId($currentJournal)}.html" class="documento" target="_blank">{translate key="reader.download"}</a><br /><br />
-				<a itemprop="url" class="descargar_general" id="pdfDownloadLink" target="_blank" href="{$baseUrl}/article/download/{$article->getBestArticleId($currentJournal)}/{$galley->getBestGalleyId($currentJournal)}.pdf">{translate key="article.pdf.download"}</a>
+				<div><a itemprop="articleBody" href="{$baseUrl}/article/view/{$article->getBestArticleId($currentJournal)}/{$galley->getBestGalleyId($currentJournal)}.html" class="document" target="_blank">{translate key="reader.download"}</a><br /><br />
+				<a itemprop="url" class="descargar-general" id="pdfDownloadLink" target="_blank" href="{$baseUrl}/article/download/{$article->getBestArticleId($currentJournal)}/{$galley->getBestGalleyId($currentJournal)}.pdf">{translate key="article.pdf.download"}</a>
 				</div>
 				{if $subscriptionRequired && $showGalleyLinks && $restrictOnlyPdf}
 					{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN || !$galley->isPdfGalley()}
@@ -128,9 +128,9 @@
 				</script>
 			{/if}
 		
-			<div class="addthis_container">
+			<div class="addthis-container">
 			<h3>{translate key="reader.articleShare"}</h3>
-				<div class="addthis_toolbox addthis_default_style ">
+				<div class="addthis_toolbox addthis-default-style ">
 					<a class="addthis_button_email addtoemail"></a>
 					<a class="addthis_button_facebook addtofacebook"></a>
 					<a class="addthis_button_tuenti addtotuenti"></a>
@@ -144,7 +144,7 @@
 	{* end AddThis *}
 	
 	{if $citationFactory->getCount()}
-		<div id="articleCitations">
+		<div id="article-citations">
 		<h4>{translate key="submission.citations"}</h4>
 		<br />
 		<div>

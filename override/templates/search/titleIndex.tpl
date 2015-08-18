@@ -26,8 +26,8 @@
 <tr><td colspan="{$numCols|escape}" class="headseparator">&nbsp;</td></tr>
 <tr class="heading" valign="bottom">
 	{if !$currentJournal}<td width="80%">{translate key="issue.issue"}</td>{/if}
-	<td width="80%" class="long-result">{translate key="article.title"}</td>
-	<td width="20%" class="short-result">{translate key="article.details"}</td>
+	<td width="80%" class="long_result">{translate key="article.title"}</td>
+	<td width="20%" class="short_result">{translate key="article.details"}</td>
 </tr>
 <tr><td colspan="{$numCols|escape}" class="headseparator">&nbsp;</td></tr>
 
@@ -44,11 +44,11 @@
 		{foreach from=$article->getAuthors() item=author name=authorList}
 			<p style="font-style: italic;">{$author->getFullName()|escape}{if !$smarty.foreach.authorList.last},{/if}</p>
 		{/foreach}
-		<p class="TitleIssue">{if $issueAvailable}<a href="{url journal=$journal->getPath() page="issue" op="view" path=$issue->getBestIssueId($journal)}">{/if}{$issue->getNumber()|strip_unsafe_html|nl2br} <span class="divider">/</span> {$issue->getYear()|strip_unsafe_html|nl2br}{if $issueAvailable}</a>{/if}</p>
-		<p class="TitleAbstract"><a href="{url journal=$journal->getPath() page="article" op="view" path=$publishedArticle->getBestArticleId($journal)}" class="file">{if $article->getLocalizedAbstract()}{translate key="article.abstract"}{else}{translate key="article.details"}{/if}</a></p>
+		<p class="title-issue">{if $issueAvailable}<a href="{url journal=$journal->getPath() page="issue" op="view" path=$issue->getBestIssueId($journal)}">{/if}{$issue->getNumber()|strip_unsafe_html|nl2br} <span class="divider">/</span> {$issue->getYear()|strip_unsafe_html|nl2br}{if $issueAvailable}</a>{/if}</p>
+		<p class="title-abstract"><a href="{url journal=$journal->getPath() page="article" op="view" path=$publishedArticle->getBestArticleId($journal)}" class="file">{if $article->getLocalizedAbstract()}{translate key="article.abstract"}{else}{translate key="article.details"}{/if}</a></p>
 		{if $issueAvailable}
 			{foreach from=$publishedArticle->getGalleys() item=galley name=galleyList}	
-				<p class="TitleGalley""><a href="{url journal=$journal->getPath() page="article" op="view" path=$publishedArticle->getBestArticleId($journal)|to_array:$galley->getBestGalleyId($journal)}" class="file">{$galley->getGalleyLabel()|escape}</a></p>
+				<p class="title-galley""><a href="{url journal=$journal->getPath() page="article" op="view" path=$publishedArticle->getBestArticleId($journal)|to_array:$galley->getBestGalleyId($journal)}" class="file">{$galley->getGalleyLabel()|escape}</a></p>
 			{/foreach}
 		{/if}
 	</td>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plugin_settings SYSTEM "../../../lib/pkp/dtd/pluginSettings.dtd">
+
+<!--
+  * settings.xml
+  *
+  * Copyright (c) 2013 Projecte Ictineo (www.projecteictineo.com)
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Default plugin settings.
+  *
+  * $Id$
+  -->
+
+<plugin_settings>
+	<setting type="string">
+		<name>customCovers</name>
+		<value>generic</value>
+	</setting>
+</plugin_settings>

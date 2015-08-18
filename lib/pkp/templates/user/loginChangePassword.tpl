@@ -52,8 +52,8 @@
 		<div class="separator"><hr/></div>
 		<div class="section formButtons ">																	
 			<div style="float:right;">
-				<a href="#" id="cancelFormButton" class="btn btn-danger btn-small">{translate key="common.cancel"}</a> 
-				<button class="btn btn-small" type="submit" id="submitFormButton" translate="1">{translate key="common.save"}</button>
+				<a href="#" id="cancelFormButton" class="btn btn-danger btn-sm">{translate key="common.cancel"}</a> 
+				<button class="btn btn-sm" type="submit" id="submitFormButton" translate="1">{translate key="common.save"}</button>
 			</div>
 			<div class="pkp_helpers_progressIndicator"></div>
 			<div class="clear"></div>

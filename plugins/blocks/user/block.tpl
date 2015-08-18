@@ -9,22 +9,23 @@
  *
  *}
 {if $isUserLoggedIn}
-	<div class="block" id="sidebarUser">
+	<div class="block" id="sidebar-user">
 		{if !$implicitAuth}
-			<div class="blockTitleModified">{translate key="navigation.user"}</div>
+			<div class="block-title-modified">{translate key="navigation.user"}</div>
 		{/if}
 
 		<p style="padding-left:8px;">{translate key="plugins.block.user.loggedInAs"}<br />
 		<strong>{$loggedInUsername|escape}</strong></p>
-		<ul class="sd_bl_user">
+		<ul class="sd-bl-user">
 			{**{if $hasOtherJournals}
 				<li><a href="{url journal="index" page="user"}">{translate key="plugins.block.user.myJournals"}</a></li>
 			{/if} *}
-			<li class="sidebarblockUserHome"><a href="{$baseUrl}/user.html">{translate key="plugins.block.user.myHome"}</a></li>
-			<li class="sidebarblockUserProfile"><a href="{$baseUrl}/user/profile.html">{translate key="plugins.block.user.myProfile"}</a></li>
-			<li class="sidebarblockUserLogout"><a href="{$baseUrl}/login/signOut.html">{translate key="plugins.block.user.logout"}</a></li>			
+			<li class="sidebar-block-user-home"><a href="{$baseUrl}/user.html">{translate key="plugins.block.user.myHome"}</a></li>
+			<li class="sidebar-block-user-profile"><a href="{$baseUrl}/user/profile.html">{translate key="plugins.block.user.myProfile"}</a></li>
+			<li class="sidebar-block-user-change-pass"><a href="{url page="user" op="changePassword"}">{translate key="user.changeMyPassword"}</a></li>
+			<li class="sidebar-block-user-logout"><a href="{$baseUrl}/login/signOut.html">{translate key="plugins.block.user.logout"}</a></li>			
 			{if $userSession->getSessionVar('signedInAs')}
-				<li class="sidebarblockUserLogoff"><a href="{url page="login" op="signOutAsUser"}">{translate key="plugins.block.user.signOutAsUser"}</a></li>
+				<li class="sidebar-block-user-logoff"><a href="{url page="login" op="signOutAsUser"}">{translate key="plugins.block.user.signOutAsUser"}</a></li>
 			{/if}
 		</ul>
 	</div>

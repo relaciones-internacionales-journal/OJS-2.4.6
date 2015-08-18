@@ -45,32 +45,21 @@
 <input type="hidden" name="source" value="{$source|strip_unsafe_html|escape}" />
 
 {if ! $implicitAuth}
+
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+		<input type="text" class="textField form-control" id="loginUsername" placeholder="{translate key="user.username"}" name="username" value="{$username|escape}" size="20" maxlength="32">		
+	</div>
 	
-	<div class="control-group">
-		<label class="control-label" for="loginUsername">{translate key="user.username"}</label>
-		<div class="input-prepend">
-		  <span class="add-on"><i class="icon-user"></i></span>
-		  <input type="text" id="loginUsername" name="username" value="{$username|escape}" size="20" maxlength="32" class="textField">
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon2"><i class="fa fa-key"></i></span>
+		<input type="password" class="textField form-control" id="loginPassword" placeholder="{translate key="user.password"}" name="password" value="{$password|escape}" size="20" maxlength="32">
 		</div>
 	</div>
 	
-	<div class="control-group">
-		<label class="control-label" for="loginPassword">{translate key="user.password"}</label>
-		<div class="input-prepend">
-			<span class="add-on"><i class="icon-lock"></i></span>
-			<input type="password" id="loginPassword" name="password" value="{$password|escape}" size="20" maxlength="32" class="textField">
-		</div>
-	</div>
-	
-	<div class="control-group">
-		<div class="controls" style="float:right;">
-		<input type="submit" value="{translate key="user.login"}" class="btn" />
-		</div>
-	</div>
-	
-	<div class="control-group" style="float:right;">
-		{if !$hideRegisterLink}<p class="login-lostpass"><a href="{url page="user" op=$registerOp}">{translate key=$registerLocaleKey}</a></p>{/if}
-		<p class="login-lostpass"><a href="{url page="login" op="lostPassword"}">{translate key="user.login.forgotPassword"}</a></p>
+	<input type="submit" value="{translate key="user.login"}" class="btn" />
+	{if !$hideRegisterLink}<p class="login-register"><a href="{url page="user" op=$registerOp}">{translate key=$registerLocaleKey}</a></p>{/if}
+	<p class="login-lost-password"><a href="{url page="login" op="lostPassword"}">{translate key="user.login.forgotPassword"}</a></p>
 	</div>
   
 {/if}{* !$implicitAuth *}

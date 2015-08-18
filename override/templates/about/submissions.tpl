@@ -28,7 +28,7 @@
 	{if $authorFees}<li><a href="{url page="about" op="submissions" anchor="authorFees"}">{translate key="about.authorFees"}</a></li>{/if}	
 </ul>
 
-<div id="sectionPolicies"><div class="arrow-down-box"><h3>{translate key="about.sectionPolicies"}</h3></div>
+<div id="section-policies"><div class="arrow-down-box"><h3>{translate key="about.sectionPolicies"}</h3></div>
 {foreach from=$sections item=section}{if !$section->getHideAbout()}
 	<h4>{$section->getLocalizedTitle()}</h4>
 	{if strlen($section->getLocalizedPolicy()) > 0}
@@ -62,14 +62,14 @@
 
 <div class="separator">&nbsp;</div>
 
-{if $currentJournal->getLocalizedSetting('reviewPolicy') != ''}<div id="peerReviewProcess"><div class="arrow-down-box"><h3>{translate key="about.authorGuidelines"} {translate key="frontpage.CoordinatorsAnd"} {translate key="about.peerReviewProcess"}</h3></div>
+{if $currentJournal->getLocalizedSetting('reviewPolicy') != ''}<div id="peer-review-process"><div class="arrow-down-box"><h3>{translate key="about.authorGuidelines"} {translate key="frontpage.CoordinatorsAnd"} {translate key="about.peerReviewProcess"}</h3></div>
 <p>{$currentJournal->getLocalizedSetting('reviewPolicy')|nl2br}</p>
 
 <div class="separator">&nbsp;</div>
 </div>
 {/if}
 
-<div id="onlineSubmissions"><div class="arrow-down-box"><h3>{translate key="about.onlineSubmissions"}</h3></div>
+<div id="online-submissions"><div class="arrow-down-box"><h3>{translate key="about.onlineSubmissions"}</h3></div>
 <p>{translate key="about.OnlineSubmissionsInfo"}</p>
 <p>{translate key="about.onlineSubmissions.registrationRequired"}</p>
 <p>{translate key="about.onlineSubmissions.haveAccount" journalTitle=$siteTitle|escape}	<a href="{$baseUrl}/login.html">{translate key="about.onlineSubmissions.login"}</a>
@@ -81,7 +81,7 @@
 </div>
 
 {*{if $currentJournal->getLocalizedSetting('authorGuidelines') != ''}
-<div id="authorGuidelines"><div class="arrow-down-box"><h3>{translate key="about.authorGuidelines"}</h3></div>
+<div id="author-guidelines"><div class="arrow-down-box"><h3>{translate key="about.authorGuidelines"}</h3></div>
 <p>{$currentJournal->getLocalizedSetting('authorGuidelines')|nl2br}</p>
 
 <div class="separator">&nbsp;</div>
@@ -89,7 +89,7 @@
 {/if}*}
 
 {if $submissionChecklist}
-	<div id="submissionPreparationChecklist"><div class="arrow-down-box"><h3>{translate key="about.submissionPreparationChecklist"}</h3></div>
+	<div id="submission-preparation-checklist"><div class="arrow-down-box"><h3>{translate key="about.submissionPreparationChecklist"}</h3></div>
 	<p>{translate key="about.submissionPreparationChecklist.description"}</p>
 	<ol>
 		{foreach from=$submissionChecklist item=checklistItem}
@@ -101,14 +101,14 @@
 {/if}
 
 {if $currentJournal->getLocalizedSetting('copyrightNotice') != ''}
-<div id="copyrightNotice"><div class="arrow-down-box"><h3>{translate key="about.copyrightNotice"}</h3></div>
+<div id="copyright-notice"><div class="arrow-down-box"><h3>{translate key="about.copyrightNotice"}</h3></div>
 <p>{$currentJournal->getLocalizedSetting('copyrightNotice')|nl2br}</p>
 
 <div class="separator">&nbsp;</div>
 </div>
 {/if}
 
-{if $currentJournal->getLocalizedSetting('privacyStatement') != ''}<div id="privacyStatement"><div class="arrow-down-box"><h3>{translate key="about.privacyStatement"}</h3></div>
+{if $currentJournal->getLocalizedSetting('privacyStatement') != ''}<div id="privacy-statement"><div class="arrow-down-box"><h3>{translate key="about.privacyStatement"}</h3></div>
 <p>{$currentJournal->getLocalizedSetting('privacyStatement')|nl2br}</p>
 
 <div class="separator">&nbsp;</div>
@@ -117,7 +117,7 @@
 
 {if $authorFees}
 
-<div id="authorFees"><h3>{translate key="manager.payment.authorFees"}</h3>
+<div id="author-fees"><h3>{translate key="manager.payment.authorFees"}</h3>
 	<p>{translate key="about.authorFeesMessage"}</p>
 	{if $currentJournal->getSetting('submissionFeeEnabled')}
 		<p>{$currentJournal->getLocalizedSetting('submissionFeeName')|escape}: {$currentJournal->getSetting('submissionFee')|string_format:"%.2f"} ({$currentJournal->getSetting('currency')})<br />

@@ -14,7 +14,7 @@
 {/strip}
 
 <hr/>
-<ul class="searchResults-ListAuhors">
+<ul class="search-results-list-authors">
 	{foreach from=$alphaList item=letter}
 		<li><a href="{url op="authors" searchInitial=$letter}">{if $letter == $searchInitial}<strong>{$letter|escape}</strong>{else}{$letter|escape}{/if}</a></li> 
 	{/foreach} 
@@ -45,7 +45,7 @@
 
 	{if $authorMiddleName != ''}{assign var=authorName value="$authorName $authorMiddleName"}{/if}
 	{strip}
-		<p class="singleAuthor"><a href="{url op="authors" path="view" firstName=$authorFirstName middleName=$authorMiddleName lastName=$authorLastName affiliation=$authorAffiliation country=$authorCountry}">{$authorName|escape}</a>
+		<p class="single-author"><a href="{url op="authors" path="view" firstName=$authorFirstName middleName=$authorMiddleName lastName=$authorLastName affiliation=$authorAffiliation country=$authorCountry}">{$authorName|escape}</a>
 			{if $authorAffiliation}, {$authorAffiliation|escape}{/if}
 			{if $lastAuthorName == $authorName && $lastAuthorCountry != $authorCountry}
 				{* Disambiguate with country if necessary (i.e. if names are the same otherwise) *}

@@ -114,8 +114,17 @@ class AddCssJsPlugin extends GenericPlugin {
 					$AddToHeadJsUrls = $extraJsUrls;
 				}
 			
-			$templateMgr->assign('additionalHeadData', $additionalHeadData."\n\t".$AddToHeadCssUrls."\n\t".$AddToHeadJsUrls);
-			
+				if ((!empty($AddToHeadCssUrls)) && (!empty($AddToHeadJsUrls))) {
+					$templateMgr->assign('additionalHeadData', $additionalHeadData."\n\t".$AddToHeadCssUrls."\n\t".$AddToHeadJsUrls);
+				}
+				
+				elseif ((empty($AddToHeadCssUrls)) && ($AddToHeadJsUrls)) {
+					$templateMgr->assign('additionalHeadData', $additionalHeadData."\n\t".$AddToHeadJsUrls);
+				}
+				
+				elseif (($AddToHeadCssUrls) && (empty($AddToHeadJsUrls))) {
+					$templateMgr->assign('additionalHeadData', $additionalHeadData."\n\t".$AddToHeadCssUrls);
+				}			
 			}			
 		}
 

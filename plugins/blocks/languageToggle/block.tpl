@@ -11,7 +11,7 @@
 
 {if $enableLanguageToggle}
 {* 
-<div class="block" id="sidebarLanguageToggle">
+<div class="block" id="sidebar-language-toggle">
 	<script type="text/javascript">
 		<!--
 		function changeLanguage() {ldelim}
@@ -25,7 +25,7 @@
 		{rdelim}
 		//-->
 	</script>
-	<span class="blockTitle">{translate key="common.language"}</span>
+	<span class="block-title">{translate key="common.language"}</span>
 	<form action="#">
 		<label for="languageSelect">{translate key="plugins.block.languageToggle.selectLabel"}</label>
 		<select id="languageSelect" {if $isPostRequest}disabled="disabled" {/if}size="1" name="locale" class="selectMenu">{html_options options=$languageToggleLocales selected=$currentLocale}</select>
@@ -34,8 +34,8 @@
 </div>
 {/if} 
 *}
-<div class="block-nav sidebarLanguageToggle" style="display:none;">
-	<div class="blockTitle">{translate key="common.language"}</div>
+<div class="block-nav sidebar-language-toggle" style="display:none;">
+	<div class="block-title">{translate key="common.language"}</div>
 	{foreach from=$languageToggleLocales key=langkey item=langname}
       {if $langkey == $currentLocale}
          <a class="icon" href="#"><img src="{$baseUrl}/plugins/blocks/languageToggle/locale/{$langkey}/flag.png" alt="{$langname}" title="{$langname}" width="18" height="12" /></a>

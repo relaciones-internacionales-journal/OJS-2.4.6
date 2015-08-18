@@ -9,7 +9,10 @@
  *
  *}
 {if !$currentJournal || $currentJournal->getSetting('publishingMode') != $smarty.const.PUBLISHING_MODE_NONE}
-<div class="block" id="sidebarNavigation">
+<div class="block" id="sidebar-navigation">
+	<div class="block-title-modified">{translate key="plugins.block.navigation.journalContent"}
+	</div>
+	
 	{**<span class="blockTitleModified">{translate key="plugins.block.navigation.journalContent"}</span>
 
 	<form id="simpleSearchForm" method="post" action="{url page="search" op="search"}">
@@ -43,8 +46,8 @@
 	<br />
 	*}
 	{if $currentJournal}
-	<span class="blockSubtitle"></span>
-	<ul class="sidebar_block_list_search">
+	<span class="block-subtitle"></span>
+	<ul class="sidebar-block-list-search">
 		<li class="sd-bl-search-issue"><a href="{$baseUrl}/issue/archive.html">{translate key="navigation.browseByIssue"}</a></li>
 		<li class="sd-bl-search-author"><a href="{$baseUrl}/search/authors.html">{translate key="navigation.browseByAuthor"}</a></li>
 		<li class="sd-bl-search-title"><a href="{$baseUrl}/search/titles.html">{translate key="navigation.browseByTitle"}</a></li>

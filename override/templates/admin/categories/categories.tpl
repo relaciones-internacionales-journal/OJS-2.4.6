@@ -26,7 +26,7 @@ $(document).ready(function() { setupTableDND("#dragTable", "moveCategory"); });
 	{translate key="admin.categories.enable.description"}<br/><br/>
 	<label class="checkbox" for="categoriesEnabledOff"><input type="radio" id="categoriesEnabledOff" {if !$categoriesEnabled}checked="checked" {/if}name="categoriesEnabled" value="0"/>&nbsp;{translate key="admin.categories.disableCategories"}</label><br/>
 	<label class="checkbox" for="categoriesEnabledOn"><input type="radio" id="categoriesEnabledOn" {if $categoriesEnabled}checked="checked" {/if}name="categoriesEnabled" value="1"/>&nbsp;{translate key="admin.categories.enableCategories"}</label><br/>
-	<input type="submit" value="{translate key="common.record"}" class="btn btn-small"/>
+	<input type="submit" value="{translate key="common.record"}" class="btn btn-sm"/>
 </form>
 
 <br />

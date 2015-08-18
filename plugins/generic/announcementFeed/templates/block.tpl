@@ -9,13 +9,15 @@
  *
  *}
 <div class="block" id="sidebarAnnouncementFeed">
-	<div class="blockTitleModified">{translate key="announcement.announcements"}</div>
+	<div class="block-title-modified">RSS</div>
 	{*
 	<a href="{url page="gateway" op="plugin" path="AnnouncementFeedGatewayPlugin"|to_array:"atom"}">
 	<img src="{$baseUrl}/plugins/generic/announcementFeed/templates/images/atom10_logo.gif" alt="{translate key="plugins.generic.announcementfeed.atom.altText"}" border="0" /></a>
 	<br/>
 	*}
-	<a href="{url page="gateway" op="plugin" path="AnnouncementFeedGatewayPlugin"|to_array:"rss2"} class="rss" target="_blank">RSS 2.0</a>
+	<ul class="plain">
+		<li><i class="fa fa-rss"></i> <a href="{url page="gateway" op="plugin" path="AnnouncementFeedGatewayPlugin"|to_array:"rss2"} class="rss" target="_blank">RSS 2.0</a></li>
+	<ul>
 	{*
 	<br/>
 	<a href="{url page="gateway" op="plugin" path="AnnouncementFeedGatewayPlugin"|to_array:"rss"}">

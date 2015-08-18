@@ -11,12 +11,15 @@
 <html lang="{$currentLocale|replace:"_":"-"}">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset={$defaultCharset|escape}" />
-	<title>{$pageTitleTranslated}</title>
 	<meta http-equiv="content-language" content="{$currentLocale}">
-	{if $currentUrl == "http://www.relacionesinternacionales.info/ojs/index.php?journal=Relaciones_Internacionales&page=index" || $currentUrl == "http://www.relacionesinternacionales.info/ojs/index.php?journal=Relaciones_Internacionales"}<title>{$pageTitleTranslated}</title>
+	{if $smarty.get.page == 'index'}
+	<title>{$currentJournal->getLocalizedTitle()|strip_unsafe_html}</title>
+    {elseif $smarty.get.page == 'admin'}
+	<title>{$pageTitleTranslated}</title>
     {else}
-    <title>Relaciones Internacionales | {$pageTitleTranslated}</title>
+    <title>{$currentJournal->getLocalizedTitle()|strip_unsafe_html} | {$pageTitleTranslated}</title>
     {/if}
+	 <title>Relaciones Internacionales | {$pageTitleTranslated}</title>
 	{*  Mobile viewport optimized *}
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
@@ -35,40 +38,17 @@
 	
 	{if $displayFavicon}<link rel="icon" href="{$faviconDir}/{$displayFavicon.uploadName|escape:"url"}" type="{$displayFavicon.mimeType|escape}" />{/if}
 	
-	{* G+ Publisher *}
-	<link rel="publisher" href="https://plus.google.com/">
-	
-	{* Disabled *}
-	{*<link rel="stylesheet" href="{$baseUrl}/lib/pkp/styles/pkp.css" type="text/css" />
+	<link rel="stylesheet" href="{$baseUrl}/lib/pkp/styles/pkp.css" type="text/css" />
 	<link rel="stylesheet" href="{$baseUrl}/lib/pkp/styles/common.css" type="text/css" />
 	<link rel="stylesheet" href="{$baseUrl}/styles/common.css" type="text/css" />
-	<link rel="stylesheet" href="{$baseUrl}/styles/compiled.css" type="text/css" />*}
+	<link rel="stylesheet" href="{$baseUrl}/styles/compiled.css" type="text/css" />
+	<link rel="stylesheet" href="{$baseUrl}/override/css/help.css" type="text/css" />
 	
 	{* Google Fonts *}
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300" type="text/css" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" type="text/css" />
-	<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700,600' rel='stylesheet' type='text/css'>	
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700,600' type='text/css'>
 	
-	{* Font Awesome 4.3 *}
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-	{* Bootstrap 3.3.4 *}
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>	
-	
-	{* Minified CSS styles *}
-    <link rel="stylesheet" href="http://www.relacionesinternacionales.info/min/g=css" type="text/css" />
-	
-	{* CSS style switcher *}	
-	{php} 
-		if(!empty($_COOKIE['style'])) $style = $_COOKIE['style'];
-		else $style = 'custom';
-	{/php}	
-	<link id="stylesheet" type="text/css" href="{$baseUrl}/styles/{php}echo $style{/php}.css" rel="stylesheet" />
-	
-	{* Minified JS *}
-	<script type="text/javascript" src="http://www.relacionesinternacionales.info/min/g=js"></script>
 
 	<!-- Base Jquery -->
 	{if $allowCDN}<script type="text/javascript" src="//www.google.com/jsapi"></script>
@@ -113,23 +93,66 @@
 		{include file="common/minifiedScripts.tpl"}
 	{/if}
 
+	<!-- Form validation -->
+	<script type="text/javascript" src="{$baseUrl}/lib/pkp/js/lib/jquery/plugins/validate/jquery.validate.js"></script>
+	<script type="text/javascript">
+		<!--
+		// initialise plugins
+		{literal}
+		$(function(){
+			jqueryValidatorI18n("{/literal}{$baseUrl}{literal}", "{/literal}{$currentLocale}{literal}"); // include the appropriate validation localization
+			{/literal}{if $validateId}{literal}
+				$("form[name={/literal}{$validateId}{literal}]").validate({
+					errorClass: "error",
+					highlight: function(element, errorClass) {
+						$(element).parent().parent().addClass(errorClass);
+					},
+					unhighlight: function(element, errorClass) {
+						$(element).parent().parent().removeClass(errorClass);
+					}
+				});
+			{/literal}{/if}{literal}
+			$(".tagit").live('click', function() {
+				$(this).find('input').focus();
+			});
+		});
+		// -->
+		{/literal}
+	</script>
+
+	{if $hasSystemNotifications}
+		{url|assign:fetchNotificationUrl page='notification' op='fetchNotification' escape=false}
+		<script type="text/javascript">
+			$(function(){ldelim}
+				$.get('{$fetchNotificationUrl}', null,
+					function(data){ldelim}
+						var notifications = data.content;
+						var i, l;
+						if (notifications && notifications.general) {ldelim}
+							$.each(notifications.general, function(notificationLevel, notificationList) {ldelim}
+								$.each(notificationList, function(notificationId, notification) {ldelim}
+									$.pnotify(notification);
+								{rdelim});
+							{rdelim});
+						{rdelim}
+				{rdelim}, 'json');
+			{rdelim});
+		</script>
+	{/if}{* hasSystemNotifications *}
+
 	{$additionalHeadData}
 	
-	<!-- Google Analytics BEGIN -->
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', '']);
-		  _gaq.push(['_trackPageview']);
-		  
-		  	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-		</script>
-	<!-- Google Analytics END -->
+	{* CSS style switcher *}	
+	{php} 
+		if(!empty($_COOKIE['style'])) $style = $_COOKIE['style'];
+		else $style = 'custom';
+	{/php}	
+	<link id="stylesheet" type="text/css" href="{$baseUrl}/override/css/{php}echo $style{/php}.css" rel="stylesheet" />
+	<link rel="stylesheet" href="{$baseUrl}/override/css/tablet.css" type="text/css" />
+	<link rel="stylesheet" href="{$baseUrl}/override/css/mobile.css" type="text/css" />
 	
-</head><body id="pkp-{$pageTitle|replace:'.':'-'}">
+</head>
+<body id="pkp-{$pageTitle|replace:'.':'-'}" class="modal-help">
 <div id="header">
 	<div id="header_container">				
 		<div class="headerTitle">

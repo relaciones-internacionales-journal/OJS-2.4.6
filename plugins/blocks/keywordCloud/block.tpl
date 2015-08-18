@@ -8,8 +8,8 @@
  * Keyword cloud block plugin
  *
  *}
-<div class="block" id="sidebarKeywordCloud">
-	<div class="blockTitleModified">{translate key="plugins.block.keywordCloud.title"}</div>
+<div class="block" id="sidebar-keyword-cloud">
+	<div class="block-title-modified">{translate key="plugins.block.keywordCloud.title"}</div>
 	<ul class="sd-bl-keywords">
 	{foreach name=cloud from=$cloudKeywords key=keyword item=count}
 		<li><a href="{url page="search" subject=$keyword}">{$keyword}</a></li>

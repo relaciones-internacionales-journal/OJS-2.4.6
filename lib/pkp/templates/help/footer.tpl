@@ -11,8 +11,5 @@
 {call_hook name="Templates::Help::Footer::PageFooter"}
 </div>
 </div>
-<script type="text/javascript" src="{$baseUrl}/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-{* MODIFICADO OJS V.2.4.6 / 06-2015*}

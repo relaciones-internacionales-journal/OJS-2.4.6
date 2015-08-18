@@ -23,7 +23,7 @@
 {literal}	url = {{/literal}{$articleUrl}{literal}}
 }{/literal}</textarea>
 	<br />
-	<input type="submit" class="btn btn-small" name="Submit" value="{translate key="plugins.citationFormats.refWorks.export"}" />
+	<input type="submit" class="btn btn-sm" name="Submit" value="{translate key="plugins.citationFormats.refWorks.export"}" />
 </form>
 </div>
 

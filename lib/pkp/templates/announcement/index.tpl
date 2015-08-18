@@ -14,7 +14,7 @@
 {include file="common/header.tpl"}
 {/strip}
 
-<div id="announcementList">
+<div id="announcement-list">
 <div class="news-list">
 	{if $announcementsIntroduction != null}
 		<div class="intro">
@@ -47,7 +47,7 @@
 		<div class="endseparator">&nbsp;</div>
 	{else}
 		<div class="news-pagination">
-			<p class="news-pagination_text">{page_info iterator=$announcements}{page_links anchor="announcements" name="announcements" iterator=$announcements}</p>
+			<p class="news-pagination-text">{page_info iterator=$announcements}{page_links anchor="announcements" name="announcements" iterator=$announcements}</p>
 		</div>
 	{/if}
 

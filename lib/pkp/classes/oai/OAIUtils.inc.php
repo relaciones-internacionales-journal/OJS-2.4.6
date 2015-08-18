@@ -107,17 +107,11 @@ class OAIUtils {
 
 		} else {
 			foreach ($data as $k => $v) {
-				if (is_array($data[$k])) {$y = 'journal';
-					if ($k == $y) {
-					echo '';}
-					else {
-					$this->prepOutput($data[$k]);}
-				} else {$y == 'journal';
-					if ($k == $y) {
-					echo '';}
-					else {
+				if (is_array($data[$k])) {
+					$this->prepOutput($data[$k]);
+				} else {
 					// FIXME FIXME FIXME
-					$data[$k] = htmlspecialchars($v);}
+					$data[$k] = htmlspecialchars($v);
 				}
 			}
 		}
@@ -150,5 +144,5 @@ class OAIUtils {
 		}
 	}
 }
-/* MODIFICADO OJS V.2.4.6 / 04-2015*/
+
 ?>

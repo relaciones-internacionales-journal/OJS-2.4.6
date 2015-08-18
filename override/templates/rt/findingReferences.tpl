@@ -68,12 +68,12 @@ function invokeWLA() {
 <!-- Display the search engine options -->
 <table class="listing" width="100%">
 	<tr valign="top">
-		<td width="10%"><input value="{translate key="common.search"}" type="button" onclick="invokeGoogleScholar()" class="btn btn-small" /></td>
+		<td width="10%"><input value="{translate key="common.search"}" type="button" onclick="invokeGoogleScholar()" class="btn btn-sm" /></td>
 		<td width="2%">1.</td>
 		<td width="88%">{translate key="rt.findingReferences.googleScholar"}</td>
 	</tr>
 	<tr valign="top">
-		<td><input value="{translate key="common.search"}" type="button" onclick="invokeWLA()" class="btn btn-small" /></td>
+		<td><input value="{translate key="common.search"}" type="button" onclick="invokeWLA()" class="btn btn-sm" /></td>
 		<td>2.</td>
 		<td>{translate key="rt.findingReferences.windowsLiveAcademic"}</td>
 	</tr>

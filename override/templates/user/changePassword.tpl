@@ -41,7 +41,7 @@
 </table>
 
 <div class="separator"><hr/></div>
-<p style="float:right"><input type="button" value="{translate key="common.cancel"}" class="btn btn-danger btn-small" onclick="document.location.href='{url page="user" escape=false}'" /> <input type="submit" value="{translate key="common.save"}" class="btn btn-small" /> </p>
+<p style="float:right"><input type="button" value="{translate key="common.cancel"}" class="btn btn-danger btn-sm" onclick="document.location.href='{url page="user" escape=false}'" /> <input type="submit" value="{translate key="common.save"}" class="btn btn-sm" /> </p>
 </form>
 </div>
 {include file="common/footer.tpl"}

@@ -110,6 +110,8 @@
 	<message key="search.infoAboutResults">Search results will be displayed under the search form.</message>
 	<message key="search.infoSearchResults">Search results</message>
 	<message key="form.errorTitle">Warning...</message>
+	<message key="user.langSelect">Lang</message>
+	<message key="user.mobileSelectStyle">Style</message>
 	
 	<!-- Extra links header -->
 	<message key="header.indexes">Indexes</message>
@@ -145,7 +147,8 @@ Law Faculty, Autonomous University of Madrid, Spain]]></message>
 	<message key="frontpage.PastIssues">Past Issues</message>
 	<message key="frontpage.More">More...</message>
 	<message key="frontpage.ReadMore">Read more</message>
-	<message key="frontpage.cookiesPolicy"><![CDATA[By continuing to use this site you consent to the use of cookies on your device as described in <a href="/ojs/pages/view/politica-cookies.html">our cookie policy</a> unless you have disabled them. You can change your <a href="/ojs/pages/view/politica-cookies.html">cookie settings</a> at any time but parts of our site will not function correctly without them.]]></message>
+	<message key="frontpage.cookiesPolicy"><![CDATA[By continuing to use this site you consent to the use of cookies on your device as described in our cookie policy unless you have disabled them. You can change yourcookie settings at any time but parts of our site will not function correctly without them. See]]></message>
+	<message key="frontpage.cookiesPolicyAccept">I agree</message>
 	
 	<!--About page-->
 	<message key="about.OnlineSubmissionsInfo">All submissions should be made using our OJS online system, allowing users and staff to check online all due processes.</message>

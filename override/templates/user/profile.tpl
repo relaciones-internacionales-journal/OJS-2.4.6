@@ -155,10 +155,11 @@
 		{fieldLabel name="profileImage" key="user.profile.form.profileImage"}
 	</td>
 	<td class="value">
-		<span class="btn btn-file btn-small"><input type="file" id="profileImage" name="profileImage" class="uploadField" />{translate key="plugins.block.navigation.journalContent"}</span> <input type="submit" name="uploadProfileImage" value="{translate key="common.upload"}" class="btn btn-small" />
+		<input type="file" id="profileImage" name="profileImage" class="btn btn-file btn-sm" />
+		<input type="submit" name="uploadProfileImage" value="{translate key="common.upload"}" class="btn btn-sm" />
 		{if $profileImage}
 			<br />
-			{translate key="common.fileName"}: {$profileImage.name|escape} {$profileImage.dateUploaded|date_format:$datetimeFormatShort} <input type="submit" name="deleteProfileImage" value="{translate key="common.delete"}" class="btn btn-small" />
+			{translate key="common.fileName"}: {$profileImage.name|escape} {$profileImage.dateUploaded|date_format:$datetimeFormatShort} <input type="submit" name="deleteProfileImage" value="{translate key="common.delete"}" class="btn btn-sm" />
 			<br />
 			<img src="{$sitePublicFilesDir}/{$profileImage.uploadName|escape:"url"}" width="{$profileImage.width|escape}" height="{$profileImage.height|escape}" style="border: 0;" alt="{translate key="user.profile.form.profileImage"}" />
 		{/if}
@@ -201,7 +202,7 @@
 </table>
 
 <div class="separator"><hr/></div>
-<p style="text-align:right;;"> <input type="button" class="btn btn-danger btn-small" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url page="user"}'" /> <input type="submit" value="{translate key="common.save"}" class="btn btn-small" /></p>
+<p style="text-align:right;;"> <input type="button" class="btn btn-danger btn-sm" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url page="user"}'" /> <input type="submit" value="{translate key="common.save"}" class="btn btn-sm" /></p>
 
 </form>
 

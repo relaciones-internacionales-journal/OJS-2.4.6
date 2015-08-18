@@ -181,7 +181,7 @@
 	</div>
 {/if}
 
-<p><input type="button" value="{translate key="common.cancel"}" class="btn btn-danger btn-small" onclick="document.location.href='{url page="admin" escape=false}'" /> <input type="submit" value="{translate key="common.save"}" class="btn btn-small" /></p>
+<p><input type="button" value="{translate key="common.cancel"}" class="btn btn-danger btn-sm" onclick="document.location.href='{url page="admin" escape=false}'" /> <input type="submit" value="{translate key="common.save"}" class="btn btn-sm" /></p>
 
 </form>
 

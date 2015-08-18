@@ -105,9 +105,9 @@ function deleteAttachment(fileId) {
 		</div>
 		{if $addressFieldsEnabled}
 		<div>
-				<input type="submit" name="blankTo" class="btn btn-small" value="{translate key="email.addToRecipient"}"/>
-				<input type="submit" name="blankCc" class="btn btn-small" value="{translate key="email.addCcRecipient"}"/>
-				<input type="submit" name="blankBcc" class="btn btn-small" value="{translate key="email.addBccRecipient"}"/>
+				<input type="submit" name="blankTo" class="btn btn-sm" value="{translate key="email.addToRecipient"}"/>
+				<input type="submit" name="blankCc" class="btn btn-sm" value="{translate key="email.addCcRecipient"}"/>
+				<input type="submit" name="blankBcc" class="btn btn-sm" value="{translate key="email.addBccRecipient"}"/>
 				{if $senderEmail}
 					<br/><br/>
 					<label class="checkbox" for="bccSender"><input type="checkbox" name="bccSender" id="bccSender" value="1"{if $bccSender} checked{/if} /> {translate key="email.bccSender" address=$senderEmail|escape}</label>
@@ -131,15 +131,9 @@ function deleteAttachment(fileId) {
 				{/foreach}
 
 				{if $attachmentNum != 1}<br/>{/if}
-					<div class="fileupload fileupload-new" data-provides="fileupload">
-						<span class="btn btn-file btn-small">
-							<span class="fileupload-new">{translate key="plugins.block.navigation.journalContent"}</span>
-							<span class="fileupload-exists">{translate key="submission.changeSection"}</span>
-							<input type="file" name="newAttachment" class="pkp_form_uploadField" />{*{translate key="plugins.block.navigation.journalContent"}*}
-						</span>
-						<span class="fileupload-preview"></span>
-						<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">X</a><br/><br/>
-						<input name="addAttachment" type="submit" class="btn btn-small" value="{translate key="common.upload"}" />
+					<div>
+						<input type="file" name="newAttachment" class="btn btn-file btn-sm" />{*{translate key="plugins.block.navigation.journalContent"}*}
+						<input name="addAttachment" type="submit" class="btn btn-sm" value="{translate key="common.upload"}" />
 					</div>		
 			</div>
 		</div>
@@ -162,7 +156,7 @@ function deleteAttachment(fileId) {
 		</div>
 		<div class="separator"><hr/></div>
 
-		<p style="text-align:right"><input type="button" value="{translate key="common.cancel"}" class="btn btn-danger btn-small" onclick="history.go(-1)" />{if !$disableSkipButton} <input name="send[skip]" type="submit" value="{translate key="email.skip"}" class="btn btn-danger btn-small" />{/if} <input name="send" type="submit" value="{translate key="email.send"}" class="btn btn-small" /></p>
+		<p style="text-align:right"><input type="button" value="{translate key="common.cancel"}" class="btn btn-danger btn-sm" onclick="history.go(-1)" />{if !$disableSkipButton} <input name="send[skip]" type="submit" value="{translate key="email.skip"}" class="btn btn-danger btn-sm" />{/if} <input name="send" type="submit" value="{translate key="email.send"}" class="btn btn-sm" /></p>
 	</form>
 </div>
 {include file="common/footer.tpl"}

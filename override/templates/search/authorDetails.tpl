@@ -12,10 +12,10 @@
 {assign var="pageTitle" value="search.authorDetails"}
 {include file="common/header.tpl"}
 {/strip}
-<div id="authorDetails-singleAuthor">
+<div id="author-details-single-author">
 <h3>{$lastName|escape}, {$firstName|escape}{if $middleName} {$middleName|escape}{/if}</h3>
-<p class="authorAffiliation">{if $affiliation}{$affiliation|escape}{/if}{if $country}, {$country|escape}{/if}<p>
-<p class="authorArticles">{translate key="submission.event.general.articlesPublished"}<p>
+<p class="author-affiliation">{if $affiliation}{$affiliation|escape}{/if}{if $country}, {$country|escape}{/if}<p>
+<p class="author-articles">{translate key="submission.event.general.articlesPublished"}<p>
 {foreach from=$publishedArticles item=article}
 	{assign var=issueId value=$article->getIssueId()}
 	{assign var=issue value=$issues[$issueId]}
@@ -26,14 +26,14 @@
 	{assign var=section value=$sections[$sectionId]}
 	{if $issue->getPublished() && $section && $journal}
 	<ul>
-		<li class="authorArticlesTitle">{$article->getLocalizedTitle()|strip_unsafe_html}</li>
-		<li class="authorArticlesAbstract"><a href="{url journal=$journal->getPath() page="article" op="view" path=$article->getBestArticleId()}" class="file">{if $article->getLocalizedAbstract()}{translate key="article.abstract"}{else}{translate key="article.details"}{/if}</a></li>
+		<li class="author-articles-title">{$article->getLocalizedTitle()|strip_unsafe_html}</li>
+		<li class="author-articles-abstract"><a href="{url journal=$journal->getPath() page="article" op="view" path=$article->getBestArticleId()}" class="file">{if $article->getLocalizedAbstract()}{translate key="article.abstract"}{else}{translate key="article.details"}{/if}</a></li>
 			{if (!$issueUnavailable || $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN)}
 			{foreach from=$article->getGalleys() item=galley name=galleyList}
-				<li class="authorArticlesGalley"><a href="{url journal=$journal->getPath() page="article" op="view" path=$article->getBestArticleId()|to_array:$galley->getBestGalleyId($journal)}" class="file">{$galley->getGalleyLabel()|escape}</a></li>
+				<li class="author-articles-galley"><a href="{url journal=$journal->getPath() page="article" op="view" path=$article->getBestArticleId()|to_array:$galley->getBestGalleyId($journal)}" class="file">{$galley->getGalleyLabel()|escape}</a></li>
 			{/foreach}
 			{/if}
-		<li class="authorArticlesIssue"><a href="{url journal=$journal->getPath() page="issue" op="view" path=$issue->getBestIssueId()}">{$issue->getIssueIdentification()|strip_unsafe_html|nl2br}</a> - {$section->getLocalizedTitle()|escape}</li>
+		<li class="author-articles-issue"><a href="{url journal=$journal->getPath() page="issue" op="view" path=$issue->getBestIssueId()}">{$issue->getIssueIdentification()|strip_unsafe_html|nl2br}</a> - {$section->getLocalizedTitle()|escape}</li>
 	</ul>
 	{/if}
 {/foreach}

@@ -1,0 +1,541 @@
+/**
+* mobile.css
+*
+* Relaciones Internacionales OJS Journal CSS Customization
+* Tablets Stylesheet
+* Only for Front-end Pages
+* Min-width: 50px
+* Max-width: 480px
+* OJS 2.4.6
+* July 2015
+*/
+
+@media only screen and (min-width:50px) 
+and (max-width : 600px) {
+    
+    /* 1. GENERAL */
+    #container {
+        min-width: 50px!important; 
+        max-width:600px!important;
+        width: 100%!important;	
+    }
+
+    #header,
+    #header.sticky {
+        position: static;
+        width:100%;
+        height:auto;
+        padding-right:5px;
+    }
+    
+    #header.sticky {
+        padding: 0px 10px;
+    }
+
+    #header-container {
+        max-width: 100%;
+    }
+
+    .header-title {
+        float:left;
+        width:50%;
+        clear:both; 
+        margin-top:7px;
+        margin-left:0px;
+        padding-top:0px; 
+        }
+
+    #header h1 {
+        margin: 0 auto;
+        padding-top:2px;
+        font-size:1.7em;
+    }
+
+    #menu-principal {
+        display:none;
+    }
+
+    .menu-mobile-container,
+    .submenu-mobile-container {
+        display: block; 
+        float: left; 
+        width:100%; 
+        margin-top:-10px;
+    }
+
+    .menu-mobile-container h3{
+        float: left; 
+        width:100%; 
+    }
+
+    .mobile-menu-dropdown-link {
+        display:inline-block; 
+        padding-right:10px;
+        font-size:24px; 
+        color:#ccc; 
+    }
+
+    .mobile-menu-dropdown-link i {
+        padding-right:7px;
+    }
+
+    #menu-princ-mobile {
+        display: none;
+        margin-left:0px;
+    }
+
+    #menu-princ-mobile li {
+        display:block; 
+        width:100%; 
+        padding:7px; 
+        font-weight:bold; 
+        font-size:18px;
+        text-align: left;
+    }
+    
+    #menu-princ-mobile li:hover { 
+        border: 0px;
+    }
+
+    .submenu-mobile-container {
+        margin: 10px 0px 20px 0px;
+    }
+
+    .submenu-mobile-container .col-md-3{
+        width:23%; 
+        display: inline-block; 
+        background-color: #666;
+    }
+
+    .submenu-mobile-container h3 {
+        font-size: 12px; 
+        text-align: center; 
+        color: #fff;
+    }
+
+    .submenu-mobile-container h3 i {
+        width:100%; 
+        padding-bottom:10px; 
+        font-size: 18px;
+        color: #ccc;
+    }
+
+    .submenu-mobile-container h3 a {
+        color: #ccc;
+    }
+    
+    .user-menu,
+    #sidebar-language-toggle,
+    #style-switcher,
+    #mobile-language,
+    #mobile-styles,
+    #mobile-social,
+    #mobile-search {
+        display:none;
+    }
+    
+    #mobile-language{ 
+        margin-bottom: 10px;
+        margin-left: 0px;
+    } 
+
+    #mobile-styles p {
+        display: none;
+    }
+    
+    #mobile-styles .circle-dark,
+    #mobile-styles .circle-light {
+        float:left;
+        width:100%; 
+        clear: both;       
+        margin: 10px 0;
+        background: none;
+    }
+
+    #mobile-styles .circle-light {
+        margin-bottom: 20px;
+    }
+
+    #mobile-styles .circle-dark:hover,
+    #mobile-styles .circle-light:hover {
+        box-shadow: none;
+    }
+
+    #mobile-styles .circle-dark a,
+    #mobile-styles .circle-light a {
+        font-size: 16px;
+    } 
+
+    #mobile-social a {
+        display:block; 
+        line-height:2.2em;
+        text-align: center;
+    }
+    #mobile-social a:last-of-type {
+        margin-bottom: 5px;
+    }
+
+    #mobile-social .social-menu-facebook,
+    #mobile-social .social-menu-twitter { 
+        position: relative;  
+        color:transparent;
+    }
+
+    #mobile-social .social-menu-facebook:before,
+    #mobile-social .social-menu-twitter:before {   
+        font-family: FontAwesome;
+        font-size: 1.2em;
+        color:#ccc;
+        text-align: center;
+    }
+
+    #mobile-social .social-menu-facebook:before {
+        content: "\f230"; 
+    }
+
+    #mobile-social .social-menu-twitter:before {   
+        content: "\f099"; 
+    }
+
+    #mobile-social .social-menu-academia {
+        width:32px;
+        margin: 0 auto;
+        background: url("../templates/images/style-dark/icons-dark.png")no-repeat;  
+        background-position: -4px -2px;
+        background-clip: content-box;
+        color:transparent!important;
+    }
+    
+    #mobile-search .input-group {
+        left:-190px;
+        margin: 20px 0px 10px 0px;
+    }
+
+    #mobile-search .input-group #query {
+        padding: 0px 5px;
+        height:31px;
+    }
+
+    #mobile-search .input-group #query,
+    #mobile-search .input-group .btn {
+        background-color: #000;
+        border: none;
+        border-radius: 0px;
+        color:#fff;
+    }
+
+    #general {
+        padding:0px 10px;
+    }
+    
+    #sub-container {
+        width:100%;
+        padding: 0px 10px;
+    }
+    
+    #breadcrumb {
+        width:100%;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    #left-sidebar {
+        display: none;
+    }
+
+    #supramain {
+        width: 100%; 
+        margin-left: 0px; 
+        padding: 0px 5px;
+    }
+
+    #sidebar-phones {
+        display:block;
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        border-top: 1px solid #444;
+        }
+    
+    #sidebar-phones .block-title-modified {
+        margin: 10px 0px;
+        padding: 0px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #2B2B2B;
+    }
+
+    #sidebar-phones .sidebar-block-list-search {
+        margin-left: 18px;
+    }
+    
+    .footer-container {
+        float:left;
+        width:100%; 
+        margin-left:0px;
+    }
+    
+    .footer-about-journal {
+        padding-bottom:10px;
+        text-align:left;
+    }
+    
+    .footer-logo-uam {
+        display:block;
+        float:left; 
+        width:100%;
+        clear:both; 
+        margin-bottom:20px;
+    }
+    
+    .footer-logo-uam {
+        background-position: 50% -301px;
+    }
+    
+    .footer-logo-uam:hover {
+        background-position: 50% -237px;
+    }
+    
+    .footer-ojs-tools ul {
+        margin-top:20px; 
+        text-align: center;
+    }
+    
+    #footer .footer-nav {
+        margin-top:0px;
+    }
+    
+    #footer .footer-nav ul{
+        text-align: center;
+    }
+    
+    #footer .footer-nav ul li a {
+        padding-left:0;
+    }
+
+    /* 2. PAGES */
+    /* 2.1. FP */
+    .fp-issue-bignumber,
+    .fp-issue-title h2,
+    .fp-issue-meta {
+        width:100%; 
+        text-align: center;
+    }
+    
+    .fp-tabbed-area #fp-Tab li {
+        width:100%;
+    }
+    
+    .fp-tabbed-area #fp-Tab li a {
+        text-align: left!important;
+    }
+    
+    .fp-tabbed-area #fp-Tab li a:before {
+        content: "\f055";
+        font-family: FontAwesome;
+        padding-right: 7px;
+
+    }
+
+    .fp-tabbed-area #fp-Tab li.active a:before {
+        content: "\f056";
+        font-family: FontAwesome;
+        padding-right: 7px;
+
+    }
+    
+    .fp-past-issues-carrousel-container {
+        width:100%; 
+        margin-top: -40px; 
+        border-top: none;
+    }
+    
+    #ca-container.ca-container {
+        display:none;
+    }
+    
+    .fp-sidebar-left {
+        width: 100%;
+    }
+    
+    #last-issues-phone {
+        display:block;
+        width:85%;
+        clear:both; 
+        margin:0px 0px 25px 15px; 
+        font-size:11px; 
+        font-weight:bold;
+    }
+    
+    #last-issues-phone ul {
+        list-style-type:square;
+    }
+    
+    /* ABOUT */
+    .member {
+        margin-bottom: 0!important; 
+        padding-top: 30px;
+        border-top: 1px solid #444; 
+    }
+    
+    .profile-pic-content {
+        float:right;
+    }
+    
+    .main-content-bio {
+        width:47%; 
+        margin-top:0px;
+        padding-bottom: 0px;
+    }
+    
+    #pkp-about-aboutThisPublishingSystem #content p:nth-child(2) img {
+        max-width:100%;
+    }
+
+    /* Issues and Articles*/
+    #pkp-archive-archives .issues-archive {
+        margin:0px;
+        border-bottom: 1px solid #444;
+    }
+    
+    #pkp-archive-archives .issues-archive h3 {
+        width:100%;
+        padding: 0px; 
+        font-size:2.2em;
+        font-weight:bold;
+        text-align: center;
+    }
+    
+    #pkp-archive-archives .issue {
+        padding-bottom:20px;
+        border-bottom: 1px solid #444;
+    }
+    
+    #pkp-archive-archives .issue .issue-cover-image {
+        width:100%; 
+        text-align: center!important;
+    }
+    
+    #pkp-archive-archives .issue .issue-archives-title {
+        float:left; 
+        width:100%; 
+        text-align:center!important;
+    }
+    
+    #pkp-archive-archives .issue .issue-archives-title h4 {
+        margin-right: 0px!important;
+    }
+    
+    #pkp-archive-archives .issue .issue-cover-description {
+        width: 100%;
+        margin-left: 0px;
+        text-align:center!important;
+    }
+    
+    .issue-block {
+        margin-bottom: 40px;
+        padding: 20px!important;
+    }
+    
+    .issue-block .issue-bignumber {
+        width:100%;
+        margin-right: 0px;
+        text-align: center;
+    }
+    
+    .issue-block .issue-description {
+        width:100%!important;
+    }
+    
+    .issue-block .issue-meta,
+    .issue-block .issue-title h2 {
+        width:100%!important;
+        text-align: center!important;
+    }
+     
+    #content-article p {
+        text-align: left;
+    }
+    
+    #content-article #article-subject,
+    #content-article #article-full-text,
+    #content-article .addthis-container {
+        width:100%;
+    }   
+    
+    /* Search */
+    #advanced-search-results table td {
+        text-align: left;
+    }
+
+    #emptyFilters .extrasContainer .col-1,
+    #emptyFilters .extrasContainer .col-2 {
+        display:block;
+        float:left;
+        width:100%;
+        clear:both;
+    }
+
+    
+    #emptyFilters .date-search .control-group {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    
+    #emptyFilters .btn {
+        float: left;
+    }
+
+    /* TYPO */
+    #main h2,
+    .arrow-down-box {
+        width: 100%;
+    }
+    
+    .main-arrow-right {
+        display: none;
+    }
+    
+    #content div,
+    #content p {
+        text-align: left;
+    }
+
+    /* Indexes and 404 */
+    
+    .logos-indices-page .indexes-group {
+        padding-left: 0;    
+    }
+
+    .logos-indices-page .indexes-group >div {
+        float: none;
+        display: inline-block;
+        width: 49%;      
+        text-align: center!important;      
+    }
+    
+    #fail-container p.fail-p-big {
+        font-size:6em;
+    }
+    
+    #fail-container ul.fail-comeback {
+        margin:0px; 
+        padding:0px;
+    }
+    #fail-container ul.fail-comeback li {
+        display:block; 
+        width:100%; 
+        text-align:center;
+    }
+
+    #four-o-four .footer-container {
+        max-width: 600px;width:100%;
+    }
+    
+    #four-o-four .footer-container h2 {
+        font-size: 22px;
+        line-height: 22px!important;
+    }
+    
+}

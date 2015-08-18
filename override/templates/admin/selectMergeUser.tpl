@@ -41,7 +41,7 @@
 	<input type="text" size="10" name="search" class="textField" value="{$search|escape}" />&nbsp;<input type="submit" value="{translate key="common.search"}" class="button" />
 </form>
 	<hr/>
-	<ul class="searchResults_ListAuhors">
+	<ul class="search-results-list-authors">
 	{foreach from=$alphaList item=letter}<li><a href="{url path=$roleSymbolic oldUserIds=$oldUserIds searchInitial=$letter}">{if $letter == $searchInitial}<strong>{$letter|escape}</strong>{else}{$letter|escape}{/if}</a></li> {/foreach}{*<a href="{url path=$roleSymbolic oldUserIds=$oldUserIds}">{if $searchInitial==''}<strong>{translate key="common.all"}</strong>{else}{translate key="common.all"}{/if}</a>*}
 	</ul>
 	<hr/>
@@ -132,7 +132,7 @@
 {/if}
 </table>
 {if empty($oldUserIds)}
-	<input type="submit" class="btn btn-small" value="{translate key="admin.mergeUsers"}" />
+	<input type="submit" class="btn btn-sm" value="{translate key="admin.mergeUsers"}" />
 	</form>
 {/if}
 </div>

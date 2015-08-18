@@ -107,7 +107,7 @@
 </tr>
 </table>
 
-<p><input type="button" value="{translate key="common.cancel"}" class="btn btn-danger btn-small" onclick="document.location.href='{url op="announcements" escape=false}'" />{if not $announcementId} <input type="submit" name="createAnother" value="{translate key="manager.announcements.form.saveAndCreateAnother"}" class="btn btn-small" />{/if} <input type="submit" value="{translate key="common.save"}" class="btn btn-small" /></p>
+<p><input type="button" value="{translate key="common.cancel"}" class="btn btn-danger btn-sm" onclick="document.location.href='{url op="announcements" escape=false}'" />{if not $announcementId} <input type="submit" name="createAnother" value="{translate key="manager.announcements.form.saveAndCreateAnother"}" class="btn btn-sm" />{/if} <input type="submit" value="{translate key="common.save"}" class="btn btn-sm" /></p>
 
 </form>
 </div>

@@ -18,17 +18,17 @@ $.event.special.mousewheel = {
     setup: function() {
         if ( this.addEventListener ) {
             for ( var i=types.length; i; ) {
-                this.addEventListener( types[--i], handler, false );
+                this.addEventListener( types[--i], dispatch, false );
             }
         } else {
-            this.onmousewheel = handler;
+            this.onmousewheel = dispatch;
         }
     },
     
     teardown: function() {
         if ( this.removeEventListener ) {
             for ( var i=types.length; i; ) {
-                this.removeEventListener( types[--i], handler, false );
+                this.removeEventListener( types[--i], dispatch, false );
             }
         } else {
             this.onmousewheel = null;
@@ -47,7 +47,7 @@ $.fn.extend({
 });
 
 
-function handler(event) {
+function dispatch(event) {
     var orgEvent = event || window.event, args = [].slice.call( arguments, 1 ), delta = 0, returnValue = true, deltaX = 0, deltaY = 0;
     event = $.event.fix(orgEvent);
     event.type = "mousewheel";
@@ -72,7 +72,7 @@ function handler(event) {
     // Add event and delta to the front of the arguments
     args.unshift(event, delta, deltaX, deltaY);
     
-    return $.event.handle.apply(this, args);
+    return $.event.dispatch.apply(this, args);
 }
 
 })(jQuery);

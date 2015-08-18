@@ -22,7 +22,7 @@ define('OAIRECORD_STATUS_ALIVE', 1);
  */
 class OAIConfig {
 	/** @var $baseUrl string URL to the OAI front-end */
-	var $baseUrl = 'http://www.relacionesinternacionales.info/ojs/oai';
+	var $baseUrl = '';
 
 	/** @var $repositoryId string identifier of the repository */
 	var $repositoryId = 'oai';
@@ -242,5 +242,5 @@ class OAIRecord extends OAIIdentifier {
 		return $returner;
 	}
 }
-/* MODIFICADO OJS V.2.4.6 / 06-2015*/
+
 ?>

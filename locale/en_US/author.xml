@@ -26,7 +26,7 @@
 	<message key="author.submit.step4a">Step 4a. Add a Supplementary File</message>
 	<message key="author.submit.step5">Step 5. Confirming the Submission</message>
 	<message key="author.submit.start">1. Start</message>
-	<message key="author.submit.upload">2. Upload Submission</message>
+	<message key="author.submit.upload">2. Upload File</message>
 	<message key="author.submit.metadata">3. Enter Metadata</message>
 	<message key="author.submit.supplementaryFiles">4. Upload Supplementary Files</message>
 	<message key="author.submit.confirmation">5. Confirmation</message>

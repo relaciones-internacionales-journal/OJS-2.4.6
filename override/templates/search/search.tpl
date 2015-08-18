@@ -15,12 +15,14 @@
 <div id="advanced-search">
 <p>{translate key="search.infoAboutResults"}</p>
 	<script type="text/javascript">
-		$(function() {ldelim}
+		var $j = jQuery.noConflict();
+		$j(function() {ldelim}
 			// Attach the form handler.
-			$('#searchForm').pkpHandler('$.pkp.pages.search.SearchFormHandler');
-		{rdelim});
+			$j('#searchForm').pkpHandler('$j.pkp.pages.search.SearchFormHandler');
+		{rdelim});	
 	</script>
-	<form method="post" id="searchForm" action="{url op="search"}" class="form-horizontal">
+	
+	<form method="post" id="searchForm" action="{url op="search"}">
 		
 		<div class="control-group" style="display:none;">
 			<label class="control-label" for="query">{translate key="search.searchAllCategories"}</label>
@@ -45,7 +47,7 @@
 		{/if}
 		
 		{if $hasActiveFilters}
-		<div class="search_filters">
+		<div class="search-filters">
 			<div class="arrow-down-box">
 				<h4>{translate key="search.activeFilters"}</h4>
 			</div>
@@ -106,7 +108,7 @@
 				</div>
 				{/if}
 
-				<div style="float:left;width:100%; clear:both;"><p style="margin-top:20px;"><input type="submit" value="{translate key="common.search"}" class="btn btn-small" /></p></div>
+				<div style="float:left;width:100%; clear:both;"><p style="margin-top:20px;"><input type="submit" value="{translate key="common.search"}" class="btn btn-sm" /></p></div>
 			{/capture}
 			{include file="controllers/extrasOnDemand.tpl" id="emptyFilters" moreDetailsText="search.advancedSearchMore" lessDetailsText="search.advancedSearchLess" extraContent=$emptyFilters}
 		{/if}
@@ -151,7 +153,7 @@
 					{foreach from=$article->getAuthors() item=authorItem name=authorList}
 						<p style="font-style: italic;">{$authorItem->getFullName()|escape}{if !$smarty.foreach.authorList.last},{/if}</p>
 					{/foreach}
-					<p class="TitleIssue"><a href="{url journal=$journal->getPath() page="issue" op="view" path=$issue->getBestIssueId($journal)}">{$issue->getNumber()|strip_unsafe_html|nl2br} <span class="divider">/</span> {$issue->getYear()|strip_unsafe_html|nl2br}</a></p>
+					<p class="title-issue"><a href="{url journal=$journal->getPath() page="issue" op="view" path=$issue->getBestIssueId($journal)}">{$issue->getNumber()|strip_unsafe_html|nl2br} <span class="divider">/</span> {$issue->getYear()|strip_unsafe_html|nl2br}</a></p>
 					{if $publishedArticle->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN|| $issueAvailable}
 						{assign var=hasAccess value=1}
 					{else}
@@ -163,7 +165,7 @@
 						{assign var=hasAbstract value=0}
 					{/if}
 					{if !$hasAccess || $hasAbstract}
-						<p class="TitleAbstract"><a href="{url journal=$journal->getPath() page="article" op="view" path=$publishedArticle->getBestArticleId($journal)}" class="file">
+						<p class="title-abstract"><a href="{url journal=$journal->getPath() page="article" op="view" path=$publishedArticle->getBestArticleId($journal)}" class="file">
 							{if !$hasAbstract}
 								{translate key="article.details"}
 							{else}
@@ -173,7 +175,7 @@
 					{/if}
 					{if $hasAccess}
 						{foreach from=$publishedArticle->getLocalizedGalleys() item=galley name=galleyList}
-							<p class="TitleGalley""><a href="{url journal=$journal->getPath() page="article" op="view" path=$publishedArticle->getBestArticleId($journal)|to_array:$galley->getBestGalleyId($journal)}" class="file">{$galley->getGalleyLabel()|escape}</a></p>
+							<p class="title-galley""><a href="{url journal=$journal->getPath() page="article" op="view" path=$publishedArticle->getBestArticleId($journal)|to_array:$galley->getBestGalleyId($journal)}" class="file">{$galley->getGalleyLabel()|escape}</a></p>
 					
 						{/foreach}
 					{/if}

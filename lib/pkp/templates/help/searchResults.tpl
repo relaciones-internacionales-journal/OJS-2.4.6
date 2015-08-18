@@ -61,7 +61,7 @@
 			<br/>
 			<form action="{url op="search"}" method="post" style="display: inline">
 			{translate key="help.searchFor"}<br/><input type="text" name="keyword" size="30" maxlength="60" value="{$helpSearchKeyword|escape}" class="textField" /><br/>
-			<input type="submit" value="{translate key="common.search"}" class="btn btn-small" />
+			<input type="submit" value="{translate key="common.search"}" class="btn btn-sm" />
 			</form>
 		</div>
 	</div>
