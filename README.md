@@ -21,22 +21,22 @@ This is our current published Open Journal System installation. Changes from our
 
 - Plugins developed/updated/modified:
   - Plugin AddCssJs: used to add:
-  - CSS files:
-  - font-awesome.min.css (external file)
-  - bootstrap.min.css (external file)
-  - carousel.css (in override > css folder)
+    - CSS files:
+      - font-awesome.min.css (external file)
+      - bootstrap.min.css (external file)
+      - carousel.css (in override > css folder)
 
-  - JS files:
-  - jquery-1.11.3.min.js (external file)
-  - bootstrap.min.js (external file)
-  - jquery.contentcarousel.js (in override > js folder)
-  - jquery.easing.1.3.js (in override > js folder)
-  - jquery.mousewheel.js (in override > js folder)
-  - styleswitcher.jquery.js (in override > js folder)
-  - jquery.menutoggle.js (in override > js folder)
-  - cookieconsent.js (in override > js folder)
+    - JS files:
+      - jquery-1.11.3.min.js (external file)
+      - bootstrap.min.js (external file)
+      - jquery.contentcarousel.js (in override > js folder)
+     - jquery.easing.1.3.js (in override > js folder)
+     - jquery.mousewheel.js (in override > js folder)
+     - styleswitcher.jquery.js (in override > js folder)
+     - jquery.menutoggle.js (in override > js folder)
+     - cookieconsent.js (in override > js folder)
 
-  - Plugin IssueCarousel: from Ictineo’s plugin: https://github.com/ictineo/ojs-issueCarousel. Updated to 2.4.6 and modified. See:
+  - Plugin IssueCarousel: from Ictineoâ€™s plugin: https://github.com/ictineo/ojs-issueCarousel. Updated to 2.4.6 and modified. See: https://github.com/relaciones-internacionales-journal/issue-carousel-plugin
   - Block plugins and some block.tpl files: modified to add FontAwesome and CSS rules.
 
   - PHP & JS Style switcher.  Source: http://code.tutsplus.com/tutorials/jquery-style-switcher--net-532
@@ -44,8 +44,6 @@ This is our current published Open Journal System installation. Changes from our
     - Roboto Condensed. Source:  http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300
     - Open Sans. Source: http://fonts.googleapis.com/css?family=Open+Sans:300,600,700
     - Crimson Text. Source: http://fonts.googleapis.com/css?family=Crimson+Text:400,700,600
-  - JS Circular Content Carousel. Source: http://tympanus.net/codrops/2011/08/16/circular-content-carousel/
-  - Minified CSS & JS via PHP. Source: https://github.com/mrclay/minify
 
 # Notes & Recommendations
 - OJS folders /cache/ /public/ and /files/ not provided. Neither config.inc.php for security reasons. So most images will not be available.
